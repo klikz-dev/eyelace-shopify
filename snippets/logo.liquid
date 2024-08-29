@@ -1,0 +1,60 @@
+{%- liquid
+  assign logo_type = 'text'
+  assign logo_to_render = logo
+
+  if logo or inverted_logo
+    assign logo_type = 'image'
+  endif
+
+  if image_type == 'inverted' and inverted_logo
+    assign logo_to_render = inverted_logo
+  endif
+
+  assign width = height | times: logo_to_render.aspect_ratio | round
+  assign twice_width = width | times: 2
+  assign mobile_width = mobile_height | times: logo_to_render.aspect_ratio | round
+-%}
+
+<div
+  class="logo--root"
+  data-type="{{ logo_type }}"
+  itemscope
+  itemtype="https://schema.org/Organization"
+>
+  <a
+    class="logo--wrapper"
+    href="{{ routes.root_url }}"
+    title="{{ shop.name }}"
+    itemprop="url"
+  >
+    {%- if logo_type == 'image' -%}
+      {{-
+        logo_to_render |
+        image_url: width: twice_width |
+        image_tag:
+          class: "logo--image",
+          itemprop: "logo",
+          fetchpriority: "high"
+      -}}
+      <style>
+        img.logo--image {
+          height: auto;
+          width: {{ width }}px;
+          border-radius: 0;
+        }
+
+        @media only screen and (max-width: 767px) {
+          img.logo--image {
+            width: {{ mobile_width }}px;
+          }
+        }
+      </style>
+
+    {%- else -%}
+      <div class="logo--text" data-item="section-heading">
+        {{- shop.name -}}
+      </div>
+
+    {%- endif -%}
+  </a>
+</div>

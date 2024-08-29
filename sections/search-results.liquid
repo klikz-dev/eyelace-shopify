@@ -1,0 +1,189 @@
+{%- liquid
+  comment
+    Translations
+  endcomment
+
+  assign filter_feedback_t = 'general.search.filter_feedback' | t
+  assign results_for_t = 'sections.navigation.results_for' | t
+  assign search_again_t = 'general.search.search_again' | t
+  assign skip_link_t = 'general.a11y.skip_pagination' | t
+
+  comment
+    Variables
+  endcomment
+
+  assign number_of_rows = section.settings.number-of-rows
+  assign products_per_row_desktop = section.settings.products-per-row--desktop
+  assign products_per_row_mobile = section.settings.products-per-row--mobile
+  assign products_per_page = number_of_rows | times: products_per_row_desktop
+
+  assign result_type = 'other'
+  for item in search.results limit: 1
+    if item.object_type == 'product'
+      assign result_type = 'product'
+    endif
+  endfor
+
+  render 'section-assets', name: 'search-results', type: 'style'
+-%}
+
+{%- capture sizes -%}
+  '(max-width: 767px) {{ 100 | divided_by: products_per_row_mobile }}vw, {{ 100 | divided_by: products_per_row_desktop }}vw'
+{%- endcapture %}
+
+<div
+  class="search-results--root"
+  id="search-results-root"
+  data-body-root
+  data-section-id="{{ section.id }}"
+  data-container="section"
+  data-view="{{ result_type }}"
+  {%- if result_type == 'product' -%}
+    data-aspect-ratio="{{ settings.image--product-size }}"
+    data-max-columns="{{ products_per_row_desktop }}"
+  {%- else -%}
+    data-aspect-ratio="{{ settings.image--article-size }}"
+  {%- endif -%}
+>
+  {%- if result_type == 'product' or search.results.size == 0 -%}
+    <div
+      class="search-results--spinner"
+      style="display:none;"
+      data-container="block"
+      data-body-spinner
+    >
+      <div class="search-results--spinner-wrapper" data-item="spinner">
+        {%- render 'icons', icon: 'spinner' -%}
+      </div>
+    </div>
+
+    {%- paginate search.results by products_per_page -%}
+      {%- if paginate.pages > 1 -%}
+        <a data-item="a11y-button" href='#search-results-footer' data-body-pagination-link>
+          {{- skip_link_t }}
+        </a>
+      {%- endif -%}
+
+      <div
+        class="search-results--products"
+        data-body-grid
+        data-container="panel"
+        data-columns="{{ products_per_row_desktop }}"
+        data-mobile-columns="{{ products_per_row_mobile }}"
+      >
+        {%- if search.results.size > 0 -%}
+          {%
+            render 'product--item' for search.results as product_item,
+            section_id: section.id,
+            sizes: sizes
+          %}
+
+        {%- else -%}
+          <div class="search-results--filter-feedback" data-container="block">
+            <p data-item="paragraph">
+              {{- filter_feedback_t -}}
+            </p>
+          </div>
+
+        {%- endif -%}
+      </div>
+
+      <div class="search-results--footer" id="search-results-footer" data-container="block">
+        <div class="search-results--pagination" data-body-pagination>
+          {%- liquid
+            if paginate.pages > 1
+              render 'pagination', paginate: paginate, view: 'search'
+            endif
+          -%}
+        </div>
+
+        <div class="search-results--button" data-item="block-link">
+          <a data-drawer-open="top" data-drawer-view="search" tabindex="0">
+            {{- search_again_t -}}
+          </a>
+        </div>
+      </div>
+    {%- endpaginate -%}
+
+  {%- else -%}
+    {%- render 'section-assets', name: 'article-item', type: 'style' -%}
+
+    {%- paginate search.results by 20 -%}
+      <div class="search-results--heading" data-container="block">
+        <p data-item="caption">
+          {{ search.results_count }} {{ results_for_t }} "{{ search.terms | replace: '*', '' }}"
+        </p>
+      </div>
+
+      <div
+        class="search-results--other"
+        data-container="panel"
+        data-columns="3"
+        data-mobile-columns="1"
+      >
+        {%-
+          render "article--item" for search.results as featured_article,
+          show_date: true,
+          show_excerpt: true,
+          type: 'full_article',
+          sizes: '(max-width: 767px) 100vw, 33.3vw'
+        -%}
+      </div>
+
+      <div class="search-results--footer" id="search-results-footer" data-container="block">
+        {%- liquid
+          if paginate.pages > 1
+            echo '<div class="search-results--pagination">'
+              render 'pagination', paginate: paginate, view: 'search'
+            echo '</div>'
+          endif
+        -%}
+
+        <div class="search-results--button" data-item="block-link">
+          <a data-drawer-open="top" data-drawer-view="search" tabindex="0">
+            {{- search_again_t -}}
+          </a>
+        </div>
+      </div>
+    {%- endpaginate -%}
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Search results",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Product results"
+    },
+    {
+      "label": "Products per row (desktop)",
+      "id": "products-per-row--desktop",
+      "type": "range",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "label": "Product per row (mobile)",
+      "id": "products-per-row--mobile",
+      "type": "radio",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ]
+    },
+    {
+      "label": "Maximum amount of rows per page",
+      "id": "number-of-rows",
+      "type": "range",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    }
+  ]
+}
+{% endschema %}

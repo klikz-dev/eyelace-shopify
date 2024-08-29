@@ -1,0 +1,66 @@
+<script>
+  var theme = theme || {};
+  theme.libraries = theme.libraries || {};
+  theme.local_storage = theme.local_storage || {};
+  theme.settings = theme.settings || {};
+  theme.scripts = theme.scripts || {};
+  theme.styles = theme.styles || {};
+  theme.swatches = theme.swatches || {};
+  theme.translations = theme.translations || {};
+  theme.urls = theme.urls || {};
+
+  theme.libraries.masonry = '{{ "masonry.min.js" | asset_url }}';
+  theme.libraries.swipe = '{{ "swipe-listener.min.js" | asset_url }}';
+  theme.libraries.plyr = '/cdn/shopifycloud/plyr/v2.0/shopify-plyr';
+  theme.libraries.vimeo = 'player.vimeo.com/api/player.js';
+  theme.libraries.youtube = 'youtube.com/iframe_api';
+
+  theme.local_storage.age_verification = 'makerTheme:ageVerified';
+  theme.local_storage.collection_layout = 'makerTheme:collectionLayout';
+  theme.local_storage.recent_products = 'makerTheme:recentlyViewed';
+  theme.local_storage.search_layout = 'makerTheme:searchLayout';
+
+  theme.settings.cart_type = '{{ settings.cart--type }}';
+  theme.settings.money_format = {{ shop.money_format | json }};
+
+  theme.translations.add_to_cart = '{{ "products.add_to_cart" | t }}';
+  theme.translations.mailing_list_success_message = '{{ "general.mailing_list.success_message" | t }}';
+  theme.translations.out_of_stock = '{{ "products.out_of_stock" | t }}';
+  theme.translations.unavailable = '{{ "products.unavailable" | t }}';
+  theme.translations.url_copied = '{{ "general.social.copied" | t }}';
+  theme.translations.low_in_stock = {
+    one: '{{ "products.low_in_stock" | t: count: 1 }}',
+    other: '{{ "products.low_in_stock" | t: count: 2 }}'
+  };
+
+  theme.urls.all_products_collection = '{{ routes.all_products_collection_url }}';
+  theme.urls.cart = '{{ routes.cart_url }}';
+  theme.urls.cart_add = '{{ routes.cart_add_url }}';
+  theme.urls.cart_change = '{{ routes.cart_change_url }}';
+  theme.urls.cart_update = '{{ routes.cart_update_url }}';
+  theme.urls.product_recommendations = '{{ routes.product_recommendations_url }}';
+  theme.urls.predictive_search = '{{ routes.predictive_search_url }}';
+  theme.urls.search = '{{ routes.search_url }}';
+
+  {% if routes.root_url == '/' %}
+    theme.urls.root = '';
+  {% else %}
+    theme.urls.root = '{{ routes.root_url }}';
+  {% endif %}
+
+  {%- if settings.color--swatches != blank -%}
+    {%- assign swatch_colors = settings.color--swatches | newline_to_br | split: '<br />' -%}
+    {%- for color in swatch_colors -%}
+      {%- unless color == blank -%}
+        {%- assign key = color | split: ':' | first | handleize -%}
+        {%- assign value = color | split: ':' | last | strip -%}
+
+        {% if value contains '.png' or value contains '.jp' or value contains '.gif' %}
+          theme.swatches['{{ key }}'] = '{{ value | file_img_url: "100x" }}';
+        {% else %}
+          theme.swatches['{{ key }}'] = '{{ value }}';
+        {% endif %}
+      {%- endunless -%}
+    {%- endfor -%}
+  {%- endif -%}
+</script>

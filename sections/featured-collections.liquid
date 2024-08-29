@@ -1,0 +1,294 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign collection_title_t = 'sections.onboarding.collection_title' | t
+
+  assign collection_list = section.settings.collection-list
+  assign columns = section.settings.width
+  assign heading = section.settings.heading | escape
+  assign heading_alignment = section.settings.heading-alignment
+  assign image_type = section.settings.image-type
+  assign light_text = section.settings.light-text
+  assign mobile_columns = section.settings.mobile-width
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign top_border = section.settings.top-border
+
+  render 'section-assets', name: 'featured-collections', type: 'style'
+-%}
+
+{%- capture sizes -%}
+  '(max-width: 767px) {{ 100 | divided_by: mobile_columns }}vw, {{ 100 | divided_by: columns }}vw'
+{%- endcapture %}
+
+{% comment %} View {% endcomment %}
+<div
+  class="featured-collections--root"
+  data-section-id="{{ section.id }}"
+  data-aspect-ratio="{{ settings.image--collection-size }}"
+  data-background-color="{{ bg_color }}"
+  data-light-text="{{ light_text }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-top-border="{{ top_border }}"
+>
+  <div class="featured-collections--wrapper" data-container="section">
+    {%- unless heading == blank -%}
+      <div data-container="block" data-heading-alignment="{{ heading_alignment }}">
+        <h2 class="featured-collections--heading" data-item="section-heading">
+          {{- heading -}}
+        </h2>
+      </div>
+    {%- endunless -%}
+
+    <div
+      class="featured-collections--body"
+      data-container="panel"
+      data-columns="{{ columns }}"
+      data-mobile-columns="{{ mobile_columns }}"
+      {% unless settings.transitions--other %}
+        data-transition-container="{{ section.id }}"
+        data-transition-type="fade-in"
+        data-transition-cascade="horizontal"
+        data-transition-cascade-interval="200"
+      {% endunless %}
+    >
+      {%- unless collection_list == blank -%}
+        {%- for collection in collection_list -%}
+          {%- liquid
+            assign no_product_images = true
+            assign placeholder_index = forloop.index
+            if forloop.index > 6
+              assign placeholder_index = forloop.index | minus: 6
+            endif
+          -%}
+
+          {%- capture image -%}
+            {%- if collection.image and image_type == 'collection' -%}
+              {{-
+                collection.image |
+                image_url: width: collection.image.width |
+                image_tag:
+                  widths: "300, 500, 767, 1000, 1200, 1500",
+                  sizes: sizes
+              -}}
+
+            {%- elsif collection.products.length > 0 -%}
+              {%- for product in collection.products -%}
+                {%- if product.featured_media.preview_image -%}
+                  {%- assign no_product_images = false -%}
+                  {{-
+                    product.featured_media.preview_image |
+                    image_url: width: product.featured_media.preview_image.width |
+                    image_tag:
+                      widths: "300, 500, 767, 1000, 1200, 1500",
+                      sizes: sizes
+                  -}}
+                  {%- break -%}
+                {%- endif -%}
+              {%- endfor -%}
+
+              {%- liquid
+                if no_product_images
+                  render "placeholder", type: "collection", aspect_ratio: 1, placeholder_index: 1
+                endif
+              -%}
+
+            {%- else -%}
+              {%-
+                render "placeholder",
+                type: "collection",
+                aspect_ratio: 1,
+                placeholder_index: placeholder_index
+              -%}
+            {%- endif -%}
+          {%- endcapture -%}
+
+          <a href="{{ collection.url }}" aria-label="{{ collection.title }}">
+            <div
+              class="featured-collections--item"
+              data-container="block"
+              {% unless settings.transitions--other %}
+                data-transition-item="{{ section.id }}"
+              {% endunless %}
+            >
+              <div
+                class="featured-collections--image"
+                data-item="image"
+                {% unless settings.transitions--image %}
+                  data-transition-item
+                  data-transition-type="zoom-in"
+                  data-transition-trigger="hover"
+                {% endunless %}
+              >
+                {{- image -}}
+              </div>
+              <h3 class="featured-collections--title" data-item="block-heading">
+                {{- collection.title -}}
+              </h3>
+            </div>
+          </a>
+        {%- endfor -%}
+
+      {%- else -%}
+        {%- for i in (1..columns) -%}
+          <div
+            class="featured-collections--item"
+            data-container="block"
+            {% unless settings.transitions--other %}
+              data-transition-item="{{ section.id }}"
+            {% endunless %}
+          >
+            <div
+              class="featured-collections--image"
+              data-item="image"
+              {% unless settings.transitions--image %}
+                data-transition-item
+                data-transition-type="zoom-in"
+                data-transition-trigger="hover"
+              {% endunless %}
+            >
+              {%-
+                render "placeholder",
+                type: "collection",
+                aspect_ratio: 1,
+                placeholder_index: forloop.index
+              -%}
+            </div>
+            <h3 class="featured-collections--title" data-item="block-heading">
+              {{- collection_title_t -}}
+            </h3>
+          </div>
+        {%- endfor -%}
+
+      {%- endunless -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collections list",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style and layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "width",
+      "label": "Blocks per row",
+      "type": "range",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Collections list"
+    },
+    {
+      "id": "heading-alignment",
+      "label": "Position heading",
+      "type": "text_alignment",
+      "default": "center"
+    },
+    {
+      "type": "collection_list",
+      "id": "collection-list",
+      "label": "Collections",
+      "limit": 12
+    },
+    {
+      "label": "Thumbnail",
+      "id": "image-type",
+      "type": "radio",
+      "options": [
+        { "value": "collection", "label": "Collection image" },
+        { "value": "product", "label": "Product image" }
+      ],
+      "default": "product",
+      "info": "Product image chooses first available product image in collection"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "id": "mobile-width",
+      "label": "Blocks per row for small devices",
+      "type": "radio",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collections list"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["aside"]
+  }
+}
+{% endschema %}

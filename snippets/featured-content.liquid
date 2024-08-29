@@ -1,0 +1,131 @@
+{% liquid
+  assign cover_link = false
+  if link_url != blank and description == blank
+    assign cover_link = true
+  endif
+
+  assign image_link = false
+  if link_url != blank and text_position != 'overlay' and cover_link == false
+    assign image_link = true
+  endif
+
+  assign mobile_overlay_style = "none"
+  unless overlay_style == "none"
+    if mobile_overlay
+      assign mobile_overlay_style = overlay_style
+    endif
+  endunless
+
+  if text_position == 'left' or text_position == 'right'
+    assign text_x_alignment = 'left'
+    assign text_y_alignment = 'center'
+  elsif text_position == 'top' or text_position == 'bottom'
+    assign text_x_alignment = 'center'
+    assign text_y_alignment = 'center'
+  endif
+%}
+
+{%- unless sizes -%}
+  {%- capture sizes -%}
+    '(max-width: 767px) {{ 100 | divided_by: mobile_per_row }}vw, {{ 100 | divided_by: per_row }}vw'
+  {%- endcapture %}
+{%- endunless -%}
+
+<div
+  class="featured-content--root"
+  data-mobile-overlay="{{ mobile_overlay }}"
+  data-overlap="{{ overlap }}"
+  data-text-position="{{ text_position }}"
+  {%- if attributes -%}
+    {{- attributes -}}
+  {%- endif -%}
+>
+  {%- if cover_link -%}
+    <a
+      class="featured-content--cover-link"
+      href="{{ link_url }}"
+      {%- if title != blank -%}
+        aria-label="{{ title }}"
+      {%- else -%}
+        aria-label="{{ image.alt }}"
+      {%- endif -%}
+    >
+  {%- endif -%}
+
+  <div
+    class="featured-content--container"
+    {%- unless overlap -%}
+      data-background-color="{{ text_bg_color }}"
+    {%- endunless -%}
+  >
+    <div class="featured-content--image">
+      {%- if image_link -%}
+        <a
+          href="{{ link_url }}"
+          {%- if title != blank -%}
+            aria-label="{{ title }}"
+          {%- else -%}
+            aria-label="{{ image.alt }}"
+          {%- endif -%}
+        >
+      {%- endif -%}
+
+      {%- if image -%}
+        {%-
+          render "image",
+          image: image,
+          aspect_ratio: image_aspect_ratio,
+          display_type: image_display_type,
+          mobile_image: mobile_image,
+          mobile_display_type: mobile_image_display_type,
+          mobile_aspect_ratio: mobile_image_aspect_ratio,
+          mobile_overlay_style: mobile_overlay_style,
+          overlay_style: overlay_style,
+          parallax: parallax_enabled,
+          sizes: sizes
+        -%}
+      {%- else -%}
+        {%-
+          render "placeholder",
+          type: "lifestyle",
+          aspect_ratio: image_aspect_ratio,
+          display_type: image_display_type,
+          mobile_display_type: mobile_image_display_type,
+          mobile_aspect_ratio: mobile_image_aspect_ratio,
+          mobile_overlay_style: mobile_overlay_style,
+          overlay_style: overlay_style,
+          parallax: parallax_enabled,
+          placeholder_index: 2
+        -%}
+      {%- endif -%}
+
+      {%- if image_link -%}
+        </a>
+      {%- endif -%}
+    </div>
+
+    {%-
+      render "stacked-text",
+      bg_color: text_bg_color,
+      cover_link: cover_link,
+      description: description,
+      heading_type: heading_type,
+      id: id,
+      light_text: light_text,
+      link_text: link_text,
+      link_url: link_url,
+      mobile_hide_description: mobile_hide_description,
+      mobile_alignment: mobile_text_alignment,
+      overline: overline,
+      style: text_style,
+      title: title,
+      width: text_width,
+      x_alignment: text_x_alignment,
+      y_alignment: text_y_alignment
+    -%}
+  </div>
+
+  {%- if cover_link -%}
+    </a>
+  {%- endif -%}
+</div>

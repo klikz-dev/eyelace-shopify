@@ -1,0 +1,675 @@
+{%- liquid
+  assign continue_shopping_t = 'collections.continue_shopping' | t
+  assign no_products_t = 'collections.no_products_feedback' | t
+  assign filter_feedback_t = 'collections.filter_feedback' | t
+  assign skip_link_t = 'general.a11y.skip_pagination' | t
+
+  assign products_per_row_desktop = section.settings.products-per-row--desktop
+  assign products_per_row_mobile = section.settings.products-per-row--mobile
+  assign promo_grid_duplicates = 0
+
+  comment
+    "only 50 products can be grabbed at a time, so best to not make
+    (number_of_rows * products_per_row_desktop) > 50"
+  endcomment
+  assign number_of_rows = section.settings.number-of-rows
+
+  comment
+    "Count number of promotion blocks so we can paginate accordingly"
+  endcomment
+  assign promo_grid_blocks = 0
+
+  for block in section.blocks
+    assign column_number = block.settings.column-number
+    assign promo_width = block.settings.promo-width
+    assign promo_grid_blocks = promo_grid_blocks | plus: promo_width
+    assign row = block.settings.row-number
+
+    comment
+      "don't allow overflow outside of main grid"
+    endcomment
+
+    if column_number > products_per_row_desktop
+      assign column_number = products_per_row_desktop
+    endif
+
+    assign alotted_width = products_per_row_desktop | plus: 1 | minus: column_number
+    if alotted_width == 0
+      assign alotted_width = 1
+    endif
+    if promo_width > alotted_width
+      assign promo_width = alotted_width
+    endif
+
+    comment
+      "`unless promo_grid_coords contains coords` checks for multiple
+      promos trying to be placed in the same place on the grid"
+    endcomment
+
+    capture promo_grid_coords
+      unless promo_grid_coords == blank
+        echo promo_grid_coords | append: '|'
+      endunless
+      assign coords = row | append: ',' | append: column_number
+      comment
+        "check for duplicate coordinates and don't render them"
+      endcomment
+      unless promo_grid_coords contains coords
+        echo coords
+      else
+        assign promo_grid_duplicates = promo_grid_duplicates | plus: 1
+        continue
+      endunless
+    endcapture
+
+    capture promo_widths
+      unless promo_widths == blank
+        echo promo_widths | append: '|'
+      endunless
+      echo promo_width
+    endcapture
+
+    capture sizes
+      assign mobile_width = 100 | divided_by: products_per_row_mobile | append: "vw, "
+      assign width = 100 | divided_by: products_per_row_desktop | times: promo_width | append: "vw'"
+      echo "'(max-width: 767px) " | append: mobile_width | append: width
+    endcapture
+
+    capture promo_html
+      unless promo_html == blank
+        echo promo_html | append: '|'
+      endunless
+
+      render 'collection-promo', block: block, promo_width: promo_width, sizes: sizes
+    endcapture
+  endfor
+
+  assign blocks_per_page = products_per_row_desktop | times: number_of_rows
+  assign products_per_page = blocks_per_page | minus: promo_grid_blocks | plus: promo_grid_duplicates
+
+  assign promo_grid_coords_arr = promo_grid_coords | split: '|'
+  assign promo_widths_arr = promo_widths | split: '|'
+  assign promo_html_arr = promo_html | split: '|'
+
+  render 'section-assets', name: 'collection--body', type: 'style'
+-%}
+
+<div
+  class="collection--body--root"
+  id="collection-root"
+  data-section-id="{{ section.id }}"
+  data-section-type="collection"
+  data-container="section"
+  data-body-root
+  data-max-columns="{{ products_per_row_desktop }}"
+>
+  <div
+    class="collection--body--spinner"
+    style="display:none;"
+    data-container="block"
+    data-body-spinner
+  >
+    <div class="collection--body--spinner-wrapper" data-item="spinner">
+      {%- render 'icons', icon: 'spinner' -%}
+    </div>
+  </div>
+
+  {%- paginate collection.products by products_per_page -%}
+    {%- if paginate.pages > 1 -%}
+      <a data-item="a11y-button" href='#collection-pagination' data-body-pagination-link>
+        {{ skip_link_t }}
+      </a>
+    {%- endif -%}
+
+    <div
+      class="collection--body--grid"
+      data-body-grid
+      data-container="panel"
+      data-columns="{{ products_per_row_desktop }}"
+      data-mobile-columns="{{ products_per_row_mobile }}"
+      {% unless settings.transitions--other %}
+        data-transition-container="{{ section.id }}"
+        data-transition-type="fade-in"
+        data-transition-trigger="20"
+        data-transition-cascade="horizontal"
+        data-transition-cascade-interval="200"
+      {% endunless %}
+    >
+      {%- if collection.products_count > 0 -%}
+        {%- liquid
+          assign current_block_num = 1
+
+          for product in collection.products
+            assign current_row = current_block_num | divided_by: products_per_row_desktop
+            assign current_column = current_block_num | modulo: products_per_row_desktop
+
+            comment
+              "last column condition"
+            endcomment
+
+            if current_column == 0
+              assign current_column = products_per_row_desktop
+            else
+              assign current_row = current_row | plus: 1
+            endif
+
+            assign current_coords = current_row | append: ',' | append: current_column
+
+            if promo_grid_coords_arr contains current_coords
+              for promo_grid_coords in promo_grid_coords_arr
+                if promo_grid_coords == current_coords
+                  assign promo_arr_index = forloop.index0
+                  break
+                endif
+              endfor
+
+              echo promo_html_arr[promo_arr_index]
+
+              comment
+                "track what we've rendered for end of the grid condition"
+              endcomment
+
+              capture indexes_accessed
+                unless indexes_accessed == blank
+                  echo indexes_accessed | append: ','
+                endunless
+                echo promo_arr_index
+              endcapture
+
+              comment
+                "need to keep track of promos width, and how that will change where we are on the grid"
+              endcomment
+
+              assign current_promo_width = promo_widths_arr[promo_arr_index] | plus: 0
+              assign current_block_num = current_block_num | plus: current_promo_width
+
+              comment
+                "check if next block is a promo"
+              endcomment
+
+              assign next_row = current_block_num | divided_by: products_per_row_desktop
+              assign next_column = current_block_num | modulo: products_per_row_desktop
+              if next_column == 0
+                assign next_column = products_per_row_desktop
+              else
+                assign next_row = next_row | plus: 1
+              endif
+
+              assign next_coords = next_row | append: ',' | append: next_column
+
+              comment
+                "if we need to render the product html later, due to consecutive promos"
+              endcomment
+
+              if promo_grid_coords_arr contains next_coords
+                capture pending_products_to_render
+                  unless pending_products_to_render == blank
+                    echo pending_products_to_render | append: '|'
+                  endunless
+
+                  render 'product--item', product_item: product, section_id: section.id, sizes: sizes
+                endcapture
+
+                continue
+              endif
+
+            endif
+
+            comment
+              "render stored products if they've been previously skipped"
+            endcomment
+
+            unless pending_products_to_render == blank
+              assign pending_products_to_render_arr = pending_products_to_render | split: '|'
+              for pending_product in pending_products_to_render_arr
+                echo pending_product
+                assign current_block_num = current_block_num | plus: 1
+              endfor
+              assign pending_products_to_render = blank
+            endunless
+
+            render 'product--item', product_item: product, section_id: section.id, sizes: sizes
+
+            assign current_block_num = current_block_num | plus: 1
+            assign indexes_accessed_arr = indexes_accessed | split: ","
+
+            comment
+              "condition where promo is placed at the end of the grid"
+            endcomment
+
+            if products_per_page == forloop.index and promo_html_arr.size > indexes_accessed_arr.size
+              assign indexes = promo_html_arr.size | minus: 1
+              for i in (0..indexes)
+                if indexes_accessed_arr contains i
+                  continue
+                elsif promo_grid_coords_arr[i] contains number_of_rows
+                  echo promo_html_arr[i]
+                endif
+              endfor
+            endif
+
+          endfor
+        -%}
+
+      {%- elsif current_tags == blank -%}
+        <div class="collection--body--empty" data-container="block">
+          <p data-item="paragraph">
+            {{- no_products_t -}}
+          </p>
+          <a href="{{ routes.root_url }}" data-item="block-link">
+            <div>{{ continue_shopping_t }}</div>
+          </a>
+        </div>
+
+      {%- else -%}
+        <div class="collection--body--empty" data-container="block">
+          <p data-item="paragraph">
+            {{- filter_feedback_t -}}
+          </p>
+        </div>
+
+      {%- endif -%}
+    </div>
+
+    <div
+      class="collection--body--pagination"
+      id="collection-pagination"
+      data-container="block"
+      data-body-pagination
+    >
+      {%- liquid
+        if paginate.pages > 1
+          render 'pagination', paginate: paginate, view: 'collection'
+        endif
+      -%}
+    </div>
+  {%- endpaginate -%}
+</div>
+
+{% schema %}
+{
+  "name": "Collection grid",
+  "settings": [
+    {
+      "label": "Products per row (desktop)",
+      "id": "products-per-row--desktop",
+      "type": "range",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "label": "Product per row (mobile)",
+      "id": "products-per-row--mobile",
+      "type": "radio",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ]
+    },
+    {
+      "label": "Maximum amount of rows per page",
+      "id": "number-of-rows",
+      "type": "range",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    }
+  ],
+  "blocks": [
+    {
+      "type": "promotion",
+      "name": "Promotion",
+      "settings": [
+        {
+          "type": "header",
+          "content": "General layout"
+        },
+        {
+          "label": "Row",
+          "id": "row-number",
+          "type": "range",
+          "min": 1,
+          "max": 12,
+          "step": 1,
+          "default": 2
+        },
+        {
+          "label": "Column",
+          "id": "column-number",
+          "type": "range",
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "default": 1
+        },
+        {
+          "label": "Width",
+          "id": "promo-width",
+          "type": "range",
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "default": 2
+        },
+        {
+          "type": "header",
+          "content": "Text layout"
+        },
+        {
+          "id": "heading-type",
+          "label": "Heading type",
+          "type": "select",
+          "options": [
+            { "label": "Banner", "value": "banner-heading" },
+            { "label": "Featured", "value": "featured-heading" },
+            { "label": "Large", "value": "section-heading" },
+            { "label": "Medium", "value": "block-heading" }
+          ],
+          "default": "featured-heading"
+        },
+        {
+          "label": "Horizontal text position",
+          "id": "text-horizontal-alignment",
+          "type": "select",
+          "options": [
+            { "label": "Left", "value": "left" },
+            { "label": "Center", "value": "center" },
+            { "label": "Right", "value": "right" }
+          ],
+          "default": "center"
+        },
+        {
+          "label": "Vertical text position",
+          "id": "text-vertical-alignment",
+          "type": "select",
+          "options": [
+            { "label": "Bottom", "value": "bottom" },
+            { "label": "Center", "value": "center" },
+            { "label": "Top", "value": "top" }
+          ],
+          "default": "center"
+        },
+        {
+          "id": "text-width",
+          "label": "Text width",
+          "type": "select",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+          "id": "text-style",
+          "label": "Text visibility enhancement",
+          "type": "select",
+          "options": [
+            {
+              "label": "None",
+              "value": "none"
+            },
+            {
+              "label": "Text shadow",
+              "value": "text-shadow"
+            },
+            {
+              "label": "Gradient behind text",
+              "value": "eclipse-shadow"
+            }
+          ],
+          "default": "none"
+        },
+        {
+          "id": "text-background-color",
+          "label": "Text background color",
+          "type": "select",
+          "options": [
+            {
+              "label": "Transparent",
+              "value": "transparent"
+            },
+            {
+              "label": "Light",
+              "value": "light"
+            },
+            {
+              "label": "Dark",
+              "value": "dark"
+            },
+            {
+              "label": "Accent 1",
+              "value": "accent-1"
+            },
+            {
+              "label": "Accent 2",
+              "value": "accent-2"
+            }
+          ],
+          "default": "light"
+        },
+        {
+          "type": "header",
+          "content": "Image layout"
+        },
+        {
+          "id": "overlay-style",
+          "label": "Image overlay",
+          "type": "select",
+          "options": [
+            {
+              "label": "None",
+              "value": "none"
+            },
+            {
+              "label": "Darken entire image",
+              "value": "darken"
+            },
+            {
+              "label": "Dark gradient from top",
+              "value": "darken-top"
+            },
+            {
+              "label": "Dark gradient from bottom",
+              "value": "darken-bottom"
+            }
+          ],
+          "default": "darken-bottom",
+          "info": "Can enhance text visibility"
+        },
+        {
+          "id": "image-display-type",
+          "label": "Image display type",
+          "type": "select",
+          "options": [
+            {
+              "label": "Original aspect ratio",
+              "value": "original"
+            },
+            {
+              "label": "Adjustable aspect ratio",
+              "value": "aspect-ratio"
+            },
+            {
+              "label": "X-Small",
+              "value": "x-small"
+            },
+            {
+              "label": "Small",
+              "value": "small"
+            },
+            {
+              "label": "Medium",
+              "value": "medium"
+            },
+            {
+              "label": "Large",
+              "value": "large"
+            },
+            {
+              "label": "X-Large",
+              "value": "x-large"
+            },
+            {
+              "label": "Fit screen",
+              "value": "fit-screen"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+          "id": "aspect-ratio",
+          "label": "Image aspect ratio",
+          "type": "range",
+          "min": 24,
+          "max": 200,
+          "step": 2,
+          "default": 56,
+          "info": "Only applies if adjustable aspect ratio is selected."
+        },
+        {
+          "id": "parallax-enabled",
+          "label": "Enable parallax",
+          "type": "checkbox",
+          "default": false,
+          "info": "Fixes image position when you scroll, use images with a height of at least 2000px to preserve resolution"
+        },
+        {
+          "id": "light-text",
+          "label": "Use light text color",
+          "type": "checkbox",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "id": "overline",
+          "label": "Overline",
+          "type": "text",
+          "default": "Overline text"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Grid promotion",
+          "info": "Emphasize featured or banner headings by wrapping text with square brackets, ie. This is [emphasized]."
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Create eye-catching promos within collection grids to increase discoverability and accelerate conversions.</p>"
+        },
+        {
+          "type": "url",
+          "id": "link-url",
+          "label": "Link",
+          "info": "Entire block will become a link when no link text or description."
+        },
+        {
+          "type": "text",
+          "id": "link-text",
+          "label": "Link text",
+          "default": "Optional link"
+        },
+        {
+          "type": "header",
+          "content": "Mobile"
+        },
+        {
+          "id": "mobile-image",
+          "label": "Mobile image (optional)",
+          "type": "image_picker"
+        },
+        {
+          "id": "mobile-hide-description",
+          "label": "Hide description in mobile",
+          "type": "checkbox",
+          "default": false
+        },
+        {
+          "id": "mobile-image-display-type",
+          "label": "Mobile image display type",
+          "type": "select",
+          "options": [
+            {
+              "label": "Original aspect ratio",
+              "value": "original"
+            },
+            {
+              "label": "Adjustable aspect ratio",
+              "value": "aspect-ratio"
+            },
+            {
+              "label": "X-Small",
+              "value": "x-small"
+            },
+            {
+              "label": "Small",
+              "value": "small"
+            },
+            {
+              "label": "Medium",
+              "value": "medium"
+            },
+            {
+              "label": "Large",
+              "value": "large"
+            },
+            {
+              "label": "X-Large",
+              "value": "x-large"
+            },
+            {
+              "label": "Fit screen",
+              "value": "fit-screen"
+            }
+          ],
+          "default": "original"
+        },
+        {
+          "id": "mobile-aspect-ratio",
+          "label": "Mobile image aspect ratio",
+          "type": "range",
+          "min": 32,
+          "max": 200,
+          "step": 2,
+          "default": 134,
+          "info": "Only applies if adjustable aspect ratio is selected."
+        },
+        {
+          "label": "Vertical text position",
+          "id": "mobile-text-alignment",
+          "type": "select",
+          "options": [
+            { "label": "Center", "value": "center" },
+            { "label": "Bottom", "value": "bottom" }
+          ],
+          "default": "center",
+          "info": "Applies when text overlays image."
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

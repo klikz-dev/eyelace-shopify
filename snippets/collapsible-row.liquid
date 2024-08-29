@@ -1,0 +1,59 @@
+{%- liquid
+  assign has_content = false
+  if page_content != blank or description != blank
+    assign has_content = true
+  endif
+-%}
+
+{%- if heading != blank -%}
+  <collapsible-row-root class="collapsible-row--root" style="display:block;">
+    <div class="collapsible-row--wrapper">
+      <button
+        class="collapsible-row--toggle"
+        aria-expanded="{{ default_open }}"
+        {%- if has_content -%}
+          tabindex="0"
+        {%- endif -%}
+      >
+        <label
+          class="collapsible-row--heading"
+          data-item="accent-text"
+          for="{{ unique_id }}"
+        >
+          {{- heading -}}
+        </label>
+
+        {%- liquid
+          if has_content
+            render 'icons', icon: 'chevron-up'
+            render 'icons', icon: 'chevron-down'
+          endif
+        -%}
+      </button>
+
+      {%- if has_content -%}
+        <div
+          class="collapsible-row--content-wrapper"
+          data-transition-item="viewport"
+          data-transition-type="fade-in"
+          data-transition-trigger="custom"
+        >
+          <div
+            id="{{ unique_id }}"
+            class="collapsible-row--content"
+            data-item="rte-content"
+          >
+            {%- liquid
+              if page_content != blank
+                echo pages[page_content].content
+              elsif description != blank
+                echo description
+              endif
+            -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+    </div>
+  </collapsible-row-root>
+{% endif %}

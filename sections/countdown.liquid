@@ -1,0 +1,424 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign bg_image = section.settings.background-image
+  assign container_width = section.settings.container-width
+  assign description = section.settings.description
+  assign heading = section.settings.heading
+  assign light_text = section.settings.light-text
+  assign link_text = section.settings.link-text
+  assign link_url = section.settings.link-url
+  assign mobile_image = section.settings.mobile-image
+  assign overlay_style = section.settings.overlay-style
+  assign overline = section.settings.overline
+  assign parallax_enabled = section.settings.parallax-enabled
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign text_style = section.settings.text-style
+  assign top_border = section.settings.top-border
+
+  assign columns = 1
+  unless heading == blank and overline == blank and description == blank and link_text == blank
+    assign columns = 2
+  endunless
+
+  assign cover_link = false
+  if link_url != blank and description == blank
+    assign cover_link = true
+  endif
+
+  render 'section-assets', name: 'countdown', type: 'style'
+-%}
+
+{%- if cover_link -%}
+  <a href="{{ link_url }}" aria-label="{{ heading }}">
+{%- endif -%}
+
+<div
+  class="countdown--root"
+  data-section-id="{{ section.id }}"
+  data-background-color="{{ bg_color }}"
+  data-columns="{{ columns }}"
+  data-container-width="{{ container_width }}"
+  data-countdown-container
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-top-border="{{ top_border }}"
+>
+  <div
+    class="countdown--wrapper"
+    data-text-style="{{ text_style }}"
+    data-light-text="{{ light_text }}"
+  >
+    {%- if columns == 2 -%}
+      <div class="countdown--text-container">
+        {%-
+          render "stacked-text",
+          description: description,
+          heading_type: 'section-heading',
+          id: section.id,
+          overline: overline,
+          title: heading,
+          width: 'medium',
+          x_alignment: 'left'
+        -%}
+
+        {%- unless link_text == blank -%}
+          {%- if cover_link -%}
+            <div
+              data-item="{{ settings.buttons--style }}"
+              data-text="{{- link_text -}}"
+              {% unless settings.transitions--text %}
+                data-transition-item="{{ section.id }}"
+                data-transition-type="fade-in"
+              {% endunless %}
+              {% unless settings.transitions--buttons %}
+                data-transition-button
+              {% endunless %}
+            >
+              <span>{{- link_text -}}</span>
+            </div>
+          {%- else -%}
+            <a
+              href="{{ link_url }}"
+              data-item="{{ settings.buttons--style }}"
+              data-text="{{- link_text -}}"
+              data-countdown-button
+              {% unless settings.transitions--text %}
+                data-transition-item="{{ section.id }}"
+                data-transition-type="fade-in"
+              {% endunless %}
+              {% unless settings.transitions--buttons %}
+                data-transition-button
+              {% endunless %}
+              {% if section.settings.show-button-when == 'finished' %}
+                style="display:none;"
+              {% endif %}
+            >
+              <span>{{- link_text -}}</span>
+            </a>
+          {%- endif -%}
+        {%- endunless -%}
+      </div>
+    {%- endif -%}
+
+    {%-
+      render 'countdown-timer',
+      expiry_date: section.settings.expiry-date,
+      expiry_hours: section.settings.expiry-hours,
+      expiry_minutes: section.settings.expiry-minutes,
+      light_number: section.settings.light-number,
+      hide_when_expired: section.settings.hide-when-expired,
+      show_button_when: section.settings.show-button-when,
+      number_size: section.settings.number-size,
+      mobile_number_size: section.settings.mobile-number-size,
+      timer_bg_color: section.settings.timer-bg-color
+    -%}
+  </div>
+
+  {%- if bg_image -%}
+    {%-
+      render 'image',
+      image: bg_image,
+      background: true,
+      overlay_style: overlay_style,
+      mobile_overlay_style: overlay_style,
+      mobile_image: mobile_image,
+      parallax: parallax_enabled
+    -%}
+  {%- endif -%}
+</div>
+
+{%- if cover_link -%}
+  </a>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Countdown",
+  "class": "section--countdown",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style and layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "light"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "text-style",
+      "label": "Text visibility enhancement",
+      "type": "select",
+      "options": [
+        {
+          "label": "None",
+          "value": "none"
+        },
+        {
+          "label": "Text shadow",
+          "value": "text-shadow"
+        },
+        {
+          "label": "Gradient behind text",
+          "value": "eclipse-shadow"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "overlay-style",
+      "label": "Image overlay",
+      "type": "select",
+      "options": [
+        {
+          "label": "None",
+          "value": "none"
+        },
+        {
+          "label": "Darken entire image",
+          "value": "darken"
+        },
+        {
+          "label": "Dark gradient from top",
+          "value": "darken-top"
+        },
+        {
+          "label": "Dark gradient from bottom",
+          "value": "darken-bottom"
+        }
+      ],
+      "default": "darken-bottom",
+      "info": "Can enhance text visibility"
+    },
+    {
+      "id": "background-image",
+      "type": "image_picker",
+      "label": "Background image"
+    },
+    {
+      "id": "parallax-enabled",
+      "label": "Enable parallax",
+      "type": "checkbox",
+      "default": false,
+      "info": "Fixes image position when you scroll, use images with a height of at least 2000px to preserve resolution"
+    },
+    {
+      "id": "timer-bg-color",
+      "label": "Timer background color",
+      "type": "select",
+      "options": [
+        { "label": "None", "value": "none" },
+        { "label": "Light", "value": "light" },
+        { "label": "Dark", "value": "dark" }
+      ],
+      "default": "dark"
+    },
+    {
+      "id": "light-number",
+      "label": "Use light number color",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "number-size",
+      "label": "Number text size",
+      "type": "range",
+      "min": 20,
+      "max": 60,
+      "step": 1,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "id": "container-width",
+      "label": "Maximum width of container",
+      "type": "select",
+      "options": [
+        {
+          "label": "Extra small",
+          "value": "1"
+        },
+        {
+          "label": "Small",
+          "value": "2"
+        },
+        {
+          "label": "Medium",
+          "value": "3"
+        },
+        {
+          "label": "Large",
+          "value": "4"
+        },
+        {
+          "label": "Extra large",
+          "value": "5"
+        },
+        {
+          "label": "Full width",
+          "value": "6"
+        }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "id": "overline",
+      "label": "Overline",
+      "type": "text",
+      "default": "Overline text"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Limited offer"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Share something about a limited offer or temporary promotion.</p>"
+    },
+    {
+      "type": "url",
+      "id": "link-url",
+      "label": "Link",
+      "info": "Entire block will become a link when no link text or description."
+    },
+    {
+      "type": "text",
+      "id": "link-text",
+      "label": "Link text",
+      "default": "Optional link"
+    },
+    {
+      "type": "header",
+      "content": "Features"
+    },
+    {
+      "id": "expiry-date",
+      "label": "Expiry date",
+      "type": "text",
+      "default": "01-01-2026",
+      "info": "DD-MM-YYYY"
+    },
+    {
+      "label": "Expiry hours",
+      "id": "expiry-hours",
+      "type": "range",
+      "min": 0,
+      "max": 23,
+      "step": 1,
+      "default": 0,
+      "info": "Represents the hour in UTC standard time"
+    },
+    {
+      "label": "Expiry minutes",
+      "id": "expiry-minutes",
+      "type": "range",
+      "min": 0,
+      "max": 59,
+      "step": 1,
+      "default": 0,
+      "info": "Represents the minutes in UTC standard time"
+    },
+    {
+      "id": "hide-when-expired",
+      "label": "Hide section when countdown expires",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "show-button-when",
+      "label": "Show button when",
+      "options": [
+        { "label": "Timer is active", "value": "active" },
+        { "label": "Timer reaches zero", "value": "finished" },
+        { "label": "Always", "value": "always" }
+      ],
+      "default": "always"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile-image",
+      "label": "Mobile background image (optional)"
+    },
+    {
+      "id": "mobile-number-size",
+      "label": "Mobile number text size",
+      "type": "range",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 20,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown",
+      "settings": {}
+    }
+  ],
+  "disabled_on": {
+    "groups": ["aside"]
+  }
+}
+{% endschema %}

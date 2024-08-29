@@ -1,0 +1,146 @@
+<div
+  class="social-icons--root"
+  data-type="{{ type }}"
+  data-align="{{ align }}"
+  data-mobile-align="{{ mobile_align }}"
+>
+  {%- case type -%}
+    {%- when 'follow' -%}
+      {%-
+        assign types = "facebook x instagram linkedin pinterest vimeo youtube tiktok threads" | split: ' '
+      -%}
+
+      {%- for type in types -%}
+        {%- capture follow_url -%}
+          social--{{ type }}--url
+        {%- endcapture -%}
+
+        {%- capture icons_html -%}
+          {{- icons_html -}}
+
+          {%- if settings[follow_url].size > 0 -%}
+            <a
+              class="social-{{ type }}--link"
+              rel="noreferrer"
+              target="_blank"
+              href="{{ settings[follow_url] | escape }}"
+              aria-label="{{ type }}"
+            >
+              {%- render 'icons', icon: type -%}
+            </a>
+          {%- endif -%}
+        {%- endcapture -%}
+      {%- endfor -%}
+
+      {%- if icons_html != blank -%}
+        {%- unless heading == blank -%}
+          <p class="social-icons--title" data-item="accent-text">
+            {{- heading -}}
+          </p>
+        {%- endunless -%}
+
+        <div class="social-icons--items">
+          {{- icons_html -}}
+        </div>
+      {%- endif -%}
+
+    {%- when 'share' -%}
+      {%- liquid
+        assign facebook_share_t = 'general.social.facebook' | t
+        assign x_share_t = 'general.social.x' | t
+        assign pinterest_share_t = 'general.social.pinterest' | t
+        assign email_share_t = 'general.social.email' | t
+        assign url_share_t = 'general.social.url' | t
+
+        assign facebook = social_settings.facebook-enabled
+        assign x = social_settings.x-enabled
+        assign pinterest = social_settings.pinterest-enabled
+        assign email = social_settings.email-enabled
+        assign url = social_settings.url-enabled
+
+        if url
+          render 'section-assets', name: 'share-url', type: 'script'
+        endif
+
+        if request.page_type == 'product'
+          assign media = product.featured_media | image_url: width: 1024, height: 1024
+          assign title = product.title | strip_html | escape | replace: ' ', '%20'
+        elsif request.page_type == 'article'
+          assign media = article.image | image_url: width: 1024, height: 1024
+          assign title = article.title | strip_html | escape | replace: ' ', '%20'
+        endif
+      -%}
+
+      {%- if facebook or x or pinterest or email or url -%}
+        {%- if heading -%}
+          <div class="social-icons--title" data-item="accent-text">
+            {{- heading -}}
+          </div>
+        {%- endif -%}
+
+        <div class="social-icons--items">
+          {%- if facebook -%}
+            <a
+              class="social-facebook--link"
+              href="https://facebook.com/sharer.php?u={{ canonical_url }}&t={{ title }}"
+              target="_blank"
+              aria-label="{{ facebook_share_t }}"
+            >
+              {%- render 'icons', icon: 'facebook' -%}
+            </a>
+          {%- endif -%}
+
+          {%- if x -%}
+            <a
+              class="social-x--link"
+              href="https://twitter.com/intent/tweet?text=Check%20out%20this%20{{ request.page_type }}:+{{ canonical_url }}"
+              target="_blank"
+              aria-label="{{ x_share_t }}"
+            >
+              {%- render 'icons', icon: 'x' -%}
+            </a>
+          {%- endif -%}
+
+          {%- if pinterest -%}
+            <a
+              class="social-pinterest--link"
+              href="https://pinterest.com/pin/create/button/?url={{ canonical_url }}&media={{ media }}&description={{ title }}"
+              target="_blank"
+              aria-label="{{ pinterest_share_t }}"
+            >
+              {%- render 'icons', icon: 'pinterest' -%}
+            </a>
+          {%- endif -%}
+
+          {%- if email -%}
+            <a
+              class="social-email--link"
+              href="mailto:?Subject={% if request.page_type == 'product' %}{{ product.title | url_escape }}{% elsif request.page_type == 'article' %}{{ article.title | url_escape }}{% endif %}&body={{ canonical_url }}"
+              aria-label="{{ email_share_t }}"
+            >
+              {%- render 'icons', icon: 'email' -%}
+            </a>
+          {%- endif -%}
+
+          {%- if url -%}
+            <share-url
+              class="social-url--link"
+              tabindex="0"
+              role="button"
+              aria-label="{{ url_share_t }}"
+              aria-describedby="feedback"
+            >
+              <span aria-hidden="false">
+                {%- render 'icons', icon: 'link' -%}
+              </span>
+              <span aria-hidden="true">
+                {%- render 'icons', icon: 'share' -%}
+              </span>
+            </share-url>
+          {%- endif -%}
+
+        </div>
+      {%- endif -%}
+
+    {%- endcase -%}
+</div>

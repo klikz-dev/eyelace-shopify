@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "1",
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    },
+    "16324732604d3e7054": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "dark",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "bottom",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "large",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "original",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "parallax-enabled": false,
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_9.15.51_AM.png",
+        "overline": "",
+        "title": "Our Mission",
+        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are obtainable in one’s home makeup routine.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16324732604d3e7054"
+  ]
+}

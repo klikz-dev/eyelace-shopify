@@ -1,0 +1,223 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign heading = section.settings.heading
+  assign heading_alignment = section.settings.heading-alignment
+  assign light_text = section.settings.light-text
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign top_border = section.settings.top-border
+-%}
+
+{%- if section.blocks.size > 0 -%}
+  <div
+    class="collapsible-rows--root"
+    data-section-id="{{ section.id }}"
+    data-background-color="{{ bg_color }}"
+    data-container-width="{{ container_width }}"
+    data-light-text="{{ light_text }}"
+    data-spacing-above="{{ spacing_above }}"
+    data-spacing-below="{{ spacing_below }}"
+    data-top-border="{{ top_border }}"
+    {% unless settings.transitions--other %}
+      data-transition-container="{{ section.id }}"
+      data-transition-type="fade-in"
+      data-transition-cascade="vertical"
+      data-transition-cascade-interval="120"
+    {% endunless %}
+  >
+    <div class="collapsible-rows--wrapper">
+      {%- if heading != blank -%}
+        <div class="collapsible-rows--header" data-heading-alignment="{{ heading_alignment }}">
+          <h2 data-item="section-heading">
+            {{- heading | escape -}}
+          </h2>
+        </div>
+      {%- endif -%}
+
+      {%- for block in section.blocks -%}
+        {%- assign unique_id = section.id | append: '--collapsible-row--' | append: forloop.index -%}
+        <div
+          class="collapsible-rows--block"
+          data-fit-together="true"
+          {% unless settings.transitions--other %}
+            data-transition-item="{{ section.id }}"
+          {% endunless %}
+          {{ block.shopify_attributes }}
+        >
+          {%-
+            render 'collapsible-row',
+            description: block.settings.description,
+            heading: block.settings.heading,
+            default_open: block.settings.default-open,
+            page_content: block.settings.page-content,
+            unique_id: unique_id
+          -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Collapsible rows",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Style and layout"
+      },
+      {
+        "id": "top-border",
+        "label": "Top border",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "id": "spacing-above",
+        "label": "Spacing above",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "spacing-below",
+        "label": "Spacing below",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "background-color",
+        "label": "Background color",
+        "type": "select",
+        "options": [
+          {
+            "label": "Transparent",
+            "value": "none"
+          },
+          {
+            "label": "Light",
+            "value": "light"
+          },
+          {
+            "label": "Dark",
+            "value": "dark"
+          },
+          {
+            "label": "Accent 1",
+            "value": "accent-1"
+          },
+          {
+            "label": "Accent 2",
+            "value": "accent-2"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "id": "light-text",
+        "label": "Use light text color",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "id": "container-width",
+        "label": "Maximum width of container",
+        "type": "select",
+        "options": [
+          {
+            "label": "Extra small",
+            "value": "1"
+          },
+          {
+            "label": "Small",
+            "value": "2"
+          },
+          {
+            "label": "Medium",
+            "value": "3"
+          },
+          {
+            "label": "Large",
+            "value": "4"
+          },
+          {
+            "label": "Extra large",
+            "value": "5"
+          },
+          {
+            "label": "Full width",
+            "value": "6"
+          }
+        ],
+        "default": "1"
+      },
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "id": "heading",
+        "label": "Heading",
+        "type": "text",
+        "default": "Collapsible rows"
+      },
+      {
+        "id": "heading-alignment",
+        "label": "Position heading",
+        "type": "text_alignment",
+        "default": "center"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collapsible-row",
+        "name": "Collapsible row",
+        "settings": [
+          {
+            "id": "heading",
+            "label": "Heading",
+            "type": "text",
+            "default": "Collapsible row"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Text",
+            "default": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
+            "info": "You can use product metafields to assign content to this row that is unique to an individual product. Learn more about [metafields](https://help.shopify.com/en/manual/metafields/displaying-metafields-on-your-online-store)."
+          },
+          {
+            "type": "page",
+            "id": "page-content",
+            "label": "Row content from page"
+          },
+          {
+            "type": "checkbox",
+            "id": "default-open",
+            "label": "Open by default",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collapsible rows",
+        "blocks": [
+          {
+            "type": "collapsible-row"
+          },
+          {
+            "type": "collapsible-row"
+          },
+          {
+            "type": "collapsible-row"
+          }
+        ]
+      }
+    ],
+    "disabled_on": {
+      "groups": ["aside"]
+    }
+  }
+{% endschema %}

@@ -1,0 +1,724 @@
+{%- liquid
+  assign add_to_cart_t = 'products.add_to_cart' | t
+  assign price_t = 'sections.onboarding.price' | t
+
+  assign product = all_products[section.settings.featured_product]
+
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign current_variant = product.selected_or_first_available_variant
+  assign media_gap = section.settings.media-gap
+  assign product_id = product.id | append: '-' | append: section.id
+  assign quantity_added = false
+  assign render_size_chart_modal = false
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign text_alignment = section.settings.text-alignment
+  assign text_column_width = section.settings.text-column-width
+  assign thumbnail_width = section.settings.thumbnail-width
+  assign top_border = section.settings.top-border
+  assign unique_handle = 'featured--' | append: section.id
+  assign video_looping_enabled = section.settings.loop-enabled
+
+  if section.settings.featured_product == blank
+    assign onboarding = true
+    assign title = 'sections.onboarding.product_title' | t
+    assign vendor = 'sections.onboarding.vendor' | t
+    assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,UYU,VES,VND' | split: ','
+    if currencies_using_comma_decimals contains cart.currency.iso_code
+      assign price_t = price_t | replace: '.', ','
+    endif
+  else
+    assign onboarding = false
+    assign title = product.title
+    assign vendor = product.vendor
+  endif
+
+  capture css_vars
+    echo '--text-column-width:' | append: text_column_width | append: '%;'
+    echo '--media-gap:' | append: media_gap | append: 'px;'
+    echo '--thumbnail-width:' | append: thumbnail_width | append: 'px;'
+  endcapture
+
+  render 'section-assets', name: 'featured-product', type: 'style'
+-%}
+
+{%- capture blocks -%}
+  {%- for block in section.blocks -%}
+    {%- liquid
+      assign fit_together = false
+      if block.type == 'collapsible-row'
+        assign fit_together = true
+      elsif block.type == 'complementary-products' and block.settings.collapsible-row-enabled
+        assign fit_together = true
+      endif
+    -%}
+
+    <div
+      class="featured-product--block"
+      data-product-block
+      data-block-type="{{ block.type }}"
+      data-fit-together="{{ fit_together }}"
+      {{- block.shopify_attributes -}}
+    >
+      {%- case block.type -%}
+        {%- when 'overline' -%}
+          <div class="featured-product--overline" data-item="overline">
+            {%- liquid
+              if onboarding
+                echo 'sections.onboarding.overline' | t
+              else
+                echo block.settings.overline
+              endif
+            -%}
+          </div>
+
+        {%- when 'heading' -%}
+          <div
+            {% unless settings.transitions--text %}
+              data-transition-cropper
+              data-transition-item="viewport"
+              data-transition-type="mask"
+            {% endunless %}
+          >
+            <div>
+              <h2 class="featured-product--heading" data-item="section-heading">
+                <a href="{{ product.url }}">
+                  {{ title }}
+                </a>
+              </h2>
+            </div>
+          </div>
+
+        {%- when 'vendor' -%}
+          <div class="featured-product--vendor" data-item="light-accent-text">
+            <a href="{{ product.vendor | url_for_vendor }}">
+              {{- vendor -}}
+            </a>
+          </div>
+
+        {%- when 'price' -%}
+          {%- if onboarding -%}
+            <div class="featured-product--price-wrapper">
+              <span class="featured-product--price" data-item='light-accent-text'>
+                {{- cart.currency.symbol -}}{{- price_t -}}
+              </span>
+            </div>
+          {%- else -%}
+            {%- render 'product-price', product: product, id: product_id -%}
+
+          {%- endif -%}
+
+        {%- when 'low-stock' -%}
+          {%- unless onboarding -%}
+            {%-
+              render 'product-low-stock',
+              current_variant: current_variant,
+              id: product_id,
+              product: product,
+              threshold: block.settings.threshold
+            -%}
+          {%- endunless -%}
+
+        {%- when 'options' -%}
+          {%- unless onboarding -%}
+            {%-
+              render "product-options",
+              id: product_id,
+              product: product,
+              unique_handle: unique_handle,
+              block_settings: block.settings
+            -%}
+
+            {%- liquid
+              if block.settings.size-chart-enabled
+                assign size_chart_option = block.settings.size-chart-option | strip | downcase
+
+                for option in product.options_with_values
+                  assign option_name = option.name | strip | downcase
+                  if option_name == size_chart_option
+                    if block.settings.size-chart-content == blank
+                      capture size_chart_path
+                        assign size_chart_path_t = 'products.size_chart_path' | t
+                        echo '<code>' | append: size_chart_path_t | append: '</code>'
+                      endcapture
+
+                      assign page_content = 'products.empty_page_content_html' | t: size_chart_path: size_chart_path
+                    else
+                      assign page_content = pages[block.settings.size-chart-content].content
+                    endif
+
+                    assign render_size_chart_modal = true
+                    break
+                  endif
+                endfor
+              endif
+            -%}
+          {%- endunless -%}
+
+        {%- when 'buy-buttons' -%}
+          {%- if onboarding -%}
+            <div
+              class="featured-product--add-to-cart"
+              data-item="button"
+              data-text="{{ add_to_cart_t }}"
+              {% unless settings.transitions--buttons %}
+                data-transition-button
+              {% endunless %}
+            >
+              <span>{{ add_to_cart_t }}</span>
+            </div>
+
+          {%- else -%}
+            {%-
+              render 'product-buy-buttons',
+              id: product_id,
+              product: product,
+              form: form,
+              smart_payment_enabled: block.settings.smart-payment-enabled
+            -%}
+
+          {%- endif -%}
+
+        {%- when 'quantity-selector' -%}
+          {%- liquid
+            assign quantity_added = true
+            render 'quantity-selector', id: product_id, type: 'product'
+          -%}
+
+        {%- when 'unavailable-form' -%}
+          {%- liquid
+            unless onboarding
+              render 'product-unavailable-form', product: product, id: product_id
+            endunless
+          -%}
+
+        {%- when 'rating' -%}
+          {%- render 'product-rating', product: product -%}
+
+        {%- when 'social-sharing' -%}
+          {%-
+            render 'social-icons',
+            align: 'left',
+            mobile_align: 'left',
+            type: 'share',
+            social_settings: block.settings
+          -%}
+
+        {%- when 'sku' -%}
+          {%- render 'product-sku', product: product, id: product_id -%}
+
+        {%- when 'collapsible-row' -%}
+          {%- assign unique_id = section.id | append: '--collapsible-row--' | append: forloop.index -%}
+          {%-
+            render 'collapsible-row',
+            description: block.settings.description,
+            heading: block.settings.heading,
+            default_open: block.settings.default-open,
+            page_content: block.settings.page-content,
+            unique_id: unique_id
+          -%}
+
+        {%- when 'complementary-products' -%}
+          {%-
+            render 'complementary-products',
+            heading: block.settings.title,
+            max_products: block.settings.max-products,
+            collapsible_row: block.settings.collapsible-row-enabled,
+            product_id: product.id
+          -%}
+
+        {%- when 'liquid' -%}
+          {{- block.settings.custom-liquid -}}
+
+        {%- when '@app' -%}
+          {%- render block -%}
+
+      {%- endcase -%}
+    </div>
+  {%- endfor -%}
+
+  {%- unless quantity_added -%}
+    <input type="hidden" name="quantity" value="1" min="1" pattern="[0-9]*" tabindex="-1">
+  {%- endunless -%}
+{%- endcapture -%}
+
+<div
+  class="featured-product--root"
+  data-product-id="{{ product_id }}"
+  data-section-id="{{ section.id }}"
+  data-background-color="{{ bg_color }}"
+  data-container-width="{{ container_width }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-text-alignment="{{ text_alignment }}"
+  data-top-border="{{ top_border }}"
+  style="{{ css_vars }}"
+>
+  <div class="featured-product--wrapper">
+    <div class="featured-product--media">
+      {%- liquid
+        if onboarding
+          render "placeholder", type: "product", aspect_ratio: 1, placeholder_index: 1
+        else
+          render 'product-media--variants', product: product, layout: 'thumbnails', thumbnail_width: thumbnail_width, video_looping_enabled: video_looping_enabled, product_id: product_id, thumbs_enabled: true
+        endif
+      -%}
+    </div>
+
+    {%- liquid
+      if onboarding
+        echo '<div class="featured-product--form">' | append: blocks | append: '</div>'
+      else
+        form 'product', product, class: 'featured-product--form'
+          echo blocks
+        endform
+      endif
+    -%}
+  </div>
+
+  {%- if render_size_chart_modal -%}
+    <modal-root
+      class="modal--root"
+      data-id="size-chart"
+      data-background-color="dark"
+      data-translucent="true"
+      data-transition-item="viewport"
+      data-transition-type="fade-in"
+      data-transition-trigger="custom"
+      aria-hidden="true"
+    >
+      <div class="modal--view">
+        <div class="product-size-chart--modal" data-item="rte-content">
+          {{- page_content -}}
+        </div>
+      </div>
+    </modal-root>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Featured product",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style and layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "container-width",
+      "label": "Maximum width of container",
+      "type": "select",
+      "options": [
+        {
+          "label": "Extra small",
+          "value": "1"
+        },
+        {
+          "label": "Small",
+          "value": "2"
+        },
+        {
+          "label": "Medium",
+          "value": "3"
+        },
+        {
+          "label": "Large",
+          "value": "4"
+        },
+        {
+          "label": "Extra large",
+          "value": "5"
+        },
+        {
+          "label": "Full width",
+          "value": "6"
+        }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "range",
+      "id": "text-column-width",
+      "label": "Text column width",
+      "min": 20,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "thumbnail-width",
+      "label": "Thumbnail width",
+      "min": 40,
+      "max": 140,
+      "step": 1,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "media-gap",
+      "label": "Gap between thumbnails",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "id": "text-alignment",
+      "label": "Text alignment",
+      "type": "text_alignment",
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "product",
+      "id": "featured_product",
+      "label": "Product"
+    },
+    {
+      "type": "header",
+      "content": "Features"
+    },
+    {
+      "type": "paragraph",
+      "content": "Learn more about [media types](https://help.shopify.com/en/manual/products/product-media)."
+    },
+    {
+      "type": "checkbox",
+      "id": "loop-enabled",
+      "label": "Enable video looping",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "overline",
+      "name": "Overline text",
+      "limit": 1,
+      "settings": [
+        {
+          "label": "Overline text",
+          "id": "overline",
+          "type": "text",
+          "default": "Overline text"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Title",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "type": "vendor",
+      "name": "Vendor",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "type": "price",
+      "name": "Price",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "type": "quantity-selector",
+      "name": "Quantity selector",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "type": "low-stock",
+      "name": "Low stock notice",
+      "limit": 1,
+      "settings": [
+        {
+          "label": "Show low in stock notice when quantity is",
+          "id": "threshold",
+          "type": "range",
+          "min": 0,
+          "max": 10,
+          "step": 1,
+          "default": 5,
+          "info": "Set to 0 to disable this feature. Updated for each variant."
+        }
+      ]
+    },
+    {
+      "type": "options",
+      "name": "Variant picker",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "variant-style",
+          "label": "Product variant style",
+          "options": [
+            { "label": "Dropdowns", "value": "dropdowns" },
+            { "label": "Buttons", "value": "buttons" }
+          ],
+          "default": "buttons"
+        },
+        {
+          "type": "checkbox",
+          "id": "swatches-enabled",
+          "label": "Enable color swatches",
+          "default": true,
+          "info": "Automatically turn color options into swatches. [Learn more](https://support.troopthemes.com/guide/color-swatch-guide)"
+        },
+        {
+          "type": "header",
+          "content": "Size chart"
+        },
+        {
+          "type": "checkbox",
+          "id": "size-chart-enabled",
+          "label": "Enable",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "size-chart-option",
+          "label": "Link from option",
+          "default": "size"
+        },
+        {
+          "type": "page",
+          "id": "size-chart-content",
+          "label": "Page content"
+        }
+      ]
+    },
+    {
+      "type": "buy-buttons",
+      "name": "Buy buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "smart-payment-enabled",
+          "label": "Show dynamic checkout button",
+          "info": "Lets customers check out directly using a familiar payment method. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "unavailable-form",
+      "name": "Unavailable form",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "type": "social-sharing",
+      "name": "Social sharing",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "facebook-enabled",
+          "label": "Enable Facebook sharing",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "x-enabled",
+          "label": "Enable 𝕏 sharing",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "pinterest-enabled",
+          "label": "Enable Pinterest sharing",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "email-enabled",
+          "label": "Enable email sharing",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "url-enabled",
+          "label": "Enable URL sharing",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "sku",
+      "name": "SKU",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "type": "collapsible-row",
+      "name": "Collapsible row",
+      "settings": [
+        {
+          "id": "heading",
+          "label": "Heading",
+          "type": "text",
+          "default": "Collapsible row"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Text",
+          "default": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
+          "info": "You can use product metafields to assign content to this row that is unique to an individual product. Learn more about [metafields](https://help.shopify.com/en/manual/metafields/displaying-metafields-on-your-online-store)."
+        },
+        {
+          "type": "page",
+          "id": "page-content",
+          "label": "Row content from page"
+        },
+        {
+          "type": "checkbox",
+          "id": "default-open",
+          "label": "Open by default",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "rating",
+      "name": "Product rating",
+      "limit": 1
+    },
+    {
+      "type": "complementary-products",
+      "name": "Complementary products",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Pairs well with"
+        },
+        {
+          "id": "max-products",
+          "label": "Maximum products to show",
+          "type": "range",
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "default": 2,
+          "info": "To select complementary products, add the Search & Discovery app. [Learn more](https://shopify.dev/themes/product-merchandising/recommendations)"
+        },
+        {
+          "type": "checkbox",
+          "id": "collapsible-row-enabled",
+          "label": "Show as collapsible row",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "liquid",
+      "name": "Custom liquid",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom-liquid",
+          "label": "Custom Liquid",
+          "info": "Add app snippets or other Liquid code to create advanced customizations."
+        }
+      ]
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured product",
+      "blocks": [
+        {
+          "type": "overline",
+          "settings": {}
+        },
+        {
+          "type": "heading",
+          "settings": {}
+        },
+        {
+          "type": "vendor",
+          "settings": {}
+        },
+        {
+          "type": "price",
+          "settings": {}
+        },
+        {
+          "type": "options",
+          "settings": {}
+        },
+        {
+          "type": "buy-buttons",
+          "settings": {}
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["aside"]
+  }
+}
+{% endschema %}

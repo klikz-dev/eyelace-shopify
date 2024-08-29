@@ -1,0 +1,127 @@
+<ul class="breadcrumbs--root">
+   <li data-item="caption">
+      <a href="{{ routes.root_url }}">
+         {{- 'general.breadcrumbs.home' | t -}}
+      </a>
+   </li>
+
+   {%- if request.page_type == "product" -%}
+      {%- if collection -%}
+         <li data-item="caption">
+            <a href="{{ routes.collections_url }}">
+               {{- 'general.breadcrumbs.collections' | t -}}
+            </a>
+         </li>
+         <li data-item="caption">
+            <a href="{{ collection.url }}">
+               {{- collection.title -}}
+            </a>
+         </li>
+      {%- else -%}
+         <li data-item="caption">
+            <a href="{{ routes.all_products_collection_url }}">
+               {{- 'general.breadcrumbs.products' | t -}}
+            </a>
+         </li>
+      {%- endif -%}
+
+      <li data-item="caption">
+         {{- product.title -}}
+      </li>
+
+   {%- elsif request.page_type == "collection" -%}
+      {%- liquid
+         assign collection_title = collection.title
+         if collection.handle == 'all'
+            assign collection_title = 'general.breadcrumbs.products' | t
+         endif
+      -%}
+
+      <li data-item="caption">
+         <a href="{{ routes.collections_url }}">
+            {{- 'general.breadcrumbs.collections' | t -}}
+         </a>
+      </li>
+
+      <li data-item="caption">
+         {%- liquid
+            if current_tags
+               echo collection_title | link_to_remove_tag: current_tags.first
+            else
+               echo collection_title
+            endif
+         -%}
+      <li>
+
+      {%- if current_tags -%}
+         <li data-item="caption">
+            {{- current_tags.first -}}
+         </li>
+      {%- endif -%}
+
+   {%- elsif request.page_type == "blog" -%}
+      <li data-item="caption">
+         {{- blog.title -}}
+      </li>
+
+   {%- elsif request.page_type == "page" -%}
+      <li data-item="caption">
+         {{- page.title -}}
+      </li>
+
+   {%- elsif request.page_type == "article" -%}
+      <li data-item="caption">
+         {{- blog.title | link_to: blog.url -}}
+      </li>
+      <li data-item="caption">
+         {{- article.title -}}
+      </li>
+
+   {%- elsif request.page_type == "404" -%}
+      <li data-item="caption">
+         {{- '404' -}}
+      </li>
+
+   {%- elsif request.page_type == "customers/register" -%}
+      <li data-item="caption">
+         {{- 'general.breadcrumbs.register' | t -}}
+      </li>
+
+   {%- elsif request.page_type == "customers/account" or request.page_type == "customers/login" -%}
+      <li data-item="caption">
+         {{- 'general.breadcrumbs.account' | t -}}
+      </li>
+
+   {%- elsif request.page_type == "customers/addresses" -%}
+      <li data-item="caption">
+         <a href="{{ routes.account_url }}">
+            {{- 'general.breadcrumbs.account' | t -}}
+         </a>
+      </li>
+      <li data-item="caption">
+         {{- 'general.breadcrumbs.addresses' | t -}}
+      </li>
+
+   {%- elsif request.page_type == "customers/order" -%}
+      <li data-item="caption">
+         <a href="{{ routes.account_url }}">
+            {{- 'general.breadcrumbs.account' | t -}}
+         </a>
+      </li>
+      <li data-item="caption">
+         {{- page_title -}}
+      </li>
+
+   {%- elsif request.page_type == "customers/activate_account" -%}
+      <li data-item="caption">
+         {{- 'general.breadcrumbs.activate_account' | t -}}
+      </li>
+
+   {%- elsif request.page_type == "list-collections" or request.page_type == "cart" or
+      request.page_type == "search" or request.page_type == "customers/reset_password" -%}
+      <li data-item="caption">
+         {{- page_title -}}
+      </li>
+
+   {%- endif -%}
+</ul>

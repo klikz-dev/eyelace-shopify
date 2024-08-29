@@ -1,0 +1,80 @@
+{%- liquid
+  assign add_to_cart_t = 'products.add_to_cart' | t
+  assign out_of_stock_t = 'products.out_of_stock' | t
+
+  assign current_variant = product.selected_or_first_available_variant
+
+  assign button_text = out_of_stock_t
+  if current_variant.available
+    assign button_text = add_to_cart_t
+  endif
+
+  unless settings.quick-add--enabled
+    render 'section-assets', name: 'product-buy-buttons', type: 'script'
+  endunless
+%}
+
+<product-buy-buttons-root class="product-buy-buttons--root" data-id="{{ id }}">
+  {{- form | payment_terms -}}
+
+  {%- if request.page_type != "password" -%}
+    <button
+      class="product-buy-buttons--primary"
+      data-enabled="true"
+      aria-busy="false"
+      data-text="{{ button_text }}"
+      {% if smart_payment_enabled and product.selling_plan_groups == empty %}
+        data-item="secondary-button"
+      {% else %}
+        data-item="button"
+      {% endif %}
+      {% unless settings.transitions--buttons %}
+        data-transition-button
+      {% endunless %}
+      {%- unless current_variant.available -%}
+        disabled
+      {%- endunless -%}
+    >
+      <span class="product-buy-buttons--cta-text">
+        {{- button_text -}}
+      </span>
+      <span class="product-buy-buttons--spinner">
+        {%- render 'icons', icon: 'spinner' -%}
+      </span>
+    </button>
+
+    {%- if smart_payment_enabled and product.available and product.selling_plan_groups == empty -%}
+      <div
+        class="product-buy-buttons--smart"
+        {%- if current_variant.available -%}
+          aria-hidden="false"
+        {%- else -%}
+          aria-hidden="true"
+        {%- endif -%}
+        {% unless settings.transitions--buttons %}
+          data-transition-button
+        {% endunless %}
+      >
+        {{- form | payment_button -}}
+      </div>
+    {%- endif -%}
+  {%- endif -%}
+
+  <select class="product-buy-buttons--select" name="id" data-mq="none">
+    {%- for variant in product.variants -%}
+      <option
+        value="{{ variant.id }}"
+        data-sku="{{ variant.sku }}"
+        data-id="{{ variant.id }}"
+        data-management="{{ variant.inventory_management }}"
+        data-policy="{{ variant.inventory_policy }}"
+        data-quantity="{{ variant.inventory_quantity | default: 0 }}"
+        {%- if variant == current_variant -%}
+          selected
+        {%- endif -%}
+      >
+        {{- variant.title -}}
+      </option>
+    {%- endfor -%}
+  </select>
+</product-buy-buttons-root>

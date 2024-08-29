@@ -1,0 +1,276 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign heading = section.settings.heading
+  assign heading_alignment = section.settings.heading-alignment
+  assign light_text = section.settings.light-text
+  assign show_description = section.settings.show-description
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign top_border = section.settings.top-border
+
+  render 'section-assets', name: 'service-list'
+-%}
+
+<service-list-root
+  class="service-list--root"
+  data-section-id="{{ section.id }}"
+  data-section-type="service_list"
+  data-background-color="{{ bg_color }}"
+  data-container-width="{{ container_width }}"
+  data-light-text="{{ light_text }}"
+  data-show-description="{{ show_description }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-top-border="{{ top_border }}"
+>
+  <div class="service-list--wrapper">
+    {%- unless heading == blank -%}
+      <h2
+        class="service-list--title"
+        data-item="section-heading"
+        data-heading-alignment="{{ heading_alignment }}"
+      >
+        {{- heading | escape -}}
+      </h2>
+    {%- endunless -%}
+
+    <div class="service-list--container">
+      {%- if section.blocks.size > 0 -%}
+        <div class="service-list--single-column">
+          <ul class="service-list--blocks">
+            {%- for block in section.blocks -%}
+              {%- if block.type == "header" -%}
+                {%- unless forloop.first -%}
+                  </ul><ul class="service-list--blocks">
+                {%- endunless -%}
+
+                <li class="service-list--block-header" {{ block.shopify_attributes }}>
+                  <h3 class="service-list--block-header--text" data-item="block-heading">
+                    {{- block.settings.title | escape -}}
+                  </h3>
+                </li>
+
+              {%- else -%}
+                <li class="service-list--block" {{ block.shopify_attributes }}>
+                  <div class="service-list--info">
+                    {%- if block.settings.title.size > 0 -%}
+                      <div class="service-list--block-title">
+                        <p class="service-list--block-title-text" data-item="paragraph">
+                          {{- block.settings.title | escape -}}
+                        </p>
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.price.size > 0 -%}
+                      <div class="service-list--price" data-item="accent-text">
+                        {{- block.settings.price | escape -}}
+                      </div>
+                    {%- endif -%}
+                  </div>
+
+                  {%- if show_description -%}
+                    {%- if block.settings.description != blank -%}
+                      <div class="service-list--description" data-item="rte-content">
+                        {{- block.settings.description -}}
+                      </div>
+                    {%- endif -%}
+                  {%- endif -%}
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </div>
+        <div class="service-list--left-column"></div>
+        <div class="service-list--right-column"></div>
+      {%- endif -%}
+    </div>
+  </div>
+</service-list-root>
+
+{% schema %}
+{
+  "name": "Service list",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style and layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "container-width",
+      "label": "Maximum width of container",
+      "type": "select",
+      "options": [
+        {
+          "label": "Extra small",
+          "value": "1"
+        },
+        {
+          "label": "Small",
+          "value": "2"
+        },
+        {
+          "label": "Medium",
+          "value": "3"
+        },
+        {
+          "label": "Large",
+          "value": "4"
+        },
+        {
+          "label": "Extra large",
+          "value": "5"
+        },
+        {
+          "label": "Full width",
+          "value": "6"
+        }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "checkbox",
+      "id": "show-description",
+      "label": "Show descriptions",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Service list"
+    },
+    {
+      "id": "heading-alignment",
+      "label": "Position heading",
+      "type": "text_alignment",
+      "default": "center"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "header",
+      "name": "Header",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Header",
+          "default": "Add header here"
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "name": "List item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Add service title here"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "$10"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Add service description here</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Service list",
+      "settings": {
+        "heading": "Service list",
+        "show-description": true
+      },
+      "blocks": [
+        {
+          "type": "header"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "header"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["aside"]
+  }
+}
+{% endschema %}

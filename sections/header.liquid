@@ -1,0 +1,254 @@
+{%- liquid
+  comment
+    Translations
+  endcomment
+
+  assign search_t = 'general.search.search' | t
+  assign cart_title_t = 'cart.title' | t
+
+  comment
+    Variables
+  endcomment
+
+  assign bg_color = section.settings.background-color
+  assign menu = section.settings.menu
+  assign light_text = section.settings.light-text
+  assign logo = section.settings.logo
+  assign logo_height = section.settings.logo-height
+  assign mobile_logo_height = section.settings.mobile-logo-height
+  assign show_search = settings.search--show-in-header
+  assign cart_type = settings.cart--type
+-%}
+
+<header-root
+  class="header--root"
+  data-section-id="{{ section.id }}"
+  data-section-type="header"
+  data-background-color="{{ bg_color }}"
+  data-light-text="{{ light_text }}"
+  {%- if logo and logo_height <= 45 -%}
+    data-header-logo-type="inline"
+  {%- elsif logo -%}
+    data-header-logo-type="overflowing"
+  {%- endif -%}
+  {%- if logo and mobile_logo_height <= 40 -%}
+    data-header-mobile-logo-type="inline"
+  {%- elsif logo -%}
+    data-header-mobile-logo-type="overflowing"
+  {%- endif -%}
+>
+  <noscript>
+    <div class="header--container">
+      <div class="header--left-side">
+        {%- if request.page_type == 'index' -%}
+          <h1 class="header--logo">
+            {%-
+              render 'logo',
+              logo: logo,
+              height: logo_height,
+              mobile_height: mobile_logo_height
+            -%}
+          </h1>
+        {%- else -%}
+          <div class="header--logo">
+            {%-
+              render 'logo',
+              logo: logo,
+              height: logo_height,
+              mobile_height: mobile_logo_height
+            -%}
+          </div>
+        {%- endif -%}
+
+        {%-
+          render 'x-menu',
+          overlap_parent: 1,
+          handle: menu,
+          noscript: true
+        -%}
+      </div>
+      <div class="header--right-side" data-item="nav-text">
+        {%- if show_search -%}
+          <div
+            class="header--search"
+            data-drawer-open="top"
+            data-drawer-view="search"
+            tabindex="0"
+          >
+            {{- search_t -}}
+          </div>
+        {%- endif -%}
+
+        {%- render 'login' -%}
+
+        <div class="cart-link" data-item="nav-text">
+          <a href="{{ routes.cart_url }}">{{ cart_title_t }}</a>
+        </div>
+      </div>
+    </div>
+  </noscript>
+
+  <div class="header--y-menu-for-drawer" style="display:none;">
+    {%- render 'y-menu', handle: menu -%}
+  </div>
+
+  <div class="header--container">
+    <div class="header--left-side">
+      {%- if request.page_type == 'index' -%}
+        <h1 class="header--logo">
+          {%-
+            render 'logo',
+            logo: logo,
+            height: logo_height,
+            mobile_height: mobile_logo_height
+          -%}
+        </h1>
+      {%- else -%}
+        <div class="header--logo">
+          {%-
+            render 'logo',
+            logo: logo,
+            height: logo_height,
+            mobile_height: mobile_logo_height
+          -%}
+        </div>
+      {%- endif -%}
+      {%-
+        render 'x-menu',
+        overlap_parent: 1,
+        handle: menu
+      -%}
+    </div>
+
+    <div class="header--right-side" data-item="nav-text">
+      {%- if show_search -%}
+        <div
+          class="header--search"
+          data-drawer-open="top"
+          data-drawer-view="search"
+          tabindex="0"
+        >
+          {{- search_t -}}
+        </div>
+      {%- endif -%}
+
+      {%- render 'login' -%}
+
+      <a
+        class="header--cart-link"
+        {%- if cart_type == 'drawer' -%}
+          data-drawer-open="right"
+          data-drawer-view="cart-drawer"
+          aria-haspopup="menu"
+          href="#"
+        {%- else -%}
+          href="{{ routes.cart_url }}"
+        {%- endif -%}
+        data-cart-count="{{ cart.item_count }}"
+      >
+        {{ cart_title_t }}&nbsp;
+      </a>
+
+      <a
+        class="header--cart-count"
+        data-item="nav-text"
+        data-cart-count="{{ cart.item_count }}"
+        {%- if cart_type == 'drawer' -%}
+          data-drawer-open="right"
+          data-drawer-view="cart-drawer"
+          aria-haspopup="menu"
+          href="#"
+        {%- else -%}
+          href="{{ routes.cart_url }}"
+        {%- endif -%}
+      ></a>
+
+      <div
+        tabindex="0"
+        data-drawer-open="left"
+        data-drawer-view="y-menu"
+        aria-haspopup="menu"
+      >
+        {%- render 'icons', icon: 'menu' -%}
+      </div>
+    </div>
+  </div>
+</header-root>
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "section--header",
+  "settings": [
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "label": "Custom logo height",
+      "id": "logo-height",
+      "type": "range",
+      "min": 15,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 35,
+      "info": "This is referring to the natural height and should be half the height of the image you uploaded to ensure it stays sharp on retina screens."
+    },
+    {
+      "label": "Mobile logo height",
+      "id": "mobile-logo-height",
+      "type": "range",
+      "min": 15,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    }
+  ],
+  "enabled_on": {
+    "groups": ["header"]
+  }
+}
+{% endschema %}

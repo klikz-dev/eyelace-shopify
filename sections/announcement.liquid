@@ -1,0 +1,120 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign icon = section.settings.icon
+  assign light_text = section.settings.light-text
+  assign link = section.settings.link
+  assign text = section.settings.text
+
+  assign enabled = true
+  if section.settings.home-page-only and template != 'index'
+    assign enabled = false
+  endif
+
+  capture link_settings
+    echo settings.color--alternative
+    echo settings.color--accent-1
+    echo settings.color--accent-2
+  endcapture
+-%}
+
+{%- if enabled -%}
+  <div
+    class="announcement--root"
+    data-section-id="{{ section.id }}"
+    data-section-type="announcement"
+    data-background-color="{{ bg_color }}"
+    data-light-text="{{ light_text }}"
+    data-spacing="none"
+  >
+    {%- if link != blank -%}
+      <a class="announcement--link" href="{{ link }}">
+    {%- endif -%}
+
+    <div class="announcement--wrapper">
+      {%- if icon -%}
+        <div class="announcement--icon">
+          {{-
+            icon |
+              image_url: width: 50, height: 50 |
+              image_tag: alt: icon.alt
+          -}}
+        </div>
+      {%- endif -%}
+
+      {%- if text != blank -%}
+        <div class="announcement--text" data-item="accent-text">
+          {{- text | escape -}}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if link != blank -%}
+      </a>
+    {%- endif -%}
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Announcement bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "home-page-only",
+      "label": "Home page only",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "accent-1"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "Icon image",
+      "info": "50 x 50px recommended"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Announcement for sales, promos, shipping info & more — Click and Collect available"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,138 @@
+{%- liquid
+  comment
+    Here you can change the max number of results per resource, API can go as high as 10
+  endcomment
+
+  assign blog_limit = 8
+  assign collections_limit = 8
+  assign pages_limit = 8
+  assign queries_limit = 8
+  assign custom_list_limit = 8
+
+  assign product_limit = 8
+  if predictive_search.performed != true
+    assign product_limit = 4
+  endif
+
+  comment
+    Translations
+  endcomment
+
+  assign blog_t = 'general.search.blog' | t
+  assign collections_t = 'general.search.collections' | t
+  assign pages_t = 'general.search.pages' | t
+  assign no_results_t = 'general.search.no_results' | t
+  assign queries_t = 'general.search.queries' | t
+  assign products_t = 'general.search.products' | t
+  assign view_all_t = 'general.search.view_all' | t
+
+  comment
+    Variables
+  endcomment
+
+  assign article_results = predictive_search.resources.articles
+  assign collection_results = predictive_search.resources.collections
+  assign page_results = predictive_search.resources.pages
+  assign query_results = predictive_search.resources.queries
+  assign show_default_products = settings.search--show-products
+
+  assign show_resources_column = false
+  if article_results.size > 0 or collection_results.size > 0 or page_results.size > 0 or query_results.size > 0
+    assign show_resources_column = true
+  elsif predictive_search.performed != true and settings.search--list != blank
+    assign show_resources_column = true
+  endif
+
+  assign products = blank
+  assign product_heading = false
+  if predictive_search.performed
+    assign products = predictive_search.resources.products
+    assign product_heading = products_t
+  elsif show_default_products
+    if settings.search--product-list == blank
+      assign products = collections.all.products | sort: 'total_sold' | reverse
+    else
+      assign products = settings.search--product-list
+    endif
+
+    if settings.search--product-heading != blank
+      assign product_heading = settings.search--product-heading
+    endif
+  endif
+-%}
+
+{%- capture button_text -%}
+  {{- view_all_t }} &rarr;
+{%- endcapture -%}
+
+{%- if show_resources_column -%}
+  <div class="predictive-search--resources">
+    {%- liquid
+      if predictive_search.performed
+        if query_results.size > 0
+          render 'predictive-search--item', type: 'query', results: query_results, title: queries_t, limit: queries_limit
+        endif
+
+        if article_results.size > 0
+          render 'predictive-search--item', type: 'article', results: article_results, title: blog_t, limit: blog_limit
+        endif
+
+        if collection_results.size > 0
+          render 'predictive-search--item', type: 'collection', results: collection_results, title: collections_t, limit: collections_limit
+        endif
+
+        if page_results.size > 0
+          render 'predictive-search--item', type: 'page', results: page_results, title: pages_t, limit: pages_limit
+        endif
+
+      elsif show_resources_column
+        render 'predictive-search--item', type: 'custom', limit: custom_list_limit
+
+      endif
+    -%}
+  </div>
+{%- endif -%}
+
+<div class="predictive-search--products">
+  {%- if product_heading -%}
+    <div class="predictive-search--heading" data-item="block-heading">
+      {{- product_heading -}}
+    </div>
+  {%- endif -%}
+
+  {%- unless products == blank -%}
+    <div
+      class="predictive-search--product-grid"
+      data-container="panel"
+      data-columns="4"
+      data-mobile-columns="2"
+    >
+      {%- liquid
+        for product in products limit: product_limit
+          render 'product--item', product_item: product, section_id: 'search', sizes: '(max-width: 767px) 50vw, 25vw'
+        endfor
+      -%}
+    </div>
+
+  {%- elsif predictive_search.performed -%}
+    <div class="predictive-search--feedback" data-item="paragraph">
+      {{- no_results_t -}}
+    </div>
+
+  {%- endunless -%}
+
+  {%- if predictive_search.performed and products != blank -%}
+    <div class="predictive-search--view-all">
+      <a
+        href="{{ routes.search_url }}?type=product&q={{ predictive_search.terms }}*"
+        data-item="button"
+        data-text="{{- button_text -}}"
+        {% unless settings.transitions--buttons %}
+          data-transition-button
+        {% endunless %}
+      >
+        <span>{{- button_text -}}</span>
+      </a>
+    </div>
+  {%- endif -%}
+</div>

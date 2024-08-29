@@ -1,0 +1,276 @@
+{%- liquid
+  assign apply_t = 'general.filter.apply' | t
+  assign browse_t = 'collections.browse' | t
+  assign color_t = 'products.color' | t
+  assign no_filters_t = 'general.filter.no_filters' | t
+  assign reset_t = 'general.filter.reset' | t
+  assign search_text_t = 'general.filter.search_by_name' | t
+  assign sort_by_t = 'general.filter.sort_by' | t
+
+  assign collections_list = linklists[custom_collection_list].links
+  if custom_collection_list == blank
+    assign collections_list = collections
+  endif
+
+  render 'section-assets', name: 'filter', type: 'style'
+-%}
+
+<div class="filter--root">
+  <div class="filter--wrapper">
+    {%- if show_collection_list or show_sort_list or show_refine_list -%}
+      <form class="filter--form">
+        {%- if show_collection_list -%}
+          <div class="filter--category">
+            <div
+              class="filter--toggle"
+              tabindex="0"
+              data-item="nav-text"
+              aria-expanded="false"
+              aria-controls="browse-filter"
+              role="button"
+            >
+              {{- browse_t }}
+              {%- render 'icons', icon: 'chevron-up' -%}
+              {%- render 'icons', icon: 'chevron-down' -%}
+            </div>
+
+            <ul
+              class="filter--menu"
+              id="browse-filter"
+              data-item="nav-text--sub"
+              data-transition-item="viewport"
+              data-transition-trigger="custom"
+              data-transition-type="fade-in"
+            >
+              {%- for collection_item in collections_list -%}
+                <li class="filter--link" data-type="browse">
+                  <input
+                    id="filter--browse--{{ collection_item.title | handle | downcase }}"
+                    class="filter--input"
+                    type="radio"
+                    name="browse"
+                    value="{{ collection_item.url }}"
+                    tabindex="-1"
+                    {% if collection_item.url == collection_url %}
+                      checked
+                    {% endif %}
+                  >
+                  <label
+                    class="filter--label"
+                    for="filter--browse--{{ collection_item.title | handle | downcase }}"
+                    data-item="nav-text--sub"
+                    tabindex="0"
+                  >
+                    <span>{{- collection_item.title -}}</span>
+                    {%- render 'icons', icon: 'cross' -%}
+                  </label>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+
+        {%- if show_sort_list -%}
+          <div class="filter--category">
+            <div
+              class="filter--toggle"
+              tabindex="0"
+              data-item="nav-text"
+              aria-expanded="false"
+              aria-controls="sort-filter"
+              role="button"
+            >
+              {{- sort_by_t }}
+              {%- render 'icons', icon: 'chevron-up' -%}
+              {%- render 'icons', icon: 'chevron-down' -%}
+            </div>
+
+            <ul
+              class="filter--menu"
+              id="sort-filter"
+              role="radiogroup"
+              data-transition-item="viewport"
+              data-transition-trigger="custom"
+              data-transition-type="fade-in"
+            >
+              {%- for option in sort_options -%}
+                <li class="filter--link" data-type="sort">
+                  <input
+                    id="filter--sort--{{ option.name | handle | downcase }}"
+                    class="filter--input"
+                    type="radio"
+                    name="sort_by"
+                    value="{{ option.value }}"
+                    data-label="{{ option.name }}"
+                    tabindex="-1"
+                    {% if option.value == sort_by %}
+                      checked
+                    {% endif %}
+                  >
+                  <label
+                    class="filter--label"
+                    for="filter--sort--{{ option.name | handle | downcase }}"
+                    data-item="nav-text--sub"
+                    tabindex="0"
+                  >
+                    <span>{{- option.name -}}</span>
+                    {%- render 'icons', icon: 'cross' -%}
+                  </label>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+
+        {%- if show_refine_list -%}
+          {%- if filters.size > 0 -%}
+            {%- for filter in filters -%}
+              <div class="filter--category">
+                <div
+                  class="filter--toggle"
+                  tabindex="0"
+                  data-item="nav-text"
+                  aria-expanded="false"
+                  aria-controls="{{ filter.label | handle | downcase }}-refine-filter"
+                  role="button"
+                >
+                  {{- filter.label }}
+                  {%- render 'icons', icon: 'chevron-up' -%}
+                  {%- render 'icons', icon: 'chevron-down' -%}
+                </div>
+
+                {%- case filter.type -%}
+                  {%- when 'price_range' -%}
+                    <div
+                      class="filter--menu"
+                      data-item="nav-text--sub"
+                      id="{{ filter.label | handle | downcase }}-refine-filter"
+                      data-transition-item="viewport"
+                      data-transition-trigger="custom"
+                      data-transition-type="fade-in"
+                    >
+                      <div class="filter--price--container">
+                        {%- render 'price-range', filter: filter -%}
+                      </div>
+                    </div>
+
+                  {%- when 'boolean' or 'list' -%}
+                    {%- liquid
+                      assign is_swatches = false
+                      if filter.param_name contains color_t and swatches_enabled
+                        assign is_swatches = true
+                      endif
+                    -%}
+
+                    <ul
+                      class="filter--menu"
+                      id="{{ filter.label | handle | downcase }}-refine-filter"
+                      {% if is_swatches %}
+                        data-is-swatches="true"
+                      {% endif %}
+                      data-transition-item="viewport"
+                      data-transition-trigger="custom"
+                      data-transition-type="fade-in"
+                    >
+                      {%- for filter_value in filter.values -%}
+                        <li class="filter--link" data-type="refine">
+                          <input
+                            id="filter--refine--{{ filter.label | handle | downcase }}-{{ filter_value.label | handle | downcase }}"
+                            class="filter--input"
+                            type="checkbox"
+                            name="{{ filter_value.param_name }}"
+                            value="{{ filter_value.value }}"
+                            data-label="{% if filter.type == 'boolean' %}{{ filter.label }}: {% endif %}{{ filter_value.label }}"
+                            tabindex="-1"
+                            {% if filter_value.active %}
+                              checked
+                            {% endif %}
+                          >
+                          <label
+                            class="filter--label"
+                            for="filter--refine--{{ filter.label | handle | downcase }}-{{ filter_value.label | handle | downcase }}"
+                            tabindex="0"
+                            {% if is_swatches %}
+                              data-item="swatch"
+                            {% endif %}
+                          >
+                            {%- liquid
+                              assign filter_label = filter_value.label | capitalize
+                              echo '<span data-item="nav-text--sub">'
+                              echo filter_label | append: '</span>'
+
+                              unless is_swatches
+                                render 'icons', icon: 'cross'
+                              endunless
+                            -%}
+                          </label>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+
+                {%- endcase -%}
+              </div>
+            {%- endfor -%}
+
+          {%- else -%}
+            <div class="filter--no-filters" data-item="caption">
+              {{- no_filters_t -}}
+            </div>
+
+          {%- endif -%}
+        {%- endif -%}
+
+      </form>
+    {%- endif -%}
+
+    {%- if show_search_link -%}
+      <div class="filter--search">
+        <a
+          class="filter--search-link"
+          data-drawer-open="top"
+          data-drawer-view="search"
+          tabindex="0"
+          aria-label="{{ search_text_t }}"
+          aria-haspopup="true"
+        >
+          <div class="filter--search-icon">
+            {%- render 'icons', icon: 'search' -%}
+          </div>
+
+          <div class="filter--search-text" data-item="nav-text--sub">
+            {{- search_text_t -}}
+          </div>
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div class="filter--button-container">
+    <button
+      class="filter--button"
+      type="button"
+      data-type="apply"
+      data-item="button"
+      data-text="{{- apply_t -}}"
+      data-drawer-close
+      tabindex="0"
+      {% unless settings.transitions--buttons %}
+        data-transition-button
+      {% endunless %}
+    >
+      <span>{{ apply_t }}</span>
+    </button>
+    <button
+      class="filter--button"
+      data-type="reset"
+      data-item="secondary-button"
+      data-text="{{ reset_t }}"
+      tabindex="0"
+      {% unless settings.transitions--buttons %}
+        data-transition-button
+      {% endunless %}
+    >
+      <span>{{ reset_t }}</span>
+    </button>
+  </div>
+</div>

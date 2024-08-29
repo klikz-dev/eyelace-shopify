@@ -1,0 +1,143 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign description = section.settings.description
+  assign form_id = 'newsletter--' | append: section.id
+  assign heading = section.settings.heading | escape
+  assign light_text = section.settings.light-text
+  assign overline = section.settings.overline
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign top_border = section.settings.top-border
+
+  render 'section-assets', name: 'newsletter', type: 'style'
+-%}
+
+<div
+  class="newsletter--root"
+  data-section-id="{{ section.id }}"
+  data-background-color="{{ bg_color }}"
+  data-light-text="{{ light_text }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-top-border="{{ top_border }}"
+>
+  {%-
+    render "stacked-text",
+    description: description,
+    heading_type: 'section-heading',
+    id: section.id,
+    overline: overline,
+    title: heading,
+    width: 'medium'
+  -%}
+
+  <div
+    class="newsletter--body"
+    data-container="block"
+    {% unless settings.transitions--text %}
+      data-transition-item="{{ section.id }}"
+      data-transition-type="fade-in"
+    {% endunless %}
+  >
+    {%- render 'subscribe-form', id: form_id -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Newsletter",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout and Color"
+      },
+      {
+        "id": "top-border",
+        "label": "Top border",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "id": "spacing-above",
+        "label": "Spacing above",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "spacing-below",
+        "label": "Spacing below",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "background-color",
+        "label": "Background color",
+        "type": "select",
+        "options": [
+          {
+            "label": "Transparent",
+            "value": "none"
+          },
+          {
+            "label": "Light",
+            "value": "light"
+          },
+          {
+            "label": "Dark",
+            "value": "dark"
+          },
+          {
+            "label": "Accent 1",
+            "value": "accent-1"
+          },
+          {
+            "label": "Accent 2",
+            "value": "accent-2"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "id": "light-text",
+        "label": "Use light text color",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "id": "overline",
+        "label": "Overline",
+        "type": "text",
+        "default": "Overline text"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Subscribe to our newsletter"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>A short sentence describing what someone will receive by subscribing</p>"
+      },
+      {
+        "type": "paragraph",
+        "content": "Customers who subscribe will have their email address added to the “accepts marketing” [customer list](/admin/customers?query=&accepts_marketing=1)"
+      }
+    ],
+    "blocks" : [],
+    "presets": [
+      {
+        "name": "Newsletter"
+      }
+    ],
+    "disabled_on": {
+      "groups": ["aside"]
+    }
+  }
+{% endschema %}

@@ -1,0 +1,69 @@
+{%- liquid
+  unless display_type
+    assign display_type = 'original'
+  endunless
+
+  unless mobile_display_type
+    assign mobile_display_type = display_type
+  endunless
+
+  if aspect_ratio == blank or display_type == 'original'
+    assign aspect_ratio = image.aspect_ratio | round: 4
+  endif
+
+  if mobile_aspect_ratio == blank or mobile_display_type == 'original'
+    assign mobile_aspect_ratio = image.aspect_ratio | round: 4
+    if mobile_image
+      assign mobile_aspect_ratio = mobile_image.aspect_ratio | round: 4
+    endif
+  endif
+
+  unless mobile_overlay_style
+    assign mobile_overlay_style = overlay_style
+  endunless
+
+  unless sizes
+    assign sizes = '100vw'
+  endunless
+
+  unless full_width
+    assign full_width = false
+  endunless
+
+  capture image_properties
+    echo '--aspect-ratio:' | append: aspect_ratio | append: ';'
+    echo '--mobile-aspect-ratio:' | append: mobile_aspect_ratio | append: ';'
+  endcapture
+-%}
+
+<picture
+  class="image--root"
+  data-background="{{ background }}"
+  data-display-type="{{ display_type }}"
+  data-mobile-display-type="{{ mobile_display_type }}"
+  data-parallax="{{ parallax }}"
+  data-overlay-style="{{ overlay_style }}"
+  data-mobile-overlay-style="{{ mobile_overlay_style }}"
+  data-full-width="{{ full_width }}"
+  style="{{ image_properties }}"
+>
+  {%- if mobile_image -%}
+    <source
+      media="(max-width: 767px)"
+      srcset="
+        {{- mobile_image | image_url: width: 400 }} 400w,
+        {{- mobile_image | image_url: width: 768 }} 768w"
+      alt="{{ mobile_image.alt }}"
+      height="{{ mobile_image.width | divided_by: mobile_aspect_ratio | round }}"
+      width="{{ mobile_image.width }}"
+    >
+  {%- endif -%}
+
+  {{-
+    image |
+    image_url: width: image.width |
+    image_tag:
+      widths: "300, 500, 767, 1000, 1200, 1500, 1800, 2400, 3000",
+      sizes: sizes
+  -}}
+</picture>

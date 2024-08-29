@@ -1,0 +1,25 @@
+<div class="layout--navigation">
+  <button
+    class="layout--close"
+    aria-label="{{ 'general.a11y.close' | t }}"
+    aria-hidden="true"
+  >
+    {%- render 'icons', icon: 'cross' -%}
+  </button>
+
+  <button
+    class="layout--previous"
+    aria-hidden="true"
+    data-modal-button="previous"
+  >
+    {%- render 'css-icons', icon: 'prev' -%}
+  </button>
+
+  <button
+    class="layout--next"
+    aria-hidden="true"
+    data-modal-button="next"
+  >
+    {%- render 'css-icons', icon: 'next' -%}
+  </button>
+</div>

@@ -1,0 +1,63 @@
+{%- liquid
+  assign tax_included_t = 'products.tax_included' | t
+
+  assign current_variant = product.selected_or_first_available_variant
+  assign compare_enabled = false
+  if current_variant.compare_at_price > current_variant.price
+    assign compare_enabled = true
+  endif
+
+  unless settings.quick-add--enabled
+    render 'section-assets', name: 'product-price', type: 'script'
+  endunless
+-%}
+
+<product-price-root class="product-price--root" data-id="{{ id }}">
+  <div class="product-price--wrapper">
+    <div class="product-price--original" data-item='accent-text'>
+      {{ current_variant.price | money }}
+    </div>
+
+    <div
+      class="product-price--compare"
+      data-item='light-accent-text'
+      {% unless compare_enabled %}
+        style="display:none;"
+      {% else %}
+        style="display:inline-block;"
+      {% endunless %}
+    >
+      {%- if compare_enabled -%}
+        {{- current_variant.compare_at_price | money -}}
+      {%- endif -%}
+    </div>
+  </div>
+
+  <div
+    class="product-price--unit-container"
+    data-item="small-text"
+    {% if current_variant.unit_price_measurement %}
+      style="display:flex;"
+    {% else %}
+      style="display:none;"
+    {% endif %}
+  >
+    <span class="product-price--unit-price">
+      {{- current_variant.unit_price | money -}}
+    </span>/
+    {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
+      <span class="product-price--reference-value">
+        {{- current_variant.unit_price_measurement.reference_value -}}
+      </span>
+    {%- endif -%}
+    <span class="product-price--reference-unit">
+      {{- current_variant.unit_price_measurement.reference_unit -}}
+    </span>
+  </div>
+
+  {%- if cart.taxes_included -%}
+    <div class="product-price--tax" data-item="small-text">
+      {{- tax_included_t -}}
+    </div>
+  {%- endif -%}
+</product-price-root>

@@ -1,0 +1,255 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection--header",
+      "settings": {
+        "show-title": true,
+        "heading-type": "featured-heading",
+        "heading-alignment": "center",
+        "show-description": true,
+        "description-alignment": "with-title",
+        "light-text": true,
+        "show-image": true,
+        "use-image-fallback": true,
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "text-style": "none",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false
+      }
+    },
+    "countdown_DrenzC": {
+      "type": "countdown",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "dark",
+        "light-text": true,
+        "text-style": "none",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "timer-bg-color": "dark",
+        "light-number": true,
+        "number-size": 40,
+        "container-width": "3",
+        "overline": "OPENING SALE",
+        "heading": "Get 10% Off Your Starter Kit",
+        "description": "<p>To celebrate our launch, enjoy a discount on our Starter Kit by purchasing today!<\/p>",
+        "link-url": "shopify:\/\/products\/starter-kit",
+        "link-text": "Shop The Sale",
+        "expiry-date": "01-01-2025",
+        "expiry-hours": 0,
+        "expiry-minutes": 0,
+        "hide-when-expired": true,
+        "show-button-when": "always",
+        "mobile-number-size": 20
+      }
+    },
+    "navigation": {
+      "type": "collection--navigation",
+      "settings": {
+        "show-browse-button": true,
+        "show-sort-button": true,
+        "show-refine-button": true,
+        "show-layout-buttons": true,
+        "show-collections-list": true,
+        "custom-list-collections": "",
+        "show-sort-list": true,
+        "show-refine-list": true,
+        "swatches-enabled": false,
+        "show-search-link": true
+      }
+    },
+    "main": {
+      "type": "collection--body",
+      "blocks": {
+        "grid-promo-1": {
+          "type": "promotion",
+          "settings": {
+            "row-number": 2,
+            "column-number": 2,
+            "promo-width": 2,
+            "heading-type": "featured-heading",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "text-width": "medium",
+            "text-style": "none",
+            "text-background-color": "light",
+            "overlay-style": "darken-bottom",
+            "image-display-type": "medium",
+            "aspect-ratio": 56,
+            "parallax-enabled": false,
+            "light-text": false,
+            "overline": "UP TO 30% OFF",
+            "title": "Buy More, Pay Less",
+            "description": "<p>Get up to 30% off when you purchase more Lash Sets.<\/p>",
+            "link-url": "shopify:\/\/collections\/lashes-collection",
+            "link-text": "Shop Lashes",
+            "mobile-hide-description": false,
+            "mobile-image-display-type": "original",
+            "mobile-aspect-ratio": 134,
+            "mobile-text-alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "grid-promo-1"
+      ],
+      "settings": {
+        "products-per-row--desktop": 4,
+        "products-per-row--mobile": "1",
+        "number-of-rows": 4
+      }
+    },
+    "featured_video_yfmy74": {
+      "type": "featured-video",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "text-width": "medium",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-style": "eclipse-shadow",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "autoplay": true,
+        "video-display-type": "aspect-ratio",
+        "aspect-ratio": 54,
+        "play-button-style": "solid",
+        "overlay-style": "darken-bottom",
+        "video-upload": "shopify:\/\/files\/videos\/EyelaceTutDraft4.mp4",
+        "video-url": "",
+        "overline": "HOW TO",
+        "heading": "Eyelace Is Easy & Convenient",
+        "description": "<p>Learn how to wear your Eyelace with our video tutorial. Anyone can achieve a professional cosmetic effect that enhances your natural beauty.<\/p>",
+        "button-text": "Learn How",
+        "button-url": "shopify:\/\/pages\/how-to",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center",
+        "mobile-hide-description": false
+      }
+    },
+    "text_columns_WPWBdB": {
+      "type": "text-columns",
+      "blocks": {
+        "image_JLqHxa": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.53.37_PM.png",
+            "title": "Stunning, Natural Look",
+            "description": "<p>No matter which lash you choose, Eyelace strip lashes are all designed to seamlessly accentuate your natural beauty. The only difference others will notice is how good you look.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_9mbkXm": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.51.52_PM.png",
+            "title": "Easy To Apply & Remove",
+            "description": "<p>Eyelace false lashes are designed to be easy for anyone to apply and remove. Whether you are on the go or perfecting your look for a shoot, Eyelace lashes will make lash perfection attainable every wear.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_eMFCVK": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.47.17_PM.png",
+            "title": "Comfortable & Reliable",
+            "description": "<p>After applying, you'll forget you're wearing your Eyelace eyelashes. They'll remain right where you've put them and feel weightless and look flawless until the end of the day when you take them off—just as easily!<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_zAbXm3": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.59.02_AM.png",
+            "title": "Non-Damaging to Your Natural Lash Line",
+            "description": "<p>Unlike extensions, which damage your natural lash line and inhibit daily hygiene, Eyelace lashes are safe for your natural eyelashes, skin, eyelids, and eyes.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_JLqHxa",
+        "image_9mbkXm",
+        "image_eMFCVK",
+        "image_zAbXm3"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "block-spacing": true,
+        "background-color": "dark",
+        "light-text": true,
+        "container-width": "4",
+        "width": 4,
+        "aspect-ratio": "square",
+        "image-width": 0,
+        "text-alignment": "center",
+        "overline": "WHY EYELACE?",
+        "heading": "Be Bold; Be Beautiful",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "1"
+      }
+    },
+    "recent-products": {
+      "type": "recent-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "heading-alignment": "center",
+        "heading": "Recently viewed"
+      }
+    },
+    "featured_blog_VbQPVw": {
+      "type": "featured-blog",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-2",
+        "light-text": false,
+        "container-width": "4",
+        "tag-select": "pinned",
+        "show-date": true,
+        "show-excerpt": true,
+        "blog": "beauty-trends",
+        "blog-heading": "Learn More About Eyelash Care & The Latest Beauty Trends!",
+        "heading-alignment": "center",
+        "view-more-text": "View more"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "countdown_DrenzC",
+    "navigation",
+    "main",
+    "featured_video_yfmy74",
+    "text_columns_WPWBdB",
+    "recent-products",
+    "featured_blog_VbQPVw"
+  ]
+}

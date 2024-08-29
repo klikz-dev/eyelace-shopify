@@ -1,0 +1,30 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign first_variant_has_pickup = false
+  for store_availability in current_variant.store_availabilities
+    if store_availability.pick_up_enabled and current_variant.available
+      assign first_variant_has_pickup = true
+      break
+    endif
+  endfor
+
+  render 'section-assets', name: 'product-pickup'
+-%}
+
+<product-pickup-root
+  class="product-pickup--root"
+  style="display:block;"
+  data-first-variant-id="{{ current_variant.id }}"
+  data-load-first-variant="{{ first_variant_has_pickup }}"
+  data-loading="false"
+  data-id="{{ id }}"
+  data-is-only-variant="{{ product.has_only_default_variant }}"
+  data-title="{{ product.title }}"
+>
+  {% comment %} pickup section is brought in async here {% endcomment %}
+  {%- if first_variant_has_pickup -%}
+    <div class="product-pickup--spinner">
+      {%- render 'icons', icon: 'spinner' -%}
+    </div>
+  {%- endif -%}
+</product-pickup-root>

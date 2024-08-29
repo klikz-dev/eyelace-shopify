@@ -1,0 +1,38 @@
+<script type="module">
+  import "{{ 'a11y.js' | asset_url }}";
+  import "{{ 'media-queries.js' | asset_url }}";
+  import "{{ 'radios.js' | asset_url }}";
+  import "{{ 'transitions.js' | asset_url }}";
+  import "{{ 'general.js' | asset_url }}";
+  import "{{ 'tab-order.js' | asset_url }}";
+  import "{{ 'collapsible-row.js' | asset_url }}";
+  import "{{ 'placeholder.js' | asset_url }}";
+  import "{{ 'disclosure.js' | asset_url }}";
+  import "{{ 'quantity-selector.js' | asset_url }}";
+  import "{{ 'feedback-bar.js' | asset_url }}";
+  import "{{ 'modal.js' | asset_url }}";
+  import "{{ 'subscribe-form.js' | asset_url }}";
+
+  {%- unless request.page_type == 'password' -%}
+    import "{{ 'y-menu.js' | asset_url }}";
+    import "{{ 'drawer.js' | asset_url }}";
+    import "{{ 'header.js' | asset_url }}";
+    import "{{ 'cart.js' | asset_url }}";
+    import "{{ 'x-menu.js' | asset_url }}";
+
+    {%- if settings.quick-add--enabled -%}
+      import "{{ 'quick-add.js' | asset_url }}";
+      import "{{ 'product-buy-buttons.js' | asset_url }}";
+    {%- endif -%}
+  {%- endunless -%}
+
+  {%- if request.design_mode -%}
+    import "{{ 'editor-events.js' | asset_url }}";
+  {%- endif -%}
+
+  {%- if settings.quick-add--enabled -%}
+    import "{{ 'product-media--variants.js' | asset_url }}";
+    import "{{ 'product-price.js' | asset_url }}";
+    import "{{ 'product-options.js' | asset_url }}";
+  {%- endif -%}
+</script>

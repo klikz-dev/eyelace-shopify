@@ -1,0 +1,62 @@
+<drawer-root class="drawer--root">
+  <div class="drawer--overlay" aria-hidden="true"></div>
+
+  <div class="drawer--focus-trigger" tabindex="0"></div>
+  <div class="drawer--focus-start" tabindex="0"></div>
+
+  <div
+    class="drawer--instance"
+    data-side="top"
+    data-focus-id="search-input"
+    aria-expanded="false"
+  >
+    <div class="drawer--container" data-view="search">
+      {%- render 'main-search' -%}
+    </div>
+  </div>
+
+  <div
+    class="drawer--instance"
+    data-side="right"
+    aria-expanded="false"
+  >
+    {%- if request.page_type == 'product' -%}
+      <div class="drawer--container" data-view="pickup"></div>
+    {%- endif -%}
+
+    {%- if request.page_type == 'collection' or request.page_type == 'search' -%}
+      <div class="drawer--container" data-view="filter"></div>
+    {%- endif -%}
+
+    {%- if settings.quick-add--enabled -%}
+      <div class="drawer--container" data-view="product-form"></div>
+    {%- endif -%}
+
+    {%- if settings.cart--type == 'drawer' or settings.quick-add--enabled -%}
+      <div class="drawer--container" data-view="cart-drawer">
+        {%- render 'cart', view: 'drawer' -%}
+      </div>
+    {%- endif -%}
+  </div>
+
+  <div
+    class="drawer--instance"
+    data-side="left"
+    aria-expanded="false"
+  >
+    <div
+      class="drawer--container"
+      data-view="y-menu"
+      {% unless settings.transitions--other %}
+        data-transition-container="y-menu"
+        data-transition-cascade="vertical"
+        data-transition-cascade-interval="120"
+        data-transition-type="fade-in"
+      {% endunless %}
+    >
+      {%- render 'mobile-nav' -%}
+    </div>
+  </div>
+
+  <div class="drawer--focus-trigger" tabindex="0"></div>
+</drawer-root>

@@ -1,0 +1,122 @@
+{
+  "type": "aside",
+  "name": "Overlay Group",
+  "sections": {
+    "popup": {
+      "type": "popup",
+      "blocks": {
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "background-color": "dark",
+            "translucent": true,
+            "light-text": true,
+            "position": "right",
+            "text-alignment": "center",
+            "heading": "Sign Up and Get 10% Off",
+            "description": "<p>Sign Up to receive our newsletter and receive 10% Off Your next purchase. Stay up to date on deals, new products, and tips and tricks to make the most of your Eyelace experience.<\/p>",
+            "social-title": "Follow Us",
+            "social-enabled": true,
+            "delay": 5,
+            "show-at-bottom": true,
+            "days-range": 7,
+            "referrer-enabled": false,
+            "referrer-url": "",
+            "page-enabled": false,
+            "page-url": ""
+          }
+        },
+        "small-promotion": {
+          "type": "small-promotion",
+          "settings": {
+            "background-color": "accent-1",
+            "translucent": true,
+            "light-text": false,
+            "heading-type": "paragraph",
+            "position": "left",
+            "heading": "Buy More, Pay Less: Up to 30% Off When You Buy More Lash Sets!",
+            "delay": 3,
+            "show-at-bottom": true,
+            "days-range": 1,
+            "referrer-enabled": false,
+            "referrer-url": "",
+            "page-enabled": false,
+            "page-url": "shopify:\/\/products\/day-dream-lash-set",
+            "scroll-text": true,
+            "animation-speed": 7.5
+          }
+        },
+        "large-promotion": {
+          "type": "large-promotion",
+          "settings": {
+            "background-color": "dark",
+            "translucent": true,
+            "light-text": true,
+            "position": "left",
+            "text-alignment": "center",
+            "heading": "To celebrate our launch, get 10% off your Starter Kit!",
+            "description": "",
+            "link-url": "shopify:\/\/products\/starter-kit",
+            "link-text": "Shop the sale",
+            "delay": 3,
+            "show-at-bottom": true,
+            "days-range": 1,
+            "referrer-enabled": false,
+            "referrer-url": "",
+            "page-enabled": false,
+            "page-url": "",
+            "countdown-enabled": true,
+            "timer-bg-color": "dark",
+            "light-number": true,
+            "expiry-date": "12-25-2024",
+            "expiry-hours": 0,
+            "expiry-minutes": 0,
+            "hide-when-expired": true,
+            "show-button-when": "always"
+          }
+        },
+        "consent-tracking": {
+          "type": "consent-tracking",
+          "settings": {
+            "background-color": "dark",
+            "translucent": true,
+            "light-text": true,
+            "position": "left",
+            "text-alignment": "center",
+            "heading": "Cookie consent",
+            "description": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter",
+        "small-promotion",
+        "large-promotion",
+        "consent-tracking"
+      ],
+      "settings": {
+        "limit": true
+      }
+    },
+    "age-verification": {
+      "type": "age-verification",
+      "disabled": true,
+      "settings": {
+        "background-color": "dark",
+        "translucent": true,
+        "light-text": true,
+        "heading": "Confirm your age",
+        "description": "<p>Are you 18 years old or older?<\/p>",
+        "decline-text": "No I'm not",
+        "approve-text": "Yes I am",
+        "declined-heading": "Come back when you're older",
+        "declined-description": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.<\/p>",
+        "return-text": "Oops, I entered incorrectly"
+      }
+    }
+  },
+  "order": [
+    "popup",
+    "age-verification"
+  ]
+}

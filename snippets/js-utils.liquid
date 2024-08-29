@@ -1,0 +1,262 @@
+{% comment %}
+  We need access to these methods immediately, so they can't be brought in async.
+  By using Liquid we don't have to request this file on page load.
+{% endcomment %}
+
+<script>
+  String.prototype.handleize = function () {
+    const char_map = {
+      á: "a", é: "e", í: "i", ó: "o", ú: "u", ñ: "n", ü: "u", à: "a", è: "e", ì: "i", ò: "o", ù: "u",
+      â: "a", ê: "e", î: "i", ô: "o", û: "u", ö: "o", ä: "a", ß: "ss", ç: "c", è: "e", é: "e", ê: "e",
+      ë: "e", î: "i", ï: "i", ô: "o", œ: "oe", ù: "u", û: "u", ü: "u"
+    };
+    // we need to convert non-english chars to english counterparts to match Liquid's 'handelize' filter
+    const regex = new RegExp(Object.keys(char_map).join("|"), 'g');
+
+    return this.toLowerCase()
+      .replace(regex, (match) => (char_map[match] ? char_map[match] : match))
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '');
+  };
+
+  // Element extended methods
+  Element.prototype.trigger = window.trigger = function(event, data = null) {
+    const event_obj = data == null ? new Event(event) : new CustomEvent(event, { detail: data });
+    this.dispatchEvent(event_obj);
+  };
+
+  Element.prototype.on = document.on = window.on = function(events, callback, options) {
+    // save the namespaces on the element itself
+    if (!this.namespaces) this.namespaces = {};
+
+    events.split(' ').forEach(event => {
+      this.namespaces[event] = callback;
+      this.addEventListener(event.split('.')[0], callback, options);
+    });
+    return this;
+  };
+
+  Element.prototype.off = window.off = function(events) {
+    if (!this.namespaces) return;
+
+    events.split(' ').forEach(event => {
+      this.removeEventListener(event.split('.')[0], this.namespaces[event]);
+      delete this.namespaces[event];
+    });
+    return this;
+  };
+
+  Element.prototype.index = function() {
+    return [...this.parentNode.children].indexOf(this);
+  };
+
+  Element.prototype.offset = function() {
+    const rect = this.getBoundingClientRect();
+
+    return {
+      top: rect.top + window.scrollY,
+      left: rect.left + window.pageXOffset
+    };
+  };
+
+  Element.prototype.setStyles = function(styles = {}) {
+    for (const property in styles) this.style[property] = styles[property];
+    return this;
+  }
+
+  Element.prototype.remove = function() {
+    return this.parentNode && this.parentNode.removeChild(this);
+  };
+
+  // NodeList & Array extended methods
+  NodeList.prototype.on = Array.prototype.on = function(events, callback, options) {
+    this.forEach(element => {
+      // save the namespaces on the element itself
+      if (!element.namespaces) element.namespaces = {};
+
+      events.split(' ').forEach(event => {
+        element.namespaces[event] = callback;
+        element.addEventListener(event.split('.')[0], callback, options);
+      });
+    });
+  };
+
+  NodeList.prototype.off = Array.prototype.off = function(events) {
+    this.forEach(element => {
+      if (!element.namespaces) return;
+
+      events.split(' ').forEach(event => {
+        element.removeEventListener(event.split('.')[0], element.namespaces[event]);
+        delete element.namespaces[event];
+      });
+    });
+  };
+
+  NodeList.prototype.not = Array.prototype.not = function(arr_like_obj) {
+    // this always returns an Array
+    const new_array_of_elements = [];
+    if (arr_like_obj instanceof HTMLElement) arr_like_obj = [arr_like_obj];
+
+    this.forEach(element => {
+      if (![...arr_like_obj].includes(element)) new_array_of_elements.push(element);
+    });
+
+    return new_array_of_elements;
+  };
+
+  // this global method is necessary for the youtube API, we can't use our own callback in this case
+  // https://developers.google.com/youtube/iframe_api_reference#Requirements
+  function onYouTubeIframeAPIReady() {
+    window.trigger('theme:youtube:apiReady');
+  }
+
+  // Utility methods
+  theme.utils = new class Utilities {
+    constructor() {
+      this.isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
+
+      {%- if request.page_type == 'product' -%}
+        this.updateRecentProducts('{{ product.handle }}');
+      {%- endif -%}
+    }
+
+    isValidEmail(email) {
+      const email_pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+      return email_pattern.test(email);
+    }
+
+    formatMoney(raw_amount) {
+      const num_decimals = theme.settings.money_format.includes('no_decimals') ? 0 : 2;
+      const locale = theme.settings.money_format.includes('comma') ? 'de-DE' : 'en-US';
+
+      const formatter = Intl.NumberFormat(locale, {
+        minimumFractionDigits: num_decimals,
+        maximumFractionDigits: num_decimals
+      });
+
+      const formatted_amount = formatter.format(raw_amount / 100);
+      {% comment %} // replace 'amount' in '${{ amount }}' {% endcomment %}
+      return theme.settings.money_format.replace(/\{\{\s*(\w+)\s*\}\}/, formatted_amount);
+    }
+
+    getHiddenDimensions(element) {
+      const cloned_el = this.parseHtml(element.outerHTML, null);
+      cloned_el.setStyles({
+        display: 'block',
+        position: 'absolute',
+        padding: element.style.padding,
+        visibility: 'hidden',
+      })
+
+      element.parentNode ? element.parentNode.appendChild(cloned_el) : document.body.appendChild(cloned_el);
+      const { offsetHeight: height, offsetWidth: width } = cloned_el;
+      cloned_el.remove();
+      return { height, width };
+    }
+
+    libraryLoader(name, url, callback) {
+      if (theme.scripts[name] === undefined) {
+        theme.scripts[name] = 'requested';
+        const script = document.createElement('script');
+        script.src = url;
+        script.onload = () => {
+          theme.scripts[name] = 'loaded';
+          callback && callback();
+          window.trigger(`theme:${name}:loaded`);
+        };
+        document.body ? document.body.appendChild(script) : document.head.appendChild(script);
+      } else if (callback && theme.scripts[name] === 'requested') {
+        window.on(`theme:${name}:loaded`, callback);
+      } else if (callback && theme.scripts[name] === 'loaded') callback();
+    }
+
+    parseHtml(html_string, selector, strip_components = []) {
+      strip_components.forEach(component => { // remove web components so they don't init
+        const regex = new RegExp(component, 'g');
+        html_string = html_string.replace(regex, 'div')
+      });
+
+      const container = document.createElement('div');
+      container.innerHTML = html_string;
+      return selector ? container.querySelector(selector) : container.querySelector(':scope > *');
+    }
+
+    setSwatchColors(inputs = false) {
+      if (!inputs) return
+
+      inputs.forEach(input => {
+        const swatch = input.nextElementSibling;
+        const swatch_color = input.value.handleize();
+
+        if (theme.swatches[swatch_color] === undefined) {
+          swatch.style['background-color'] = swatch_color;
+        } else if (CSS.supports('color', theme.swatches[swatch_color])) {
+          swatch.style['background-color'] = theme.swatches[swatch_color];
+        } else {
+          swatch.style['background-image'] = `url(${theme.swatches[swatch_color]})`;
+        }
+      });
+    }
+
+    stylesheetLoader(name, url, callback) {
+      if (theme.styles[name] === undefined) {
+        theme.styles[name] = 'requested';
+        const stylesheet = document.createElement('link');
+        stylesheet.rel = 'stylesheet';
+        stylesheet.href = url;
+        stylesheet.onload = () => {
+          theme.styles[name] = 'loaded';
+          callback && callback();
+          window.trigger(`theme:${name}Styles:loaded`);
+        }
+        document.body ? document.body.appendChild(stylesheet) : document.head.appendChild(stylesheet);
+      } else if (callback && theme.styles[name] === 'requested') {
+        window.on(`theme:${name}Styles:loaded`, callback);
+      } else if (callback && theme.styles[name] === 'loaded') callback();
+    }
+
+    getQuantity(product_id, { id, management, policy, quantity }, requested_quantity) {
+      // if inventory isn't tracked we can add items indefinitely
+      if (management !== 'shopify' || policy === 'continue') return requested_quantity;
+
+      const cart_quantity = theme.cart.basket[id] ? theme.cart.basket[id] : 0;
+      let quantity_remaining = parseInt(quantity) - cart_quantity;
+
+      if (quantity_remaining <= 0) {
+        quantity_remaining = 0;
+        window.trigger(`theme:product:${product_id}:updateQuantity`, 1);
+      } else if (requested_quantity > quantity_remaining) {
+        window.trigger(`theme:product:${product_id}:updateQuantity`, quantity_remaining);
+      } else return requested_quantity;
+
+      theme.feedback.trigger('quantity', quantity_remaining);
+      return false;
+    }
+
+    updateRecentProducts(handle) {
+      const current_product_arr = [handle];
+      const previous_product_str = localStorage.getItem(theme.local_storage.recent_products);
+      const max_num_recents_stored = 4;
+      let previous_product_arr, current_product_str, newly_visited_product = false;
+
+      // first check if we have existing data or not
+      if (previous_product_str) {
+        previous_product_arr = JSON.parse(previous_product_str);
+
+        if (previous_product_arr.indexOf(handle) === -1) newly_visited_product = true;
+      } else {
+        // localStorage accepts strings only, so we'll convert to string and set
+        current_product_str = JSON.stringify(current_product_arr);
+        localStorage.setItem(theme.local_storage.recent_products, current_product_str);
+      }
+      if (newly_visited_product) {
+        if (previous_product_arr.length === max_num_recents_stored)
+          previous_product_arr = previous_product_arr.slice(1);
+
+        current_product_str = JSON.stringify(previous_product_arr.concat(current_product_arr));
+        localStorage.setItem(theme.local_storage.recent_products, current_product_str);
+      }
+    }
+  }
+</script>

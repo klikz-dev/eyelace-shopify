@@ -1,0 +1,213 @@
+{%- liquid
+  assign approve_text = section.settings.approve-text
+  assign bg_color = section.settings.background-color
+  assign decline_text = section.settings.decline-text
+  assign declined_heading = section.settings.declined-heading
+  assign description = section.settings.description
+  assign declined_description = section.settings.declined-description
+  assign heading = section.settings.heading
+  assign light_text = section.settings.light-text
+  assign return_text = section.settings.return-text
+  assign translucent = section.settings.translucent
+-%}
+
+<modal-root
+  class="modal--root"
+  data-id="age-verification"
+  data-section-id="{{ section.id }}"
+  data-background-color="{{ bg_color }}"
+  data-blocking="age_verification"
+  data-focus-id="{{ section.id }}-accept_button"
+  data-translucent="{{ translucent }}"
+  data-light-text="{{ light_text }}"
+  data-transition-item="viewport"
+  data-transition-type="fade-in"
+  data-transition-trigger="custom"
+  aria-hidden="true"
+>
+  <div
+    class="modal--view"
+    data-transition-item="viewport"
+    data-transition-type="fade-out"
+    data-transition-trigger="custom"
+  >
+    {%- unless heading == blank -%}
+      <div class="age-verification--heading" data-item="section-heading">
+        {{- heading -}}
+      </div>
+    {%- endunless -%}
+
+    {%- unless description == blank -%}
+      <div class="age-verification--description" data-item="rte-content">
+        {{- description -}}
+      </div>
+    {%- endunless -%}
+
+    <div class="modal--button-container">
+      <button
+        data-modal-button="next"
+        data-item="secondary-button"
+        data-text="{{ decline_text }}"
+        {% unless settings.transitions--buttons %}
+          data-transition-button
+        {% endunless %}
+      >
+        <span>{{- decline_text -}}</span>
+      </button>
+      <button
+        id="{{ section.id }}-accept_button"
+        data-item="button"
+        data-text="{{ approve_text }}"
+        data-modal-close
+        {% unless settings.transitions--buttons %}
+          data-transition-button
+        {% endunless %}
+      >
+        <span>{{- approve_text -}}</span>
+      </button>
+    </div>
+  </div>
+
+  <div
+    class="modal--view"
+    data-transition-item="viewport"
+    data-transition-type="fade-in"
+    data-transition-trigger="custom"
+  >
+    {%- unless declined_heading == blank -%}
+      <div class="modal--heading" data-item="section-heading">
+        {{- declined_heading -}}
+      </div>
+    {%- endunless -%}
+
+    {%- unless declined_description == blank -%}
+      <div class="modal--description" data-item="rte-content">
+        {{- declined_description -}}
+      </div>
+    {%- endunless -%}
+
+    <div class="modal--button-container">
+      <button
+        data-modal-button="previous"
+        data-item="button"
+        data-text="{{ return_text }}"
+        {% unless settings.transitions--buttons %}
+          data-transition-button
+        {% endunless %}
+      >
+        <span>{{- return_text -}}</span>
+      </button>
+    </div>
+  </div>
+</modal-root>
+
+{% schema %}
+  {
+    "name": "Age verification",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Style and layout"
+      },
+      {
+        "id": "background-color",
+        "label": "Background color",
+        "type": "select",
+        "options": [
+          {
+            "label": "Transparent",
+            "value": "none"
+          },
+          {
+            "label": "Light",
+            "value": "light"
+          },
+          {
+            "label": "Dark",
+            "value": "dark"
+          },
+          {
+            "label": "Accent 1",
+            "value": "accent-1"
+          },
+          {
+            "label": "Accent 2",
+            "value": "accent-2"
+          }
+        ],
+        "default": "dark"
+      },
+      {
+        "id": "translucent",
+        "label": "Translucent background",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "light-text",
+        "label": "Use light text color",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Confirm your age"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Are you 18 years old or older?</p>"
+      },
+      {
+        "type": "text",
+        "id": "decline-text",
+        "label": "Decline button text",
+        "default": "No I'm not"
+      },
+      {
+        "type": "text",
+        "id": "approve-text",
+        "label": "Approve button text",
+        "default": "Yes I am"
+      },
+      {
+        "type": "paragraph",
+        "content": "This content will display if the user does not meet the age verification requirements."
+      },
+      {
+        "type": "text",
+        "id": "declined-heading",
+        "label": "Heading",
+        "default": "Come back when you're older"
+      },
+      {
+        "type": "richtext",
+        "id": "declined-description",
+        "label": "Description",
+        "default": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.</p>"
+      },
+      {
+        "type": "text",
+        "id": "return-text",
+        "label": "Return button text",
+        "default": "Oops, I entered incorrectly"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Age verification"
+      }
+    ],
+    "enabled_on": {
+      "groups": ["aside"]
+    }
+  }
+{% endschema %}

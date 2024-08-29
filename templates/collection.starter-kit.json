@@ -1,0 +1,74 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection--header",
+      "settings": {
+      }
+    },
+    "header-promo": {
+      "type": "image-with-text",
+      "settings": {
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "light",
+        "container-width": "5",
+        "title": "Collection Promotion",
+        "description": "<p>A collection-wide promotion for sales, product announcements and more.<\/p>"
+      }
+    },
+    "navigation": {
+      "type": "collection--navigation",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "collection--body",
+      "blocks": {
+        "grid-promo-1": {
+          "type": "promotion",
+          "settings": {
+            "row-number": 2,
+            "column-number": 2,
+            "promo-width": 2,
+            "overlay-style": "darken-bottom",
+            "light-text": "false",
+            "overline": "Overline text",
+            "title": "Grid promotion",
+            "description": "<p>Create eye-catching promos within collection grids to increase discoverability and accelerate conversions.<\/p>",
+            "link-url": "",
+            "link-text": "Optional link"
+          }
+        }
+      },
+      "block_order": [
+        "grid-promo-1"
+      ],
+      "settings": {
+      }
+    },
+    "recent-products": {
+      "type": "recent-products",
+      "settings": {
+        "spacing-above": false
+      }
+    },
+    "footer-promo": {
+      "type": "image-with-text",
+      "settings": {
+        "spacing-above": false,
+        "spacing-below": false,
+        "container-width": "6",
+        "title": "Collection Promotion",
+        "description": "<p>A collection-wide promotion for sales, product announcements and more.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "header-promo",
+    "navigation",
+    "main",
+    "recent-products",
+    "footer-promo"
+  ]
+}

@@ -1,0 +1,205 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign heading = section.settings.heading | escape
+  assign heading_type = section.settings.heading-type
+  assign light_text = section.settings.light-text
+  assign link_text = section.settings.link-text
+  assign link_url = section.settings.link-url
+  assign overline = section.settings.overline | escape
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign description = section.settings.description
+  assign top_border = section.settings.top-border
+
+  assign cover_link = false
+  if link_url != blank and description == blank
+    assign cover_link = true
+  endif
+-%}
+
+{%- if cover_link -%}
+  <a href="{{ link_url }}" aria-label="{{ heading }}">
+{%- endif -%}
+
+<div
+  class="featured-text--root"
+  data-section-id="{{ section.id }}"
+  data-background-color="{{ bg_color }}"
+  data-container-width="{{ container_width }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-top-border="{{ top_border }}"
+>
+  {%-
+    render "stacked-text",
+    cover_link: cover_link,
+    description: description,
+    heading_type: heading_type,
+    id: section.id,
+    light_text: light_text,
+    link_url: link_url,
+    link_text: link_text,
+    mobile_hide_description: false,
+    overline: overline,
+    title: heading,
+    x_alignment: 'center',
+    y_alignment: 'center'
+  -%}
+</div>
+
+{%- if cover_link -%}
+  </a>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Rich text",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Style and layout"
+      },
+      {
+        "id": "top-border",
+        "label": "Top border",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "id": "spacing-above",
+        "label": "Spacing above",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "spacing-below",
+        "label": "Spacing below",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "background-color",
+        "label": "Background color",
+        "type": "select",
+        "options": [
+          {
+            "label": "Transparent",
+            "value": "none"
+          },
+          {
+            "label": "Light",
+            "value": "light"
+          },
+          {
+            "label": "Dark",
+            "value": "dark"
+          },
+          {
+            "label": "Accent 1",
+            "value": "accent-1"
+          },
+          {
+            "label": "Accent 2",
+            "value": "accent-2"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "id": "light-text",
+        "label": "Use light text color",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "id": "heading-type",
+        "label": "Heading type",
+        "type": "select",
+        "options": [
+          { "label": "Banner", "value": "banner-heading" },
+          { "label": "Featured", "value": "featured-heading" },
+          { "label": "Large", "value": "section-heading" },
+          { "label": "Medium", "value": "block-heading" }
+        ],
+        "default": "section-heading"
+      },
+      {
+        "id": "container-width",
+        "label": "Maximum width of container",
+        "type": "select",
+        "options": [
+          {
+            "label": "Extra small",
+            "value": "1"
+          },
+          {
+            "label": "Small",
+            "value": "2"
+          },
+          {
+            "label": "Medium",
+            "value": "3"
+          },
+          {
+            "label": "Large",
+            "value": "4"
+          },
+          {
+            "label": "Extra large",
+            "value": "5"
+          },
+          {
+            "label": "Full width",
+            "value": "6"
+          }
+        ],
+        "default": "4"
+      },
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "id": "overline",
+        "label": "Overline",
+        "type": "text",
+        "default": "Overline text"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Introduce your brand",
+        "info": "Emphasize featured or banner headings by wrapping text with square brackets, ie. This is [emphasized]."
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Introduce your brand, products and vision statement and welcome customers to your store.</p>"
+      },
+      {
+        "id": "link-url",
+        "label": "Link",
+        "type": "url",
+        "default": "/",
+        "info": "Entire section will become a link when no link text or description."
+      },
+      {
+        "id": "link-text",
+        "label": "Link text",
+        "type": "text",
+        "default": "Link text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Rich text"
+      }
+    ],
+    "disabled_on": {
+      "groups": ["aside"]
+    }
+  }
+{% endschema %}

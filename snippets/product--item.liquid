@@ -1,0 +1,293 @@
+{%- liquid
+  assign color_t = 'products.color' | t
+  assign compare_price_t = 'sections.onboarding.compare_price' | t
+  assign new_t = 'products.new' | t
+  assign off_t = 'products.off' | t
+  assign out_of_stock_t = 'products.out_of_stock' | t
+  assign price_t = 'sections.onboarding.price' | t
+  assign sale_t = 'products.sale' | t
+
+  assign featured_tags = settings.product--featured-tags | remove: ' ' | split: ','
+  assign hide_single_swatch = settings.product--hide-single-swatch
+  assign image_aspect_ratio = settings.image--product-size
+  assign label_color = settings.product--label-color
+  assign label_light_text = settings.product--label-light-text
+  assign label_shape = settings.product--label-shape
+  assign new_label_period = settings.product--new-label-period
+  assign rating_enabled = settings.product--show-rating
+  assign show_new_label = settings.product--show-new-label
+  assign swatches_enabled = settings.product--swatches-enabled
+  assign show_sale_label = settings.product--show-sale-label
+  assign show_vendor = settings.product--show-vendor
+  if show_sale_label == 'false'
+    assign show_sale_label = false
+  endif
+
+  unless text_alignment
+    assign text_alignment = settings.product--text-alignment
+  endunless
+
+  unless view
+    assign view = 'grid'
+  endunless
+
+  if show_new_label
+    assign now_timestamp = 'now' | date: '%s'
+    assign new_label_period_in_seconds = new_label_period | times: 86400
+    assign valid_date = now_timestamp | minus: new_label_period_in_seconds | plus: 0
+    assign publish_date = product_item.created_at | date: '%s' | plus: 0
+
+    assign is_new_product = false
+    if valid_date < publish_date
+      assign is_new_product = true
+    endif
+  endif
+
+  unless onboarding
+    assign onboarding = false
+  endunless
+
+  if onboarding
+    assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,UYU,VES,VND' | split: ','
+    if currencies_using_comma_decimals contains cart.currency.iso_code
+      assign compare_price_t = compare_price_t | replace: '.', ','
+      assign price_t = price_t | replace: '.', ','
+    endif
+
+    assign compare_price = cart.currency.symbol | append: compare_price_t
+    assign excerpt = 'sections.onboarding.description' | t
+    assign title = 'sections.onboarding.product_title' | t
+    assign url = product_item.url | within: collection
+    assign vendor = 'sections.onboarding.vendor' | t
+
+  else
+    assign title = product_item.title
+    assign url = product_item.url | within: collection
+    assign vendor = product_item.vendor
+
+    if product_item.compare_at_price > product_item.price and product_item.available
+      assign compare_price = product_item.compare_at_price | money
+    else
+      assign compare_price = false
+    endif
+
+    assign excerpt = product_item.metafields.global.description_tag | newline_to_br
+    if excerpt == blank
+      assign excerpt = product_item.description | strip_html | truncate: 100 | newline_to_br
+    endif
+
+  endif
+
+  capture display_labels
+    unless product_item.available or onboarding
+      echo out_of_stock_t
+      assign label_type = 'out-of-stock'
+
+    elsif show_sale_label and compare_price and onboarding == false
+      if show_sale_label == 'show-text'
+        assign sale_text = sale_t
+      elsif show_sale_label == 'show-percent'
+        assign price_diff = product_item.compare_at_price | minus: product_item.price
+        assign percent_diff = price_diff | times: 100 | divided_by: product_item.compare_at_price
+        assign sale_text = percent_diff | append: '% ' | append: off_t
+      endif
+
+      echo sale_text
+      assign label_type = 'sale'
+
+    elsif show_new_label and is_new_product and onboarding == false
+      echo new_t
+      assign label_type = 'new'
+
+    endunless
+  endcapture
+
+  capture featured_label
+    if featured_tags.size > 0 and product_item.available and onboarding == false
+      assign break_loop = false
+
+      for featured_tag in featured_tags
+        assign formatted_featured_tag = featured_tag | downcase
+
+        for product_tag in product_item.tags
+          assign formatted_product_tag = product_tag | remove: ' ' | downcase
+
+          if formatted_product_tag == formatted_featured_tag
+            echo product_tag | escape
+            assign label_type = product_tag | handleize
+            assign break_loop = true
+            break
+          endif
+        endfor
+
+        if break_loop
+          break
+        endif
+      endfor
+    endif
+  endcapture
+-%}
+
+{%- capture heading -%}
+  <p class="product--title" data-item="{{ settings.product--heading-type }}">
+    {{- title -}}
+  </p>
+{%- endcapture -%}
+
+{%- capture image -%}
+  {%- if onboarding -%}
+    {%- render "placeholder", type: 'product', placeholder_index: placeholder_index -%}
+  {%- else -%}
+    {%- if product_item.featured_media.preview_image -%}
+      {{-
+        product_item.featured_media.preview_image |
+        image_url: width: product_item.featured_media.preview_image.width |
+        image_tag:
+          widths: "300, 500, 767, 1000",
+          sizes: sizes
+      -}}
+
+    {%- else -%}
+      {%- render "placeholder", type: 'product', placeholder_index: placeholder_index -%}
+
+    {%- endif -%}
+  {%- endif -%}
+{%- endcapture -%}
+
+{% if product_item.media.size > 1 and settings.product--hover-image-enabled %}
+  {%- capture hover_image -%}
+    <div class="product--hover-image">
+      {{-
+        product_item.media[1].preview_image |
+        image_url: width: product_item.media[1].preview_image.width |
+        image_tag:
+          widths: "300, 500, 767, 1000",
+          sizes: sizes
+      -}}
+    </div>
+  {%- endcapture -%}
+{%- else -%}
+  {%- assign hover_image = false -%}
+{%- endif -%}
+
+<div
+  class="product--root"
+  data-product-item
+  data-product-view="{{ view }}"
+  data-text-alignment="{{ text_alignment }}"
+  {% if hover_image %}
+    data-hover-image
+  {% endif %}
+  {% if view == 'grid' -%}
+    data-container="block"
+  {% endif %}
+  data-aspect-ratio="{{ image_aspect_ratio }}"
+  {% unless settings.transitions--other %}
+    data-transition-item="{{ section_id }}"
+  {% endunless %}
+>
+  {%- if display_labels != blank or featured_label != blank -%}
+    <div
+      class="product--labels"
+      data-item="overline"
+      data-light-text="{{ label_light_text }}"
+    >
+      {%- if display_labels != blank -%}
+        <div
+          class="product--label"
+          data-background-color="{{ label_color }}"
+          data-label-shape="{{ label_shape }}"
+          data-label-type="{{ label_type }}"
+        >
+          {{- display_labels -}}
+        </div>
+      {%- endif -%}
+      {%- if featured_label != blank -%}
+        <div
+          class="product--label"
+          data-background-color="{{ label_color }}"
+          data-label-shape="{{ label_shape }}"
+          data-label-type="{{ label_type }}"
+        >
+          {{- featured_label -}}
+        </div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <a href="{{ url }}" aria-label="{{ product_item.title }}">
+    <div class="product--image-wrapper">
+      <div class="product--image" data-item="image">
+        {{- image -}}
+      </div>
+
+      {%- liquid
+        if hover_image
+          echo hover_image
+        endif
+
+        render 'product--quick-add', product: product_item
+      -%}
+    </div>
+
+    <div class="product--details-container">
+      {%- liquid
+        echo '<div class="product--details">'
+          echo '<div class="product--details-wrapper">'
+            if show_vendor
+              echo '<div class="product--vendor" data-item="light-accent-text">'
+                echo vendor
+              echo '</div>'
+            endif
+
+            echo heading
+
+            if rating_enabled
+              echo '<div class="product--rating">'
+                render 'product-rating', product: product_item
+              echo '</div>'
+            endif
+
+            if swatches_enabled
+              echo '<div class="product--swatches--horizontal-view">'
+                for option in product_item.options_with_values
+                  assign option_name = option.name | strip | downcase
+                  assign unique_id = section_id | append: '-horizontal-' | append: product_item.id
+
+                  if option_name == color_t
+                    unless hide_single_swatch and option.values.size == 1
+                      render 'radios', id: unique_id, option: option, display_swatches_only: true
+                    endunless
+                    break
+                  endif
+                endfor
+              echo '</div>'
+            endif
+          echo '</div>'
+
+          render 'product--item-price', product: product_item
+        echo '</div>'
+
+        comment
+          "can't use a capture statement for swatches as we need a unique ID"
+        endcomment
+
+        if swatches_enabled
+          echo '<div class="product--swatches--column-view">'
+            for option in product_item.options_with_values
+              assign option_name = option.name | strip | downcase
+              assign unique_id = section_id | append: '-column-' | append: product_item.id
+
+              if option_name == color_t
+                unless hide_single_swatch and option.values.size == 1
+                  render 'radios', id: unique_id, option: option, display_swatches_only: true
+                endunless
+                break
+              endif
+            endfor
+            echo '</div>'
+        endif
+      -%}
+    </div>
+  </a>
+</div>

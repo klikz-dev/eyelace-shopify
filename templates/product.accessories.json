@@ -1,0 +1,405 @@
+{
+  "sections": {
+    "4e9385a7-14ff-4617-8542-ed651a7ec51f": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": false,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "overline": "",
+        "title": "Buy More, Pay Less",
+        "description": "<p>Get up to 30% off when you buy more!<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "main": {
+      "type": "product",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": true
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapsible-row-enabled": false,
+            "heading": "Description"
+          }
+        },
+        "complementary-products": {
+          "type": "complementary-products",
+          "settings": {
+            "title": "Pairs well with",
+            "max-products": 2,
+            "collapsible-row-enabled": false
+          }
+        },
+        "social-sharing": {
+          "type": "social-sharing",
+          "settings": {
+            "facebook-enabled": true,
+            "x-enabled": true,
+            "pinterest-enabled": true,
+            "email-enabled": true,
+            "url-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "vendor",
+        "price",
+        "options",
+        "buy-buttons",
+        "pickup",
+        "description",
+        "complementary-products",
+        "social-sharing"
+      ],
+      "settings": {
+        "container-width": "4",
+        "spacing-above": true,
+        "spacing-below": true,
+        "media-layout": "mixed",
+        "text-column-width": 30,
+        "media-gap": 8,
+        "column-spacing": "close",
+        "text-alignment": "left",
+        "thumbnail-width": 80,
+        "heading-enabled": false,
+        "heading-sizes-enabled": true,
+        "heading-size": 40,
+        "breadcrumbs-enabled": true,
+        "modal-enabled": true,
+        "variant-scroll-enabled": true,
+        "image-zoom-enabled": true,
+        "loop-enabled": false,
+        "mobile-media-layout": "slideshow"
+      }
+    },
+    "edb6b679-1b0d-4698-be1b-efe7bb590de9": {
+      "type": "featured-collection",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "background-color": "none",
+        "light-text": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1",
+        "collection": "accessories",
+        "max-products": 8,
+        "heading": "Essential Accessories"
+      }
+    },
+    "5041891c-740e-40b2-a00d-936d32f31a4c": {
+      "type": "featured-video",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "text-width": "medium",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "autoplay": true,
+        "video-display-type": "aspect-ratio",
+        "aspect-ratio": 46,
+        "play-button-style": "solid",
+        "overlay-style": "darken-bottom",
+        "video-upload": "shopify:\/\/files\/videos\/EyelaceTutDraft4.mp4",
+        "video-url": "",
+        "overline": "HOW TO",
+        "heading": "Eyelace Is Easy & Convenient",
+        "description": "<p>Learn how to wear your Eyelace with our video tutorial. Anyone can achieve a professional cosmetic effect that enhances your natural beauty.<\/p>",
+        "button-text": "Learn How",
+        "button-url": "shopify:\/\/pages\/how-to",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center",
+        "mobile-hide-description": false
+      }
+    },
+    "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92": {
+      "type": "collapsible-rows",
+      "blocks": {
+        "collapsible_row_aWY7gX": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What are Eyelace lashes made from?",
+            "description": "<p>Eyelace lashes are crafted from high-quality PBT fiber, a polyester polymer known for its durability and natural look. They are also latex-free and hypoallergenic, ensuring they are safe for sensitive skin.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-0": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I apply Eyelace lashes?",
+            "description": "<p>Watch our tutorial video to find out how to apply and remove your Eyelace Lashes!<br\/><br\/><a href=\"\/pages\/how-to\" target=\"_blank\" title=\"How To\">How To Tutorial<\/a><\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-1": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Can I reuse Eyelace lashes?",
+            "description": "<p>Yes, Eyelace lashes are designed for multiple uses. With proper care and cleaning, you can reuse them several times. Be sure to gently remove any adhesive residue after each use and store them in their original packaging.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-2": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Are Eyelace lashes suitable for sensitive eyes?",
+            "description": "<p>Absolutely. Eyelace lashes are hypoallergenic and latex-free, making them suitable for those with sensitive eyes and skin. Additionally, our Eyelace White Lash Glue is formulated to be gentle and non-irritating.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_TrUby6": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I remove Eyelace lashes?",
+            "description": "<p>To remove your Eylace, gently pull it until the glue slowly separates from your natural lash. <br\/>If you feel any tension use a warm compress, or a shower to melt the glue before you pull.<br\/>Once removed store your lashes on the plastic tray to reuse them.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_ipc4Ff": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Can I wear Eyelace lashes with glasses?",
+            "description": "<p><strong>Yes, Eyelace offers a variety of false lash styles suitable for wear with glasses. Opt for shorter and more natural styles like Natural Beauty or Elegant Effect to ensure they don’t interfere with your eyewear.<\/strong><\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_rmDELC": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How long do Eyelace lashes last?",
+            "description": "<p>The longevity of Eyelace faux lashes depends on how well they are cared for. With proper maintenance, they can be reused multiple times. Always handle them gently, clean them after use, and store them in a safe place.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_HnVRkP": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What is the difference between the various Eyelace lash styles?",
+            "description": "<p>Each Eyelace lash style is designed to offer a different look and level of drama:<\/p><ul><li>Natural Beauty: Subtle enhancement for everyday wear.<\/li><li>Perfect Poise: Dark and dramatic, ideal for professional settings.<\/li><li>Elegant Effect: Wispy and elegant, adding a refined touch.<\/li><li>Day Dream: Full-bodied and charming, perfect for work and play.<\/li><li>Social Butterfly: Bold yet natural, suitable for any occasion.<\/li><li>Night Life: Extra sexy and glamorous, perfect for nights out.<\/li><li>Ball Gown: Dramatic and classy, ideal for formal events.<\/li><\/ul>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_JFHYyz": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I choose the right lash style for me?",
+            "description": "<p>Consider the occasion and the look you want to achieve. For everyday wear, opt for more natural styles like Natural Beauty or Day Dream. For a night out or special event, bolder styles like Night Life or Ball Gown will provide the dramatic effect you desire. If you wear glasses, choose shorter styles to ensure comfort. Try our Starter Kit and receive a set of each of our seven false eyelashes so you can try them all and find your favorites!<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_eEciBQ": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Are Eyelace lashes cruelty-free?",
+            "description": "<p>Yes, Eyelace faux eyelashes are cruelty-free and made from synthetic fibers, ensuring no harm to animals.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_aWY7gX",
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-0",
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-1",
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-2",
+        "collapsible_row_TrUby6",
+        "collapsible_row_ipc4Ff",
+        "collapsible_row_rmDELC",
+        "collapsible_row_HnVRkP",
+        "collapsible_row_JFHYyz",
+        "collapsible_row_eEciBQ"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "light",
+        "light-text": false,
+        "container-width": "1",
+        "heading": "Frequently Asked Questions",
+        "heading-alignment": "center"
+      }
+    },
+    "9122b6fc-3d6e-4f6b-8054-88ddcb8687a7": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-0": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "2",
+            "y-blocks": "1",
+            "image-display-type": "fill",
+            "aspect-ratio": 56,
+            "title": "Best Sellers of all time",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-1": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "image-display-type": "fill",
+            "aspect-ratio": 56,
+            "title": "Just Released",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "image-display-type": "fill",
+            "aspect-ratio": 56,
+            "title": "On Sale",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-3": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "2",
+            "y-blocks": "1",
+            "image-display-type": "fill",
+            "aspect-ratio": 56,
+            "title": "Trending this month",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        }
+      },
+      "block_order": [
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-0",
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-1",
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2",
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-3"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "heading-light-text": false,
+        "container-width": "4",
+        "spacing": true,
+        "width": 3,
+        "light-text": false,
+        "text-style": "light-with-darken",
+        "heading-type": "block-heading",
+        "overlay-style": "darken-bottom",
+        "overline": "",
+        "heading": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "2",
+        "mobile-overlay": true,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "title": "You may also like"
+      }
+    }
+  },
+  "order": [
+    "4e9385a7-14ff-4617-8542-ed651a7ec51f",
+    "main",
+    "edb6b679-1b0d-4698-be1b-efe7bb590de9",
+    "5041891c-740e-40b2-a00d-936d32f31a4c",
+    "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92",
+    "9122b6fc-3d6e-4f6b-8054-88ddcb8687a7",
+    "related-products"
+  ]
+}

@@ -1,0 +1,156 @@
+{%- liquid
+  assign products_view_ar_t = 'products.view_ar' | t
+  assign image_modal_t = 'products.image_modal' | t
+
+  unless media_size
+    assign media_size = ''
+  endunless
+
+  unless zoom_enabled
+    assign zoom_enabled = false
+  endunless
+
+  assign aspect_ratio = product_media.aspect_ratio | round: 3
+  if product_media.media_type == 'model'
+    assign aspect_ratio = product_media.preview_image.aspect_ratio | round: 3
+  endif
+-%}
+
+<div
+  class="product-media--root"
+  data-id="{{ product_media.id }}"
+  data-active="{{ media_active }}"
+  data-media-type="{{ product_media.media_type }}"
+  style="--product-media--aspect-ratio:{{ aspect_ratio }};"
+>
+  {%- case product_media.media_type -%}
+    {%- when "image" -%}
+      {%- capture image -%}
+        {%- if zoom_enabled -%}
+          <product-zoom-root
+            class="product-zoom--root"
+            data-id="{{ product_media.id }}"
+            data-magnify="1.7"
+          >
+            <div class="product-zoom--wrapper">
+              {{-
+                product_media |
+                image_url: width: product_media.width |
+                image_tag:
+                  widths: "500, 767, 1000, 1200, 1500, 1800, 2100, 2400, 3000",
+                  sizes: '100vw'
+              -}}
+            </div>
+
+            <div class="product-zoom--enlarged">
+              {{-
+                product_media |
+                image_url: width: product_media.width |
+                image_tag:
+                  widths: "500, 767, 1000, 1200, 1500, 1800, 2100, 2400, 3000",
+                  sizes: '100vw'
+              -}}
+            </div>
+          </product-zoom-root>
+
+        {%- else -%}
+          {{-
+            product_media |
+            image_url: width: product_media.width |
+            image_tag:
+              widths: "500, 767, 1000, 1200, 1500, 1800, 2100, 2400, 3000",
+              sizes: '100vw',
+              loading: loading
+          -}}
+
+        {%- endif -%}
+      {%- endcapture -%}
+
+      {%- if modal_enabled -%}
+        <modal-trigger
+          class="product-media--modal"
+          data-id="product"
+          data-index="{{ index }}"
+          aria-label="{{ image_modal_t }}"
+          tabindex="0"
+        >
+          {{- image -}}
+        </modal-trigger>
+      {%- else -%}
+        {{- image -}}
+      {%- endif -%}
+
+    {%- when "video" -%}
+      <product-video-root
+        class="product-video--root"
+        tabindex="0"
+        data-loop-enabled="{{ video_looping_enabled }}"
+        data-type="plyr"
+        {% unless media_size == blank %}
+          data-view="{{ media_size }}"
+        {% endunless %}
+      >
+        <div class="product-video--container">
+          {{- product_media | video_tag: image_size: "1024x" -}}
+        </div>
+      </product-video-root>
+
+    {%- when "external_video" -%}
+      <product-video-root
+        class="product-video--root"
+        tabindex="0"
+        data-loop-enabled="{{ video_looping_enabled }}"
+        data-type="youtube"
+        data-video-id="{{ product_media.external_id }}"
+        {% unless media_size == blank %}
+          data-view="{{ media_size }}"
+        {% endunless %}
+      >
+        <div class="product-video--container">
+          <div
+            class="product-video"
+            id="{{- media_size -}}{%- if media_size != blank -%}-{%- endif -%}{{- product_media.id -}}"
+          ></div>
+        </div>
+      </product-video-root>
+
+    {%- when "model" -%}
+      <product-model-root
+        class="product-model--root"
+        tabindex="0"
+        {% if media_size != blank %}
+          data-view="{{ media_size }}"
+        {% endif %}
+      >
+        {{-
+          product_media | model_viewer_tag: reveal: 'interaction',
+          toggleable: true,
+          image_size: "1024x"
+        -}}
+      </product-model-root>
+
+      <a
+        class="product-model--button"
+        role="button"
+        data-item="button"
+        aria-label="{{ products_view_ar_t }}"
+        tabindex="0"
+        {% unless settings.transitions--buttons %}
+          data-transition-button
+        {% endunless %}
+      >
+        <div
+          data-shopify-xr
+          data-shopify-model3d-id="{{ product_media.id }}"
+          data-shopify-title="{{ product.title }}"
+        >
+          {%- render 'icons', icon: '3d-badge' -%}
+          {{- products_view_ar_t -}}
+        </div>
+      </a>
+
+    {%- else -%}
+      {{- product_media | media_tag -}}
+
+  {%- endcase -%}
+</div>

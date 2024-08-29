@@ -1,0 +1,60 @@
+{%- liquid
+  assign day = 'sections.countdown.day' | t
+  assign hour = 'sections.countdown.hour' | t
+  assign min = 'sections.countdown.min' | t
+  assign sec = 'sections.countdown.sec' | t
+
+  render 'section-assets', name: 'countdown-timer'
+-%}
+
+{%- capture time_units -%}
+  {{- day }} | {{ hour }} | {{ min }} | {{ sec -}}
+{%- endcapture -%}
+{%- assign time_units = time_units | split: " | " -%}
+
+<countdown-timer
+  class="countdown-timer--root"
+  data-item="section-heading"
+  data-expiry-date="{{ expiry_date }}"
+  data-expiry-hours="{{ expiry_hours }}"
+  data-expiry-minutes="{{ expiry_minutes }}"
+  data-hide-expired="{{ hide_when_expired }}"
+  data-show-button-when="{{ show_button_when }}"
+  data-light-number="{{ light_number }}"
+  data-timer-bg="{{ timer_bg_color }}"
+  style="--number-size:{{ number_size }}px;--mobile-number-size:{{ mobile_number_size }}px;"
+>
+  {%- for unit in time_units -%}
+    <div class="countdown-timer--item" data-item="nav-text">
+      <div class="countdown-timer--digits">
+        {%- for i in (1..2) -%}
+          <div
+            class="countdown-timer--digit"
+            data-value="0"
+            data-index="0"
+          >
+            <div
+              data-transition-item="viewport"
+              data-transition-type="slide-in"
+              data-transition-active="true"
+              data-transition-trigger="custom"
+            >0</div>
+            <div
+              data-transition-item="viewport"
+              data-transition-active="true"
+              data-transition-trigger="custom"
+            >9</div>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      <div class="countdown-timer--unit">
+        {{ unit }}
+      </div>
+    </div>
+
+    {%- unless forloop.last -%}
+      <span class="countdown-timer--seperator" aria-hidden="true">:</span>
+    {%- endunless -%}
+  {%- endfor -%}
+</countdown-timer>

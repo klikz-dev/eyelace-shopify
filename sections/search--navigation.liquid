@@ -1,0 +1,115 @@
+{%- liquid
+  assign show_sort_button = section.settings.show-sort-button
+  assign show_refine_button = section.settings.show-refine-button
+  assign results_for_t = 'sections.navigation.results_for' | t
+
+  assign result_type = 'article'
+  for item in search.results limit: 1
+    if item.object_type == 'product'
+      assign result_type = 'product'
+    endif
+  endfor
+-%}
+
+{%- capture results_string -%}
+  {{ search.results_count }} {{ results_for_t }} "{{ search.terms | replace: '*', '' }}"
+{%- endcapture -%}
+
+{%- capture ajax_url -%}
+  {{ routes.search_url }}?type=product&q={{ search.terms }}&
+{%- endcapture -%}
+
+{%- if result_type == 'product' or search.results.size == 0 -%}
+  {%-
+    render 'navigation',
+    ajax_url: ajax_url,
+    custom_collection_list: false,
+    mobile_buttons: 'sort,refine'
+    results_string: results_string,
+    show_browse_button: false,
+    show_collection_list: false,
+    show_layout_buttons: section.settings.show-layout-buttons,
+    show_search_link: section.settings.show-search-link,
+    show_sort_button: section.settings.show-sort-button,
+    show_sort_list: section.settings.show-sort-list,
+    show_refine_button: section.settings.show-refine-button,
+    show_refine_list: section.settings.show-refine-list,
+    storage_name: 'search_layout',
+    swatches_enabled: section.settings.swatches-enabled
+  -%}
+
+  {%- if show_sort_button or show_refine_button -%}
+    <div class="filter--for-drawer" style="display:none;">
+      {%-
+        render 'filter',
+        filters: search.filters,
+        show_collection_list: false,
+        show_refine_list: section.settings.show-refine-list,
+        show_search_link: section.settings.show-search-link,
+        show_sort_list: section.settings.show-sort-list,
+        sort_by: search.sort_by,
+        sort_options: search.sort_options,
+        swatches_enabled: section.settings.swatches-enabled
+      -%}
+    </div>
+  {%- endif -%}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Search navigation",
+  "settings": [
+    {
+      "content": "Quick links",
+      "type": "header"
+    },
+    {
+      "label": "Show sort by button",
+      "id": "show-sort-button",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "label": "Show refine button",
+      "id": "show-refine-button",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "label": "Show layout buttons",
+      "id": "show-layout-buttons",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "content": "Drawer",
+      "type": "header"
+    },
+    {
+      "label": "Show sort by list",
+      "id": "show-sort-list",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "label": "Show refine list",
+      "id": "show-refine-list",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "swatches-enabled",
+      "label": "Enable color swatches",
+      "default": false,
+      "info": "Automatically turn color options into swatches. [Learn more](https://support.troopthemes.com/guide/color-swatch-guide)"
+    },
+    {
+      "label": "Show search link",
+      "id": "show-search-link",
+      "type": "checkbox",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

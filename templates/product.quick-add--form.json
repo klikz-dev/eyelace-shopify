@@ -1,0 +1,13 @@
+{
+  "layout": false,
+  "sections": {
+    "main": {
+      "type": "product--quick-add--form",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,72 @@
+{%- liquid
+  assign comments_t = 'blog.article.comments' | t
+
+  assign canonical_url = shop.url | append: article.url
+  assign disqus_enabled = section.settings.disqus-enabled
+  assign disqus_shortname = section.settings.disqus-shortname | downcase
+  assign show_comments = section.settings.show-comments
+
+  assign enabled = true
+  unless disqus_enabled or show_comments
+    assign enabled = false
+  endunless
+-%}
+
+{%- if blog.comments_enabled? and enabled -%}
+  <div
+    class="article-comments--root"
+    data-section-id="{{ section.id }}"
+    data-spacing-above="false"
+  >
+    <div class="article-comments-wrapper">
+      {%- if disqus_enabled -%}
+        <h2 class="article-comments--heading" data-item="section-heading">
+          {{- comments_t -}}
+        </h2>
+        <div id="disqus_thread" class="article-comments--disqus"></div>
+        <script>
+          function disqus_config() {
+            this.page.identifier = '{{ article.id }}';
+            this.page.title = '{{ shop.name }} - {{ article.title }}';
+            this.page.url = '{{ canonical_url }}';
+          }
+
+          theme.utils.libraryLoader('disqus', "https://{{ disqus_shortname }}.disqus.com/embed.js");
+        </script>
+
+      {%- elsif show_comments -%}
+        <h2 class="article-comments--heading" data-item='section-heading'>
+          {{- comments_t -}}
+        </h2>
+        {%- render 'comments' -%}
+
+      {%- endif -%}
+    </div>
+  </div>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Comments",
+  "settings": [
+    {
+      "id": "show-comments",
+      "label": "Show comments",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "disqus-enabled",
+      "label": "Enable Disqus comments",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "disqus-shortname",
+      "label": "DISQUS shortname",
+      "type": "text"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,109 @@
+<style>
+  {%- liquid
+    assign font--heading = settings.typography--heading
+    assign font--heading--normal = font--heading | font_modify: 'weight', 'normal'
+    assign font--accent = settings.typography--accent
+    assign font--accent--bold = font--accent | font_modify: 'weight', 'bolder'
+    assign font--paragraph = settings.typography--paragraph
+    assign font--paragraph--bold = font--paragraph | font_modify: 'weight', 'bolder'
+    assign font--paragraph--italic = font--paragraph | font_modify: 'style', 'italic'
+    assign font--paragraph--bold-italic = font--paragraph--bold | font_modify: 'style', 'italic'
+
+    echo font--heading | font_face: font_display: 'swap'
+
+    if font--heading--normal
+      echo font--heading--normal | font_face: font_display: 'swap'
+    endif
+
+    echo font--accent | font_face: font_display: 'swap'
+
+    if font--accent--bold
+      echo font--accent--bold | font_face: font_display: 'swap'
+    endif
+
+    echo font--paragraph | font_face: font_display: 'swap'
+
+    if font--paragraph--bold
+      echo font--paragraph--bold | font_face: font_display: 'swap'
+    endif
+
+    if font--paragraph--italic
+      echo font--paragraph--italic | font_face: font_display: 'swap'
+    endif
+
+    if font--paragraph--bold-italic
+      echo font--paragraph--bold-italic | font_face: font_display: 'swap'
+    endif
+  -%}
+
+  :root {
+    {%- if settings.typography--heading--uppercase -%}
+      --font--heading--uppercase: uppercase;
+      --font--margin-scale: -2;
+      --font--translation-scale: 1;
+    {%- else -%}
+      --font--heading--uppercase: normal;
+      --font--margin-scale: -1;
+      --font--translation-scale: 0.25;
+    {%- endif -%}
+
+    {%- if settings.typography--heading--size == 'x-large' -%}
+      --font--section-heading--size: 32px;
+      --font--block-heading--size: 24px;
+    {%- elsif settings.typography--heading--size == 'large' -%}
+      --font--section-heading--size: 28px;
+      --font--block-heading--size: 20px;
+    {%- elsif settings.typography--heading--size == 'medium' -%}
+      --font--section-heading--size: 24px;
+      --font--block-heading--size: 18px;
+    {%- elsif settings.typography--heading--size == 'small' -%}
+      --font--section-heading--size: 20px;
+      --font--block-heading--size: 16px;
+    {%- endif -%}
+
+    {%- if settings.typography--paragraph--size == 'large' -%}
+      --font--paragraph--size: 18px;
+      --font--accent--size: 14px;
+    {%- elsif settings.typography--paragraph--size == 'medium' -%}
+      --font--paragraph--size: 16px;
+      --font--accent--size: 13px;
+    {%- elsif settings.typography--paragraph--size == 'small' -%}
+      --font--paragraph--size: 14px;
+      --font--accent--size: 12px;
+    {%- endif -%}
+
+    --font--banner--size: {{ settings.typography--banner--size | plus: 24 }}px;
+    --font--banner--mobile-size: {{ settings.typography--banner--mobile-size | plus: 24 }}px;
+
+    --font--featured--size: {{ settings.typography--featured--size | plus: 24 }}px;
+    --font--featured--mobile-size: {{ settings.typography--featured--mobile-size | plus: 24 }}px;
+
+    --font--heading--family: {{ font--heading.family }}, {{ font--heading.fallback_families }};
+    --font--heading--weight: {{ font--heading.weight | default: 400 }};
+    --font--heading--normal-weight: {{ font--heading--normal.weight | default: 400 }};
+    --font--heading--style: {{ font--heading.style }};
+    --font--heading--spacing: {{ settings.typography--heading--spacing }}px;
+
+    --font--accent--family: {{ font--accent.family }}, {{ font--accent.fallback_families }};
+    --font--accent--weight: {{ font--accent.weight | default: 400 }};
+    --font--accent--style: {{ font--accent.style }};
+
+    --font--paragraph--family: {{ font--paragraph.family }}, {{ font--paragraph.fallback_families }};
+    --font--paragraph--weight: {{ font--paragraph.weight | default: 400 }};
+    --font--paragraph--style: {{ font--paragraph.style }};
+    --font--paragraph--spacing: {{ settings.typography--paragraph--spacing }}px;
+
+    --font--button--spacing: {{ settings.typography--button--spacing }}px;
+    --font--line-height: 1.2;
+  }
+
+  [data-item~='featured-heading'] .emphasized,
+  [data-item~='banner-heading'] .emphasized {
+    {%- if settings.typography--hollow -%}
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 2px;
+    {%- else -%}
+      font-style: italic;
+    {%- endif -%}
+  }
+</style>

@@ -1,0 +1,50 @@
+{%- liquid
+  assign submit_t = 'general.mailing_list.submit' | t
+  assign placeholder_t = 'general.mailing_list.placeholder' | t
+  assign shopify_disclaimer_t = 'shopify.online_store.spam_detection.disclaimer_html' | t
+-%}
+
+<subscribe-form class="subscribe-form--root">
+  {%- form 'customer', id: id, class: 'subscribe-form', aria-busy: 'false' -%}
+    <input type="hidden" name="contact[tags]" value="newsletter" />
+    <input
+      type="hidden"
+      name="contact[first_name]"
+      value="Newsletter"
+    />
+    <input
+      type="hidden"
+      name="contact[last_name]"
+      value="Subscriber"
+    />
+    <label for="{{ id }}_subscribe-form_email" data-item="hidden-text">
+      {{ placeholder_t }}
+    </label>
+    <input
+      class="subscribe-form--input"
+      id="{{ id }}_subscribe-form_email"
+      type="email"
+      autocomplete="email"
+      placeholder="{{ placeholder_t }}"
+      name="contact[email]"
+    />
+
+    <button
+      class="subscribe-form--submit"
+      type="submit"
+      aria-label="{{ submit_t }}"
+    >
+      {%- render 'css-icons', icon: 'next' -%}
+      {%- render 'icons', icon: 'spinner' -%}
+    </button>
+
+    {%- if form.posted_successfully? -%}
+      <script>window.location.hash = '#feedback-bar--newsletter';</script>
+    {%- endif -%}
+
+    <div data-item="hidden-text">
+      {%- comment -%} remove the below line to display reCAPTCHA badge {%- endcomment -%}
+      {{- shopify_disclaimer_t -}}
+    </div>
+  {%- endform -%}
+</subscribe-form>

@@ -1,0 +1,116 @@
+{%- liquid
+  assign from_t = 'general.filter.from' | t
+  assign to_t = 'general.filter.to' | t
+
+  assign min_value = filter.min_value.value | money_without_currency
+  assign max_value = filter.max_value.value | money_without_currency
+  assign range_max = filter.range_max | money_without_currency
+
+  assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,UYU,VES,VND' | split: ','
+  assign uses_comma_decimals = false
+  if currencies_using_comma_decimals contains cart.currency.iso_code
+    assign uses_comma_decimals = true
+  endif
+
+  if filter.range_max > 50000
+    assign step = 10
+  elsif filter.range_max > 10000
+    assign step = 5
+  elsif filter.range_max > 1000
+    assign step = 1
+  elsif filter.range_max > 500
+    assign step = 0.25
+  else
+    assign step = 0.1
+  endif
+
+  render 'section-assets', name: 'price-range'
+-%}
+
+<price-range-root>
+  <div class="price-range--wrapper">
+    <button type="button" class="price-range--button" data-min-price>
+      <div>&nbsp;</div>
+    </button>
+    <div class="price-range--line">
+      <div></div>
+    </div>
+    <button type="button" class="price-range--button" data-max-price>
+      <div>&nbsp;</div>
+    </button>
+  </div>
+
+  <div class="price-range--fields">
+    <div class="price-range--field">
+      <span class="price-range--currency">
+        {{- cart.currency.symbol -}}
+      </span>
+      <input
+        class="price-range--input"
+        name="{{ filter.min_value.param_name }}"
+        id="price-range--min"
+        {%- if filter.min_value.value and uses_comma_decimals -%}
+          value="{{ min_value | replace: '.', '' | replace: ',', '.' }}"
+        {%- elsif filter.min_value.value -%}
+          value="{{ min_value | replace: ',', '' }}"
+        {%- else -%}
+          value="0"
+        {%- endif -%}
+        type="number"
+        step="{{ step }}"
+        min="0"
+        {%- if uses_comma_decimals -%}
+          max="{{ range_max | replace: '.', '' | replace: ',', '.' }}"
+        {%- else -%}
+          max="{{ range_max | replace: ',', '' }}"
+        {%- endif -%}
+        data-min-price
+      >
+      <label
+        class="price-range--label"
+        for="price-range--min"
+        data-item="hidden-text"
+      >
+        {{- from_t -}}
+      </label>
+    </div>
+    <div class="price-range--separator">
+      &mdash;
+    </div>
+    <div class="price-range--field">
+      <span class="price-range--currency">
+        {{- cart.currency.symbol -}}
+      </span>
+      <input
+        class="price-range--input"
+        name="{{ filter.max_value.param_name }}"
+        id="price-range--max"
+        {%- if filter.max_value.value and uses_comma_decimals -%}
+          value="{{ max_value | replace: '.', '' | replace: ',', '.' }}"
+        {%- elsif filter.max_value.value -%}
+          value="{{ max_value | replace: ',', '' }}"
+        {%- elsif uses_comma_decimals -%}
+          value="{{ range_max | replace: '.', '' | replace: ',', '.' }}"
+        {%- else -%}
+          value="{{ range_max | replace: ',', '' }}"
+        {%- endif -%}
+        type="number"
+        step="{{ step }}"
+        min="0"
+        {%- if uses_comma_decimals -%}
+          max="{{ range_max | replace: '.', '' | replace: ',', '.' }}"
+        {%- else -%}
+          max="{{ range_max | replace: ',', '' }}"
+        {%- endif -%}
+        data-max-price
+      >
+      <label
+        class="price-range--label"
+        for="price-range--max"
+        data-item="hidden-text"
+      >
+        {{- to_t -}}
+      </label>
+    </div>
+  </div>
+</price-range-root>

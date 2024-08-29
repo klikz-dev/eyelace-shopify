@@ -1,0 +1,190 @@
+{%- liquid
+  comment
+    "Variables"
+  endcomment
+
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign form_id = 'contact_form_' | append: section.id
+  assign facebook_url = settings.social--facebook--url
+  assign heading = section.settings.heading
+  assign instagram_url = settings.social--instagram--url
+  assign light_text = section.settings.light-text
+  assign pinterest_url = settings.social--pinterest--url
+  assign show_social_sharing = section.settings.show-social-sharing
+  assign store_address = section.settings.store-address
+  assign store_hours = section.settings.store-hours
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign threads_url = settings.social--threads--url
+  assign tiktok_url = settings.social--tiktok--url
+  assign top_border = section.settings.top-border
+  assign x_url = settings.social--x--url
+  assign vimeo_url = settings.social--vimeo--url
+  assign youtube_url = settings.social--youtube--url
+
+  if facebook_url == blank and instagram_url == blank and threads_url == blank and pinterest_url == blank and tiktok_url == blank and x_url == blank and vimeo_url == blank and youtube_url == blank
+    assign show_social_sharing = false
+  endif
+-%}
+
+<div
+  class="contact--root"
+  data-section-id="{{ section.id }}"
+  data-background-color="{{ bg_color }}"
+  data-container-width="{{ container_width }}"
+  data-light-text="{{ light_text }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-top-border="{{ top_border }}"
+>
+  <div class="contact--wrapper">
+    {%- unless heading == blank -%}
+      <div class="contact--header">
+        <h2 class="contact--title" data-item="section-heading">
+          {{- heading -}}
+        </h2>
+      </div>
+    {%- endunless -%}
+
+    {%-
+      render 'contact-form',
+      store_address: store_address,
+      store_hours: store_hours,
+      form_id: form_id,
+      show_social_sharing: show_social_sharing
+    -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contact form",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style and layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "container-width",
+      "label": "Maximum width of container",
+      "type": "select",
+      "options": [
+        {
+          "label": "Extra small",
+          "value": "1"
+        },
+        {
+          "label": "Small",
+          "value": "2"
+        },
+        {
+          "label": "Medium",
+          "value": "3"
+        },
+        {
+          "label": "Large",
+          "value": "4"
+        },
+        {
+          "label": "Extra large",
+          "value": "5"
+        },
+        {
+          "label": "Full width",
+          "value": "6"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "label": "Heading",
+      "id": "heading",
+      "type": "text",
+      "default": "Contact us"
+    },
+    {
+      "id": "store-address",
+      "type": "textarea",
+      "label": "Address",
+      "default": "391 Sutter St,\r\nSan Francisco"
+    },
+    {
+      "type": "richtext",
+      "id": "store-hours",
+      "label": "Hours",
+      "default": "<p>Monday - Friday<br>12pm - 8pm<br><br>Saturday - Sunday<br>12pm - 5pm</p>"
+    },
+    {
+      "id": "show-social-sharing",
+      "label": "Show social sharing",
+      "type": "checkbox",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact form"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["aside"]
+  }
+}
+{% endschema %}

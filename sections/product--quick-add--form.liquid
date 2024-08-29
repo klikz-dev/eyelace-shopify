@@ -1,0 +1,38 @@
+{%- liquid
+  assign select_options_t = 'products.select_options' | t
+
+  assign product_id = product.id | append: '-' | append: section.id
+  assign show_quantity = settings.quick-add--show-quantity
+  assign swatches_enabled = settings.product--swatches-enabled
+  assign variant_style = settings.quick-add--variant-style
+-%}
+
+<div class="product--quick-add--form">
+  <div class="product--quick-add--select-options" data-item="accent-text">
+    {{- select_options_t -}}
+  </div>
+
+  <a href="{{ product.url }}">
+    <h2 class="product--quick-add--title" data-item="section-heading">
+      {{- product.title -}}
+    </h2>
+  </a>
+
+  {%- liquid
+    render 'product-media--variants', product: product, product_id: product_id, layout: 'thumbnails'
+
+    form 'product', product
+      render 'product-price', product: product, id: product_id
+
+      if show_quantity
+        render 'quantity-selector', id: product_id, type: 'product'
+      else
+        echo '<input type="hidden" name="quantity" value="1" min="1" pattern="[0-9]*" tabindex="-1">'
+      endif
+
+      render 'product-options', id: product_id, product: product, swatches_enabled: swatches_enabled, variant_style: variant_style
+
+      render 'product-buy-buttons', id: product_id, product: product, form: form
+    endform
+  -%}
+</div>

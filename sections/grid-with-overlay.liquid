@@ -1,0 +1,629 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign columns = section.settings.width
+  assign description = section.settings.description
+  assign heading = section.settings.heading
+  assign heading_type = section.settings.heading-type
+  assign heading_light_text = section.settings.heading-light-text
+  assign light_text = section.settings.light-text
+  assign link_text = section.settings.link-text
+  assign link_url = section.settings.link-url
+  assign mobile_overlay = section.settings.mobile-overlay
+  assign mobile_columns = section.settings.mobile-width
+  assign mobile_display_type = section.settings.mobile-image-display-type
+  assign mobile_aspect_ratio = 100.0 | divided_by: section.settings.mobile-aspect-ratio
+  assign overlay_style = section.settings.overlay-style
+  assign overline = section.settings.overline
+  assign spacing = section.settings.spacing
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign text_style = section.settings.text-style
+  assign top_border = section.settings.top-border
+
+  assign hover_enabled = false
+  if overlay_style == 'hover'
+    assign hover_enabled = true
+  endif
+
+  assign header_text_exists = true
+  if overline == blank and heading == blank and description == blank
+    assign header_text_exists = false
+  endif
+
+  assign footer_text_exists = true
+  if link_text == blank
+    assign footer_text_exists = false
+  endif
+
+  assign full_width = true
+  if spacing
+    assign full_width = false
+  endif
+-%}
+
+<div
+  class="featured-grid--root"
+  data-section-id="{{ section.id }}"
+  data-background-color="{{ bg_color }}"
+  data-container="section"
+  data-container-width="{{ container_width }}"
+  data-footer-text-exists="{{ footer_text_exists }}"
+  data-header-text-exists="{{ header_text_exists }}"
+  data-hover-enabled="{{ hover_enabled }}"
+  data-mobile-overlay="{{ mobile_overlay }}"
+  data-spacing="{{ spacing }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-text-position="center"
+  data-top-border="{{ top_border }}"
+>
+  {%- if header_text_exists -%}
+    <div
+      class="featured-grid--header"
+      data-container="block"
+      data-light-text="{{ heading_light_text }}"
+    >
+      {%- unless overline == blank -%}
+        <h4 data-item="overline">
+          {{- overline | escape -}}
+        </h4>
+      {%- endunless -%}
+
+      {%- unless heading == blank -%}
+        <h2 class="featured-grid--heading" data-item="section-heading">
+          {{- heading | escape -}}
+        </h2>
+      {%- endunless -%}
+
+      {%- unless description == blank -%}
+        <h3 class="featured-grid--description" data-item="paragraph">
+          {{- description -}}
+        </h3>
+      {%- endunless -%}
+    </div>
+  {%- endif -%}
+
+  <div class="featured-grid--body" data-light-text="{{ light_text }}">
+    <div
+      class="featured-grid--body--container"
+      data-container="panel"
+      data-columns="{{ columns }}"
+      data-mobile-columns="{{ mobile_columns }}"
+      data-block-spacing="{{ spacing }}"
+      {% unless settings.transitions--other %}
+        data-transition-container="{{ section.id }}"
+        data-transition-type="fade-in"
+        data-transition-cascade="horizontal"
+        data-transition-cascade-interval="200"
+      {% endunless %}
+    >
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign block_link_text = block.settings.link-text
+          assign block_link_url = block.settings.link-url
+          assign title = block.settings.title
+          assign image = block.settings.image
+          assign display_type = block.settings.image-display-type
+          assign mobile_image = block.settings.mobile-image
+          assign x_blocks = block.settings.x-blocks
+          assign y_blocks = block.settings.y-blocks
+
+          if display_type == 'aspect-ratio'
+            assign aspect_ratio = 100.0 | divided_by: block.settings.aspect-ratio
+          else
+            if image == blank or display_type == 'fill'
+              assign aspect_ratio = 1.0
+              if x_blocks == '2' and y_blocks == '1'
+                assign aspect_ratio = 2.0
+              elsif x_blocks == '2' and y_blocks == '2'
+                assign aspect_ratio = 0.5
+              endif
+            else
+              assign aspect_ratio = image.aspect_ratio
+            endif
+          endif
+        -%}
+
+        <div
+          class="featured-grid--item"
+          data-container="block"
+          data-wide="{% if x_blocks == "2" %}true{% else %}false{% endif %}"
+          data-tall="{% if y_blocks == "2" %}true{% else %}false{% endif %}"
+          data-display-type="{{ display_type }}"
+          {% unless settings.transitions--other %}
+            data-transition-item="{{ section.id }}"
+          {% endunless %}
+          {{ block.shopify_attributes }}
+        >
+          {%- if block_link_url != blank -%}
+            <a
+              class="featured-grid--item--link-wrapper"
+              href="{{ block_link_url }}"
+              {%- if title != blank -%}
+                aria-label="{{ title }}"
+              {%- elsif heading != blank -%}
+                aria-label="{{ heading }}"
+              {%- else -%}
+                aria-label="{{ image.alt }}"
+              {%- endif -%}
+            >
+          {%- endif -%}
+
+          <div class="featured-grid--item--container">
+            <div
+              class="featured-grid--item--image"
+              data-item="image"
+              {% unless settings.transitions--image %}
+                data-transition-item
+                data-transition-type="zoom-in"
+                data-transition-trigger="hover"
+              {% endunless %}
+            >
+              {%- if image -%}
+                {%- capture sizes -%}
+                  {%- liquid
+                    assign width = 100 | divided_by: columns
+                    if x_blocks == "2"
+                      assign width = width | times: 2
+                    endif
+                  -%}
+
+                  '(max-width: 767px) {{ 100 | divided_by: mobile_columns }}vw, {{ width }}vw'
+                {%- endcapture %}
+
+                {%-
+                  render "image",
+                  image: image,
+                  mobile_image: mobile_image,
+                  overlay_style: overlay_style,
+                  display_type: 'aspect-ratio',
+                  aspect_ratio: aspect_ratio,
+                  mobile_display_type: mobile_display_type,
+                  mobile_aspect_ratio: mobile_aspect_ratio,
+                  sizes: sizes,
+                  full_width: full_width
+                -%}
+              {%- else -%}
+                {%-
+                  render "placeholder",
+                  type: "image",
+                  overlay_style: overlay_style,
+                  display_type: 'aspect-ratio',
+                  aspect_ratio: aspect_ratio,
+                  mobile_display_type: mobile_display_type,
+                  mobile_aspect_ratio: mobile_aspect_ratio,
+                  full_width: full_width
+                -%}
+              {%- endif -%}
+            </div>
+
+            {%- unless title == blank and block_link_text == blank -%}
+              <div
+                class="featured-grid--item--text"
+                data-text-style="{{ text_style }}"
+              >
+                {%- if title != blank -%}
+                  <h3 class="featured-grid--item--title" data-item="{{ heading_type }}">
+                    {{- title | newline_to_br -}}
+                  </h3>
+                {%- endif -%}
+
+                {%- if block_link_text != blank -%}
+                  <div class="featured-grid--item--link" data-item="block-link">
+                    <div class="featured-grid--item--link-container">
+                      {{- block_link_text -}}
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+            {%- endunless -%}
+          </div>
+
+          {%- if block_link_url != blank -%}
+            </a>
+          {%- endif -%}
+        </div>
+
+      {%- endfor -%}
+    </div>
+  </div>
+
+  {%- if footer_text_exists -%}
+    <div class="featured-grid--footer" data-container="panel" data-light-text="{{ light_text }}">
+      <div class="featured-grid--footer--block" data-container="block">
+        <a
+          class="featured-grid--footer--button"
+          href="{{ link_url }}"
+          data-text="{{- link_text -}}"
+          data-item="{{ settings.buttons--style }}"
+          {% unless settings.transitions--buttons %}
+            data-transition-button
+          {% endunless %}
+        >
+          <div class="featured-grid--footer--button-container">
+            {{- link_text -}}
+          </div>
+        </a>
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Grid with overlay",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "heading-light-text",
+      "label": "Heading light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "container-width",
+      "label": "Maximum width of container",
+      "type": "select",
+      "options": [
+        {
+          "label": "Extra small",
+          "value": "1"
+        },
+        {
+          "label": "Small",
+          "value": "2"
+        },
+        {
+          "label": "Medium",
+          "value": "3"
+        },
+        {
+          "label": "Large",
+          "value": "4"
+        },
+        {
+          "label": "Extra large",
+          "value": "5"
+        },
+        {
+          "label": "Full width",
+          "value": "6"
+        }
+      ],
+      "default": "4"
+    },
+    {
+      "id": "spacing",
+      "label": "Show spacing between blocks",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "width",
+      "label": "Blocks per row",
+      "type": "range",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Text layout"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "text-style",
+      "label": "Text visibility enhancement",
+      "type": "select",
+      "options": [
+        {
+          "label": "None",
+          "value": "none"
+        },
+        {
+          "label": "Text shadow",
+          "value": "text-shadow"
+        },
+        {
+          "label": "Gradient behind text",
+          "value": "eclipse-shadow"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "heading-type",
+      "label": "Heading type",
+      "type": "select",
+      "options": [
+        { "label": "Featured", "value": "featured-heading" },
+        { "label": "Large", "value": "section-heading" },
+        { "label": "Medium", "value": "block-heading" },
+        { "label": "Small", "value": "overline" }
+      ],
+      "default": "block-heading"
+    },
+    {
+      "type": "header",
+      "content": "Image layout"
+    },
+    {
+      "id": "overlay-style",
+      "label": "Image overlay",
+      "type": "select",
+      "options": [
+        { "label": "None", "value": "none" },
+        { "label": "Darken entire image", "value": "darken" },
+        { "label": "Dark gradient from top", "value": "darken-top" },
+        { "label": "Dark gradient from bottom", "value": "darken-bottom" },
+        { "label": "Hover", "value": "hover" }
+      ],
+      "default": "darken-bottom",
+      "info": "Can enhance text visibility"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "id": "overline",
+      "label": "Overline",
+      "type": "text",
+      "default": "Overline text"
+    },
+    {
+      "id": "heading",
+      "label": "Heading",
+      "type": "text",
+      "default": "Grid with overlay"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "url",
+      "id": "link-url",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "link-text",
+      "label": "Link text"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "id": "mobile-width",
+      "label": "Blocks per row for small devices",
+      "type": "radio",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "2"
+    },
+    {
+      "id": "mobile-overlay",
+      "label": "Overlay text on small devices",
+      "type": "checkbox",
+      "default": true,
+      "info": "Not applicable for Show on hover text style."
+    },
+    {
+      "id": "mobile-image-display-type",
+      "label": "Mobile image display type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Original aspect ratio",
+          "value": "original"
+        },
+        {
+          "label": "Adjustable aspect ratio",
+          "value": "aspect-ratio"
+        },
+        {
+          "label": "X-Small",
+          "value": "x-small"
+        },
+        {
+          "label": "Small",
+          "value": "small"
+        },
+        {
+          "label": "Medium",
+          "value": "medium"
+        },
+        {
+          "label": "Large",
+          "value": "large"
+        },
+        {
+          "label": "X-Large",
+          "value": "x-large"
+        },
+        {
+          "label": "Fit screen",
+          "value": "fit-screen"
+        }
+      ],
+      "default": "original"
+    },
+    {
+      "id": "mobile-aspect-ratio",
+      "label": "Mobile image aspect ratio",
+      "type": "range",
+      "min": 32,
+      "max": 200,
+      "step": 2,
+      "default": 134,
+      "info": "Only applies if adjustable aspect ratio is selected."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image with optional text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile-image",
+          "label": "Mobile image (optional)"
+        },
+        {
+          "id": "x-blocks",
+          "label": "Width spans",
+          "type": "select",
+          "options": [
+            { "label": "One block", "value": "1" },
+            { "label": "Two blocks", "value": "2" }
+          ],
+          "default": "1"
+        },
+        {
+          "id": "y-blocks",
+          "label": "Height spans",
+          "type": "select",
+          "options": [
+            { "label": "One block", "value": "1" },
+            { "label": "Two blocks", "value": "2" }
+          ],
+          "default": "1"
+        },
+        {
+          "id": "image-display-type",
+          "label": "Image display type",
+          "type": "select",
+          "options": [
+            { "label": "Original aspect ratio", "value": "original" },
+            { "label": "Adjustable aspect ratio", "value": "aspect-ratio" },
+            { "label": "Fill available space", "value": "fill" }
+          ],
+          "default": "fill"
+        },
+        {
+          "id": "aspect-ratio",
+          "label": "Image aspect ratio",
+          "type": "range",
+          "min": 24,
+          "max": 200,
+          "step": 2,
+          "default": 56,
+          "info": "Only applies if adjustable aspect ratio is selected."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Grid image"
+        },
+        {
+          "type": "url",
+          "id": "link-url",
+          "label": "Link",
+          "info": "Entire block will become a link when no link text."
+        },
+        {
+          "id": "link-text",
+          "label": "Link text",
+          "type": "text",
+          "default": "View more"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Grid with overlay",
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+            "x-blocks": "2"
+          }
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image",
+          "settings": {
+            "x-blocks": "2"
+          }
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["aside"]
+  }
+}
+{% endschema %}

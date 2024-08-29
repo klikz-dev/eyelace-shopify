@@ -1,0 +1,203 @@
+{%- liquid
+  assign button_text = button_text | escape | truncate: 30
+  assign button_url = button_url | url_escape
+  assign description = description
+  assign heading = heading | escape
+
+  assign cover_link = false
+  if button_text == blank and button_url != blank
+    assign cover_link = true
+  endif
+
+  if video_upload != blank
+    assign video_type = 'plyr'
+    assign video_id = false
+  elsif video_url
+    assign video_type = video_url.type
+    assign video_id = video_url.id
+  else
+    assign video_id = '_9VUPq3SxOc'
+    assign video_type = 'youtube'
+  endif
+
+  unless video_type == 'plyr' and autoplay
+    render 'section-assets', name: 'featured-video', type: 'script'
+  endunless
+
+  assign natural_aspect_ratio = 'calc(16 / 9)'
+  if video_upload
+    assign natural_aspect_ratio = video_upload.aspect_ratio
+  endif
+
+  capture css_vars
+    echo '--video-aspect-ratio:' | append: aspect_ratio | append: ';'
+    echo '--video-mobile-aspect-ratio:' | append: mobile_aspect_ratio | append: ';'
+    echo '--natural-aspect-ratio:' | append: natural_aspect_ratio | append: ';'
+  endcapture
+-%}
+
+<featured-video
+  class="featured-video"
+  data-api="{{ video_type }}"
+  data-autoplay="{{ autoplay }}"
+  data-overlay-style="{{ overlay_style }}"
+  data-display-type="{{ display_type }}"
+  data-id="{{ id }}"
+  data-light-text="{{ light_text }}"
+  data-mobile-text-alignment="{{ mobile_text_alignment }}"
+  data-mobile-display-type="{{ mobile_display_type }}"
+  data-text-x-alignment="{{ text_x_alignment }}"
+  data-text-y-alignment="{{ text_y_alignment }}"
+  data-text-width="{{ text_width }}"
+  data-video-id="{{ video_id }}"
+  style="{{ css_vars }}"
+>
+  {%- if cover_link -%}
+    <a class="featured-video--container" href="{{ button_url }}">
+  {%- else -%}
+    <div class="featured-video--container">
+  {%- endif -%}
+
+  {%- unless autoplay -%}
+    <div class="featured-video--thumbnail">
+      {%- if thumbnail -%}
+        {%-
+          render 'image',
+          image: thumbnail,
+          background: true,
+          overlay_style: overlay_style,
+          display_type: display_type,
+          mobile_display_type: mobile_display_type,
+          mobile_overlay_style: overlay_style,
+          mobile_image: mobile_thumbnail,
+          sizes: '100vw'
+        -%}
+      {%- else -%}
+        {%-
+          render "placeholder",
+          type: "lifestyle",
+          background: true,
+          overlay_style: overlay_style,
+          display_type: display_type,
+          mobile_display_type: mobile_display_type,
+          mobile_overlay_style: overlay_style,
+          placeholder_index: 1
+        -%}
+      {%- endif -%}
+    </div>
+  {%- endunless -%}
+
+  <div
+    class="featured-video--header"
+    {% unless settings.transitions--text %}
+      data-transition-container="{{ id }}"
+      data-transition-cascade="vertical"
+      data-transition-cascade-interval="500"
+    {% endunless %}
+    data-text-style="{{ text_style }}"
+    data-background-color="{{ text_bg_color }}"
+    data-translucent="{{ settings.content--box-translucent }}"
+  >
+    {%- unless overline == blank -%}
+      <h4 data-item="overline">
+        {{- overline | escape -}}
+      </h4>
+    {%- endunless -%}
+
+    {%- unless heading == blank -%}
+      <div
+        class="featured-video--heading"
+        {% unless settings.transitions--text %}
+          data-transition-item="{{ id }}"
+          data-transition-type="slide-in"
+        {% endunless %}
+      >
+        <h2 data-item="{{ heading_type }}">
+          {%- render "utils", utility: "emphasized-text", text: heading -%}
+        </h2>
+      </div>
+    {%- endunless -%}
+
+    {%- unless description == blank -%}
+      <div
+        class="featured-video--description"
+        data-item="rte-content"
+        {% if mobile_hide_description %}
+          data-mq="medium-large"
+        {% endif %}
+        {% unless settings.transitions--text %}
+          data-transition-item="{{ id }}"
+          data-transition-type="slide-in"
+        {% endunless %}
+      >
+        {{- description -}}
+      </div>
+    {%- endunless -%}
+
+    {%- unless autoplay -%}
+      <div
+        class="featured-video--play-container"
+        {% unless settings.transitions--text %}
+          data-transition-item="{{ id }}"
+          data-transition-type="fade-in"
+        {% endunless %}
+      >
+        <button class="featured-video--play" tabindex="0">
+          {%- liquid
+            if play_button_style == 'solid'
+              render 'icons', icon: 'play-solid'
+            else
+              render 'icons', icon: 'play-outline'
+            endif
+          -%}
+        </button>
+      </div>
+    {%- endunless -%}
+
+    {%- if button_text != blank -%}
+      <a
+        class="featured-video--button"
+        data-item="{{ settings.buttons--style }}"
+        data-text="{{ button_text }}"
+        href="{{ button_url }}"
+        {% unless settings.transitions--text %}
+          data-transition-item="{{ id }}"
+          data-transition-type="fade-in"
+        {% endunless %}
+        {% unless settings.transitions--buttons %}
+          data-transition-button
+        {% endunless %}
+      >
+        <div>{{ button_text }}</div>
+      </a>
+    {%- endif -%}
+  </div>
+
+  <div
+    class="featured-video--wrapper"
+    {%- if autoplay -%}
+      tabindex="-1"
+    {%- else -%}
+      data-transition-item="viewport"
+      data-transition-type="fade-in"
+      data-transition-trigger="custom"
+    {%- endif -%}
+  >
+    {%- if video_upload -%}
+      {{-
+        video_upload | video_tag: image_size: "1024x",
+        autoplay: autoplay,
+        muted: autoplay,
+        loop: autoplay
+      -}}
+    {%- else -%}
+      <div id="player-{{ id }}"></div>
+    {%- endif -%}
+  </div>
+
+  {%- if cover_link -%}
+    </a>
+  {%- else -%}
+    </div>
+  {%- endif -%}
+</featured-video>

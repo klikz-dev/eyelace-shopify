@@ -1,0 +1,100 @@
+{% comment %} Usage:
+  - if option_values != option_names, arrays should have matched indices
+  - current_value and input_name are needed for some forms (ie. localization)
+  - current_value should exist within option_values
+{% endcomment %}
+
+{%- liquid
+  unless option_values
+    assign option_values = option_names
+  endunless
+
+  capture disclosure_name
+    assign label = label_name | downcase | remove: ' '
+    echo id | downcase | append: '-' | append: label
+  endcapture
+-%}
+
+<disclosure-root
+  class="disclosure--root"
+  data-id="{{ id | downcase }}"
+  {%- if type != blank -%}
+    data-type="{{ type }}"
+  {%- endif -%}
+>
+  <div
+    class="disclosure--header"
+    {%- unless display_label -%}
+      data-item="hidden-text"
+    {%- endunless -%}
+  >
+    <label
+      class="disclosure--label"
+      data-item="accent-text"
+      id="{{ disclosure_name }}-toggle"
+    >
+      {%- comment -%} label_name needed for a11y {%- endcomment -%}
+      {{- label_name | escape -}}
+    </label>
+  </div>
+
+  <div class="disclosure--main">
+    <button
+      class="disclosure--toggle"
+      data-item="nav-text"
+      aria-expanded="false"
+      aria-controls="{{ disclosure_name }}"
+      aria-labelledby="{{ disclosure_name }}-toggle"
+    >
+      {%- liquid
+        echo '<div class="disclosure--current-option">'
+          if current_value
+            for value in option_values
+              if value == current_value
+                echo option_names[forloop.index0]
+                break
+              endif
+            endfor
+          endif
+        echo '</div>'
+
+        render 'icons', icon: 'chevron-up'
+        render 'icons', icon: 'chevron-down'
+      -%}
+    </button>
+    <ul
+      class="disclosure--form"
+      id="{{ disclosure_name }}"
+      data-transition-item="viewport"
+      data-transition-type="scale-in"
+      data-transition-trigger="custom"
+    >
+      {%- for name in option_names -%}
+        <li
+          class="disclosure--option"
+          tabindex="0"
+          data-item="nav-text--sub"
+          data-value="{{ option_values[forloop.index0] | escape }}"
+          {%- if option_values[forloop.index0] == current_value -%}
+            aria-current="true"
+          {%- else -%}
+            aria-current="false"
+          {%- endif -%}
+        >
+          {{ name }}
+        </li>
+      {%- endfor -%}
+    </ul>
+    <input
+      class="disclosure--input"
+      type="hidden"
+      {%- if input_name -%}
+        name="{{ input_name }}"
+      {%- endif -%}
+      {%- if current_value -%}
+        value="{{ current_value | escape }}"
+      {%- endif -%}
+      data-item="disclosure"
+    />
+  </div>
+</disclosure-root>

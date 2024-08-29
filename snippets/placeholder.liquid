@@ -1,0 +1,53 @@
+{% comment %} Aspect ratio needs at least one decimal {% endcomment %}
+{%- liquid
+  assign placeholder = type
+
+  unless aspect_ratio and aspect_ratio != 0
+    assign aspect_ratio = 1.45
+  endunless
+
+  unless mobile_aspect_ratio
+    assign mobile_aspect_ratio = aspect_ratio | round: 2
+  endunless
+
+  unless full_width
+    assign full_width = false
+  endunless
+
+  if placeholder_index
+    capture placeholder
+      echo type | append: '-' | append: placeholder_index
+    endcapture
+  endif
+
+  unless display_type
+    assign display_type = 'aspect-ratio'
+  endunless
+
+  unless mobile_display_type
+    assign mobile_display_type = display_type
+  endunless
+
+  capture placeholder_properties
+    echo '--aspect-ratio:' | append: aspect_ratio | append: ';'
+    echo '--mobile-aspect-ratio:' | append: mobile_aspect_ratio | append: ';'
+  endcapture
+-%}
+
+<placeholder-root
+  class="placeholder--root"
+  data-background="{{ background }}"
+  data-display-type="{{ display_type }}"
+  data-mobile-display-type="{{ mobile_display_type }}"
+  data-overlay-style="{{ overlay_style }}"
+  data-mobile-overlay-style="{{ mobile_overlay_style }}"
+  data-parallax="{{ parallax }}"
+  data-full-width="{{ full_width }}"
+  data-transition-item="viewport"
+  data-transition-type="stroke"
+  style="{{ placeholder_properties }}"
+>
+  <div class="placeholder--container">
+    {{- placeholder | placeholder_svg_tag -}}
+  </div>
+</placeholder-root>

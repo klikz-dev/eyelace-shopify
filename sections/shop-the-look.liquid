@@ -1,0 +1,373 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign heading = section.settings.heading
+  assign heading_alignment = section.settings.heading-alignment
+  assign hotspot_color = section.settings.hotspot-color
+  assign light_text = section.settings.light-text
+  assign image = section.settings.image
+  assign mobile_image = section.settings.mobile-image
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign top_border = section.settings.top-border
+
+  render 'section-assets', name: 'shop-the-look'
+-%}
+
+{%- for block in section.blocks -%}
+  {%- capture css_vars -%}
+    --x-pos:{{ block.settings.horizontal }}%;
+    --y-pos:{{ block.settings.vertical }}%;
+    --mobile-x-pos:{{ block.settings.mobile-horizontal }}%;
+    --mobile-y-pos:{{ block.settings.mobile-vertical }}%;
+  {%- endcapture -%}
+
+  {%- capture hotspots_html -%}
+    {{- hotspots_html -}}
+
+    <button
+      class="shop-the-look--button"
+      data-index="{{ forloop.index }}"
+      data-transition-item="viewport"
+      data-transition-type="grow"
+      data-transition-trigger="hover"
+      data-transition-active="{% if forloop.index == 1 %}true{% else %}false{% endif %}"
+      aria-label="{{ block.settings.product.title }}"
+      style="{{ css_vars }}"
+      {{ block.shopify_attributes }}
+    >
+      <div class="shop-the-look--hotspot">
+        <span data-item="hidden-text">
+          {{- block.settings.product.title -}}
+        </span>
+      </div>
+    </button>
+  {%- endcapture -%}
+
+  {%- capture products_html -%}
+    {{- products_html -}}
+
+    <div
+      class="shop-the-look--product"
+      data-index="{{ forloop.index }}"
+      data-transition-item="viewport"
+      data-transition-trigger="custom"
+      data-transition-type="slide-in"
+      {%- if forloop.index == 1 -%}
+        data-transition-active="true"
+        aria-hidden="false"
+        {%- else -%}
+        data-transition-active="false"
+        aria-hidden="true"
+      {%- endif -%}
+    >
+      {%- liquid
+        unless block.settings.product == blank
+          render 'product--item', product_item: block.settings.product, section_id: section.id, text_alignment: 'center', sizes: '(max-width: 767px) 100vw, 25vw'
+        else
+          render 'product--item', onboarding: true, placeholder_index: forloop.index, section_id: section.id, text_alignment: 'center'
+        endunless
+      -%}
+    </div>
+  {%- endcapture -%}
+
+  {%- if section.blocks.size > 1 -%}
+    {%- capture dots_html -%}
+      {{- dots_html -}}
+
+      <button
+        class="shop-the-look--dot"
+        data-index="{{ forloop.index }}"
+        aria-label="{{ block.settings.product.title }}"
+        {%- if forloop.index == 1 -%}
+          aria-current="true"
+        {%- else -%}
+          aria-current="false"
+        {%- endif -%}
+      ></button>
+    {%- endcapture -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<shop-the-look
+  class="shop-the-look--root"
+  data-section-id="{{ section.id }}"
+  data-background-color="{{ bg_color }}"
+  data-container-width="{{ container_width }}"
+  data-hotspot-color="{{ hotspot_color }}"
+  data-light-text="{{ light_text }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-top-border="{{ top_border }}"
+>
+  <div class="shop-the-look--container" data-container="section">
+    {%- if heading != blank -%}
+      <div
+        class="shop-the-look--title"
+        data-container="block"
+        data-heading-alignment="{{ heading_alignment }}"
+      >
+        <h2 data-item="section-heading">
+          {{- heading | escape -}}
+        </h2>
+      </div>
+    {%- endif -%}
+
+    <div class="shop-the-look--block">
+      <div class="shop-the-look--image">
+        {%- liquid
+          if image
+            render 'image', image: image, mobile_image: mobile_image, sizes: '(max-width: 767px) 100vw, 75vw'
+          else
+            render 'placeholder', type: 'collection', aspect_ratio: 1.33, placeholder_index: 1
+          endif
+        -%}
+
+        {{- hotspots_html -}}
+      </div>
+
+      <div class="shop-the-look--products">
+        {{- products_html -}}
+
+        {%- if section.blocks.size > 1 -%}
+          <div class="shop-the-look--navigation" data-mq="medium-large">
+            {{- dots_html -}}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</shop-the-look>
+
+{% schema %}
+{
+  "name": "Shop the look",
+  "class": "section--shop-the-look",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style and layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "container-width",
+      "label": "Maximum width of container",
+      "type": "select",
+      "options": [
+        {
+          "label": "Extra small",
+          "value": "1"
+        },
+        {
+          "label": "Small",
+          "value": "2"
+        },
+        {
+          "label": "Medium",
+          "value": "3"
+        },
+        {
+          "label": "Large",
+          "value": "4"
+        },
+        {
+          "label": "Extra large",
+          "value": "5"
+        },
+        {
+          "label": "Full width",
+          "value": "6"
+        }
+      ],
+      "default": "4"
+    },
+    {
+      "id": "hotspot-color",
+      "label": "Hotspot color",
+      "type": "select",
+      "options": [
+        { "label": "White", "value": "white" },
+        { "label": "Light", "value": "light" },
+        { "label": "Dark", "value": "dark" },
+        { "label": "Accent 1", "value": "accent-1" },
+        { "label": "Accent 2", "value": "accent-2" }
+      ],
+      "default": "white"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "label": "Heading",
+      "id": "heading",
+      "type": "text",
+      "default": "Shop the look"
+    },
+    {
+      "id": "heading-alignment",
+      "label": "Position heading",
+      "type": "text_alignment",
+      "default": "center"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile-image",
+      "label": "Mobile image"
+    }
+  ],
+  "blocks": [{
+      "type": "hotspot",
+      "name": "Product hotspot",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "label": "Horizontal position",
+          "id": "horizontal",
+          "type": "range",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "label": "Vertical position",
+          "id": "vertical",
+          "type": "range",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "header",
+          "content": "Mobile"
+        },
+        {
+          "label": "Mobile horizontal position",
+          "id": "mobile-horizontal",
+          "type": "range",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "label": "Mobile vertical position",
+          "id": "mobile-vertical",
+          "type": "range",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        }
+      ]
+  }],
+  "presets": [
+    {
+      "name": "Shop the look",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "hotspot",
+          "settings": {
+            "horizontal": 35,
+            "vertical": 33,
+            "mobile-horizontal": 35,
+            "mobile-vertical": 35
+          }
+        },
+        {
+          "type": "hotspot",
+          "settings": {
+            "horizontal": 44,
+            "vertical": 62,
+            "mobile-horizontal": 45,
+            "mobile-vertical": 66
+          }
+        },
+        {
+          "type": "hotspot",
+          "settings": {
+            "horizontal": 65,
+            "vertical": 50,
+            "mobile-horizontal": 65,
+            "mobile-vertical": 47
+          }
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["aside"]
+  }
+}
+{% endschema %}

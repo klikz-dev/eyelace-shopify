@@ -1,0 +1,109 @@
+{%- liquid
+  assign text_exists = false
+  if overline != blank or title != blank or description != blank or link_text != blank
+    assign text_exists = true
+  endif
+
+  unless bg_color
+    assign bg_color = 'transparent'
+  endunless
+-%}
+
+{%- if text_exists -%}
+  <div
+    class="stacked-text--root"
+    data-light-text="{{ light_text }}"
+    data-mobile-alignment="{{ mobile_alignment }}"
+    data-x-alignment="{{ x_alignment }}"
+    data-y-alignment="{{ y_alignment }}"
+    data-width="{{ width }}"
+  >
+    <div
+      class="stacked-text--wrapper"
+      data-text-style="{{ style }}"
+      data-background-color="{{ bg_color }}"
+      data-translucent="{{ settings.content--box-translucent }}"
+      {% unless settings.transitions--text %}
+        data-transition-container="{{ id }}"
+        data-transition-type="slide-in"
+        data-transition-cascade="vertical"
+        data-transition-cascade-interval="500"
+      {% endunless %}
+    >
+      {%- if title != blank -%}
+        <div
+          {% unless settings.transitions--text %}
+            data-transition-item="{{ id }}"
+          {% endunless %}
+        >
+          <h2 class="stacked-text--title" data-item="{{ heading_type }}">
+            {%- render "utils", utility: "emphasized-text", text: title -%}
+          </h2>
+        </div>
+      {%- endif -%}
+
+      {%- if overline != blank -%}
+        <div
+          class="stacked-text--overline"
+          {% unless settings.transitions--text %}
+            data-transition-item="{{ id }}"
+          {% endunless %}
+        >
+          <h3 data-item="overline">
+            {{- overline | escape -}}
+          </h3>
+        </div>
+      {%- endif -%}
+
+      {%- if description != blank -%}
+        <div
+          class="stacked-text--description"
+          data-item="rte-content"
+          {% if mobile_hide_description %}
+            data-mq="medium-large"
+          {% endif %}
+          {% unless settings.transitions--text %}
+            data-transition-item="{{ id }}"
+          {% endunless %}
+        >
+          {{- description -}}
+        </div>
+      {%- endif -%}
+
+      {%- if link_text != blank -%}
+        {%- if cover_link -%}
+          <div
+            class="stacked-text--button"
+            data-item="{{- settings.buttons--style -}}"
+            data-text="{{ link_text }}"
+            {% unless settings.transitions--text %}
+              data-transition-item="{{ id }}"
+              data-transition-type="fade-in"
+            {% endunless %}
+            {% unless settings.transitions--buttons %}
+              data-transition-button
+            {% endunless %}
+          >
+            <span>{{- link_text -}}</span>
+          </div>
+        {%- else -%}
+          <a
+            class="stacked-text--button"
+            href="{{ link_url }}"
+            data-item="{{- settings.buttons--style -}}"
+            data-text="{{ link_text }}"
+            {% unless settings.transitions--text %}
+              data-transition-item="{{ id }}"
+              data-transition-type="fade-in"
+            {% endunless %}
+            {% unless settings.transitions--buttons %}
+              data-transition-button
+            {% endunless %}
+          >
+            <span>{{- link_text -}}</span>
+          </a>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}

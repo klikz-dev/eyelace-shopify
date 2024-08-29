@@ -1,0 +1,67 @@
+{%- liquid
+  assign close_t = 'general.a11y.close' | t
+
+  assign bg_color = block.settings.background-color
+  assign days_range = block.settings.days-range
+  assign delay = block.settings.delay
+  assign light_text = block.settings.light-text
+  assign heading = block.settings.heading
+  assign heading_type = block.settings.heading-type
+  assign page_enabled = block.settings.page-enabled
+  assign page_url = block.settings.page-url
+  assign position = block.settings.position
+  assign referrer_enabled = block.settings.referrer-enabled
+  assign referrer_url = block.settings.referrer-url
+  assign scroll_text = block.settings.scroll-text
+  assign animation_speed = block.settings.animation-speed
+  assign show_at_bottom = block.settings.show-at-bottom
+  assign translucent = block.settings.translucent
+
+  assign enabled = false
+  unless page_enabled and page_url != request.path
+    assign enabled = true
+  endunless
+-%}
+
+{%- if enabled and heading != blank -%}
+  <popup-block
+    class="popup--block--root"
+    data-block-id="{{ block.id | camelize }}"
+    data-background-color="{{ bg_color }}"
+    data-delay="{{ delay }}"
+    data-text-alignment="{{ text_alignment }}"
+    data-translucent="{{ translucent }}"
+    data-scroll-text="{{ scroll_text }}"
+    data-show-again-after="{{ days_range }}"
+    data-show-at-bottom="{{ show_at_bottom }}"
+    data-light-text="{{ light_text }}"
+    data-position="{{ position }}"
+    data-referrer-enabled="{{ referrer_enabled }}"
+    data-referrer-url="{{ referrer_url }}"
+    data-transition-item="viewport"
+    data-transition-type="scale-in"
+    data-transition-trigger="custom"
+    data-type="small-promotion"
+    aria-hidden="true"
+    {% if scroll_text %}
+      style="--popup--animation-speed:{{ animation_speed }};"
+    {% endif %}
+    {{ block.shopify_attributes }}
+  >
+    <div class="popup--block--wrapper">
+      <div class="popup--block--heading" data-item="{{ heading_type }}">
+        <span>{{- heading -}}</span>
+
+        {%- if scroll_text -%}
+          {%- for i in (0..9) -%}
+            <span data-mq="small">{{- heading -}}</span>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+
+    <button aria-label="{{ close_t }}" class="popup--block--close">
+      {%- render 'icons', icon: 'cross' -%}
+    </button>
+  </popup-block>
+{%- endif -%}

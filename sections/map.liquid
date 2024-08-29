@@ -1,0 +1,274 @@
+{%- liquid
+  assign address = section.settings.address
+  assign api_key = section.settings.api-key
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign heading = section.settings.heading | escape
+  assign hours = section.settings.hours
+  assign light_text = section.settings.light-text
+  assign map_address = section.settings.map-address
+  assign map_address_format = map_address | replace: ', ', ' ' | replace: ' ', '+'
+  assign map_link = 'https://google.com/maps/place/' | append: map_address_format
+  assign map_theme = section.settings.theme
+  assign open_map_t = 'sections.map.open' | t
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign top_border = section.settings.top-border
+
+  render 'section-assets', name: 'map'
+-%}
+
+{%- capture image -%}
+  {%- if section.settings.image == blank -%}
+    {%- render "placeholder", type: "lifestyle", aspect_ratio: 1.5, placeholder_index: 2 -%}
+  {%- else -%}
+    {{-
+      section.settings.image |
+      image_url: width: section.settings.image.width |
+      image_tag:
+        widths: "300, 500, 800, 1000, 1200, 1500, 1800, 2100, 2400, 3000",
+        sizes: 'calc(100vw - 300px)'
+    -}}
+  {%- endif -%}
+{%- endcapture -%}
+
+{% comment %} View {% endcomment %}
+<map-root
+  class="map--root"
+  data-section-id="{{ section.id }}"
+  data-address="{{ map_address }}"
+  data-api-key="{{ api_key }}"
+  data-background-color="{{ bg_color }}"
+  data-container-width="{{ container_width }}"
+  data-light-text="{{ light_text }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-theme="{{ map_theme }}"
+  data-top-border="{{ top_border }}"
+  style="display:block;"
+>
+  <div class="map--wrapper">
+    <div class="map--body">
+      <div class="map--info">
+        {%- if heading != blank -%}
+          <h2 class="map--heading" data-item="section-heading">
+            {{- heading -}}
+          </h2>
+        {%- endif -%}
+
+        {%- if address != blank -%}
+          <div class="map--address">
+            <div class="map--address-content" data-item="rte-content">
+              {{- address -}}
+            </div>
+
+            {%- if map_address != blank -%}
+              <div class="map--open-maps-link" data-item="block-link">
+                <a
+                  href="{{ map_link }}"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="{{ open_map_t }}"
+                >
+                  {{ open_map_t }}
+                </a>
+              </div>
+            {%- endif -%}
+
+          </div>
+        {%- endif -%}
+
+        {%- if hours != blank -%}
+          <div class="map--hours" data-item="rte-content">{{ hours }}</div>
+        {%- endif -%}
+
+      </div>
+
+      <div class="map--media">
+        {%- if api_key != blank -%}
+          <div class="map--google-maps"></div>
+        {%- endif -%}
+
+        {%- if section.settings.api-key == blank -%}
+          {%- if map_address != blank -%}
+            <a
+              href="{{ map_link }}"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="{{ open_map_t }}"
+            >
+          {%- endif -%}
+
+          <div class="map--image">
+            {{- image -}}
+          </div>
+
+          {%- if map_address != blank -%}
+            </a>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</map-root>
+
+{% schema %}
+  {
+    "name": "Map",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Style and layout"
+      },
+      {
+        "id": "top-border",
+        "label": "Top border",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "id": "spacing-above",
+        "label": "Spacing above",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "spacing-below",
+        "label": "Spacing below",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "background-color",
+        "label": "Background color",
+        "type": "select",
+        "options": [
+          {
+            "label": "Transparent",
+            "value": "none"
+          },
+          {
+            "label": "Light",
+            "value": "light"
+          },
+          {
+            "label": "Dark",
+            "value": "dark"
+          },
+          {
+            "label": "Accent 1",
+            "value": "accent-1"
+          },
+          {
+            "label": "Accent 2",
+            "value": "accent-2"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "id": "light-text",
+        "label": "Use light text color",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "id": "container-width",
+        "label": "Maximum width of container",
+        "type": "select",
+        "options": [
+          {
+            "label": "Extra small",
+            "value": "1"
+          },
+          {
+            "label": "Small",
+            "value": "2"
+          },
+          {
+            "label": "Medium",
+            "value": "3"
+          },
+          {
+            "label": "Large",
+            "value": "4"
+          },
+          {
+            "label": "Extra large",
+            "value": "5"
+          },
+          {
+            "label": "Full width",
+            "value": "6"
+          }
+        ],
+        "default": "4"
+      },
+      {
+        "label": "Google maps style",
+        "type": "radio",
+        "id": "theme",
+        "options": [
+          { "value": "standard", "label": "Standard" },
+          { "value": "dark", "label": "Dark" },
+          { "value": "grayscale", "label": "Grayscale" }
+        ],
+        "default": "grayscale"
+      },
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Our store"
+      },
+      {
+        "id": "address",
+        "type": "richtext",
+        "label": "Address",
+        "default": "<p>391 Sunrise Blvd,<br>Los Angeles<br>CA 94108, USA</p>"
+      },
+      {
+        "type": "richtext",
+        "id": "hours",
+        "label": "Hours",
+        "default": "<p>Monday - Friday<br>10am - 6pm<br><br>Saturday - Sunday<br>12pm - 5pm</p>"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "Displayed if the map isn’t loaded"
+      },
+      {
+        "type": "header",
+        "content": "Features"
+      },
+      {
+        "id": "api-key",
+        "type": "text",
+        "label": "Google Maps API key",
+        "info": "You’ll need to register a [Google Maps API Key](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/map-section-api-key#register-a-google-maps-api-key) to display the map."
+      },
+      {
+        "id": "map-address",
+        "label": "Map Address",
+        "type": "text",
+        "placeholder": "391 Sunrise Blvd, Los Angeles",
+        "default": "391 Sunrise Blvd, Los Angeles",
+        "info": "Google Maps will find the exact location"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Map"
+      }
+    ],
+    "disabled_on": {
+      "groups": ["aside"]
+    }
+  }
+{% endschema %}

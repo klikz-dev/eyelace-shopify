@@ -1,0 +1,122 @@
+{%- liquid
+  assign ajax_url = collection.url | append: '?'
+  unless collection.current_vendor == blank and collection.current_type == blank
+    assign ajax_url = collection.url | append: '&'
+  endunless
+
+  assign show_browse_button = section.settings.show-browse-button
+  assign show_sort_button = section.settings.show-sort-button
+  assign show_refine_button = section.settings.show-refine-button
+-%}
+
+{%-
+  render 'navigation',
+  ajax_url: ajax_url,
+  custom_collection_list: section.settings.custom-list-collections,
+  mobile_buttons: 'browse,refine'
+  results_string: false,
+  show_browse_button: section.settings.show-browse-button,
+  show_collection_list: section.settings.show-collections-list,
+  show_layout_buttons: section.settings.show-layout-buttons,
+  show_search_link: section.settings.show-search-link,
+  show_sort_button: section.settings.show-sort-button,
+  show_sort_list: section.settings.show-sort-list,
+  show_refine_button: section.settings.show-refine-button,
+  show_refine_list: section.settings.show-refine-list,
+  storage_name: 'collection_layout',
+  swatches_enabled: section.settings.swatches-enabled
+-%}
+
+{%- if show_browse_button or show_refine_button or show_sort_button -%}
+  <div class="filter--for-drawer" style="display:none;">
+    {%-
+      render 'filter',
+      collection_url: collection.url,
+      custom_collection_list: section.settings.custom-list-collections,
+      filters: collection.filters,
+      show_collection_list: section.settings.show-collections-list,
+      show_refine_list: section.settings.show-refine-list,
+      show_search_link: section.settings.show-search-link,
+      show_sort_list: section.settings.show-sort-list,
+      sort_by: collection.sort_by,
+      sort_options: collection.sort_options,
+      swatches_enabled: section.settings.swatches-enabled
+    -%}
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Collection navigation",
+  "settings": [
+    {
+      "content": "Quick links",
+      "type": "header"
+    },
+    {
+      "label": "Show browse button",
+      "id": "show-browse-button",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "label": "Show sort by button",
+      "id": "show-sort-button",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "label": "Show refine button",
+      "id": "show-refine-button",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "label": "Show layout buttons",
+      "id": "show-layout-buttons",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "content": "Drawer",
+      "type": "header"
+    },
+    {
+      "label": "Show collections list",
+      "id": "show-collections-list",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "label": "Enable custom collection list",
+      "id": "custom-list-collections",
+      "type": "link_list"
+    },
+    {
+      "label": "Show sort by list",
+      "id": "show-sort-list",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "label": "Show refine list",
+      "id": "show-refine-list",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "swatches-enabled",
+      "label": "Enable color swatches",
+      "default": false,
+      "info": "Automatically turn color options into swatches. [Learn more](https://support.troopthemes.com/guide/color-swatch-guide)"
+    },
+    {
+      "label": "Show search link",
+      "id": "show-search-link",
+      "type": "checkbox",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

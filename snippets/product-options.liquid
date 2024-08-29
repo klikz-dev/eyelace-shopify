@@ -1,0 +1,96 @@
+{%- liquid
+  assign color_t = 'products.color' | t | downcase
+  assign out_of_stock_t = 'products.out_of_stock' | t
+
+  assign current_variant = product.selected_or_first_available_variant
+
+  if block_settings
+    assign variant_style = block_settings.variant-style
+    assign size_chart_enabled = block_settings.size-chart-enabled
+    assign size_chart_option = block_settings.size-chart-option | strip | downcase
+    assign swatches_enabled = block_settings.swatches-enabled
+  endif
+
+  unless unique_handle
+    assign unique_id = id
+  else
+    assign unique_id = unique_handle | append: '-' | append: id
+  endunless
+-%}
+
+{%- unless product.has_only_default_variant -%}
+  {%- liquid
+    unless settings.quick-add--enabled
+      render 'section-assets', name: 'product-options', type: 'script'
+    endunless
+  -%}
+
+  <product-options-root
+    class="product-options--root"
+    data-handle="{{ product.handle }}"
+    data-id="{{ id }}"
+    style="display:block;"
+  >
+    <div class="product-options--container">
+      {%- for option in product.options_with_values -%}
+        <div class="product-options--option" data-index="{{ forloop.index0 }}">
+          {%- liquid
+            assign option_name = option.name | strip | downcase
+
+            if swatches_enabled and option_name == color_t
+              render 'radios', option: option, id: unique_id, is_swatches: true
+            elsif variant_style == 'dropdowns'
+              render 'disclosure', display_label: true, label_name: option_name, option_names: option.values, current_value: option.selected_value, id: unique_id, type: 'option-picker'
+            else
+              render 'radios', option: option, id: unique_id
+            endif
+
+            comment
+              "The size chart link gets moved with JS"
+            endcomment
+          -%}
+
+          {%- if size_chart_enabled and size_chart_option == option_name -%}
+            <div class="product-size-chart--root" style="display:none;">
+              <modal-trigger
+                class="product-size-chart--link"
+                data-id="size-chart"
+                data-item='block-link'
+                tabindex="0"
+              >
+                <span>
+                  {{- 'products.size_chart' | t -}}
+                </span>
+              </modal-trigger>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+
+    <noscript>
+      <select class="product-options--select-noscript" name="id">
+        {% for variant in product.variants %}
+          <option
+            value="{{ variant.id }}"
+            data-sku="{{ variant.sku }}"
+            {% if variant == current_variant %}
+              selected
+            {% elsif variant.available == false %}
+              disabled
+            {% endif %}
+          >
+            {{ variant.title }}{% if variant.available == false %} ({{ out_of_stock_t }}){% endif %}
+          </option>
+        {% endfor %}
+      </select>
+    </noscript>
+
+    <script type="application/json" id="variant--json-{{ unique_id }}">
+      {{- product.variants | json -}}
+    </script>
+    <script type="application/json" id="variant-first--json-{{ unique_id }}">
+      {{- current_variant.options | json -}}
+    </script>
+  </product-options-root>
+{%- endunless -%}

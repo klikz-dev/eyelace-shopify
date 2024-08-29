@@ -1,0 +1,61 @@
+{%- liquid
+  assign form_id = id | append: '--unavailable'
+  assign sold_out_button_t = 'products.sold_out.button' | t
+  assign sold_out_email_ph_t = 'products.sold_out.email_placeholder' | t
+  assign sold_out_email_t = 'products.sold_out.email_description' | t
+  assign unavailable_t = 'products.unavailable_notice' | t
+
+  assign current_variant = product.selected_or_first_available_variant
+
+  render 'section-assets', name: 'product-unavailable-form', type: 'script'
+-%}
+
+<product-unavailable-root
+  class="product-unavailable--root"
+  {% if current_variant.available %}
+    aria-hidden="true"
+  {% else %}
+    aria-hidden="false"
+  {% endif %}
+  aria-busy="false"
+  data-id="{{ id }}"
+>
+  <label for="{{ form_id }}-email" data-item="small-text">
+    {{- unavailable_t -}}
+  </label>
+  <div class="product-unavailable--form">
+    <input
+      class="product-unavailable--input"
+      type="email"
+      name="contact[email]"
+      autocomplete="email"
+      placeholder="{{ sold_out_email_ph_t }}"
+      value="{{ customer.email }}"
+      id="{{ form_id }}-email"
+    >
+    <input
+      class="product-unavailable--value"
+      type="hidden"
+      name="contact[message]"
+      value="{{ sold_out_email_t }}: {{ product.title | escape }} - {{ current_variant.title | escape }}"
+    >
+    <button
+      class="product-unavailable--submit"
+      type="button"
+      data-item="button"
+      data-text="{{- sold_out_button_t -}}"
+      {% unless settings.transitions--buttons %}
+        data-transition-button
+      {% endunless %}
+    >
+      <span class="product-unavailable--text-wrapper">
+        <span class="product-unavailable--text">
+          {{- sold_out_button_t -}}
+        </span>
+        <span class="product-unavailable--loading">
+          {%- render 'icons', icon: 'spinner' -%}
+        </span>
+      </span>
+    </button>
+  </div>
+</product-unavailable-root>

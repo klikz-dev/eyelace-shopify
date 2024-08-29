@@ -1,0 +1,61 @@
+{%- liquid
+  assign accent_1_translucent = settings.color--accent-1 | color_to_rgb | color_modify: 'alpha', 0.85
+  assign accent_2_translucent = settings.color--accent-2 | color_to_rgb | color_modify: 'alpha', 0.85
+  assign light_translucent = settings.bg-color--light | color_to_rgb | color_modify: 'alpha', 0.85
+  assign body_translucent = settings.bg-color--body | color_to_rgb | color_modify: 'alpha', 0.85
+  assign dark_translucent = settings.bg-color--dark | color_to_rgb | color_modify: 'alpha', 0.85 | color_darken: 10
+
+  assign button_bg = settings.bg-color--button
+  comment
+    unless settings.buttons--gradient == blank
+      assign button_bg = settings.buttons--gradient
+    endunless
+  endcomment
+-%}
+
+<style>
+  :root {
+    --color--accent-1: {{ settings.color--accent-1 }};
+    --color--accent-1-translucent: {{ accent_1_translucent }};
+    --color--accent-2: {{ settings.color--accent-2 }};
+    --color--accent-2-translucent: {{ accent_2_translucent }};
+    --bg-color--light: {{ settings.bg-color--light }};
+    --bg-color--light-translucent: {{ light_translucent }};
+    --bg-color--dark: {{ settings.bg-color--dark }};
+    --bg-color--dark-translucent: {{ dark_translucent }};
+    --bdr-color--badge: {{ settings.color--body | color_modify: 'alpha', 0.05 }};
+    --bdr-color--page: {{ settings.bdr-color--page }};
+    --bg-color--body: {{ settings.bg-color--body }};
+    --bg-color--body-translucent: {{ body_translucent }};
+    --color--body: {{ settings.color--body }};
+    --color--body--light: {{ settings.color--body | color_lighten: 19 }};
+    --color--alternative: {{ settings.color--alternative }};
+    --bg-color--textbox: #fff;
+    --bg-color--panel: #f7f7f7;
+    --bdr-color--general: #eaeaea;
+    --bdr-color--badge: {{ settings.color--body | color_modify: 'alpha', 0.07 }};
+
+    --color--border-disabled: #d2d2d2;
+    --color--success: #4caf50;
+    --color--fail: #d32f2f;
+    --color--stars: black;
+
+    --content--shadow-opacity: {{ settings.content--shadow-opacity | divided_by: 100.0 }};
+    --content--image-opacity: {{- settings.content--image-opacity | divided_by: 100.0 | round: 3 -}};
+
+    --button--color: {{ settings.color--button }};
+    --button--bg-color: {{ button_bg }};
+    --button--bg-color--hover: var(--button--bg-color);
+    --button--bdr-color: {{ settings.bg-color--button }};
+    --button--color-disabled: #b9b9b9;
+    --button--radius: {{ settings.buttons--radius }}px;
+    --input--radius: {{ settings.inputs--radius }}px;
+    --image--radius: {{ settings.image--radius }}px;
+
+    /* shop pay */
+    --payment-terms-background-color: {{ settings.bg-color--body }};
+
+    /* js helpers */
+    --sticky-offset: 0px;
+  }
+</style>

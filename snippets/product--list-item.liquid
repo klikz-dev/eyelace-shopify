@@ -1,0 +1,30 @@
+<a
+  class="product--list-item"
+  href="{{ product_item.url }}"
+  aria-label="{{ product_item.title }}"
+  data-product-item
+>
+  <div class="product--list-item--wrapper">
+    <div class="product--list-item--image">
+      {%- if product_item.featured_media.preview_image -%}
+        {{-
+          product_item.featured_media.preview_image |
+          image_url: width: product_item.featured_media.preview_image.width |
+          image_tag: widths: "120", sizes: '60px'
+        -}}
+      {%- else -%}
+        {%- render "placeholder", type: 'product', aspect_ratio: 1, placeholder_index: 1 -%}
+      {%- endif -%}
+    </div>
+
+    <div class="product--list-item--info">
+      <div data-item="paragraph">
+        {{- product_item.title -}}
+      </div>
+
+      {%- render 'product--item-price', product: product_item -%}
+    </div>
+
+    {%- render 'product--quick-add', product: product_item -%}
+  </div>
+</a>

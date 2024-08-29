@@ -1,0 +1,395 @@
+{%- liquid
+  assign animation_speed = section.settings.animation-speed
+  assign animation_direction = section.settings.animation-direction
+  assign bg_color = section.settings.background-color
+  assign bg_image = section.settings.background-image
+  assign light_text = section.settings.light-text
+  assign mobile_image = section.settings.mobile-image
+  assign overlay_style = section.settings.overlay-style
+  assign parallax_enabled = section.settings.parallax-enabled
+  assign pause_on_hover = section.settings.pause-on-hover
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign text_size = section.settings.text-size
+  assign top_border = section.settings.top-border
+
+  render 'section-assets', name: 'scrolling-content', type: 'style'
+-%}
+
+{%- capture content_html -%}
+  {%- for block in section.blocks -%}
+    {%- liquid
+      assign hide_on_desktop = block.settings.hide-on-desktop
+      assign hide_on_mobile = block.settings.hide-on-mobile
+      assign link = block.settings.link
+
+      if hide_on_desktop and hide_on_mobile
+        continue
+      endif
+
+      if block.type == 'image'
+        assign block_image = block.settings.image
+        assign image_height = block.settings.image-height
+        assign mobile_block_image = block.settings.mobile-image
+        assign mobile_image_height = block.settings.mobile-image-height
+
+        assign size = block_image.aspect_ratio | times: image_height | append: 'px'
+        assign mobile_size = size | append: ', '
+        unless mobile_block_image == blank
+          assign mobile_size = mobile_block_image.aspect_ratio | times: mobile_image_height | append: 'px, '
+        endunless
+        assign sizes = '(max-width: 767px) ' | append: mobile_size | append: size
+
+        capture block_styles
+          echo '--scrolling-content--block-height:' | append: image_height | append: 'px;'
+          echo '--scrolling-content--block-mobile-height:' | append: mobile_image_height | append: 'px;'
+        endcapture
+      endif
+    -%}
+
+    {%- unless link == blank -%}
+      <a
+        href="{{ link }}"
+        {% if block.type == 'image' %}
+          aria-label="{{ block_image.alt }}"
+        {% else %}
+          aria-label="{{ block.settings.text }}"
+        {% endif %}
+      >
+    {% endunless %}
+
+    <div
+      class="scrolling-content--block"
+      {%- if hide_on_desktop -%}
+        data-mq="small"
+      {%- elsif hide_on_mobile -%}
+        data-mq="medium-large"
+      {%- endif -%}
+      {%- if block.type == 'text' -%}
+        data-item="{{ text_size }}"
+      {%- else -%}
+        data-item="image"
+        style="{{ block_styles }}"
+      {%- endif -%}
+      {{- block.shopify_attributes -}}
+    >
+      <div class="scrolling-content--block-wrapper">
+        {%- liquid
+          if block.type == 'image'
+            if block_image
+              render 'image', image: block_image, mobile_image: mobile_block_image, sizes: sizes
+            else
+              render 'placeholder', type: 'collection', aspect_ratio: 1.33, placeholder_index: 1
+            endif
+          else
+            echo block.settings.text
+          endif
+        -%}
+      </div>
+    </div>
+
+    {%- unless link == blank -%}
+      </a>
+    {% endunless %}
+  {%- endfor -%}
+{%- endcapture -%}
+
+<div
+  class="scrolling-content--root"
+  data-section-id="{{ section.id }}"
+  data-top-border="{{ top_border }}"
+  data-container-width="6"
+  data-background-color="{{ bg_color }}"
+  data-light-text="{{ light_text }}"
+  data-hover-pause="{{ pause_on_hover }}"
+  data-direction="{{ animation_direction }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  style="--scrolling-content--animation-speed:{{ animation_speed }};"
+>
+  <div class="scrolling-content--wrapper">
+    {%- for i in (0..9) -%}
+      <div class="scrolling-content--container">
+        {{- content_html -}}
+      </div>
+    {%- endfor -%}
+  </div>
+
+  {%- if bg_image -%}
+    {%-
+      render 'image',
+      image: bg_image,
+      aspect_ratio: aspect_ratio,
+      mobile_aspect_ratio: mobile_aspect_ratio,
+      background: true,
+      overlay_style: overlay_style,
+      mobile_overlay_style: overlay_style,
+      mobile_image: mobile_image,
+      parallax: parallax_enabled
+    -%}
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Scrolling content",
+  "class": "section--scrolling-content",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style and layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "background-image",
+      "type": "image_picker",
+      "label": "Background image"
+    },
+    {
+      "id": "parallax-enabled",
+      "label": "Enable parallax",
+      "type": "checkbox",
+      "default": false,
+      "info": "Fixes image position when you scroll, use images with a height of at least 2000px to preserve resolution"
+    },
+    {
+      "id": "overlay-style",
+      "label": "Image overlay",
+      "type": "select",
+      "options": [
+        {
+          "label": "None",
+          "value": "none"
+        },
+        {
+          "label": "Darken entire image",
+          "value": "darken"
+        },
+        {
+          "label": "Dark gradient from top",
+          "value": "darken-top"
+        },
+        {
+          "label": "Dark gradient from bottom",
+          "value": "darken-bottom"
+        }
+      ],
+      "default": "darken-bottom",
+      "info": "Can enhance text visibility"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "label": "Text size",
+      "id": "text-size",
+      "type": "select",
+      "options": [
+        { "label": "Paragraph text", "value": "paragraph" },
+        { "label": "Heading", "value": "section-heading" }
+      ],
+      "default": "section-heading"
+    },
+    {
+      "type": "header",
+      "content": "Features"
+    },
+    {
+      "id": "animation-direction",
+      "label": "Direction",
+      "type": "select",
+      "options": [
+        { "label": "Left", "value": "left" },
+        { "label": "Right", "value": "right" }
+      ],
+      "default": "left"
+    },
+    {
+      "id": "animation-speed",
+      "label": "Scroll speed",
+      "type": "range",
+      "min": 1,
+      "max": 10,
+      "step": 0.5,
+      "default": 6
+    },
+    {
+      "id": "pause-on-hover",
+      "label": "Pause on hover",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile-image",
+      "label": "Mobile background image (optional)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "label": "Text",
+          "id": "text",
+          "type": "text",
+          "default": "Your scrolling text here"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "id": "hide-on-mobile",
+          "label": "Hide in mobile",
+          "type": "checkbox",
+          "default": false
+        },
+        {
+          "id": "hide-on-desktop",
+          "label": "Hide in desktop",
+          "type": "checkbox",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Image"
+        },
+        {
+          "label": "Image height",
+          "id": "image-height",
+          "type": "range",
+          "min": 15,
+          "max": 180,
+          "step": 5,
+          "unit": "px",
+          "default": 100,
+          "info": "This is referring to the natural height and should be half the height of the image you uploaded to ensure it stays sharp on retina screens."
+        },
+
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+
+        {
+          "id": "hide-on-desktop",
+          "label": "Hide in desktop",
+          "type": "checkbox",
+          "default": false
+        },
+        {
+          "type": "header",
+          "content": "Mobile"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile-image",
+          "label": "Mobile image (optional)"
+        },
+        {
+          "label": "Mobile image height",
+          "id": "mobile-image-height",
+          "type": "range",
+          "min": 15,
+          "max": 100,
+          "step": 5,
+          "unit": "px",
+          "default": 70
+        },
+        {
+          "id": "hide-on-mobile",
+          "label": "Hide in mobile",
+          "type": "checkbox",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling content",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["aside"]
+  }
+}
+{% endschema %}

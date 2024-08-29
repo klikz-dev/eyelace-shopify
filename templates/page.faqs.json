@@ -1,0 +1,155 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "2",
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    },
+    "16324397781a8be68b": {
+      "type": "collapsible-rows",
+      "blocks": {
+        "16324397781a8be68b-0": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What are Eyelace lashes made from?",
+            "description": "<p>Eyelace false lashes are crafted from high-quality PBT fiber, a polyester polymer known for its durability and natural look. They are also latex-free and hypoallergenic, ensuring they are safe for sensitive skin.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "16324397781a8be68b-1": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I apply Eyelace lashes?",
+            "description": "<p>Watch our tutorial video to find out how to apply and remove your Eyelace Lashes!<br\/><br\/><a href=\"\/pages\/how-to\" target=\"_blank\" title=\"How To\">How To Tutorial<\/a><\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "16324397781a8be68b-2": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Can I reuse Eyelace lashes?",
+            "description": "<p>Yes, Eyelace faux lashes are designed for multiple uses. With proper care and cleaning, you can reuse them several times. Be sure to gently remove any adhesive residue after each use and store them in their original packaging.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "a6080b6f-76b2-411e-84ba-9bbd1dbedff2": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Are Eyelace lashes suitable for sensitive eyes?",
+            "description": "<p>Absolutely. Eyelace false eyelashes are hypoallergenic and latex-free, making them suitable for those with sensitive eyes and skin. Additionally, our Eyelace White Lash Glue is formulated to be gentle and non-irritating.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "5212a784-4faa-4ff4-b627-6ca5174a15f9": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I remove Eyelace lashes?",
+            "description": "<p>To remove your Eylace, gently pull it until the glue slowly separates from your natural lash. <br\/>If you feel any tension use a warm compress, or a shower to melt the glue before you pull.<br\/>Once removed store your lashes on the plastic tray to reuse them.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_RXW3pQ": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Can I wear Eyelace lashes with glasses?",
+            "description": "<p>Yes, Eyelace offers a variety of faux eyelash styles suitable for wear with glasses. Opt for shorter and more natural styles like Natural Beauty or Elegant Effect to ensure they don’t interfere with your eyewear.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_g3hyTd": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How long do Eyelace lashes last?",
+            "description": "<p>The longevity of Eyelace lashes depends on how well they are cared for. With proper maintenance, they can be reused multiple times. Always handle them gently, clean them after use, and store them in a safe place.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_hgQrpU": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What is the difference between the various Eyelace lash styles?",
+            "description": "<p>Each Eyelace lash style is designed to offer a different look and level of drama:<\/p><ul><li>Natural Beauty: Subtle enhancement for everyday wear.<\/li><li>Perfect Poise: Dark and dramatic, ideal for professional settings.<\/li><li>Elegant Effect: Wispy and elegant, adding a refined touch.<\/li><li>Day Dream: Full-bodied and charming, perfect for work and play.<\/li><li>Social Butterfly: Bold yet natural, suitable for any occasion.<\/li><li>Night Life: Extra sexy and glamorous, perfect for nights out.<\/li><li>Ball Gown: Dramatic and classy, ideal for formal events.<\/li><\/ul>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_4tAhAt": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I choose the right lash style for me?",
+            "description": "<p>Consider the occasion and the look you want to achieve. For everyday wear, opt for more natural styles like Natural Beauty or Day Dream. For a night out or special event, bolder styles like Night Life or Ball Gown will provide the dramatic effect you desire. If you wear glasses, choose shorter styles to ensure comfort. Try our Starter Kit and receive a set of each of our seven lashes so you can try them all and find your favorites!<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_8d9wCX": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Are Eyelace lashes cruelty-free?",
+            "description": "<p>Yes, Eyelace lashes are cruelty-free and made from synthetic fibers, ensuring no harm to animals.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        }
+      },
+      "block_order": [
+        "16324397781a8be68b-0",
+        "16324397781a8be68b-1",
+        "16324397781a8be68b-2",
+        "a6080b6f-76b2-411e-84ba-9bbd1dbedff2",
+        "5212a784-4faa-4ff4-b627-6ca5174a15f9",
+        "collapsible_row_RXW3pQ",
+        "collapsible_row_g3hyTd",
+        "collapsible_row_hgQrpU",
+        "collapsible_row_4tAhAt",
+        "collapsible_row_8d9wCX"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "2",
+        "heading": "Frequently Asked Questions",
+        "heading-alignment": "center"
+      }
+    },
+    "featured_text_hjp6CR": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "dark",
+        "light-text": true,
+        "heading-type": "section-heading",
+        "container-width": "4",
+        "overline": "",
+        "heading": "Shop Our Collection",
+        "description": "<p>See what Eyelace has to offer and shop our collection.<\/p>",
+        "link-url": "shopify:\/\/collections",
+        "link-text": "Shop Now"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16324397781a8be68b",
+    "featured_text_hjp6CR"
+  ]
+}

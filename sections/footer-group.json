@@ -1,0 +1,53 @@
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "e305aec6-12d6-4184-8c5b-8aac302cb0dc": {
+          "type": "about",
+          "settings": {
+            "about-title": "Because You're Beautiful.",
+            "text": "<p>[current_year] © Eyelace LLC<\/p>",
+            "subscribe--show-social-icons": true
+          }
+        },
+        "1f422316-5885-4672-af57-e8d7e77d15d4": {
+          "type": "menu",
+          "settings": {
+            "menu-title": "Quick Links",
+            "menu": "footer",
+            "show-policy-links": true
+          }
+        },
+        "4bbc4d2e-97a8-4d59-87f2-9195c41265ab": {
+          "type": "subscribe",
+          "settings": {
+            "newsletter--heading": "Exclusive Discounts & Offers",
+            "newsletter--info": "<p>Be the first to receive updates on new arrivals, publications, and deals.<\/p>",
+            "subscribe--show-newsletter": true
+          }
+        }
+      },
+      "block_order": [
+        "e305aec6-12d6-4184-8c5b-8aac302cb0dc",
+        "1f422316-5885-4672-af57-e8d7e77d15d4",
+        "4bbc4d2e-97a8-4d59-87f2-9195c41265ab"
+      ],
+      "settings": {
+        "top-border": false,
+        "background-color": "dark",
+        "heading-type": "block-heading",
+        "light-text": true,
+        "enable-follow-on-shop": true,
+        "show-region-selector": true,
+        "show-locale-selector": true,
+        "show-payment-icons": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

@@ -1,0 +1,133 @@
+{%- liquid
+  assign tagged_in_t = 'blog.article.tagged_in' | t
+  assign share_t = 'general.social.share' | t
+
+  assign hidden_tags = settings.hide-tags | split: ','
+  assign number_of_tags = 0
+  assign show_tags = section.settings.show-tags
+
+  assign facebook = section.settings.facebook-enabled
+  assign x = section.settings.x-enabled
+  assign pinterest = section.settings.pinterest-enabled
+  assign email = section.settings.email-enabled
+  assign url = section.settings.url-enabled
+
+  assign show_share = false
+  if facebook or x or pinterest or email or url
+    assign show_share = true
+  endif
+-%}
+
+{%- capture render_tags -%}
+  {%- for tag in article.tags -%}
+    {%- liquid
+      assign temp_tag = tag | downcase | escape
+      assign skip = false
+
+      for hidden_tag in hidden_tags
+        assign formatted_hidden_tag = hidden_tag | downcase | escape | strip
+        if temp_tag == formatted_hidden_tag
+          assign skip = true
+          break
+        endif
+      endfor
+
+      if skip
+        continue
+      endif
+
+      assign number_of_tags = number_of_tags | plus: 1
+    -%}
+
+    <li class="article--tag">
+      <a href="{{ blog.url }}/tagged/{{ tag | handle }}">
+        {{- tag | capitalize -}}
+      </a>
+    </li>
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- liquid
+  if number_of_tags == 0
+    assign show_tags = false
+  endif
+-%}
+
+{%- if show_share or show_tags -%}
+  <div
+    class="article--navigation-root"
+    data-section-id="{{ section.id }}"
+    data-spacing-above="false"
+  >
+    <div class="article--navigation-wrapper">
+      {%- if show_tags -%}
+        <div class="article--tag-info">
+          <h3 class="article--tagged-in" data-item="block-heading">
+            {{- tagged_in_t -}}
+          </h3>
+
+          <ul class="article--tags" data-item="paragraph">
+            {{- render_tags -}}
+          </ul>
+        </div>
+      {%- endif -%}
+
+      {%- if show_share -%}
+        <div class="article--share">
+          {%-
+            render 'social-icons',
+            type: 'share',
+            align: 'right',
+            mobile_align: 'left',
+            heading: share_t,
+            social_settings: section.settings
+          -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Navigation",
+  "settings": [
+    {
+      "id": "show-tags",
+      "label": "Show article tags",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "facebook-enabled",
+      "label": "Enable Facebook sharing",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "x-enabled",
+      "label": "Enable 𝕏 sharing",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "pinterest-enabled",
+      "label": "Enable Pinterest sharing",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "email-enabled",
+      "label": "Enable email sharing",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "url-enabled",
+      "label": "Enable URL sharing",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,29 @@
+{%- liquid
+  assign css_url = name | append: '.css' | asset_url
+  assign js_url = name | append: '.js' | asset_url
+-%}
+
+{%- unless type == 'script' -%}
+  <link
+    href="{{ css_url }}"
+    rel="stylesheet"
+    onload="this.loaded=true;window.trigger('theme:{{ name | camelize }}Styles:loaded');"
+  >
+{%- endunless -%}
+
+{%- unless type == 'style' -%}
+  <script type="module">
+    import '{{ js_url }}';
+  </script>
+{%- endunless -%}
+
+{% comment %} this helps initialize sections in the theme editor {% endcomment %}
+{%- if request.design_mode -%}
+  <script type="application/json" class="section-assets">
+    {
+      "name": "{{ name }}",
+      "css": {% unless type == 'script' %}"{{ css_url }}"{% else %}false{% endunless %},
+      "js": {% unless type == 'style' %}"{{ js_url }}"{% else %}false{% endunless %}
+    }
+  </script>
+{%- endif -%}

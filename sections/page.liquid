@@ -1,0 +1,127 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign light_text = section.settings.light-text
+  assign show_title = section.settings.show-title
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+-%}
+
+{%- if page.content != blank or show_title -%}
+  <div
+    class="template-page--root"
+    data-section-id="{{ section.id }}"
+    data-background-color="{{ bg_color }}"
+    data-container-width="{{ container_width }}"
+    data-spacing-above="{{ spacing_above }}"
+    data-spacing-below="{{ spacing_below }}"
+    data-light-text="{{ light_text }}"
+    {% if page.content == blank %}
+      data-content-empty="true"
+    {% endif %}
+  >
+    <div class="template-page--wrapper">
+      {%- if show_title -%}
+        <h1 class="template-page--heading" data-item="section-heading">
+          {{- page.title -}}
+        </h1>
+      {%- endif -%}
+
+      <div data-item="rte-content">
+        {{- page.content -}}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Page",
+    "settings": [
+      {
+        "id": "show-title",
+        "label": "Show title",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "background-color",
+        "label": "Background color",
+        "type": "select",
+        "options": [
+          {
+            "label": "Transparent",
+            "value": "none"
+          },
+          {
+            "label": "Light",
+            "value": "light"
+          },
+          {
+            "label": "Dark",
+            "value": "dark"
+          },
+          {
+            "label": "Accent 1",
+            "value": "accent-1"
+          },
+          {
+            "label": "Accent 2",
+            "value": "accent-2"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "id": "light-text",
+        "label": "Use light text color",
+        "type": "checkbox",
+        "default": false
+      },
+      {
+        "id": "container-width",
+        "label": "Maximum width of container",
+        "type": "select",
+        "options": [
+          {
+            "label": "Extra small",
+            "value": "1"
+          },
+          {
+            "label": "Small",
+            "value": "2"
+          },
+          {
+            "label": "Medium",
+            "value": "3"
+          },
+          {
+            "label": "Large",
+            "value": "4"
+          },
+          {
+            "label": "Extra large",
+            "value": "5"
+          },
+          {
+            "label": "Full width",
+            "value": "6"
+          }
+        ],
+        "default": "4"
+      },
+      {
+        "id": "spacing-above",
+        "label": "Spacing above",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "id": "spacing-below",
+        "label": "Spacing below",
+        "type": "checkbox",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}

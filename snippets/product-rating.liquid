@@ -1,0 +1,24 @@
+{%- liquid
+  assign reviews = product.metafields.reviews
+  assign rating_integer = reviews.rating.value.rating | floor
+  assign rating_decimal = reviews.rating.value.rating | modulo: 1 | round: 2
+  assign rating_max = reviews.rating.value.scale_max
+  assign rating_value = rating_integer | plus: rating_decimal
+
+  assign product_rating_t = 'products.star_reviews_info' | t: rating_value: rating_value, rating_max: rating_max
+  assign total_reviews_t = 'products.total_reviews' | t
+-%}
+
+{%- if reviews.rating.value != blank and reviews.rating_count != 0 -%}
+  <div
+    class="product-rating--root"
+    role="img"
+    aria-label="{{ product_rating_t }}"
+    style="--rating:{{ rating_integer }};--rating-max:{{ rating_max }};--rating-decimal:{{ rating_decimal }};"
+  >
+    <div class="product-rating--stars"></div>
+    <span class="product-rating--count" data-item="accent-text" aria-label="{{ total_reviews_t }}">
+      {{- reviews.rating_count -}}
+    </span>
+  </div>
+{%- endif -%}

@@ -1,0 +1,5 @@
+{%- liquid
+  for product in recommendations.products
+    render 'product--list-item', product_item: product
+  endfor
+-%}

@@ -1,0 +1,1 @@
+@media only screen and (max-width:767px){.recent-products--title{text-align:center}}.recent-products--spinner{display:flex;justify-content:center;align-items:center;padding:var(--spacing--section--y) 0}[data-light-text=true] .recent-products--spinner{fill:var(--color--alternative)}

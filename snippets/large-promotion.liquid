@@ -1,0 +1,98 @@
+{%- liquid
+  assign close_t = 'general.a11y.close' | t
+
+  assign bg_color = block.settings.background-color
+  assign countdown_enabled = block.settings.countdown-enabled
+  assign days_range = block.settings.days-range
+  assign delay = block.settings.delay
+  assign light_text = block.settings.light-text
+  assign description = block.settings.description
+  assign heading = block.settings.heading
+  assign link_text = block.settings.link-text
+  assign link_url = block.settings.link-url
+  assign page_enabled = block.settings.page-enabled
+  assign page_url = block.settings.page-url
+  assign position = block.settings.position
+  assign referrer_enabled = block.settings.referrer-enabled
+  assign referrer_url = block.settings.referrer-url
+  assign show_at_bottom = block.settings.show-at-bottom
+  assign text_alignment = block.settings.text-alignment
+  assign translucent = block.settings.translucent
+-%}
+
+{%- unless page_enabled and page_url != request.path -%}
+  <popup-block
+    class="popup--block--root"
+    data-block-id="{{ block.id | camelize }}"
+    data-background-color="{{ bg_color }}"
+    data-delay="{{ delay }}"
+    data-text-alignment="{{ text_alignment }}"
+    data-translucent="{{ translucent }}"
+    data-countdown-container
+    data-show-again-after="{{ days_range }}"
+    data-show-at-bottom="{{ show_at_bottom }}"
+    data-light-text="{{ light_text }}"
+    data-position="{{ position }}"
+    data-referrer-enabled="{{ referrer_enabled }}"
+    data-referrer-url="{{ referrer_url }}"
+    data-transition-item="viewport"
+    data-transition-type="scale-in"
+    data-transition-trigger="custom"
+    data-type="large-promotion"
+    aria-hidden="true"
+    {{ block.shopify_attributes }}
+  >
+    <div class="popup--block--container">
+      {%- unless heading == blank -%}
+        <div class="popup--block--heading" data-item="block-heading">
+          {{- heading -}}
+        </div>
+      {%- endunless -%}
+
+      {%- unless description == blank -%}
+        <div class="popup--block--description" data-item="rte-content">
+          {{- description -}}
+        </div>
+      {%- endunless -%}
+
+      {%- if countdown_enabled -%}
+        {%-
+          render 'countdown-timer',
+          expiry_date: block.settings.expiry-date,
+          expiry_hours: block.settings.expiry-hours,
+          expiry_minutes: block.settings.expiry-minutes,
+          light_number: block.settings.light-number,
+          hide_when_expired: block.settings.hide-when-expired,
+          show_button_when: block.settings.show-button-when,
+          number_size: 26,
+          mobile_number_size: 18,
+          timer_bg_color: block.settings.timer-bg-color
+        -%}
+      {%- endif -%}
+
+      {%- unless link_text == blank -%}
+        <div class="popup--button" data-container="block">
+          <a
+            class="popup--button--container"
+            href="{{ link_url }}"
+            data-item="{{ settings.buttons--style }}"
+            data-text="{{- link_text -}}"
+            data-countdown-button
+            {% unless settings.transitions--buttons %}
+              data-transition-button
+            {% endunless %}
+            {% if block.settings.show-button-when == 'finished' %}
+              style="display:none;"
+            {% endif %}
+          >
+            <span>{{- link_text -}}</span>
+          </a>
+        </div>
+      {%- endunless -%}
+    </div>
+
+    <button aria-label="{{ close_t }}" class="popup--block--close">
+      {%- render 'icons', icon: 'cross' -%}
+    </button>
+  </popup-block>
+{%- endunless -%}

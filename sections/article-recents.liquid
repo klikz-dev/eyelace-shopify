@@ -1,0 +1,73 @@
+{%- liquid
+  assign continue_reading_t = 'blog.article.continue_reading' | t
+
+  comment
+    "gets a recent article that is not the next, previous, or current article"
+  endcomment
+
+  assign other_article = ''
+  for a in blog.articles
+    if a.id == blog.previous_article.id
+      continue
+    elsif a.id == blog.next_article.id
+      continue
+    elsif a.id == article.id
+      continue
+    else
+      assign other_article = a
+      break
+    endif
+  endfor
+
+  assign columns = 3
+  unless blog.next_article and blog.previous_article
+    assign columns = 2
+  endunless
+
+  render 'section-assets', name: 'article-item', type: 'style'
+-%}
+
+{%- capture sizes -%}
+  '(max-width: 767px) 100vw, {{ 100 | divided_by: columns }}vw'
+{%- endcapture %}
+
+<div
+  class="article--recents-root"
+  data-section-id="{{ section.id }}"
+  data-aspect-ratio="{{ settings.image--article-size }}"
+  data-spacing-above="false"
+>
+  <div class="article--recents-wrapper" data-container="section">
+    <div class="article--recents-header" data-container="block">
+      <h2 class="article--recents-title" data-item='section-heading'>
+        {{- continue_reading_t -}}
+      </h2>
+    </div>
+
+    <div
+      class="article--recents-grid"
+      data-container="panel"
+      data-columns="{{ columns }}"
+      data-mobile-columns="1"
+    >
+      {%- liquid
+        if blog.previous_article
+          render "article--item", featured_article: blog.previous_article, show_author: false, show_date: false, show_excerpt: false, type: 'full_article', sizes: sizes
+        endif
+
+        render "article--item", featured_article: other_article, show_author: false, show_date: false, show_excerpt: false, type: 'full_article', sizes: sizes
+
+        if blog.next_article
+          render "article--item", featured_article: blog.next_article, show_author: false, show_date: false, show_excerpt: false, type: 'full_article', sizes: sizes
+        endif
+      -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Recent articles",
+  "settings": []
+}
+{% endschema %}

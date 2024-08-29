@@ -1,0 +1,39 @@
+{%- liquid
+  assign copied_t = 'general.social.copied' | t
+  assign n_items_left_t = 'products.n_items_left' | t
+  assign no_items_left_t = 'products.no_items_left' | t
+  assign one_item_left_t = 'products.one_item_left' | t
+  assign product_form_t = 'products.sold_out.signed_up_html' | t
+  assign email_invalid_t = 'products.sold_out.email_invalid' | t
+  assign success_feedback_t = 'sections.contact.success_feedback_html' | t
+  assign success_t = 'general.mailing_list.success_message' | t
+-%}
+
+<feedback-bar-root
+  class="feedback-bar--root"
+  data-transition-item="viewport"
+  data-transition-type="slide-in"
+  data-transition-trigger="custom"
+  aria-hidden="true"
+>
+  <div
+    id="feedback"
+    class="feedback-bar--message"
+    data-background-color="dark"
+    data-translucent="true"
+    data-light-text="true"
+    data-item="accent-text"
+  ></div>
+  <script type="application/json">
+    {
+      "copied": "{{- copied_t -}}",
+      "contact-form": "{{- success_feedback_t -}}",
+      "email-invalid": "{{- email_invalid_t -}}",
+      "newsletter": "{{- success_t -}}",
+      "product-form": "{{- product_form_t -}}",
+      "product--no-items": "{{- no_items_left_t -}}",
+      "product--one-item": "{{- one_item_left_t -}}",
+      "product--n-items": "{{- n_items_left_t -}}"
+    }
+  </script>
+</feedback-bar-root>

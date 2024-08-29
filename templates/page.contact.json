@@ -1,0 +1,119 @@
+{
+  "sections": {
+    "1632436597fbc1d0e4": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": true,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify:\/\/shop_images\/TOP_BANNER22.png",
+        "overline": "Contact us",
+        "title": "Get in touch",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "main": {
+      "type": "page",
+      "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "1",
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    },
+    "16324378141979f11c": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "heading-type": "section-heading",
+        "container-width": "1",
+        "overline": "",
+        "heading": "",
+        "description": "<p>We are a small, female owned business! We have many innovative ideas about expanding our product collection. If you have product dreams you would like to share with us or ideas for how we could improve our existing products or serve you better, we would be honored to hear from you! Please reach us at the contact info listed below!<\/p>",
+        "link-url": "\/",
+        "link-text": ""
+      }
+    },
+    "1632180071f18cee62": {
+      "type": "contact",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "heading": "",
+        "store-address": "",
+        "store-hours": "",
+        "show-social-sharing": true
+      }
+    },
+    "featured_text_qDdLEm": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-1",
+        "light-text": true,
+        "heading-type": "section-heading",
+        "container-width": "4",
+        "overline": "",
+        "heading": "Makeup Artist Partnership Program",
+        "description": "<p>Eyelace offers a discount on our Collection Lash Set for Certified Makeup Artists who wish to partner with us and stun their clients with the highest quality lashes.<\/p>",
+        "link-url": "shopify:\/\/pages\/makeup-artists-partnership",
+        "link-text": "Apply Now"
+      }
+    },
+    "newsletter_DqLzfH": {
+      "type": "newsletter",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "dark",
+        "light-text": true,
+        "overline": "Discounts & Special Offers",
+        "heading": "Subscribe to our newsletter and receive special offers only for our members!",
+        "description": "<p>Our newsletter is packed full of the latest deals, tips, tricks, and trends so you can always stay ahead and get the most out of Eyelace.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "1632436597fbc1d0e4",
+    "main",
+    "16324378141979f11c",
+    "1632180071f18cee62",
+    "featured_text_qDdLEm",
+    "newsletter_DqLzfH"
+  ]
+}

@@ -1,0 +1,121 @@
+{%- liquid
+  assign contact_name_t = 'sections.contact.name' | t
+  assign contact_email_t = 'sections.contact.email' | t
+  assign contact_message_t = 'sections.contact.message' | t
+  assign contact_button_t = 'sections.contact.button' | t
+  assign open_maps_t = 'sections.map.open' | t
+  assign shopify_disclaimer_t = 'shopify.online_store.spam_detection.disclaimer_html' | t
+
+  render 'section-assets', name: 'contact', type: 'style'
+-%}
+
+<div class="contact--container">
+  {%- if store_address != blank or store_hours != blank -%}
+    <div class="contact--left-column">
+      {%- unless store_address == blank -%}
+        <div class="contact--address">
+          <address class="contact--address-text" data-item="paragraph">
+            {{- store_address | newline_to_br -}}
+          </address>
+
+          <a
+            class="contact--address-link"
+            data-item="block-link"
+            href="https://www.google.ca/maps/place/{{ store_address | url_encode }}"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>{{- open_maps_t -}}</span>
+          </a>
+        </div>
+      {%- endunless -%}
+
+      {%- unless store_hours == blank -%}
+        <div class="contact--hours" data-item="paragraph">
+          {{- store_hours -}}
+        </div>
+      {%- endunless -%}
+    </div>
+  {%- endif -%}
+
+  <div class="contact--right-column">
+    {%- form 'contact', id: form_id -%}
+      <div class="contact--form-details">
+        <label for="{{ form_id }}-contact-name" data-item="hidden-text">
+          {{ contact_name_t }}
+        </label>
+        <input
+          class="{% if form.errors contains 'name' %}error{% endif %}"
+          id="{{ form_id }}-contact-name"
+          type="text"
+          name="contact[name]"
+          value="{{ contact.fields.name }}"
+          placeholder="{{ contact_name_t }}"
+          autocomplete="name"
+          {% if form.errors contains 'name' %}
+            aria-invalid="true"
+          {% endif %}
+        />
+
+        <label for="{{ form_id }}-contact-email" data-item="hidden-text">
+          {{- contact_email_t -}}
+        </label>
+        <input
+          class="{% if form.errors contains 'email' %}error{% endif %}"
+          id="{{ form_id }}-contact-email"
+          type="email"
+          name="contact[email]"
+          value="{{ contact.fields.email }}"
+          placeholder="{{ contact_email_t }}"
+          autocomplete="email"
+          {% if form.errors contains 'email' %}
+            aria-invalid="true"
+          {% endif %}
+          required
+        />
+      </div>
+
+      <label for="{{ form_id }}-contact-textarea" data-item="hidden-text">
+        {{- contact_message_t -}}
+      </label>
+      <textarea
+        class="{% if form.errors contains 'body' %}error{% endif %}"
+        id="{{ form_id }}-contact-textarea"
+        rows="5"
+        cols="60"
+        name="contact[body]"
+        placeholder="{{ contact_message_t }}"
+        required
+      >{{ contact.fields.body }}</textarea>
+
+      <div class="contact--form-submit">
+        <button
+          type="submit"
+          value="{{ contact_button_t }}"
+          data-item="button"
+          data-text="{{- contact_button_t -}}"
+          {% unless settings.transitions--buttons %}
+            data-transition-button
+          {% endunless %}
+        >
+          <span>{{- contact_button_t -}}</span>
+        </button>
+      </div>
+
+      {%- if form.posted_successfully? or form.errors -%}
+        <script>window.location.hash = '#feedback-bar--contact-form';</script>
+      {%- endif -%}
+
+      <div data-item="hidden-text">
+        {% comment %} remove the below line to display reCAPTCHA badge {% endcomment %}
+        {{ shopify_disclaimer_t }}
+      </div>
+    {%- endform -%}
+
+    {%- liquid
+      if show_social_sharing
+        render 'social-icons', type: 'follow', align: 'center'
+      endif
+    -%}
+  </div>
+</div>

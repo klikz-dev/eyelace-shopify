@@ -1,0 +1,51 @@
+{%- liquid
+  assign from_t = 'products.from' | t
+
+  assign current_variant = product.selected_or_first_available_variant
+
+  if product.compare_at_price > product.price and product.available
+    assign compare_price = product.compare_at_price | money
+  else
+    assign compare_price = false
+  endif
+-%}
+
+{%- if product -%}
+  <div class="product--price-container">
+    <div class="product--price-wrapper">
+      {%- if product.price_varies -%}
+        <span class="product--from" data-item="accent-text">
+          {{- from_t -}}
+        </span>
+      {%- endif -%}
+
+      {%- if compare_price -%}
+        <span class="product--compare-price money" data-item="light-accent-text">
+          {{- compare_price -}}
+        </span>
+      {%- endif -%}
+
+      <span class="product--price money" data-item="accent-text">
+        {{- product.price | money -}}
+      </span>
+    </div>
+
+    <div class="product--unit-price-container" data-item="small-text">
+      {%- if current_variant.unit_price_measurement -%}
+        <span class="product--unit-price">
+          {{- current_variant.unit_price | money -}}
+        </span>/
+
+        {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
+          <span class="product--reference-value">
+            {{- current_variant.unit_price_measurement.reference_value -}}
+          </span>
+        {%- endif -%}
+
+        <span class="product--reference-unit">
+          {{- current_variant.unit_price_measurement.reference_unit -}}
+        </span>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}

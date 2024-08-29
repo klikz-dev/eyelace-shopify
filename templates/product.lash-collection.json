@@ -1,0 +1,542 @@
+{
+  "sections": {
+    "4e9385a7-14ff-4617-8542-ed651a7ec51f": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify:\/\/shop_images\/video_section.png",
+        "overline": "",
+        "title": "Buy More, Pay Less",
+        "description": "<p>For up to six additional items, get an extra 5% on each!<\/p><p>Second Item - 5% off! Third - 10% off! Fourth - 15% off! Fifth - 20% off! Sixth - 25% off! Seventh - 30% off!<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "main": {
+      "type": "product",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": true
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapsible-row-enabled": false,
+            "heading": "Description"
+          }
+        },
+        "complementary-products": {
+          "type": "complementary-products",
+          "settings": {
+            "title": "Pairs well with",
+            "max-products": 2,
+            "collapsible-row-enabled": false
+          }
+        },
+        "social-sharing": {
+          "type": "social-sharing",
+          "settings": {
+            "facebook-enabled": true,
+            "x-enabled": true,
+            "pinterest-enabled": true,
+            "email-enabled": true,
+            "url-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "vendor",
+        "price",
+        "options",
+        "buy-buttons",
+        "pickup",
+        "description",
+        "complementary-products",
+        "social-sharing"
+      ],
+      "settings": {
+        "container-width": "4",
+        "spacing-above": true,
+        "spacing-below": true,
+        "media-layout": "mixed",
+        "text-column-width": 30,
+        "media-gap": 8,
+        "column-spacing": "close",
+        "text-alignment": "left",
+        "thumbnail-width": 80,
+        "heading-enabled": false,
+        "heading-sizes-enabled": true,
+        "heading-size": 40,
+        "breadcrumbs-enabled": true,
+        "modal-enabled": true,
+        "variant-scroll-enabled": true,
+        "image-zoom-enabled": true,
+        "loop-enabled": false,
+        "mobile-media-layout": "slideshow"
+      }
+    },
+    "text_columns_geTnDr": {
+      "type": "text-columns",
+      "blocks": {
+        "image_gNjPH4": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.53.37_PM.png",
+            "title": "Stunning & Natural Look",
+            "description": "<p>Designed to blend into your natural lash, Eyelace lashes accentuate your natural beauty and create a natural effect that will stun your friends when you tell them they are false lashes.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_qLKWEd": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-26_at_1.32.02_PM.png",
+            "title": "Diverse Lash Looks For All Occasions",
+            "description": "<p>Eyelace lashes vary in dramatic effect, so that you can wear the right lash that fits the look you desire on every occasion.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_bzUVEN": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-26_at_1.34.06_PM.png",
+            "title": "Easy to Apply & Remove",
+            "description": "<p>Unlike strip lashes that are messy and unpredictable or individual eyelash extensions that rely on someone else to apply, Eyelace lashes give you full control over lash application and removal.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_m34KRG": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-26_at_1.33.02_PM.png",
+            "title": "Non-Damaging & Made For Your Skin",
+            "description": "<p>Designed with as little material as possible and sourced from the highest quality ingredients, Eyelace lashes enhance your lashes without damaging them.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gNjPH4",
+        "image_qLKWEd",
+        "image_bzUVEN",
+        "image_m34KRG"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "block-spacing": true,
+        "background-color": "dark",
+        "light-text": true,
+        "container-width": "4",
+        "width": 4,
+        "aspect-ratio": "square",
+        "image-width": 0,
+        "text-alignment": "center",
+        "overline": "Professional False Lashes",
+        "heading": "Quality Made For Beauty",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "1"
+      }
+    },
+    "edb6b679-1b0d-4698-be1b-efe7bb590de9": {
+      "type": "featured-collection",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "background-color": "none",
+        "light-text": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1",
+        "collection": "accessories",
+        "max-products": 8,
+        "heading": "Essential Accessories"
+      }
+    },
+    "5041891c-740e-40b2-a00d-936d32f31a4c": {
+      "type": "featured-video",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "text-width": "medium",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "autoplay": true,
+        "video-display-type": "aspect-ratio",
+        "aspect-ratio": 46,
+        "play-button-style": "solid",
+        "overlay-style": "darken-bottom",
+        "video-upload": "shopify:\/\/files\/videos\/EyelaceTutDraft4.mp4",
+        "video-url": "",
+        "overline": "HOW TO",
+        "heading": "Eyelace Is Easy & Convenient",
+        "description": "<p>Learn how to wear your Eyelace with our video tutorial. Anyone can achieve a professional cosmetic effect that enhances your natural beauty.<\/p>",
+        "button-text": "Learn How",
+        "button-url": "",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center",
+        "mobile-hide-description": false
+      }
+    },
+    "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92": {
+      "type": "collapsible-rows",
+      "blocks": {
+        "collapsible_row_aWY7gX": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What are Eyelace lashes made from?",
+            "description": "<p>Eyelace lashes are crafted from high-quality PBT fiber, a polyester polymer known for its durability and natural look. They are also latex-free and hypoallergenic, ensuring they are safe for sensitive skin.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-0": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I apply Eyelace lashes?",
+            "description": "<p>Watch our tutorial video to find out how to apply and remove your Eyelace Faux Lashes!<\/p><p><a href=\"\/pages\/how-to\" target=\"_blank\" title=\"How To\">How To Tutorial<\/a><\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_aVFNAq": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Can I reuse Eyelace lashes?",
+            "description": "<p>Yes, Eyelace false lashes are designed for multiple uses. With proper care and cleaning, you can reuse them several times. Be sure to gently remove any adhesive residue after each use and store them in their original packaging.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_NTRt6V": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Are Eyelace lashes suitable for sensitive eyes?",
+            "description": "<p>Absolutely. Eyelace lashes are hypoallergenic and latex-free, making them suitable for those with sensitive eyes and skin. Additionally, our Eyelace White Lash Glue is formulated to be gentle and non-irritating.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_DB7BGy": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I remove Eyelace lashes?",
+            "description": "<p>To remove your Eylace, gently pull it until the glue slowly separates from your natural lash. <br\/>If you feel any tension use a warm compress, or a shower to melt the glue before you pull.<br\/>Once removed store your lashes on the plastic tray to reuse them.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_VVgbRt": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Can I wear Eyelace lashes with glasses?",
+            "description": "<p>Yes, Eyelace offers a variety of false eyelash styles suitable for wear with glasses. Opt for shorter and more natural styles like Natural Beauty or Elegant Effect to ensure they don’t interfere with your eyewear.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_8kXxmW": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How long do Eyelace lashes last?",
+            "description": "<p>The longevity of Eyelace lashes depends on how well they are cared for. With proper maintenance, they can be reused multiple times. Always handle them gently, clean them after use, and store them in a safe place.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_LxDU8b": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What is the difference between the various Eyelace lash styles?",
+            "description": "<p>Each Eyelace lash style is designed to offer a different look and level of drama:<\/p><ul><li>Natural Beauty: Subtle enhancement for everyday wear.<\/li><li>Perfect Poise: Dark and dramatic, ideal for professional settings.<\/li><li>Elegant Effect: Wispy and elegant, adding a refined touch.<\/li><li>Day Dream: Full-bodied and charming, perfect for work and play.<\/li><li>Social Butterfly: Bold yet natural, suitable for any occasion.<\/li><li>Night Life: Extra sexy and glamorous, perfect for nights out.<\/li><li>Ball Gown: Dramatic and classy, ideal for formal events.<\/li><\/ul>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_RzLa3L": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I choose the right lash style for me?",
+            "description": "<p>Consider the occasion and the look you want to achieve. For everyday wear, opt for more natural styles like Natural Beauty or Day Dream. For a night out or special event, bolder styles like Night Life or Ball Gown will provide the dramatic effect you desire. If you wear glasses, choose shorter styles to ensure comfort. Try our Starter Kit and receive a set of each of our seven lashes so you can try them all and find your favorites!<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_3xpyCr": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Are Eyelace lashes cruelty-free?",
+            "description": "<p>Yes, Eyelace lashes are cruelty-free and made from synthetic fibers, ensuring no harm to animals.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_aWY7gX",
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-0",
+        "collapsible_row_aVFNAq",
+        "collapsible_row_NTRt6V",
+        "collapsible_row_DB7BGy",
+        "collapsible_row_VVgbRt",
+        "collapsible_row_8kXxmW",
+        "collapsible_row_LxDU8b",
+        "collapsible_row_RzLa3L",
+        "collapsible_row_3xpyCr"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "light",
+        "light-text": false,
+        "container-width": "1",
+        "heading": "Frequently Asked Questions",
+        "heading-alignment": "center"
+      }
+    },
+    "featured_text_g4i9Qi": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-1",
+        "light-text": false,
+        "heading-type": "section-heading",
+        "container-width": "4",
+        "overline": "",
+        "heading": "Makeup Artist Partnership Program",
+        "description": "<p>Eyelace offers a discount on our Collection Lash Set for Certified Makeup Artists who wish to partner with us and stun their clients with the highest quality lashes.<\/p>",
+        "link-url": "shopify:\/\/pages\/makeup-artists-partnership",
+        "link-text": "APPLY NOW"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "title": "You may also like"
+      }
+    },
+    "9122b6fc-3d6e-4f6b-8054-88ddcb8687a7": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unnamed_10_3.png",
+            "x-blocks": "2",
+            "y-blocks": "1",
+            "image-display-type": "fill",
+            "aspect-ratio": 56,
+            "title": "Engage with Community Stories",
+            "link-url": "shopify:\/\/pages\/community-stories",
+            "link-text": "Read More"
+          }
+        },
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unnamed_9_1.png",
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "image-display-type": "fill",
+            "aspect-ratio": 56,
+            "title": "Partner as a Makeup Artist",
+            "link-url": "shopify:\/\/pages\/makeup-artists-partnership",
+            "link-text": "Apply Now"
+          }
+        },
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_9.05.24_AM.png",
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "image-display-type": "fill",
+            "aspect-ratio": 56,
+            "title": "Participate in Kids' Drawing Contest",
+            "link-url": "shopify:\/\/pages\/share-your-experience",
+            "link-text": "Submit Drawing"
+          }
+        },
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.59.43_AM.png",
+            "x-blocks": "2",
+            "y-blocks": "1",
+            "image-display-type": "fill",
+            "aspect-ratio": 56,
+            "title": "Share Content & Earn Free Lash Sets",
+            "link-url": "shopify:\/\/pages\/drawing-contest",
+            "link-text": "Submit Photos & Videos"
+          }
+        }
+      },
+      "block_order": [
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-0",
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-1",
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2",
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-3"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "dark",
+        "heading-light-text": true,
+        "container-width": "4",
+        "spacing": true,
+        "width": 3,
+        "light-text": true,
+        "text-style": "light-with-darken",
+        "heading-type": "block-heading",
+        "overlay-style": "darken-bottom",
+        "overline": "Explore Our Community",
+        "heading": "Become Part of the Eyelace Community",
+        "description": "<p>Eyelace believes in being more than just an eyelash, a cosmetic intervention, or a financial transaction. We want to be a community that inspires, encourages, and connects women across the nation and beyond. Share your unique beauty and story; become part of our community today!<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "2",
+        "mobile-overlay": true,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134
+      }
+    },
+    "featured_text_EKYTYx": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "heading-type": "section-heading",
+        "container-width": "4",
+        "overline": "",
+        "heading": "REVIEW WIDGET PLACEHOLDER",
+        "description": "",
+        "link-url": "\/",
+        "link-text": ""
+      }
+    },
+    "1717124400bfcc5742": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_3jbheJ": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_3jbheJ"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    }
+  },
+  "order": [
+    "4e9385a7-14ff-4617-8542-ed651a7ec51f",
+    "main",
+    "text_columns_geTnDr",
+    "edb6b679-1b0d-4698-be1b-efe7bb590de9",
+    "5041891c-740e-40b2-a00d-936d32f31a4c",
+    "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92",
+    "featured_text_g4i9Qi",
+    "related-products",
+    "9122b6fc-3d6e-4f6b-8054-88ddcb8687a7",
+    "featured_text_EKYTYx",
+    "1717124400bfcc5742"
+  ]
+}

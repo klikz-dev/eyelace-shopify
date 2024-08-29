@@ -1,0 +1,28 @@
+<div class="mobile-nav">
+  <div
+    class="mobile-nav--header"
+    {% unless settings.transitions--other %}
+      data-transition-item="y-menu"
+    {% endunless %}
+  >
+    {%- if settings.search--show-in-header -%}
+      <div
+        class="mobile-nav--search"
+        data-item="accent-text"
+        data-drawer-open="top"
+        data-drawer-view="search"
+        tabindex="0"
+      >
+        {{- 'general.search.search' | t -}}
+      </div>
+    {%- endif -%}
+
+    <div class="mobile-nav--login" data-item="accent-text">
+      {% render 'login' %}
+    </div>
+  </div>
+
+  <div class="mobile-nav--menu" data-item="accent-text">
+    {% comment %} Copied from header {% endcomment %}
+  </div>
+</div>

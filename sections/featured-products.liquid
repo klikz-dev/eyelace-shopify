@@ -1,0 +1,253 @@
+{%- liquid
+  comment
+    Translations
+  endcomment
+
+  assign skip_link_t = 'sections.featured_collection.skip_link' | t
+
+  comment
+    Variables
+  endcomment
+
+  assign bg_color = section.settings.background-color
+  assign display_type = section.settings.display-type
+  assign heading = section.settings.heading | escape
+  assign heading_alignment = section.settings.heading-alignment
+  assign light_text = section.settings.light-text
+  assign link_text = section.settings.link-text
+  assign link_url = section.settings.link-url
+  assign product_list = section.settings.product-list
+  assign product_per_row_desktop = section.settings.products-per-row--desktop
+  assign product_per_row_mobile = section.settings.products-per-row--mobile
+  assign product_limit = product_per_row_desktop | times: 2
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign top_border = section.settings.top-border
+
+  assign onboarding = false
+  if product_list == blank
+    assign onboarding = true
+  endif
+
+  render 'section-assets', name: 'featured-collection', type: 'style'
+-%}
+
+{%- capture sizes -%}
+  '(max-width: 767px) {{ 100 | divided_by: products_per_row_mobile }}vw, {{ 100 | divided_by: products_per_row_desktop }}vw'
+{%- endcapture %}
+
+<div
+  class="featured-collection--root"
+  data-section-id="{{ section.id }}"
+  data-background-color="{{ bg_color }}"
+  data-container="section"
+  data-light-text="{{ light_text }}"
+  data-section-type="index_featured_products"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-top-border="{{ top_border }}"
+  style="display:grid;"
+>
+  {%- if heading != blank -%}
+    <div
+      class="featured-collection--header"
+      data-container="block"
+      data-heading-alignment="{{ heading_alignment }}"
+    >
+      <h2 class="featured-collection--title" data-item="section-heading">
+        {{- heading -}}
+      </h2>
+    </div>
+  {%- endif -%}
+
+  <div
+    class="featured-collection--products"
+    data-display-type="{{ display_type }}"
+    data-container="panel"
+    {%- if display_type == 'grid' -%}
+      data-columns="{{ product_per_row_desktop }}"
+      data-mobile-columns="{{ product_per_row_mobile }}"
+    {%- endif -%}
+    {% unless settings.transitions--other %}
+      data-transition-container="{{ section.id }}"
+      data-transition-type="fade-in"
+    {% endunless %}
+  >
+    {%- liquid
+      if display_type == 'slideshow'
+        echo '<a data-item="a11y-button" href="#featured-products-show-more">'
+          echo skip_link_t
+        echo '</a>'
+
+        render 'carousel', view: 'product', section_id: section.id, onboarding: onboarding, bg_color: bg_color, blocks: product_list, blocks_per_slide: 4, blocks_per_slide_mobile: 2, dot_nav_enabled: true, total_blocks: product_list.count, total_slides: product_list.count | divided_by: 2, spacing_around_blocks: true, transition_type: 'slide'
+
+      else
+        if onboarding
+          for i in (1..product_limit)
+            assign placeholder_index = i
+            if i > 6
+              assign placeholder_index = i | minus: 6
+            endif
+
+            render 'product--item', onboarding: true, placeholder_index: placeholder_index, section_id: section.id
+          endfor
+
+        else
+          for product in product_list limit: product_limit
+            render 'product--item', product_item: product, section_id: section.id, sizes: sizes
+          endfor
+        endif
+      endif
+    -%}
+  </div>
+
+  {%- unless link_text == blank -%}
+    <div data-container="block">
+      <div
+        id="featured-products-show-more"
+        class="featured-collection--show-more"
+        data-item="block-link"
+      >
+        <a href="{{ link_url }}">
+          {{- link_text -}}
+        </a>
+      </div>
+    </div>
+  {%- endunless -%}
+</div>
+
+{% schema %}
+{
+  "name": "Featured products",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style and layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "display-type",
+      "label": "Display type",
+      "type": "radio",
+      "options": [
+        { "label": "Slideshow", "value": "slideshow" },
+        { "label": "Grid", "value": "grid" }
+      ],
+      "default": "slideshow"
+    },
+    {
+      "label": "Products per row (desktop)",
+      "id": "products-per-row--desktop",
+      "type": "radio",
+      "options": [
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" }
+      ],
+      "default": "3",
+      "info": "Applies to grid display only"
+    },
+    {
+      "label": "Product per row (mobile)",
+      "id": "products-per-row--mobile",
+      "type": "radio",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "2",
+      "info": "Applies to grid display only"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "product_list",
+      "id": "product-list",
+      "label": "Products",
+      "limit": 12
+    },
+    {
+      "id": "heading",
+      "label": "Heading",
+      "type": "text",
+      "default": "Featured products"
+    },
+    {
+      "id": "heading-alignment",
+      "label": "Position heading",
+      "type": "text_alignment",
+      "default": "center"
+    },
+    {
+      "type": "url",
+      "id": "link-url",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "link-text",
+      "label": "Link text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured products"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["aside"]
+  }
+}
+{% endschema %}

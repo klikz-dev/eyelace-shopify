@@ -1,0 +1,347 @@
+{
+  "sections": {
+    "image_with_text_nPqKbw": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "large",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.56.15_AM.png",
+        "overline": "",
+        "title": "Welcome to the Eyelace Experience",
+        "description": "<p>The most natural, elegant, single-placement Faux Lashes on the market.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "main": {
+      "type": "list-collections",
+      "settings": {
+        "view": "collection-thumbnails",
+        "spacing-above": true,
+        "spacing-below": true,
+        "collection-list": [
+          "starter-kit",
+          "lashes-collection",
+          "accessories"
+        ],
+        "heading": "All Products",
+        "container-width": "4",
+        "width": 3,
+        "light-text": true,
+        "text-style": "eclipse-shadow",
+        "heading-type": "block-heading",
+        "image-type": "collection",
+        "overlay-style": "darken-bottom",
+        "spacing": true,
+        "mobile-width": "2",
+        "mobile-overlay": true
+      }
+    },
+    "testimonials_mhLqjd": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_X9xDEV": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_3.05.42_PM.png",
+            "icon": "quote",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>\"On the days I'm gonna get a sweat on, but I want to look good, feel confident, have a little flair...I always go to Eyelace.\" <\/p><p>Elle C., student athlete @elleevancasselman<\/p>"
+          }
+        },
+        "testimonial_GjUmHH": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
+          }
+        },
+        "testimonial_D3HChJ": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
+          }
+        },
+        "testimonial_PRLKtw": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_X9xDEV",
+        "testimonial_GjUmHH",
+        "testimonial_D3HChJ",
+        "testimonial_PRLKtw"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "dark",
+        "light-text": true,
+        "container-width": "4",
+        "image-shape": "circle",
+        "overline": "Our Customers Love",
+        "heading": "The Eyelace Experience",
+        "mobile-width": "1"
+      }
+    },
+    "featured_text_HYUUJb": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-1",
+        "light-text": false,
+        "heading-type": "section-heading",
+        "container-width": "4",
+        "overline": "OUR MISSION",
+        "heading": "We wear our Eyelace not because we want to be beautiful, but because we are.",
+        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are attainable at home.<\/p>",
+        "link-url": "\/",
+        "link-text": "Learn More"
+      }
+    },
+    "countdown_yDf74X": {
+      "type": "countdown",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "dark",
+        "light-text": true,
+        "text-style": "none",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "timer-bg-color": "dark",
+        "light-number": true,
+        "number-size": 40,
+        "container-width": "3",
+        "overline": "OPENING SALE",
+        "heading": "Get 10% Off Your Starter Kit",
+        "description": "<p>To celebrate our launch, enjoy a discount on our Starter Kit by purchasing today!<\/p>",
+        "link-url": "shopify:\/\/products\/starter-kit",
+        "link-text": "Shop The Sale",
+        "expiry-date": "01-01-2026",
+        "expiry-hours": 0,
+        "expiry-minutes": 0,
+        "hide-when-expired": true,
+        "show-button-when": "always",
+        "mobile-number-size": 20
+      }
+    },
+    "featured_product_m36478": {
+      "type": "featured-product",
+      "blocks": {
+        "overline_q6qq4a": {
+          "type": "overline",
+          "settings": {
+            "overline": ""
+          }
+        },
+        "heading_DmgWBQ": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "vendor_bXjQ9G": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "price_rcxWLx": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "options_Aft6Ec": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "buy_buttons_zEegFF": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "overline_q6qq4a",
+        "heading_DmgWBQ",
+        "vendor_bXjQ9G",
+        "price_rcxWLx",
+        "options_Aft6Ec",
+        "buy_buttons_zEegFF"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "container-width": "4",
+        "text-column-width": 30,
+        "thumbnail-width": 80,
+        "media-gap": 8,
+        "text-alignment": "left",
+        "featured_product": "starter-kit",
+        "loop-enabled": false
+      }
+    },
+    "featured_video_Vqh84B": {
+      "type": "featured-video",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "text-width": "medium",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "autoplay": true,
+        "video-display-type": "aspect-ratio",
+        "aspect-ratio": 56,
+        "play-button-style": "solid",
+        "overlay-style": "darken-bottom",
+        "video-upload": "shopify:\/\/files\/videos\/EyelaceTutDraft4.mp4",
+        "video-url": "",
+        "overline": "HOW TO",
+        "heading": "Eyelace Is Easy & Convenient",
+        "description": "<p>Learn how to wear your Eyelace with our video tutorial. With enough practice and support, we are confident anyone can achieve a perfect lash look with our groundbreaking Eyelace lash tools.<\/p>",
+        "button-text": "Learn How",
+        "button-url": "shopify:\/\/pages\/how-to",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center",
+        "mobile-hide-description": false
+      }
+    },
+    "text_columns_mLbmTV": {
+      "type": "text-columns",
+      "blocks": {
+        "image_8L8BpU": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.53.37_PM.png",
+            "title": "Stunning & Natural Look",
+            "description": "<p>Eyelace Strip Lashes are meant to accentuate your natural beauty, that is why we designed them to look so natural the only difference you’ll notice is how good you look.<\/p>",
+            "link-url": "shopify:\/\/collections\/lashes-collection",
+            "link-text": "View more"
+          }
+        },
+        "image_pMLeeE": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.51.52_PM.png",
+            "title": "Easy To Apply & Remove",
+            "description": "<p>Eyelace false lashes are designed to be easy to apply and remove for anyone. Whether you are on the go or perfecting your look they are simple to make a part of your routine.<\/p>",
+            "link-url": "shopify:\/\/collections\/lashes-collection",
+            "link-text": "View more"
+          }
+        },
+        "image_CzMRtX": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.56.06_PM_dfca52b1-9acb-475e-9fc7-b1754e14c47b.png",
+            "title": "Comfortable For Any Occasion",
+            "description": "<p>Eyelace eyelashes are comfortable, natural, and designed to not only look flawless but feel flawless so you can be your best self whenever and wherever you are.<\/p>",
+            "link-url": "shopify:\/\/collections\/lashes-collection",
+            "link-text": "View more"
+          }
+        },
+        "image_BWTaad": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.49.17_PM.png",
+            "title": "Non-Damaging & Made For Your Skin",
+            "description": "<p>Your natural beauty is a priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.<\/p>",
+            "link-url": "shopify:\/\/collections\/lashes-collection",
+            "link-text": "View more"
+          }
+        }
+      },
+      "block_order": [
+        "image_8L8BpU",
+        "image_pMLeeE",
+        "image_CzMRtX",
+        "image_BWTaad"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "block-spacing": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "width": 4,
+        "aspect-ratio": "square",
+        "image-width": 0,
+        "text-alignment": "center",
+        "overline": "WHY EYELACE?",
+        "heading": "Enhancing Your Natural Beauty",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "1"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_nPqKbw",
+    "main",
+    "testimonials_mhLqjd",
+    "featured_text_HYUUJb",
+    "countdown_yDf74X",
+    "featured_product_m36478",
+    "featured_video_Vqh84B",
+    "text_columns_mLbmTV"
+  ]
+}

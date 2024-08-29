@@ -1,0 +1,5 @@
+{%- render 'section-assets', name: 'product-sku', type: 'script' -%}
+
+<product-sku-root class="product-page--sku" data-item="small-text" data-id="{{ id }}">
+  {{- 'products.sku' | t -}}:&nbsp;<span>{{- product.selected_or_first_available_variant.sku -}}</span>
+</product-sku-root>

@@ -1,0 +1,31 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "show-title": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "custom_content_trYUby": {
+      "type": "custom-content",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "custom_html": "<div><p>TOS HTML EMBED HERE<\/p><\/div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_content_trYUby"
+  ]
+}

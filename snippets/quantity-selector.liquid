@@ -1,0 +1,68 @@
+{% comment %}
+  Inputs:
+    - "id" for a11y
+    - "type" lets you set use case between "cart" or "product"
+    - "value" for default quantity
+{% endcomment %}
+
+{%- liquid
+  assign minus_t = 'cart.minus' | t
+  assign plus_t = 'cart.plus' | t
+  assign quantity_t = 'cart.quantity' | t
+  assign remove_t = 'cart.remove' | t
+
+  if value == blank
+    assign value = 1
+  endif
+
+  assign label_type = 'hidden-text'
+  if type == 'product'
+    assign label_type = 'accent-text'
+  endif
+-%}
+
+<quantity-selector class="quantity-selector--root" data-id="{{ id }}" data-type="{{ type }}">
+  <label for="{{ id }}" data-item="{{ label_type }}">
+    {{- quantity_t -}}
+  </label>
+
+  <div class="quantity-selector--container">
+    <button
+      type="button"
+      class="quantity-selector--minus"
+      tabindex="0"
+      aria-role="button"
+      aria-label="{{ minus_t }}"
+    >
+      {%- render 'icons', icon: 'minus' -%}
+    </button>
+    <input
+      class="quantity-selector--input"
+      id="{{ id }}"
+      type="text"
+      name="quantity"
+      value="{{ value }}"
+      min="1"
+      pattern="[0-9]*"
+      tabindex='-1'
+      data-loading="false"
+    />
+    <button
+      type="button"
+      class="quantity-selector--plus"
+      tabindex="0"
+      aria-role="button"
+      aria-label="{{ plus_t }}"
+    >
+      {%- render 'icons', icon: 'plus' -%}
+    </button>
+  </div>
+
+  {%- if type == 'cart' -%}
+    <div class="quantity-selector--remove" data-item='block-link'>
+      <span tabindex="0" aria-label="{{ remove_t }}" title="{{ remove_t }}">
+        {{- remove_t -}}
+      </span>
+    </div>
+  {%- endif -%}
+</quantity-selector>

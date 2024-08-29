@@ -1,0 +1,280 @@
+{% comment %}
+  # Hero - desktop #
+  - Spacing + slide transition causes overhang
+  - 1-4 per slide
+
+  # Hero - mobile #
+  - 1 per slide (2 could be possible)
+  - No arrow nav
+  - Same overhang as desktop
+  - Option to show descriptions on mobile
+
+  # Product - desktop #
+  - 3-4 per slide
+  - Always overhang
+  - No fade option
+
+  # Product - mobile #
+  - 1-2 per slide
+  - No arrow nav
+{% endcomment %}
+
+{% liquid
+  if onboarding and view == 'product'
+    assign total_blocks = 8
+    assign total_slides = 2
+  elsif onboarding and view == 'product-page'
+    assign total_blocks = 4
+    assign total_slides = 4
+  endif
+
+  if view == 'product-page'
+    assign current_variant = product.selected_or_first_available_variant
+    assign featured_media = current_variant.featured_media | default: product.featured_media
+  endif
+
+  assign blocks_per_slide_mobile = blocks_per_slide_mobile | plus: 0
+  assign blocks_per_slide_float = blocks_per_slide | append: ".00"
+  assign blocks_per_slide_float_mobile = blocks_per_slide_mobile | append: ".00"
+  assign total_slides = total_blocks | divided_by: blocks_per_slide_float | ceil
+  assign total_slides_mobile = total_blocks | divided_by: blocks_per_slide_float_mobile | ceil
+  assign total_spaces = blocks_per_slide | times: total_slides
+  assign total_spaces_mobile = blocks_per_slide_mobile | times: total_slides_mobile
+
+  assign offset = 0
+  assign offset_mobile = 0
+  assign container_offset = 0
+  assign container_offset_mobile = 0
+
+  if spacing_around_blocks
+    assign offset = 48
+    assign offset_mobile = 32
+    assign container_offset = offset | times: total_slides | times: 2
+    assign container_offset_mobile = offset_mobile | times: total_slides_mobile | times: 2
+  endif
+
+  capture css_vars
+    echo '--total-slides:' | append: total_slides | append: ';'
+    echo '--total-slides-mobile:' | append: total_slides_mobile | append: ';'
+    echo '--total-spaces:' | append: total_spaces | append: ';'
+    echo '--total-spaces-mobile:' | append: total_spaces_mobile | append: ';'
+    echo '--offset:' | append: offset | append: 'px;'
+    echo '--offset-mobile:' | append: offset_mobile | append: 'px;'
+    echo '--container-offset:' | append: container_offset | append: 'px;'
+    echo '--container-offset-mobile:' | append: container_offset_mobile | append: 'px;'
+  endcapture
+
+  render 'section-assets', name: 'carousel'
+%}
+
+{%- capture sizes -%}
+  '(max-width: 767px) {{ 100 | divided_by: blocks_per_slide_mobile }}vw, {{ 100 | divided_by: blocks_per_slide }}vw'
+{%- endcapture %}
+
+<carousel-root
+  class="carousel--root"
+  data-at-end="false"
+  data-at-start="true"
+  data-auto-rotate="{{ auto_rotate }}"
+  data-background-color="{{ bg_color }}"
+  data-blocks-per-slide--mobile="{{ blocks_per_slide_mobile }}"
+  data-blocks-per-slide="{{ blocks_per_slide }}"
+  data-dot-nav="{{ dot_nav_enabled }}"
+  data-rotate-frequency="{{ rotate_frequency }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-around-blocks="{{ spacing_around_blocks }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-transition-type="{{ transition_type }}"
+  data-view="{{ view }}"
+  style="{{ css_vars }}"
+>
+  <div class="carousel--viewport">
+    {%- unless arrows_enabled == false -%}
+      <div class="carousel--arrow-nav">
+        <div class="carousel--prev" tabindex="0">
+          {%- render 'css-icons', icon: 'prev' -%}
+        </div>
+      </div>
+    {%- endunless -%}
+
+    <div class="carousel--x-container">
+      <div class="carousel--y-container">
+        {%- if onboarding and view == 'product' -%}
+          {%- for i in (1..total_blocks) -%}
+            <div
+              class="carousel--block"
+              data-loaded="{{ block_loaded }}"
+              data-loaded--mobile="{{ block_loaded_mobile }}"
+              {{ block.shopify_attributes }}
+            >
+              <div class="carousel--block--container">
+                {%- liquid
+                  assign placeholder_index = i
+                  if i > 6
+                    assign placeholder_index = i | minus: 6
+                  endif
+
+                  render 'product--item', onboarding: true, view: "slider", section_id: section_id, placeholder_index: placeholder_index
+                %}
+              </div>
+            </div>
+          {%- endfor -%}
+
+        {%- elsif onboarding and view == 'product-page' -%}
+          {%- for i in (1..total_blocks) -%}
+            <div
+              class="carousel--block"
+              data-loaded="{{ block_loaded }}"
+              data-loaded--mobile="{{ block_loaded_mobile }}"
+              {{ block.shopify_attributes }}
+            >
+              <div class="carousel--block--container">
+                {%- render "placeholder", type: "product", placeholder_index: i -%}
+              </div>
+            </div>
+          {%- endfor -%}
+
+        {%- else -%}
+          {%- for block in blocks limit: total_blocks -%}
+            {%- liquid
+              assign block_loaded = false
+              assign block_loaded_mobile = false
+              assign block_id = section_id | append: '--block-' | append: forloop.index
+
+              assign loading = 'lazy'
+              if forloop.index <= blocks_per_slide
+                assign loading = 'eager'
+                assign block_loaded = true
+              endif
+
+              if forloop.index <= blocks_per_slide_mobile
+                assign block_loaded_mobile = true
+              endif
+            -%}
+
+            <div
+              class="carousel--block"
+              data-id="{{ block_id }}"
+              data-loaded="{{ block_loaded }}"
+              data-loaded--mobile="{{ block_loaded_mobile }}"
+              {{ block.shopify_attributes }}
+            >
+              <div class="carousel--block--container">
+                {% comment %}
+                  forced
+                  section
+                  block
+                {% endcomment %}
+                {%- if view == "slideshow" and block.type == 'image' -%}
+                  {%-
+                    render 'featured-content',
+                    description: block.settings.description,
+                    heading_type: heading_type,
+                    id: block_id,
+                    image: block.settings.image,
+                    image_aspect_ratio: aspect_ratio,
+                    image_display_type: display_type,
+                    light_text: light_text,
+                    link_text: block.settings.link-text,
+                    link_url: block.settings.link-url,
+                    mobile_hide_description: block.settings.mobile-hide-description,
+                    mobile_image_display_type: mobile_display_type,
+                    mobile_image_aspect_ratio: mobile_aspect_ratio,
+                    mobile_text_alignment: block.settings.mobile-text-alignment,
+                    mobile_overlay: mobile_overlay,
+                    mobile_image: block.settings.mobile-image,
+                    mobile_per_row: blocks_per_slide_mobile,
+                    overline: block.settings.overline,
+                    overlay_style: overlay_style,
+                    per_row: blocks_per_slide,
+                    sizes: sizes,
+                    text_bg_color: text_bg_color,
+                    text_style: text_style,
+                    text_width: block.settings.text-width,
+                    text_position: 'overlay',
+                    text_x_alignment: block.settings.text-horizontal-alignment,
+                    text_y_alignment: block.settings.text-vertical-alignment,
+                    title: block.settings.title
+                  -%}
+
+                {%- elsif view == "slideshow" and block.type == 'video' -%}
+                  {%-
+                    render 'featured-video',
+                    aspect_ratio: aspect_ratio,
+                    autoplay: block.settings.autoplay,
+                    button_text: block.settings.button-text,
+                    button_url: block.settings.button-url,
+                    description: block.settings.description,
+                    display_type: display_type,
+                    heading: block.settings.heading,
+                    heading_type: heading_type,
+                    id: block_id,
+                    light_text: light_text,
+                    mobile_display_type: mobile_display_type,
+                    mobile_aspect_ratio: mobile_aspect_ratio,
+                    mobile_hide_description: block.settings.mobile-hide-description,
+                    mobile_text_alignment: block.settings.mobile-text-alignment,
+                    mobile_thumbnail: block.settings.mobile-thumbnail,
+                    overline: block.settings.overline,
+                    overlay_style: overlay_style,
+                    play_button_style: block.settings.play-button-style,
+                    text_bg_color: text_bg_color,
+                    text_style: text_style,
+                    text_x_alignment: block.settings.text-horizontal-alignment,
+                    text_y_alignment: block.settings.text-vertical-alignment,
+                    text_width: block.settings.text-width,
+                    thumbnail: block.settings.image,
+                    video_upload: block.settings.video-upload,
+                    video_url: block.settings.video-url
+                  -%}
+
+                {%- elsif view == "product" -%}
+                  {%-
+                    render 'product--item',
+                    product_item: block,
+                    view: "slider",
+                    section_id: section_id,
+                    sizes: sizes
+                  -%}
+
+                {%- elsif view == "product-page" -%}
+                  {%- liquid
+                    assign media_active = false
+                    if block.id == featured_media.id
+                      assign media_active = true
+                    endif
+                  -%}
+
+                  {%-
+                    render "product-media",
+                    product: product,
+                    product_media: block,
+                    media_active: media_active,
+                    video_looping_enabled: video_looping_enabled,
+                    media_size: "mobile",
+                    loading: loading
+                  -%}
+
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- unless arrows_enabled == false -%}
+      <div class="carousel--arrow-nav">
+        <div class="carousel--next" tabindex="0">
+          {%- render 'css-icons', icon: 'next' -%}
+        </div>
+      </div>
+    {%- endunless -%}
+  </div>
+
+  <div class="carousel--dot-container">
+    <div class="carousel--dot-viewport">
+      <div class="carousel--dot-nav"></div>
+    </div>
+  </div>
+</carousel-root>

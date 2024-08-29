@@ -1,0 +1,173 @@
+{%- liquid
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign max_products = 4
+  assign light_text = section.settings.light-text
+  assign title = section.settings.title
+  assign top_border = section.settings.top-border
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+
+  render 'section-assets', name: 'related-products', type: 'style'
+  render 'section-assets', name: 'product-recommendations', type: 'script'
+-%}
+
+<product-recommendations-root
+  class="related-products--root"
+  data-section-id="{{ section.id }}"
+  data-background-color="{{ bg_color }}"
+  data-container-width="{{ container_width }}"
+  data-intent="related"
+  data-max-products="{{ max_products }}"
+  data-light-text="{{ light_text }}"
+  data-product-id="{{ product.id }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-top-border="{{ top_border }}"
+  style="display:none;"
+>
+  <div class="related-products--wrapper" data-container="section">
+    {%- if title != blank -%}
+      <div class="related-products--header" data-container="block">
+        <h2 class="related-products--title" data-item="section-heading">
+          {{- title -}}
+        </h2>
+      </div>
+    {%- endif -%}
+
+    <div
+      class="related-products--grid"
+      data-container="panel"
+      data-columns="4"
+      data-fixed-columns="true"
+      data-mobile-columns="2"
+      data-products-container
+      {% unless settings.transitions--other %}
+        data-transition-container="related-products"
+        data-transition-type="fade-in"
+        data-transition-cascade="horizontal"
+        data-transition-cascade-interval="200"
+      {% endunless %}
+    >
+      {%- for product in recommendations.products limit: max_products -%}
+        {%-
+          render 'product--item',
+          product_item: product,
+          section_id: section.id,
+          sizes: '(max-width: 767px) 50vw, 25vw'
+        -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</product-recommendations-root>
+
+{% schema %}
+{
+  "name": "Related products",
+  "class": "section--related-products",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Dynamic recommendations change and improve with time. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)"
+    },
+    {
+      "type": "header",
+      "content": "Style and layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "container-width",
+      "label": "Maximum width of container",
+      "type": "select",
+      "options": [
+        {
+          "label": "Extra small",
+          "value": "1"
+        },
+        {
+          "label": "Small",
+          "value": "2"
+        },
+        {
+          "label": "Medium",
+          "value": "3"
+        },
+        {
+          "label": "Large",
+          "value": "4"
+        },
+        {
+          "label": "Extra large",
+          "value": "5"
+        },
+        {
+          "label": "Full width",
+          "value": "6"
+        }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "You may also like"
+    }
+  ]
+}
+{% endschema %}

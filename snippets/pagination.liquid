@@ -1,0 +1,138 @@
+{%- liquid
+  assign previous_t = 'general.pagination.previous' | t
+  assign next_t = 'general.pagination.next' | t
+  assign first_t = 'general.pagination.first' | t
+  assign last_t = 'general.pagination.last' | t
+  assign of_t = 'general.pagination.of' | t
+
+  if view == 'blog-comments'
+    assign hash = '#comments'
+  elsif view == 'collection'
+    assign hash = '#collection-root'
+  elsif view == 'search'
+    assign hash = '#search-root'
+  else
+    assign hash = ''
+  endif
+
+  if paginate.previous or paginate.next
+    for part in paginate.parts
+      if forloop.first and paginate.previous
+        capture first_link
+          echo part.url
+        endcapture
+        continue
+      endif
+
+      if forloop.last and paginate.next
+        capture last_link
+          echo part.url
+        endcapture
+      endif
+    endfor
+  endif
+
+  render 'section-assets', name: 'pagination', type: 'style'
+-%}
+
+<div class="pagination--root" data-item="accent-text">
+  <a
+    class="pagination--link"
+    {%- if paginate.previous -%}
+      href="{{ first_link }}{{ hash }}"
+    {%- else -%}
+      tabindex="-1"
+    {%- endif -%}
+    role="button"
+    aria-label="{{ first_t }}"
+  >
+    <div
+      class="pagination--first-arrow"
+      {%- unless paginate.previous -%}
+        aria-hidden="true"
+      {%- endunless -%}
+    >
+      {%- liquid
+        if paginate.previous
+          render 'icons', icon: 'first'
+        endif
+      -%}
+    </div>
+  </a>
+
+  <a
+    class="pagination--link"
+    {%- if paginate.previous -%}
+      href="{{ paginate.previous.url }}{{ hash }}"
+    {%- else -%}
+      tabindex="-1"
+    {%- endif -%}
+    role="button"
+    aria-label="{{ previous_t }}"
+  >
+    <div
+      class="pagination--left-arrow"
+      {%- unless paginate.previous -%}
+        aria-hidden="true"
+      {%- endunless -%}
+    >
+      {%- liquid
+        if paginate.previous
+          render 'icons', icon: 'chevron-left'
+        endif
+      -%}
+    </div>
+  </a>
+
+  <div class="pagination--of">
+    {{- paginate.current_page }} {{ of_t }} {{ paginate.pages -}}
+  </div>
+
+  <a
+    class="pagination--link"
+    {%- if paginate.next -%}
+      href="{{ paginate.next.url }}{{ hash }}"
+    {%- else -%}
+      tabindex="-1"
+    {%- endif -%}
+    role="button"
+    aria-label="{{ next_t }}"
+  >
+    <div
+      class="pagination--right-arrow"
+      {%- unless paginate.next -%}
+        aria-hidden="true"
+      {%- endunless -%}
+    >
+      {%- liquid
+        if paginate.next
+          render 'icons', icon: 'chevron-right'
+        endif
+      -%}
+    </div>
+  </a>
+
+  <a
+    class="pagination--link"
+    {%- if paginate.next -%}
+      href="{{ last_link }}{{ hash }}"
+    {%- else -%}
+      tabindex="-1"
+    {%- endif -%}
+    role="button"
+    aria-label="{{ last_t }}"
+  >
+    <div
+      class="pagination--last-arrow"
+      {%- unless paginate.next -%}
+        aria-hidden="true"
+      {%- endunless -%}
+    >
+      {%- liquid
+        if paginate.next
+          render 'icons', icon: 'last'
+        endif
+      -%}
+    </div>
+  </a>
+</div>

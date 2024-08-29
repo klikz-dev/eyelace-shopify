@@ -1,0 +1,1 @@
+class Placeholder extends HTMLElement{constructor(){super()}connectedCallback(){this.querySelectorAll("path").forEach(e=>{var t=Math.ceil(e.getTotalLength());e.setStyles({strokeDasharray:t,strokeDashoffset:t})})}}customElements.define("placeholder-root",Placeholder);

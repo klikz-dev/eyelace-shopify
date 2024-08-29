@@ -1,0 +1,67 @@
+{%- liquid
+  assign no_results_t = 'general.search.no_results' | t
+
+  if type == 'article'
+    assign url = routes.search_url | append: '?type=article&q=' | append: predictive_search.terms | append: '*'
+  elsif type == 'collection'
+    assign url = routes.collections_url
+  elsif type == 'custom'
+    assign results = linklists[settings.search--list].links
+    assign title = settings.search--list-heading
+  endif
+-%}
+
+<div class="predictive-search--item">
+  {%- if url -%}
+    <a href="{{ url }}">
+  {%- endif -%}
+
+  {%- unless title == blank -%}
+    <div
+      class="predictive-search--heading"
+      data-item="block-heading"
+      {% unless settings.transitions--text %}
+        data-transition-item="search"
+        data-transition-cascade="vertical"
+        data-transition-cascade-interval="120"
+      {% endunless %}
+    >
+      {{- title }}
+    </div>
+  {%- endunless -%}
+
+  {%- if url -%}
+    </a>
+  {%- endif -%}
+
+  {%- if results.size > 0 -%}
+    <div class="predictive-search--container" data-item="paragraph">
+      {%- for result in results limit: limit -%}
+        <div
+          class="predictive-search--item"
+          {% unless settings.transitions--text %}
+            data-transition-item="search"
+            data-transition-cascade="vertical"
+            data-transition-cascade-interval="120"
+          {% endunless %}
+        >
+          <a href="{{ result.url }}">
+            {%- liquid
+              if type == 'query'
+                echo result.styled_text
+              else
+                echo result.title
+              endif
+            -%}
+          </a>
+        </div>
+      {%- endfor -%}
+    </div>
+
+  {%- else -%}
+    <div class="predictive-search--feedback" data-item="paragraph">
+      {{- no_results_t -}}
+    </div>
+
+  {%- endif -%}
+</div>

@@ -1,0 +1,200 @@
+{%- liquid
+  assign browse_t = 'sections.navigation.browse' | t
+  assign clear_all_t = 'sections.navigation.clear_all' | t
+  assign large_layout_t = 'sections.navigation.large_layout' | t
+  assign refine_t = 'sections.navigation.refine' | t
+  assign small_layout_t = 'sections.navigation.small_layout' | t
+  assign sort_by_t = 'sections.navigation.sort_by' | t
+
+  assign show_filter = false
+  if show_browse_button or show_refine_button or show_sort_button
+    assign show_filter = true
+  endif
+
+  render 'section-assets', name: 'navigation'
+-%}
+
+<navigation-root
+  class="navigation--root"
+  data-section-id="{{ section.id }}"
+  data-show-navigation="{% if show_filter or show_layout_buttons %}true{% else %}false{% endif %}"
+  data-storage-name="{{ storage_name }}"
+  data-url="{{ ajax_url }}"
+  style="display:block;"
+>
+  {%- if show_filter or show_layout_buttons -%}
+    <div class="navigation--container" data-mq="medium-large">
+
+      {%- if show_filter -%}
+        <div class="navigation--filter" data-item="nav-text">
+          {%- if show_browse_button -%}
+            <div
+              class="navigation--button"
+              tabindex="0"
+              data-drawer-open="right"
+              data-drawer-view="filter"
+              data-toggle-menu="browse-filter"
+              aria-haspopup="menu"
+            >
+              {{ browse_t }}
+            </div>
+          {%- endif -%}
+          {%- if show_sort_button -%}
+            <div
+              class="navigation--button"
+              tabindex="0"
+              data-drawer-open="right"
+              data-drawer-view="filter"
+              data-toggle-menu="sort-filter"
+              aria-haspopup="menu"
+            >
+              {{ sort_by_t }}
+            </div>
+          {%- endif -%}
+          {%- if show_refine_button -%}
+            <div
+              class="navigation--button"
+              tabindex="0"
+              data-drawer-open="right"
+              data-drawer-view="filter"
+              data-toggle-menu="refine-filter"
+              aria-haspopup="menu"
+            >
+              {{- refine_t -}}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {%- if results_string -%}
+        <div class="navigation--results" data-item="caption">
+          {{- results_string -}}
+        </div>
+      {%- endif -%}
+
+      {%- if show_layout_buttons -%}
+        <div class="navigation--layout">
+          <div
+            class="navigation--layout-button"
+            tabindex="0"
+            data-active="false"
+            data-column-size="2"
+            role="button"
+            aria-label="{{ large_layout_t }}"
+          >
+            {%- render 'icons', icon: 'grid-large' -%}
+          </div>
+          <div
+            class="navigation--layout-button"
+            tabindex="0"
+            data-active="false"
+            data-column-size
+            role="button"
+            aria-label="{{ small_layout_t }}"
+          >
+            {%- render 'icons', icon: 'grid-small' -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+    </div>
+  {%- endif -%}
+
+  <div class="navigation--mobile-header" data-container="block" data-mq="small">
+    {%- if show_browse_button and mobile_buttons contains 'browse' -%}
+      <div
+        class="navigation--mobile-button"
+        tabindex="0"
+        data-item="accent-text"
+        data-drawer-open="right"
+        data-drawer-view="filter"
+        data-toggle-menu="browse-filter"
+        aria-haspopup="menu"
+      >
+        {{- browse_t -}}
+      </div>
+    {%- endif -%}
+    {%- if show_sort_button and mobile_buttons contains 'sort' -%}
+      <div
+        class="navigation--mobile-button"
+        tabindex="0"
+        data-item="accent-text"
+        data-drawer-open="right"
+        data-drawer-view="filter"
+        data-toggle-menu="sort-filter"
+        aria-haspopup="menu"
+      >
+        {{- sort_by_t -}}
+      </div>
+    {%- endif -%}
+    {%- if show_refine_button and mobile_buttons contains 'refine' -%}
+      <div
+        class="navigation--mobile-button"
+        tabindex="0"
+        data-item="accent-text"
+        data-drawer-open="right"
+        data-drawer-view="filter"
+        data-toggle-menu="refine-filter"
+        aria-haspopup="menu"
+      >
+        {{- refine_t -}}
+      </div>
+    {%- endif -%}
+  </div>
+
+  {%- if show_sort_list or show_refine_list -%}
+    {%- comment -%} this is used to render active tags above the product grid {%- endcomment -%}
+    <div
+      class="navigation--tags-container"
+      data-container="block"
+      style="display:none;"
+    >
+      <ul class="navigation--active-tags" data-item="nav-text--sub">
+        {%- if show_sort_list -%}
+          <li
+            class="navigation--active-tag"
+            data-type="sort"
+            tabindex="0"
+            style="display:none;"
+          >
+            {{ sort_by_t }}:&nbsp;<span></span>
+            {%- render 'icons', icon: 'cross' -%}
+          </li>
+        {%- endif -%}
+        {%- if show_refine_list -%}
+          <li
+            class="navigation--active-tag"
+            data-type="refine"
+            tabindex="0"
+            style="display:none;"
+          >
+            {%- if swatches_enabled -%}
+              <label
+                class="navigation--active-tag--swatch"
+                data-item="swatch"
+              ></label>
+            {%- endif -%}
+
+            <span></span>
+            {%- render 'icons', icon: 'cross' -%}
+          </li>
+          <li
+            class="navigation--active-tag"
+            data-type="price"
+            tabindex="0"
+            style="display:none;"
+          >
+            {{- cart.currency.symbol -}}
+            <span data-min-price></span>&nbsp;-&nbsp;
+            {{- cart.currency.symbol -}}
+            <span data-max-price></span>
+            {%- render 'icons', icon: 'cross' -%}
+          </li>
+        {%- endif -%}
+        <li class="navigation--active-clear" tabindex="0" data-item="block-link">
+          <span>{{ clear_all_t }}</span>
+        </li>
+      </ul>
+    </div>
+  {%- endif -%}
+</navigation-root>

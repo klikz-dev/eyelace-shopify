@@ -1,0 +1,346 @@
+{%- liquid
+  assign aspect_ratio = section.settings.image-shape
+  assign bg_color = section.settings.background-color
+  assign container_width = section.settings.container-width
+  assign heading = section.settings.heading
+  assign light_text = section.settings.light-text
+  assign mobile_columns = section.settings.mobile-width
+  assign overline = section.settings.overline
+  assign spacing_above = section.settings.spacing-above
+  assign spacing_below = section.settings.spacing-below
+  assign top_border = section.settings.top-border
+
+  render 'section-assets', name: 'testimonials', type: 'style'
+-%}
+
+<div
+  class="testimonials--root"
+  data-section-id="{{ section.id }}"
+  data-container-width="{{ container_width }}"
+  data-background-color="{{ bg_color }}"
+  data-aspect-ratio="{{ aspect_ratio }}"
+  data-light-text="{{ light_text }}"
+  data-spacing-above="{{ spacing_above }}"
+  data-spacing-below="{{ spacing_below }}"
+  data-top-border="{{ top_border }}"
+>
+  <div class="testimonials--wrapper" data-container="section">
+    {%- if overline != blank or heading != blank -%}
+      <div class="testimonials--header" data-container="block">
+        {%- if overline != blank -%}
+          <p class="testimonials--overline" data-item="overline">
+            {{- overline | escape -}}
+          </p>
+        {%- endif -%}
+
+        {%- if heading != blank -%}
+          <h3 class="testimonials--heading" data-item="section-heading">
+            {{- heading | escape -}}
+          </h3>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div
+      class="testimonials--body"
+      data-container="panel"
+      data-columns="4"
+      data-fixed-columns="true"
+      data-mobile-columns="{{ mobile_columns }}"
+      {% unless settings.transitions--other %}
+        data-transition-container="{{ section.id }}"
+        data-transition-type="fade-in"
+        data-transition-cascade="horizontal"
+        data-transition-cascade-interval="200"
+      {% endunless %}
+    >
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign author_name = block.settings.author-name
+          assign author_role = block.settings.author-role
+          assign description = block.settings.description
+          assign icon = block.settings.icon
+          assign image = block.settings.image
+        -%}
+
+        <div
+          class="testimonials--block"
+          {% unless settings.transitions--other %}
+            data-transition-item="{{ section.id }}"
+          {% endunless %}
+          {{ block.shopify_attributes }}
+        >
+          {%- if image -%}
+            {%- capture sizes -%}
+              '(max-width: 767px) {{ 100 | divided_by: mobile_columns }}vw, 25vw'
+            {%- endcapture %}
+
+            <div class="testimonials--image">
+              {{-
+                image |
+                image_url: width: image.width |
+                image_tag:
+                  widths: "300, 500, 767, 1000, 1200",
+                  sizes: sizes
+              -}}
+            </div>
+          {%- endif -%}
+
+          {%- if icon == 'quote' -%}
+            {%- render 'icons', icon: 'quote' -%}
+
+          {%- elsif icon != 'none' -%}
+            <div class="testimonials--rating">
+              {%- liquid
+                assign rating = icon | divided_by: 2 | floor
+                assign rating_modulo = icon | modulo: 2
+
+                for i in (1..rating)
+                  render 'icons', icon: 'star'
+                endfor
+
+                if rating_modulo == 1
+                  render 'icons', icon: 'half-star'
+                endif
+              -%}
+            </div>
+
+          {%- endif -%}
+
+          {%- if author_role != blank or author_name != blank or description != blank -%}
+            <div class="testimonials--info">
+              {%- if author_role != blank -%}
+                <p class="testimonials--role" data-item="overline">
+                  {{- author_role | escape -}}
+                </p>
+              {%- endif -%}
+
+              {%- if author_name != blank -%}
+                <p class="testimonials--name" data-item="block-heading">
+                  {{- author_name | escape -}}
+                </p>
+              {%- endif -%}
+
+              {%- if description != blank -%}
+                <div class="testimonials--description" data-item="paragraph">
+                  {{- description -}}
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Style and layout"
+    },
+    {
+      "id": "top-border",
+      "label": "Top border",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "spacing-above",
+      "label": "Spacing above",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "spacing-below",
+      "label": "Spacing below",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "id": "background-color",
+      "label": "Background color",
+      "type": "select",
+      "options": [
+        {
+          "label": "Transparent",
+          "value": "none"
+        },
+        {
+          "label": "Light",
+          "value": "light"
+        },
+        {
+          "label": "Dark",
+          "value": "dark"
+        },
+        {
+          "label": "Accent 1",
+          "value": "accent-1"
+        },
+        {
+          "label": "Accent 2",
+          "value": "accent-2"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "id": "light-text",
+      "label": "Use light text color",
+      "type": "checkbox",
+      "default": false
+    },
+    {
+      "id": "container-width",
+      "label": "Maximum width of container",
+      "type": "select",
+      "options": [
+        {
+          "label": "Extra small",
+          "value": "1"
+        },
+        {
+          "label": "Small",
+          "value": "2"
+        },
+        {
+          "label": "Medium",
+          "value": "3"
+        },
+        {
+          "label": "Large",
+          "value": "4"
+        },
+        {
+          "label": "Extra large",
+          "value": "5"
+        },
+        {
+          "label": "Full width",
+          "value": "6"
+        }
+      ],
+      "default": "4"
+    },
+    {
+      "id": "image-shape",
+      "label": "Image shape",
+      "type": "select",
+      "options": [
+        { "label": "Natural", "value": "natural" },
+        { "label": "Square (1:1)", "value": "square" },
+        { "label": "Landscape (4:3)", "value": "landscape" },
+        { "label": "Portrait (2:3)", "value": "portrait" },
+        { "label": "Circle", "value": "circle" }
+      ],
+      "default": "circle"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "id": "overline",
+      "label": "Overline",
+      "type": "text",
+      "default": "Overline text"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Testimonials"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "id": "mobile-width",
+      "label": "Blocks per row for small devices",
+      "type": "radio",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "1"
+    }
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "id": "icon",
+          "label": "Icon",
+          "type": "select",
+          "options": [
+            { "label": "None", "value": "none" },
+            { "label": "Quote", "value": "quote" },
+            { "label": "0.5 star", "value": "1" },
+            { "label": "1 star", "value": "2" },
+            { "label": "1.5 stars", "value": "3" },
+            { "label": "2 stars", "value": "4" },
+            { "label": "2.5 stars", "value": "5" },
+            { "label": "3 stars", "value": "6" },
+            { "label": "3.5 stars", "value": "7" },
+            { "label": "4 stars", "value": "8" },
+            { "label": "4.5 stars", "value": "9" },
+            { "label": "5 stars", "value": "10" }
+          ],
+          "default": "quote"
+        },
+        {
+          "type": "text",
+          "id": "author-role",
+          "label": "Author's role"
+        },
+        {
+          "type": "text",
+          "id": "author-name",
+          "label": "Author's name"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>Here you can include a short description about the author or their testimonial.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["aside"]
+  }
+}
+{% endschema %}

@@ -1,0 +1,250 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection--header",
+      "settings": {
+        "show-title": true,
+        "heading-type": "featured-heading",
+        "heading-alignment": "center",
+        "show-description": true,
+        "description-alignment": "with-title",
+        "light-text": true,
+        "show-image": true,
+        "use-image-fallback": true,
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "text-style": "none",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false
+      }
+    },
+    "navigation": {
+      "type": "collection--navigation",
+      "settings": {
+        "show-browse-button": true,
+        "show-sort-button": true,
+        "show-refine-button": true,
+        "show-layout-buttons": true,
+        "show-collections-list": true,
+        "custom-list-collections": "",
+        "show-sort-list": true,
+        "show-refine-list": true,
+        "swatches-enabled": false,
+        "show-search-link": true
+      }
+    },
+    "main": {
+      "type": "collection--body",
+      "blocks": {
+        "grid-promo-1": {
+          "type": "promotion",
+          "settings": {
+            "row-number": 2,
+            "column-number": 2,
+            "promo-width": 2,
+            "heading-type": "featured-heading",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "text-width": "medium",
+            "text-style": "none",
+            "text-background-color": "light",
+            "overlay-style": "darken-bottom",
+            "image-display-type": "medium",
+            "aspect-ratio": 56,
+            "parallax-enabled": false,
+            "light-text": false,
+            "overline": "Up to 30% Off",
+            "title": "Buy More, Pay Less",
+            "description": "<p>Get up to 30% off when you purchase more Lash Sets.<\/p>",
+            "link-url": "",
+            "link-text": "",
+            "mobile-hide-description": false,
+            "mobile-image-display-type": "original",
+            "mobile-aspect-ratio": 134,
+            "mobile-text-alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "grid-promo-1"
+      ],
+      "settings": {
+        "products-per-row--desktop": 4,
+        "products-per-row--mobile": "1",
+        "number-of-rows": 4
+      }
+    },
+    "text_columns_BgyhLQ": {
+      "type": "text-columns",
+      "blocks": {
+        "image_TrR44R": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.59.02_AM.png",
+            "title": "Stunning & Natural Look",
+            "description": "<p>Eyelace strip lashes are meant to accentuate your natural beauty, that is why we designed them to look so natural the only difference you’ll notice is how good you look.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_MiH74T": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.59.02_AM.png",
+            "title": "Easy To Apply & Remove",
+            "description": "<p>Eyelace false lashes are designed to be easy to apply and remove for anyone. Whether you are on the go or perfecting your look they are simple to make a part of your routine.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_F9KDQX": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.59.02_AM.png",
+            "title": "Comfortable For Any Occasion",
+            "description": "<p>Eyelace eyelashes are comfortable, natural, and designed to not only look flawless but feel flawless so you can be your best self whenever and wherever you are.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_64P8gf": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.59.02_AM.png",
+            "title": "Non-Damaging & Made For Your Skin",
+            "description": "<p>Your natural beauty is a priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.<\/p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_TrR44R",
+        "image_MiH74T",
+        "image_F9KDQX",
+        "image_64P8gf"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "block-spacing": true,
+        "background-color": "dark",
+        "light-text": true,
+        "container-width": "4",
+        "width": 4,
+        "aspect-ratio": "square",
+        "image-width": 0,
+        "text-alignment": "center",
+        "overline": "WHY EYELACE?",
+        "heading": "Enhancing Your Natural Beauty",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "1"
+      }
+    },
+    "featured_video_9P8HAn": {
+      "type": "featured-video",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "text-width": "medium",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-style": "eclipse-shadow",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "autoplay": true,
+        "video-display-type": "aspect-ratio",
+        "aspect-ratio": 56,
+        "play-button-style": "solid",
+        "overlay-style": "darken-bottom",
+        "video-upload": "shopify:\/\/files\/videos\/EyelaceTutDraft4.mp4",
+        "video-url": "",
+        "overline": "HOW TO",
+        "heading": "Eyelace Is Easy & Convenient",
+        "description": "<p>Learn how to wear your Eyelace with our video tutorial. Anyone can achieve a professional cosmetic effect that enhances your natural beauty.<\/p>",
+        "button-text": "Learn How",
+        "button-url": "shopify:\/\/pages\/how-to",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center",
+        "mobile-hide-description": false
+      }
+    },
+    "countdown_843Cmn": {
+      "type": "countdown",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "dark",
+        "light-text": true,
+        "text-style": "none",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "timer-bg-color": "dark",
+        "light-number": true,
+        "number-size": 40,
+        "container-width": "3",
+        "overline": "OPENING SALE",
+        "heading": "Get 10% Off Your Starter Kit",
+        "description": "<p>For our opening sale get 10% off your Eyelace Starter Kit when you puchase now!<\/p>",
+        "link-url": "shopify:\/\/products\/starter-kit",
+        "link-text": "Shop The Sale",
+        "expiry-date": "01-01-2026",
+        "expiry-hours": 0,
+        "expiry-minutes": 0,
+        "hide-when-expired": true,
+        "show-button-when": "always",
+        "mobile-number-size": 20
+      }
+    },
+    "recent-products": {
+      "type": "recent-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "light",
+        "light-text": false,
+        "heading-alignment": "center",
+        "heading": "Recently viewed"
+      }
+    },
+    "newsletter_FB8aUp": {
+      "type": "newsletter",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-1",
+        "light-text": false,
+        "overline": "DISCOUNTS & SPECIAL OFFERS",
+        "heading": "Subscribe to our newsletter and receive special offers only for our members!",
+        "description": "<p>Our newsletter is packed full of the latest deals, tips, tricks, and trends so you can always stay ahead and get the most out of Eyelace.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "navigation",
+    "main",
+    "text_columns_BgyhLQ",
+    "featured_video_9P8HAn",
+    "countdown_843Cmn",
+    "recent-products",
+    "newsletter_FB8aUp"
+  ]
+}

@@ -1,0 +1,47 @@
+{%- liquid
+  comment
+    Translations
+  endcomment
+
+  assign intro_t = 'general.404.intro' | t
+  assign home_page_link = 'general.404.home_page_link' | t
+  assign page_title_t = 'general.404.page_title' | t
+  assign products_link_t = 'general.404.products_link' | t
+-%}
+
+{%- capture home_page_link -%}
+  <a href="{{ shop.url }}">{{ home_page_link }}</a>
+{%- endcapture -%}
+
+{%- capture products_link -%}
+  <a href="{{ routes.all_products_collection_url }}">{{ products_link_t }}</a>
+{%- endcapture -%}
+
+<div
+  class="four-o-four--root"
+  data-section-id="{{ section.id }}"
+>
+  <div class="four-o-four--wrapper">
+    <h1 class="four-o-four--heading" data-item="section-heading">
+      {{- page_title_t -}}
+    </h1>
+
+    <h3 class="four-o-four--info" data-item="block-heading">
+      {{- intro_t -}}
+    </h3>
+
+    <p>
+      {{-
+        'general.404.return_links_html' | t:
+        home_page_link: home_page_link, products_link: products_link
+      -}}
+    </p>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "404",
+    "settings": []
+  }
+{% endschema %}

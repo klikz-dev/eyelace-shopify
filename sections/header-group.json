@@ -1,0 +1,31 @@
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "settings": {
+        "home-page-only": false,
+        "background-color": "accent-1",
+        "light-text": false,
+        "text": "Eyelace Has Launched! Get Your Starter Kit Today!",
+        "link": ""
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "background-color": "dark",
+        "light-text": true,
+        "logo": "{{ shop.brand.logo }}",
+        "logo-height": 35,
+        "mobile-logo-height": 30,
+        "menu": "header"
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}
