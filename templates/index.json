@@ -696,6 +696,7 @@
       "block_order": [
         "socialwidget_instagram_feed_base_widget_GzPH4E"
       ],
+      "disabled": true,
       "settings": {
         "background-color": "none",
         "light-text": false,
@@ -727,6 +728,7 @@
       "blocks": {
         "juniper_tiktok_feed_mintty_tiktok_feed_hmRVRb": {
           "type": "shopify:\/\/apps\/juniper-tiktok-feed\/blocks\/mintty-tiktok-feed\/fa514c33-5475-4484-b270-5f1e7eb87a9a",
+          "disabled": true,
           "settings": {
             "title": "",
             "title_color": "",
@@ -738,6 +740,7 @@
       "block_order": [
         "juniper_tiktok_feed_mintty_tiktok_feed_hmRVRb"
       ],
+      "disabled": true,
       "settings": {
         "background-color": "none",
         "light-text": false,
