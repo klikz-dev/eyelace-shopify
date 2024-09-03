@@ -688,6 +688,7 @@
       "blocks": {
         "socialwidget_instagram_feed_base_widget_GzPH4E": {
           "type": "shopify:\/\/apps\/socialwidget\/blocks\/base-widget\/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
+          "disabled": true,
           "settings": {
           }
         }
@@ -705,6 +706,7 @@
     },
     "featured_text_fPaNCj": {
       "type": "featured-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
