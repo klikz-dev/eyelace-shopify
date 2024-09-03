@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "slideshow": {
@@ -326,11 +335,11 @@
         "testimonial_MjhCez": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/test02_large_1.png",
+            "image": "shopify:\/\/shop_images\/IMG_4696_e6be543d-92b9-45e9-9488-7e13a561cd7e.jpg",
             "icon": "quote",
-            "author-role": "Model",
-            "author-name": "Jocelyn H.",
-            "description": "<p>Eyelace’s lashes impress at every shoot. Whether I am working or networking I feel confident knowing my lashes are flawless.<\/p>"
+            "author-role": "Entrepreneur",
+            "author-name": "Bri W.",
+            "description": "<p>\"As a black, female entrepreneur, confidence is key, and your eyes are the focal point of your connections and communication.\" @thebrittanybrand01<\/p>"
           }
         },
         "testimonial_RrKatf": {
