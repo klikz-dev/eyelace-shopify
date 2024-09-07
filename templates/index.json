@@ -617,13 +617,13 @@
         "image_Tjmffx": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Photo_Sep_07_2024_11_41_22_AM.jpg",
-            "mobile-image": "shopify:\/\/shop_images\/Photo_Sep_07_2024_11_41_22_AM.jpg",
+            "image": "shopify:\/\/shop_images\/Photo_Sep_07_2024_12_03_43_PM.jpg",
+            "mobile-image": "shopify:\/\/shop_images\/Photo_Sep_07_2024_12_03_43_PM.jpg",
             "x-blocks": "1",
             "y-blocks": "1",
             "image-display-type": "fill",
             "aspect-ratio": 56,
-            "title": "Enter Children's Drawing Contest",
+            "title": "Enter Drawing Contest",
             "link-url": "",
             "link-text": "Submit Entry"
           }
@@ -658,7 +658,7 @@
         "spacing": true,
         "width": 3,
         "light-text": true,
-        "text-style": "eclipse-shadow",
+        "text-style": "none",
         "heading-type": "block-heading",
         "overlay-style": "darken-bottom",
         "overline": "Buliding A Community",
