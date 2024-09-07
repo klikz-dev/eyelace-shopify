@@ -591,7 +591,8 @@
         "image_qLWmqt": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/unnamed_10_3.png",
+            "image": "shopify:\/\/shop_images\/photo_4a24deb6-1179-4b4e-8e86-5e6f59fa1ac9.jpg",
+            "mobile-image": "shopify:\/\/shop_images\/photo_4a24deb6-1179-4b4e-8e86-5e6f59fa1ac9.jpg",
             "x-blocks": "2",
             "y-blocks": "1",
             "image-display-type": "fill",
@@ -604,7 +605,8 @@
         "image_KJJai8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.57.03_AM.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-09-07_at_12.21.14_PM.png",
+            "mobile-image": "shopify:\/\/shop_images\/Screenshot_2024-09-07_at_12.21.14_PM.png",
             "x-blocks": "1",
             "y-blocks": "1",
             "image-display-type": "fill",
@@ -631,7 +633,8 @@
         "image_4AfCyJ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TOP_BANNER22.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-09-07_at_12.10.39_PM_5a6dd6ca-ec55-459c-8e7b-3a2828d5da6f.png",
+            "mobile-image": "shopify:\/\/shop_images\/Screenshot_2024-09-07_at_12.10.39_PM_5a6dd6ca-ec55-459c-8e7b-3a2828d5da6f.png",
             "x-blocks": "2",
             "y-blocks": "1",
             "image-display-type": "fill",
@@ -659,7 +662,7 @@
         "width": 3,
         "light-text": true,
         "text-style": "none",
-        "heading-type": "block-heading",
+        "heading-type": "section-heading",
         "overlay-style": "darken-bottom",
         "overline": "Buliding A Community",
         "heading": "Become Part of our Growing Community",
