@@ -345,21 +345,21 @@
         "testimonial_RrKatf": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/test02_large_1.png",
+            "image": "shopify:\/\/shop_images\/IMG_4888.jpg",
             "icon": "quote",
-            "author-role": "Business Owner",
-            "author-name": "Maria M.",
-            "description": "<p>These lashes give me the confidence I need when I walk into a meeting or meet with my clients every time. The fact that they are so quick and easy to wear means I waste 0 time getting ready during my busy schedule.<\/p>"
+            "author-role": "Designer & Stylist",
+            "author-name": "Melissa C.",
+            "description": "<p>\"It's just so much fun to be play with beauty and try new things. Expressing myself creatively is essential to who I am both personally and professionally.\"        @melissa_choi<\/p>"
           }
         },
         "testimonial_jwdbtX": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/test02_large_1.png",
+            "image": "shopify:\/\/shop_images\/IMG_4890.jpg",
             "icon": "quote",
-            "author-role": "Actress",
-            "author-name": "Clara J.",
-            "description": "<p>A part of my life is making sure I look and feel my best, that way I can wow people no matter when and where. Having my eyelashes be a part of that is essential to that lifestyle.<br\/><\/p>"
+            "author-role": "Proud Mama & Grandmama",
+            "author-name": "Wade's Mom",
+            "description": "<p>\"You just never outgrow the desire to feel beautiful in your own skin. You just don't. Most things change, but that remains the same.\"<\/p>"
           }
         }
       },
