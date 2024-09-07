@@ -1,13 +1,67 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
       "type": "article",
       "settings": {
+        "show-featured": true,
+        "heading-position": "below",
+        "show-date": true,
+        "show-author": true
       }
     },
     "navigation": {
       "type": "article-navigation",
       "settings": {
+        "show-tags": true,
+        "facebook-enabled": true,
+        "x-enabled": true,
+        "pinterest-enabled": true,
+        "email-enabled": true,
+        "url-enabled": true
+      }
+    },
+    "image_with_text_h4JKtP": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify:\/\/shop_images\/Creative_Banner_4.jpg",
+        "overline": "Overline text",
+        "title": "Image with text",
+        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-image": "shopify:\/\/shop_images\/Creative_Banner_4.jpg",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
       }
     },
     "recents": {
@@ -18,12 +72,16 @@
     "comments": {
       "type": "article-comments",
       "settings": {
+        "show-comments": true,
+        "disqus-enabled": false,
+        "disqus-shortname": ""
       }
     }
   },
   "order": [
     "main",
     "navigation",
+    "image_with_text_h4JKtP",
     "recents",
     "comments"
   ]
