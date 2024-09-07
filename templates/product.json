@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "4e9385a7-14ff-4617-8542-ed651a7ec51f": {
@@ -21,6 +30,7 @@
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
+        "image": "shopify:\/\/shop_images\/Glue_2x3_c950c13b-dfdd-4261-b7d7-16d252580a94.jpg",
         "overline": "",
         "title": "Buy More, Pay Less",
         "description": "<p>Get up to 30% off when you buy more!<\/p>",
