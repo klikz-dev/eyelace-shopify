@@ -617,7 +617,8 @@
         "image_Tjmffx": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.56.48_AM.png",
+            "image": "shopify:\/\/shop_images\/Photo_Sep_07_2024_11_41_22_AM.jpg",
+            "mobile-image": "shopify:\/\/shop_images\/Photo_Sep_07_2024_11_41_22_AM.jpg",
             "x-blocks": "1",
             "y-blocks": "1",
             "image-display-type": "fill",
