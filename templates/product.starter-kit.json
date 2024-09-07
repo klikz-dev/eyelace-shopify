@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_with_text_pJGaga": {
@@ -21,12 +30,13 @@
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
-        "image": "shopify:\/\/shop_images\/Starter_Kit_Placeholder_807e278c-b1a3-49d9-b5bf-33e1b8fa7ab6.png",
+        "image": "shopify:\/\/shop_images\/Creative_Banner_5_Brighter.jpg",
         "overline": "Be Bold; Be Beautiful",
         "title": "Get Started With Eyelace",
         "description": "<p>A new experience in lashes. The Eyelace Starter Kit is the best way to get started with Eyelace. Featuring a collection of all of our lashes and must-have accessories in one box at a discounted price. Find your look and bring out your inner beauty with lashes for every occasion, style, and person.<\/p>",
         "link-url": "",
         "link-text": "",
+        "mobile-image": "shopify:\/\/shop_images\/Creative_Banner_5_Brighter.jpg",
         "mobile-overlay": true,
         "mobile-hide-description": false,
         "mobile-image-display-type": "original",
