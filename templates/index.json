@@ -511,7 +511,6 @@
     },
     "featured_products_GFFf48": {
       "type": "featured-products",
-      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -523,12 +522,12 @@
         "products-per-row--mobile": "2",
         "product-list": [
           "ball-gown-lash-set",
-          "day-dream-lash-set",
-          "elegant-effect-lash-set",
-          "natural-beauty-lash-set",
           "night-life-lash-set",
+          "day-dream-lash-set",
+          "social-butterfly-lash-set",
           "perfect-poise-lash-set",
-          "social-butterfly-lash-set"
+          "elegant-effect-lash-set",
+          "natural-beauty-lash-set"
         ],
         "heading": "LASH COLLECTION",
         "heading-alignment": "center",
