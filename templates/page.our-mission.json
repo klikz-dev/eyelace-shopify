@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -36,7 +45,7 @@
         "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_9.15.51_AM.png",
         "overline": "",
         "title": "Our Mission",
-        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are obtainable in one’s home makeup routine.<\/p>",
+        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are attainable in one’s home makeup routine.<\/p>",
         "link-url": "",
         "link-text": "",
         "mobile-overlay": true,
