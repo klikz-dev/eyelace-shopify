@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "4e9385a7-14ff-4617-8542-ed651a7ec51f": {
@@ -268,6 +277,15 @@
             "default-open": false
           }
         },
+        "collapsible_row_prcz6C": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Collapsible row",
+            "description": "<p>Use rows to highlight unique features, <br\/>sizing information, <br\/>or other sales information.<\/p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
         "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-0": {
           "type": "collapsible-row",
           "settings": {
@@ -299,7 +317,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "How do I remove Eyelace lashes?",
-            "description": "<p>To remove your Eylace, gently pull it until the glue slowly separates from your natural lash. <br\/>If you feel any tension use a warm compress, or a shower to melt the glue before you pull.<br\/>Once removed store your lashes on the plastic tray to reuse them.<\/p>",
+            "description": "<p>To remove your Eylace, gently pull the lash until the glue slowly separates from your natural lash. <br\/>If you feel any tension use a warm compress, or a shower to melt the glue before you pull it.<br\/>Once removed, store your lashes on a plastic tray to reuse them.<\/p>",
             "page-content": "",
             "default-open": false
           }
@@ -308,7 +326,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "Can I wear Eyelace lashes with glasses?",
-            "description": "<p>Yes, Eyelace offers a variety of false eyelash styles suitable for wear with glasses. Opt for shorter and more natural styles like Natural Beauty or Elegant Effect to ensure they don’t interfere with your eyewear.<\/p>",
+            "description": "<p>Yes, though they range in dimension, all of the Eyelace lashes remain within natural lash sizes and therefore all can be worn while wearing glasses. Eyelace can also be applied if one wears contact lenses.<\/p>",
             "page-content": "",
             "default-open": false
           }
@@ -352,6 +370,7 @@
       },
       "block_order": [
         "collapsible_row_aWY7gX",
+        "collapsible_row_prcz6C",
         "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-0",
         "collapsible_row_aVFNAq",
         "collapsible_row_NTRt6V",
