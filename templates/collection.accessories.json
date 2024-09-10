@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "collection-header": {
@@ -144,7 +153,7 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.53.37_PM.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-09-10_at_1.34.18_PM.png",
             "title": "Stunning, Natural Look",
             "description": "<p>No matter which lash you choose, Eyelace strip lashes are all designed to seamlessly accentuate your natural beauty. The only difference others will notice is how good you look.<\/p>",
             "link-url": "",
