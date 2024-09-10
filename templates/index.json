@@ -522,8 +522,8 @@
         "products-per-row--desktop": "4",
         "products-per-row--mobile": "2",
         "product-list": [
-          "day-dream-lash-set",
           "ball-gown-lash-set",
+          "day-dream-lash-set",
           "elegant-effect-lash-set",
           "natural-beauty-lash-set",
           "night-life-lash-set",
@@ -534,24 +534,6 @@
         "heading-alignment": "center",
         "link-url": "",
         "link-text": ""
-      }
-    },
-    "featured_collection_f6XeeL": {
-      "type": "featured-collection",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "background-color": "none",
-        "light-text": false,
-        "display-type": "grid",
-        "products-per-row--desktop": "4",
-        "products-per-row--mobile": "1",
-        "collection": "lashes-collection",
-        "max-products": 7,
-        "heading": "LASH COLLECTION"
       }
     },
     "featured_video_XRWVTH": {
@@ -937,6 +919,24 @@
         "link-url": "shopify:\/\/pages\/contact",
         "link-text": "Contact us"
       }
+    },
+    "featured_collection_4bDeTQ": {
+      "type": "featured-collection",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "background-color": "none",
+        "light-text": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1",
+        "collection": "",
+        "max-products": 6,
+        "heading": "Collection name"
+      }
     }
   },
   "order": [
@@ -951,7 +951,6 @@
     "ef31fa12-e7a0-4c66-8567-1cca76a8a029",
     "scrolling_content_8TVBBx",
     "featured_products_GFFf48",
-    "featured_collection_f6XeeL",
     "featured_video_XRWVTH",
     "featured-collection-slider",
     "grid_with_overlay_B3dhQ9",
@@ -962,6 +961,7 @@
     "f464cea0-bd7e-46ca-8e5a-57cfc76269da",
     "888c0700-2b7d-4516-8312-8388f1daefac",
     "featured-blog",
-    "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381"
+    "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381",
+    "featured_collection_4bDeTQ"
   ]
 }
