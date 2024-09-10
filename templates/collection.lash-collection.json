@@ -15,7 +15,7 @@
         "show-title": true,
         "heading-type": "featured-heading",
         "heading-alignment": "center",
-        "show-description": true,
+        "show-description": false,
         "description-alignment": "with-title",
         "light-text": true,
         "show-image": true,
@@ -24,7 +24,7 @@
         "aspect-ratio": 56,
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
-        "text-style": "eclipse-shadow",
+        "text-style": "text-shadow",
         "overlay-style": "darken-bottom",
         "parallax-enabled": false
       }
