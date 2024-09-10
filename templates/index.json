@@ -550,7 +550,7 @@
         "text-style": "eclipse-shadow",
         "text-background-color": "transparent",
         "heading-type": "banner-heading",
-        "autoplay": true,
+        "autoplay": false,
         "video-display-type": "aspect-ratio",
         "aspect-ratio": 48,
         "play-button-style": "solid",
