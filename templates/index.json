@@ -511,6 +511,7 @@
     },
     "featured_products_GFFf48": {
       "type": "featured-products",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
