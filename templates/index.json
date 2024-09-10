@@ -389,7 +389,7 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.53.59_AM.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-09-10_at_1.46.39_PM.png",
             "title": "BOLD",
             "description": "",
             "link-url": "",
@@ -499,6 +499,7 @@
         "spacing-above": true,
         "spacing-below": true,
         "background-color": "accent-2",
+        "background-image": "shopify:\/\/shop_images\/Screenshot_2024-09-10_at_1.47.35_PM.png",
         "parallax-enabled": false,
         "overlay-style": "darken-bottom",
         "light-text": false,
