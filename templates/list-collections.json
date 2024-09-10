@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_with_text_nPqKbw": {
@@ -65,37 +74,40 @@
           "type": "testimonial",
           "settings": {
             "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_3.05.42_PM.png",
-            "icon": "quote",
-            "author-role": "",
+            "icon": "10",
+            "author-role": "@elleevancasselman",
             "author-name": "",
-            "description": "<p>\"On the days I'm gonna get a sweat on, but I want to look good, feel confident, have a little flair...I always go to Eyelace.\" <\/p><p>Elle C., student athlete @elleevancasselman<\/p>"
+            "description": "<p>\"On the days I'm gonna get a sweat on, but I want to look good, feel confident, have a little flair...I always go to Eyelace.\"<\/p>"
           }
         },
         "testimonial_GjUmHH": {
           "type": "testimonial",
           "settings": {
-            "icon": "quote",
+            "image": "shopify:\/\/shop_images\/IMG_4696_a30fb336-c87f-41e5-8bf9-96b22611eef0.jpg",
+            "icon": "10",
             "author-role": "",
-            "author-name": "",
-            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
+            "author-name": "@thebrittanybrand01",
+            "description": "<p>\"As a black, female entrepreneur, confidence is key, and your eyes are the focal point of your connections and communication.\"<\/p>"
           }
         },
         "testimonial_D3HChJ": {
           "type": "testimonial",
           "settings": {
-            "icon": "quote",
+            "image": "shopify:\/\/shop_images\/IMG_4888_e8c194c7-28bc-473d-91b4-cd4dc3852fb3.jpg",
+            "icon": "10",
             "author-role": "",
-            "author-name": "",
-            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
+            "author-name": "@melissa_choi",
+            "description": "<p>\"It's just so much fun to be play with beauty and try new things. Expressing myself creatively is essential to who I am both personally and professionally.\"<\/p>"
           }
         },
         "testimonial_PRLKtw": {
           "type": "testimonial",
           "settings": {
-            "icon": "quote",
-            "author-role": "",
+            "image": "shopify:\/\/shop_images\/IMG_4890.jpg",
+            "icon": "10",
+            "author-role": "@powerhouse_wade",
             "author-name": "",
-            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
+            "description": "<p>\"You just never outgrow the desire to feel beautiful in your own skin. You just don't. Most things change, but that remains the same. (And use my son's social media. I'm not on all that).\"<\/p>"
           }
         }
       },
