@@ -518,7 +518,7 @@
         "background-color": "none",
         "light-text": false,
         "display-type": "grid",
-        "products-per-row--desktop": "3",
+        "products-per-row--desktop": "4",
         "products-per-row--mobile": "2",
         "product-list": [
           "ball-gown-lash-set",
