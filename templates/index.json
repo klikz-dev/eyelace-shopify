@@ -536,6 +536,24 @@
         "link-text": ""
       }
     },
+    "featured_collection_f6XeeL": {
+      "type": "featured-collection",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "background-color": "none",
+        "light-text": false,
+        "display-type": "grid",
+        "products-per-row--desktop": "4",
+        "products-per-row--mobile": "1",
+        "collection": "lashes-collection",
+        "max-products": 7,
+        "heading": "Collection name"
+      }
+    },
     "featured_video_XRWVTH": {
       "type": "featured-video",
       "settings": {
@@ -933,6 +951,7 @@
     "ef31fa12-e7a0-4c66-8567-1cca76a8a029",
     "scrolling_content_8TVBBx",
     "featured_products_GFFf48",
+    "featured_collection_f6XeeL",
     "featured_video_XRWVTH",
     "featured-collection-slider",
     "grid_with_overlay_B3dhQ9",
