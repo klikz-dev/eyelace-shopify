@@ -63,46 +63,12 @@
         "heading-alignment": "center",
         "heading": "Recently viewed"
       }
-    },
-    "footer-promo": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "overlay",
-        "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
-        "text-width": "medium",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "overline": "Overline text",
-        "title": "Collection Promotion",
-        "description": "<p>A collection-wide promotion for sales, product announcements and more.<\/p>",
-        "link-url": "",
-        "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
-      }
     }
   },
   "order": [
     "collection-header",
     "navigation",
     "main",
-    "recent-products",
-    "footer-promo"
+    "recent-products"
   ]
 }
