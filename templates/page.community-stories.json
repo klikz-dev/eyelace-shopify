@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -70,6 +79,7 @@
     },
     "featured_text_zxTzQR": {
       "type": "featured-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -83,6 +93,51 @@
         "description": "<p><\/p><p><strong>Video instructions<\/strong><\/p><p>While you are out and about with your lashes on, make a short video in which you tell us:<\/p><p> (1) who you are, (2) where you are, (3) which Eyelace lash you are wearing, and (4) why you love lashes or why it is important to you that women feel bold and beautiful!<\/p><p><strong>Photo instructions<\/strong><\/p><p>In a context that shows off who you are, take a few selfies or have someone take a few photos of you wearing your Eyelace lashes. <\/p><p><strong>Submitting Your Video or Photo<\/strong><\/p><p>Complete the submission information below along with uploading your photos and video.<\/p><p>If we feature your submission, we will send you a coupon for free lash sets!<\/p>",
         "link-url": "mailto:customerservice@eyelace.com",
         "link-text": "Submit Your Video or Photo"
+      }
+    },
+    "1726092639ea92d46f": {
+      "type": "apps",
+      "blocks": {
+        "hulk_form_builder_form_block_MnjggM": {
+          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "3ouO3AbXMtyDF59EiX4udw",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#FFF",
+            "input_background_color_focus": "#F4DADA",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2D2727",
+            "input_font_color": "#3D3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#EBE9E9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#F3F3F3",
+            "sub_btn_bg_color": "#3F3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#FFFFFF",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "hulk_form_builder_form_block_MnjggM"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "spacing-above": true,
+        "spacing-below": true
       }
     },
     "custom_content_4G3ELC": {
@@ -195,6 +250,7 @@
     "image_with_text_EAQ3ww",
     "17162756717a17c541",
     "featured_text_zxTzQR",
+    "1726092639ea92d46f",
     "custom_content_4G3ELC",
     "1716281049b0d047be",
     "featured_text_wVBi4C",
