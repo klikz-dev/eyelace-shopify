@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -27,14 +36,14 @@
         "text-style": "eclipse-shadow",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
-        "autoplay": true,
+        "autoplay": false,
         "video-display-type": "original",
         "aspect-ratio": 56,
         "play-button-style": "outline",
         "overlay-style": "darken-bottom",
         "video-upload": "shopify:\/\/files\/videos\/EyelaceTutDraft4.mp4",
         "video-url": "",
-        "image": "shopify:\/\/shop_images\/TOP_BANNER.png",
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-09-10_at_3.20.12_PM.png",
         "overline": "How To",
         "heading": "Learn How To Apply & Your Eyelace Lashes",
         "description": "<p>Learn how to wear your Eyelace with our video tutorial. We are confident that with practice and support, anyone can achieve a professional lash effect that enhances their natural beauty.<\/p>",

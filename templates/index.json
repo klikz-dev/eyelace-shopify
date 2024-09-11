@@ -920,24 +920,6 @@
         "link-url": "shopify:\/\/pages\/contact",
         "link-text": "Contact us"
       }
-    },
-    "featured_collection_4bDeTQ": {
-      "type": "featured-collection",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "background-color": "none",
-        "light-text": false,
-        "display-type": "slideshow",
-        "products-per-row--desktop": "3",
-        "products-per-row--mobile": "1",
-        "collection": "",
-        "max-products": 6,
-        "heading": "Collection name"
-      }
     }
   },
   "order": [
@@ -962,7 +944,6 @@
     "f464cea0-bd7e-46ca-8e5a-57cfc76269da",
     "888c0700-2b7d-4516-8312-8388f1daefac",
     "featured-blog",
-    "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381",
-    "featured_collection_4bDeTQ"
+    "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381"
   ]
 }
