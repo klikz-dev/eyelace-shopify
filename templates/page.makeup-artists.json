@@ -114,7 +114,7 @@
         "light-text": false,
         "container-width": "4",
         "spacing-above": false,
-        "spacing-below": true
+        "spacing-below": false
       }
     },
     "featured_product_WdmnFy": {
