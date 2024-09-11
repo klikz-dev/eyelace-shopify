@@ -104,7 +104,7 @@
       },
       "15179280101827346836": {
         "type": "shopify:\/\/apps\/juniper-tiktok-feed\/blocks\/head-block\/fa514c33-5475-4484-b270-5f1e7eb87a9a",
-        "disabled": true,
+        "disabled": false,
         "settings": {
         }
       }
