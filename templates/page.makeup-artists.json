@@ -113,7 +113,7 @@
         "background-color": "none",
         "light-text": false,
         "container-width": "4",
-        "spacing-above": true,
+        "spacing-above": false,
         "spacing-below": true
       }
     },
