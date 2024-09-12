@@ -154,7 +154,7 @@
         "image_tNaHJG": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/unnamed_9_1.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-09-07_at_12.21.14_PM.png",
             "x-blocks": "1",
             "y-blocks": "1",
             "image-display-type": "fill",
@@ -167,7 +167,7 @@
         "image_J8QpRA": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/unnamed_10_3.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-09-07_at_12.10.39_PM.png",
             "x-blocks": "1",
             "y-blocks": "1",
             "image-display-type": "fill",
@@ -243,7 +243,7 @@
         "light-text": true,
         "overline": "Overline text",
         "heading": "Subscribe to our newsletter",
-        "description": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        "description": "<p>Read about the lives of the empowered women in our community and stay on top of our latest tips and tricks.<\/p>"
       }
     }
   },
