@@ -376,9 +376,9 @@
         "background-color": "none",
         "light-text": false,
         "container-width": "6",
-        "image-shape": "circle",
+        "image-shape": "portrait",
         "overline": "Our Customers Love",
-        "heading": "The Eyelace Experience",
+        "heading": "THE EYELACE EXPERIENCE",
         "mobile-width": "1"
       }
     },
