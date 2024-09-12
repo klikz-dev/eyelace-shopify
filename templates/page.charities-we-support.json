@@ -12,10 +12,197 @@
     "main": {
       "type": "page",
       "settings": {
+        "show-title": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "slideshow_PfL9zx": {
+      "type": "slideshow",
+      "blocks": {
+        "image_wEQPNN": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "overline": "Overline text",
+            "title": "Slide heading",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+            "link-url": "\/",
+            "link-text": "View more",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_LkLFcB": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "overline": "Overline text",
+            "title": "Slide heading",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+            "link-url": "\/",
+            "link-text": "View more",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_EDjxk3": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "overline": "Overline text",
+            "title": "Slide heading",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+            "link-url": "\/",
+            "link-text": "View more",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        }
+      },
+      "block_order": [
+        "image_wEQPNN",
+        "image_LkLFcB",
+        "image_EDjxk3"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "arrows-enabled": true,
+        "blocks_per_slide": 2,
+        "background-color": "none",
+        "light-text": true,
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
+    "image_with_text_dNXHyK": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "right",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "overline": "Overline text",
+        "title": "Image with text",
+        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "image_with_text_j3gfyd": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "left",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "overline": "Overline text",
+        "title": "Image with text",
+        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "image_with_text_KqkFLB": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "right",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "overline": "Overline text",
+        "title": "Image with text",
+        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+        "link-url": "https:\/\/malala.org\/",
+        "link-text": "Visit Malala Fund",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "slideshow_PfL9zx",
+    "image_with_text_dNXHyK",
+    "image_with_text_j3gfyd",
+    "image_with_text_KqkFLB"
   ]
 }
