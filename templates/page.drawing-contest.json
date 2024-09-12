@@ -235,6 +235,7 @@
     },
     "newsletter_X7w3UT": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
