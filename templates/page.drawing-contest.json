@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -25,18 +34,18 @@
         "heading-type": "featured-heading",
         "text-position": "overlay",
         "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
+        "text-vertical-alignment": "bottom",
         "text-width": "large",
-        "text-style": "eclipse-shadow",
+        "text-style": "none",
         "text-background-color": "transparent",
         "image-display-type": "x-large",
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-02-13_at_12.17.26_PM.png",
-        "overline": "",
+        "image": "shopify:\/\/shop_images\/new_20f4480b-f1ac-4b2b-83f0-60c4ef7888f9.jpg",
+        "overline": "BECOME AN EYELACE ARTIST",
         "title": "Drawing Contest",
-        "description": "<p>We don’t just want to sell lashes, we want to be a community of individuals committed to the belief in our worth and beauty. Contribute to our creative community by printing out our icon, coloring it, and sending it back to us to feature on our website and in our social media. Don’t forget to tell us one thing about yourself that you love or find particularly special about who you are. We would love to feature your beautiful work and statements in our community posts!<br\/><\/p>",
+        "description": "<p>We don’t just want to sell lashes, we want to be a community of individuals committed to the belief in our worth and beauty. Contribute to our creative community by submitting a drawing or our Eyelace icon.<\/p>",
         "link-url": "",
         "link-text": "",
         "mobile-image": "shopify:\/\/shop_images\/Screenshot_2024-02-13_at_12.17.26_PM.png",
@@ -71,7 +80,7 @@
         "image": "shopify:\/\/shop_images\/Screenshot_2024-02-15_at_11.53.52_AM.png",
         "overline": "Worksheet",
         "title": "How To Enter Our Drawing Contest",
-        "description": "<ol><li>Press the DOWNLOAD NOW button below to download a PDF worksheet of our logo to color in.<\/li><li>Print out, and color in the logo in whatever way speaks to what you believe is beautiful and connects with your inner artist!<\/li><li>Write one thing about yourself that you love, or find particularly special about who you are on your drawing.<\/li><li>Upload the file by filling out the form below that says UPLOAD.<\/li><li>Keep finding ways to connect with your inner artist and bring out your beauty through your creativity while you wait for us to reach out to you!<\/li><\/ol>",
+        "description": "<ol><li>Press the DOWNLOAD NOW button below to download a PDF worksheet of our logo to color in.<\/li><li>Print out and color in the logo in whatever way speaks to what you believe is beautiful and connects with your inner artist!<\/li><li>Below your drawing, write one thing about yourself that you love or find particularly special about who you are.<\/li><li>Complete the Drawing Contest Submission form below & upload your file.<\/li><li>Keep finding ways to connect with your inner artist and bring out your beauty through your creativity while you wait for us to reach out to you!<\/li><\/ol>",
         "link-url": "https:\/\/cdn.shopify.com\/s\/files\/1\/0648\/3220\/9045\/files\/eyelace.com_Icon-Drawing-Contest.pdf?v=1716282572",
         "link-text": "Download Now",
         "mobile-overlay": true,
@@ -132,7 +141,7 @@
         "image_7b9Cfd": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.56.15_AM.png",
+            "image": "shopify:\/\/shop_images\/photo_4a24deb6-1179-4b4e-8e86-5e6f59fa1ac9.jpg",
             "x-blocks": "2",
             "y-blocks": "1",
             "image-display-type": "fill",
