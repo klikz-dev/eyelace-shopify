@@ -461,7 +461,7 @@
         "text_9NKXVh": {
           "type": "text",
           "settings": {
-            "text": "Buy More, Pay Less",
+            "text": "Become a Member Today!",
             "link": "",
             "hide-on-mobile": false,
             "hide-on-desktop": false
@@ -481,7 +481,7 @@
         "text_xVhmtU": {
           "type": "text",
           "settings": {
-            "text": "Up To 30% Off When You Buy More",
+            "text": "Subscribe and Save",
             "link": "",
             "hide-on-mobile": false,
             "hide-on-desktop": false
@@ -506,7 +506,8 @@
         "text-size": "section-heading",
         "animation-direction": "left",
         "animation-speed": 6,
-        "pause-on-hover": false
+        "pause-on-hover": false,
+        "mobile-image": "shopify:\/\/shop_images\/Creative_Banner_4.jpg"
       }
     },
     "featured_products_GFFf48": {
