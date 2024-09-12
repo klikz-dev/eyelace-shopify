@@ -21,7 +21,7 @@
         "overlap": false,
         "heading-type": "featured-heading",
         "text-position": "overlay",
-        "text-horizontal-alignment": "right",
+        "text-horizontal-alignment": "center",
         "text-vertical-alignment": "center",
         "text-width": "medium",
         "text-style": "none",
