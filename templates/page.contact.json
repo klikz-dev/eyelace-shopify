@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "1632436597fbc1d0e4": {
@@ -21,12 +30,13 @@
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
-        "image": "shopify:\/\/shop_images\/TOP_BANNER22.png",
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-09-12_at_12.38.52_PM.png",
         "overline": "Contact us",
         "title": "Get in touch",
         "description": "",
         "link-url": "",
         "link-text": "",
+        "mobile-image": "shopify:\/\/shop_images\/Screenshot_2024-09-12_at_12.38.52_PM.png",
         "mobile-overlay": true,
         "mobile-hide-description": false,
         "mobile-image-display-type": "original",
