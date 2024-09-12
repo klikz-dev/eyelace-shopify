@@ -74,43 +74,10 @@
     },
     "main": {
       "type": "collection--body",
-      "blocks": {
-        "grid-promo-1": {
-          "type": "promotion",
-          "settings": {
-            "row-number": 2,
-            "column-number": 2,
-            "promo-width": 2,
-            "heading-type": "block-heading",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "text-width": "medium",
-            "text-style": "none",
-            "text-background-color": "light",
-            "overlay-style": "darken-bottom",
-            "image-display-type": "medium",
-            "aspect-ratio": 56,
-            "parallax-enabled": false,
-            "light-text": false,
-            "overline": "",
-            "title": "Buy More, Pay Less",
-            "description": "<p>Get up to 30% off when you purchase more. For each additional item, get an additional 5% off up to seven additional items. So 5% of the second, 10% of the third, up to 30% off the 7th!<\/p>",
-            "link-url": "shopify:\/\/collections\/lashes-collection",
-            "link-text": "Shop Lashes",
-            "mobile-hide-description": false,
-            "mobile-image-display-type": "original",
-            "mobile-aspect-ratio": 134,
-            "mobile-text-alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "grid-promo-1"
-      ],
       "settings": {
-        "products-per-row--desktop": 4,
+        "products-per-row--desktop": 3,
         "products-per-row--mobile": "1",
-        "number-of-rows": 4
+        "number-of-rows": 3
       }
     },
     "featured_video_yfmy74": {
