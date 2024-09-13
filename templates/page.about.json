@@ -23,7 +23,7 @@
         "text-position": "overlay",
         "text-horizontal-alignment": "right",
         "text-vertical-alignment": "center",
-        "text-width": "medium",
+        "text-width": "large",
         "text-style": "none",
         "text-background-color": "transparent",
         "image-display-type": "medium",
