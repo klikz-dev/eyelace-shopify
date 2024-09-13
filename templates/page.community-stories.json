@@ -40,7 +40,7 @@
         "text-background-color": "transparent",
         "image-display-type": "medium",
         "aspect-ratio": 56,
-        "overlay-style": "darken",
+        "overlay-style": "darken-top",
         "parallax-enabled": false,
         "image": "shopify:\/\/shop_images\/1_71093c34-30b2-479b-9a0a-c663dd2f7ff7.jpg",
         "overline": "Become a part of the eyelace journey",
