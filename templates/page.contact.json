@@ -64,10 +64,10 @@
         "background-color": "none",
         "light-text": false,
         "heading-type": "section-heading",
-        "container-width": "1",
+        "container-width": "3",
         "overline": "",
         "heading": "",
-        "description": "<p>We are a small, female owned business! We have many innovative ideas about expanding our product collection. If you have product dreams you would like to share with us or ideas for how we could improve our existing products or serve you better, we would be honored to hear from you! Please reach us at the contact info listed below!<\/p>",
+        "description": "<p>We are a small, female owned business that has many innovative ideas about expanding our product collection. If you have product dreams you would like to share with us or ideas for how we could improve our existing products to serve you better, we would be honored to hear from you. Please leave us a message in the form below!<\/p>",
         "link-url": "\/",
         "link-text": ""
       }
