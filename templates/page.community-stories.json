@@ -62,7 +62,7 @@
           "type": "shopify:\/\/apps\/ghost-shoppable-ugc-video\/blocks\/ghost_shoppable_videos\/0c680c94-9038-480e-8e79-1229a9895cfb",
           "settings": {
             "ghost_collection_id": "66e3c4c91f49630761fdc539",
-            "display_type": "carousel"
+            "display_type": "onsite"
           }
         }
       },
