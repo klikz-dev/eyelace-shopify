@@ -661,7 +661,7 @@
         "spacing-below": true,
         "background-color": "none",
         "heading-light-text": false,
-        "container-width": "4",
+        "container-width": "3",
         "spacing": true,
         "width": 3,
         "light-text": true,
