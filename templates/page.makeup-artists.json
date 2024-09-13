@@ -55,6 +55,59 @@
         "mobile-text-alignment": "center"
       }
     },
+    "scrolling_content_V6dWf7": {
+      "type": "scrolling-content",
+      "blocks": {
+        "image_kxdmY4": {
+          "type": "image",
+          "settings": {
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "image_7WykgD": {
+          "type": "image",
+          "settings": {
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "text_N9mBd9": {
+          "type": "text",
+          "settings": {
+            "text": "Your scrolling text here",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "image_kxdmY4",
+        "image_7WykgD",
+        "text_N9mBd9"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "background-image": "shopify:\/\/shop_images\/Creative_Banner_1.jpg",
+        "parallax-enabled": false,
+        "overlay-style": "darken-bottom",
+        "light-text": false,
+        "text-size": "section-heading",
+        "animation-direction": "left",
+        "animation-speed": 6,
+        "pause-on-hover": false
+      }
+    },
     "featured_text_zWVQF4": {
       "type": "featured-text",
       "settings": {
@@ -208,6 +261,7 @@
   "order": [
     "main",
     "image_with_text_BP6LU4",
+    "scrolling_content_V6dWf7",
     "featured_text_zWVQF4",
     "1726094955c8b50914",
     "featured_product_WdmnFy",
