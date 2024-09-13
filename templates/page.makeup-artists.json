@@ -118,7 +118,7 @@
         "top-border": false,
         "spacing-above": true,
         "spacing-below": true,
-        "background-color": "accent-2",
+        "background-color": "accent-1",
         "parallax-enabled": false,
         "overlay-style": "darken-bottom",
         "light-text": false,
