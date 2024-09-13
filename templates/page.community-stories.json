@@ -61,7 +61,7 @@
         "ghost_shoppable_ugc_video_ghost_shoppable_videos_pwE4jR": {
           "type": "shopify:\/\/apps\/ghost-shoppable-ugc-video\/blocks\/ghost_shoppable_videos\/0c680c94-9038-480e-8e79-1229a9895cfb",
           "settings": {
-            "ghost_collection_id": "664c493e4b7a28a36a2abfba",
+            "ghost_collection_id": "66e3c4c91f49630761fdc539",
             "display_type": "carousel"
           }
         }
@@ -105,24 +105,24 @@
             "form_settings": false,
             "font_color": "#000000",
             "size": 14,
-            "input_background_color": "#FFF",
-            "input_background_color_focus": "#F4DADA",
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#f4dada",
             "input_border_radius": 1,
             "input_border_color": "#ebe9e9",
-            "input_border_color_focus": "#2D2727",
-            "input_font_color": "#3D3131",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
             "input_size": 14,
             "border_color": "#121212",
             "border_radius": 2,
             "border": 1,
-            "fill_color": "#EBE9E9",
+            "fill_color": "#ebe9e9",
             "padding": 35,
             "form_width": 600,
             "btn_text": "Submit",
-            "sub_btn_txt_color": "#F3F3F3",
-            "sub_btn_bg_color": "#3F3333",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
             "sub_btn_font_size": 14,
-            "sub_btn_bdr_color": "#FFFFFF",
+            "sub_btn_bdr_color": "#ffffff",
             "sub_btn_bdr_rad": 3,
             "sub_btn_bdr_width": 1,
             "fonts": "Times New Roman"
