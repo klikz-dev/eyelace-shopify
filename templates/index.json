@@ -138,7 +138,7 @@
         "text-position": "overlay",
         "text-horizontal-alignment": "left",
         "text-vertical-alignment": "center",
-        "text-width": "medium",
+        "text-width": "large",
         "text-style": "eclipse-shadow",
         "text-background-color": "transparent",
         "image-display-type": "aspect-ratio",
