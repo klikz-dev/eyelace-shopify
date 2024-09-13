@@ -101,7 +101,7 @@
         "top-border": false,
         "spacing-above": true,
         "spacing-below": true,
-        "background-color": "none",
+        "background-color": "accent-1",
         "background-image": "shopify:\/\/shop_images\/Creative_Banner_4.jpg",
         "parallax-enabled": false,
         "overlay-style": "darken-bottom",
