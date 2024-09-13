@@ -243,6 +243,66 @@
         "heading-alignment": "center",
         "view-more-text": "View more"
       }
+    },
+    "testimonials_MTMTNn": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_iMj9J3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
+          }
+        },
+        "testimonial_iY6NkV": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
+          }
+        },
+        "testimonial_jnHFHN": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
+          }
+        },
+        "testimonial_3Yz9hH": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_iMj9J3",
+        "testimonial_iY6NkV",
+        "testimonial_jnHFHN",
+        "testimonial_3Yz9hH"
+      ],
+      "disabled": true,
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "image-shape": "circle",
+        "overline": "Overline text",
+        "heading": "Testimonials",
+        "mobile-width": "1"
+      }
     }
   },
   "order": [
@@ -256,6 +316,7 @@
     "featured_text_wVBi4C",
     "171628108183c7a010",
     "newsletter_fUFC9X",
-    "featured_blog_gJXFW8"
+    "featured_blog_gJXFW8",
+    "testimonials_MTMTNn"
   ]
 }
