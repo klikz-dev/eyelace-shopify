@@ -61,9 +61,11 @@
         "image_kxdmY4": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/8.jpg",
             "image-height": 100,
             "link": "",
             "hide-on-desktop": false,
+            "mobile-image": "shopify:\/\/shop_images\/8.jpg",
             "mobile-image-height": 70,
             "hide-on-mobile": false
           }
@@ -71,9 +73,11 @@
         "image_7WykgD": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/3.jpg",
             "image-height": 100,
             "link": "",
             "hide-on-desktop": false,
+            "mobile-image": "shopify:\/\/shop_images\/3.jpg",
             "mobile-image-height": 70,
             "hide-on-mobile": false
           }
