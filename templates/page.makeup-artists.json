@@ -65,9 +65,9 @@
         "light-text": false,
         "heading-type": "section-heading",
         "container-width": "3",
-        "overline": "Get 30% off",
+        "overline": "Get 30% off Collection Lash Sets",
         "heading": "How To Become A Partner",
-        "description": "<p>The Collection Lash Set includes one pair each of all seven original Eyelace lash designs. Designed for the Starter Kit but sold separately at the request of makeup artists.<br\/><br\/>Upload proof of your State Issued Makeup Artist License to receive a 30% discount code made specifically for you to be used on any number of Collection Lash Set purchases.<\/p>",
+        "description": "<p>The Collection Lash Set includes one pair each of all seven original Eyelace lash designs. Designed for the Starter Kit but sold separately at the request of makeup artists.<br\/><br\/>Upload proof of your state issued Makeup Artist License to receive a 30% discount code made specifically for you to be used on any number of Collection Lash Set purchases.<\/p>",
         "link-url": "mailto:info@eyelace.com",
         "link-text": ""
       }
@@ -128,51 +128,6 @@
         "pause-on-hover": false
       }
     },
-    "1726094955c8b50914": {
-      "type": "apps",
-      "blocks": {
-        "hulk_form_builder_form_block_DWxcb9": {
-          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
-          "settings": {
-            "form_uuid": "wiQ5VS8iZPfvgzvlBuq4uw",
-            "form_settings": false,
-            "font_color": "#000000",
-            "size": 14,
-            "input_background_color": "#ffffff",
-            "input_background_color_focus": "#f4dada",
-            "input_border_radius": 1,
-            "input_border_color": "#ebe9e9",
-            "input_border_color_focus": "#2d2727",
-            "input_font_color": "#3d3131",
-            "input_size": 14,
-            "border_color": "#121212",
-            "border_radius": 2,
-            "border": 1,
-            "fill_color": "#ebe9e9",
-            "padding": 35,
-            "form_width": 600,
-            "btn_text": "Submit",
-            "sub_btn_txt_color": "#f3f3f3",
-            "sub_btn_bg_color": "#3f3333",
-            "sub_btn_font_size": 14,
-            "sub_btn_bdr_color": "#ffffff",
-            "sub_btn_bdr_rad": 3,
-            "sub_btn_bdr_width": 1,
-            "fonts": "Times New Roman"
-          }
-        }
-      },
-      "block_order": [
-        "hulk_form_builder_form_block_DWxcb9"
-      ],
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "container-width": "4",
-        "spacing-above": false,
-        "spacing-below": false
-      }
-    },
     "featured_product_WdmnFy": {
       "type": "featured-product",
       "blocks": {
@@ -229,6 +184,51 @@
         "loop-enabled": false
       }
     },
+    "1726094955c8b50914": {
+      "type": "apps",
+      "blocks": {
+        "hulk_form_builder_form_block_DWxcb9": {
+          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "settings": {
+            "form_uuid": "wiQ5VS8iZPfvgzvlBuq4uw",
+            "form_settings": false,
+            "font_color": "#000000",
+            "size": 14,
+            "input_background_color": "#ffffff",
+            "input_background_color_focus": "#f4dada",
+            "input_border_radius": 1,
+            "input_border_color": "#ebe9e9",
+            "input_border_color_focus": "#2d2727",
+            "input_font_color": "#3d3131",
+            "input_size": 14,
+            "border_color": "#121212",
+            "border_radius": 2,
+            "border": 1,
+            "fill_color": "#ebe9e9",
+            "padding": 35,
+            "form_width": 600,
+            "btn_text": "Submit",
+            "sub_btn_txt_color": "#f3f3f3",
+            "sub_btn_bg_color": "#3f3333",
+            "sub_btn_font_size": 14,
+            "sub_btn_bdr_color": "#ffffff",
+            "sub_btn_bdr_rad": 3,
+            "sub_btn_bdr_width": 1,
+            "fonts": "Times New Roman"
+          }
+        }
+      },
+      "block_order": [
+        "hulk_form_builder_form_block_DWxcb9"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "spacing-above": false,
+        "spacing-below": false
+      }
+    },
     "newsletter_nN7dWf": {
       "type": "newsletter",
       "settings": {
@@ -266,8 +266,8 @@
     "image_with_text_BP6LU4",
     "featured_text_zWVQF4",
     "scrolling_content_V6dWf7",
-    "1726094955c8b50914",
     "featured_product_WdmnFy",
+    "1726094955c8b50914",
     "newsletter_nN7dWf",
     "featured_blog_rXUqPA"
   ]
