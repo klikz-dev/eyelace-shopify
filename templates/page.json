@@ -1,12 +1,45 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
       "type": "page",
       "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "6",
+        "spacing-above": true,
+        "spacing-below": false
+      }
+    },
+    "featured_text_FPy4T9": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "heading-type": "section-heading",
+        "container-width": "4",
+        "overline": "Overline text",
+        "heading": "Introduce your brand",
+        "description": "<p>Introduce your brand, products and vision statement and welcome customers to your store.<\/p>",
+        "link-url": "\/",
+        "link-text": "Link text"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "featured_text_FPy4T9"
   ]
 }
