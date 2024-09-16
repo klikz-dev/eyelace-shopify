@@ -21,7 +21,7 @@
           "type": "shopify:\/\/apps\/w3-share-the-love\/blocks\/cause-selector\/b55be288-4b15-45c3-ac82-5cee6259fdc8",
           "settings": {
             "text_alignment": "left",
-            "title": "Select a Cause",
+            "title": "Choose a Cause to Support",
             "title_tag": "h3",
             "title_classes": "",
             "intro": "<p>Select a cause from the list below.<\/p>",
