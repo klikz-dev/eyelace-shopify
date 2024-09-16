@@ -20,7 +20,7 @@
             "title_tag": "h3",
             "title_classes": "",
             "intro": "<p>Help us make a difference! Select an organization from the list below, and we’ll donate a portion of your purchase at no extra cost to you. Your choice empowers women and supports meaningful change.<\/p>",
-            "select_classes": "",
+            "select_classes": "<div class=\"donation-section\">   <h2 class=\"cause-title\">Choose a Cause to Support<\/h2>   <ul class=\"cause-links\">     <li><a href=\"#\" class=\"cause-link\">Organization 1<\/a><\/li>     <li><a href=\"#\" class=\"cause-link\">Organization 2<\/a><\/li>     <li><a href=\"#\" class=\"cause-link\">Organization 3<\/a><\/li>     <li><a href=\"#\" class=\"cause-link opt-out\">Opt out of gifting at this time<\/a><\/li>   <\/ul> <\/div>",
             "link_classes": "",
             "form_name": "",
             "show_links": true,
