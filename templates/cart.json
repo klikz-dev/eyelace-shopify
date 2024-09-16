@@ -9,11 +9,6 @@
 */
 {
   "sections": {
-    "main": {
-      "type": "cart",
-      "settings": {
-      }
-    },
     "1726468789aa6fed02": {
       "type": "apps",
       "blocks": {
@@ -44,10 +39,15 @@
         "spacing-above": false,
         "spacing-below": true
       }
+    },
+    "main": {
+      "type": "cart",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main",
-    "1726468789aa6fed02"
+    "1726468789aa6fed02",
+    "main"
   ]
 }
