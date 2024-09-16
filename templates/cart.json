@@ -1,12 +1,53 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
       "type": "cart",
       "settings": {
       }
+    },
+    "1726468789aa6fed02": {
+      "type": "apps",
+      "blocks": {
+        "w3_share_the_love_cause_selector_ekTypf": {
+          "type": "shopify:\/\/apps\/w3-share-the-love\/blocks\/cause-selector\/b55be288-4b15-45c3-ac82-5cee6259fdc8",
+          "settings": {
+            "text_alignment": "right",
+            "title": "Select a Cause",
+            "title_tag": "h3",
+            "title_classes": "",
+            "intro": "<p>Select a cause from the list below.<\/p>",
+            "select_classes": "",
+            "link_classes": "",
+            "form_name": "",
+            "show_links": true,
+            "show_descriptions": true,
+            "is_optional": true
+          }
+        }
+      },
+      "block_order": [
+        "w3_share_the_love_cause_selector_ekTypf"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "spacing-above": true,
+        "spacing-below": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1726468789aa6fed02"
   ]
 }
