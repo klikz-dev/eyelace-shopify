@@ -22,9 +22,9 @@
           "settings": {
             "text_alignment": "left",
             "title": "Choose a Cause to Support",
-            "title_tag": "h3",
+            "title_tag": "h4",
             "title_classes": "",
-            "intro": "<p>Select a cause from the list below.<\/p>",
+            "intro": "<p>Help us make a difference! Select an organization from the list below, and we’ll donate a portion of your purchase at no extra cost to you. Your choice empowers women and supports meaningful change.<\/p>",
             "select_classes": "",
             "link_classes": "",
             "form_name": "",
