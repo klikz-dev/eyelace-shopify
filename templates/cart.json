@@ -20,7 +20,7 @@
             "title_tag": "h3",
             "title_classes": "",
             "intro": "<p>Help us make a difference! Select an organization from the list below, and we’ll donate a portion of your purchase at no extra cost to you. Your choice empowers women and supports meaningful change.<\/p>",
-            "select_classes": "\/* Style for the container *\/ .donation-dropdown-container {   margin: 20px 0;   padding: 10px;   font-family: 'Arial', sans-serif; }  \/* Style for the label *\/ .dropdown-label {   font-size: 16px;   font-weight: bold;   color: #333;   margin-bottom: 8px;   display: block; }  \/* Style for the dropdown *\/ .donation-dropdown {   width: 100%;   padding: 12px;   font-size: 16px;   border: 2px solid #ccc;   border-radius: 8px;   background-color: #fff;   appearance: none;   transition: border-color 0.3s ease; }  \/* Add hover and focus effects *\/ .donation-dropdown:hover {   border-color: #666; }  .donation-dropdown:focus {   outline: none;   border-color: #444; }  \/* Customizing the arrow of the dropdown *\/ .donation-dropdown {   background-image: url('data:image\/svg+xml;base64,...'); \/* Add custom arrow icon if you wish *\/   background-position: right 10px center;   background-repeat: no-repeat; }",
+            "select_classes": "",
             "link_classes": "",
             "form_name": "",
             "show_links": true,
