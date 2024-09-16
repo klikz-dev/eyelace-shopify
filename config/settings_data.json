@@ -40,6 +40,7 @@
     "product--heading-type": "paragraph",
     "product--label-color": "none",
     "favicon": "shopify:\/\/shop_images\/IMG_2639.jpg",
+    "cart--type": "page",
     "cart--show-note": false,
     "social--instagram--url": "https:\/\/instagram.com\/eyelacelashes",
     "social--facebook--url": "https:\/\/facebook.com\/eyelace",
