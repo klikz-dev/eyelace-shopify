@@ -48,6 +48,7 @@
     "social--pinterest--url": "https:\/\/pinterest.com\/eyelace",
     "social--tiktok--url": "https:\/\/tiktok.com\/@eyelace",
     "transitions--image": false,
+    "transitions--buttons": false,
     "preset": "bloom",
     "content_for_index": [
 
