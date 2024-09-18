@@ -17,85 +17,24 @@
         "light-text": false,
         "container-width": "4",
         "spacing-above": true,
-        "spacing-below": true
+        "spacing-below": false
       }
     },
-    "slideshow_PfL9zx": {
-      "type": "slideshow",
-      "blocks": {
-        "image_wEQPNN": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "overline": "Overline text",
-            "title": "Slide heading",
-            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
-            "link-url": "\/",
-            "link-text": "View more",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_LkLFcB": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "overline": "Overline text",
-            "title": "Slide heading",
-            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
-            "link-url": "\/",
-            "link-text": "View more",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_EDjxk3": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "overline": "Overline text",
-            "title": "Slide heading",
-            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
-            "link-url": "\/",
-            "link-text": "View more",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        }
-      },
-      "block_order": [
-        "image_wEQPNN",
-        "image_LkLFcB",
-        "image_EDjxk3"
-      ],
+    "featured_text_mHrnyP": {
+      "type": "featured-text",
       "settings": {
         "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "spacing-around-blocks": false,
-        "arrows-enabled": true,
-        "blocks_per_slide": 2,
+        "spacing-above": true,
+        "spacing-below": true,
         "background-color": "none",
-        "light-text": true,
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "heading-type": "featured-heading",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "auto-rotate": false,
-        "rotate-frequency": 7,
-        "transition_type": "slide",
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "blocks_per_slide_mobile": "1",
-        "mobile-overlay": true
+        "light-text": false,
+        "heading-type": "section-heading",
+        "container-width": "4",
+        "overline": "Overline text",
+        "heading": "Introduce your brand",
+        "description": "<p>Introduce your brand, products and vision statement and welcome customers to your store.<\/p>",
+        "link-url": "\/",
+        "link-text": "Link text"
       }
     },
     "image_with_text_dNXHyK": {
@@ -200,7 +139,7 @@
   },
   "order": [
     "main",
-    "slideshow_PfL9zx",
+    "featured_text_mHrnyP",
     "image_with_text_dNXHyK",
     "image_with_text_j3gfyd",
     "image_with_text_KqkFLB"
