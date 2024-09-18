@@ -97,7 +97,7 @@
         "link-url": "https:\/\/www.workingforwomen.org\/",
         "link-text": "LEARN MORE",
         "mobile-overlay": true,
-        "mobile-hide-description": false,
+        "mobile-hide-description": true,
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
