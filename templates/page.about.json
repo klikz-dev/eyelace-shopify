@@ -83,7 +83,7 @@
         "overlap": false,
         "heading-type": "featured-heading",
         "text-position": "left",
-        "text-horizontal-alignment": "center",
+        "text-horizontal-alignment": "left",
         "text-vertical-alignment": "center",
         "text-width": "large",
         "text-style": "none",
