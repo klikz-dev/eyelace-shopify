@@ -939,23 +939,6 @@
         "view-more-text": "Learn More"
       }
     },
-    "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381": {
-      "type": "featured-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "dark",
-        "light-text": true,
-        "heading-type": "section-heading",
-        "container-width": "1",
-        "overline": "Issues or concerns",
-        "heading": "Any questions or concerns about your Eyelace?",
-        "description": "<p>We're passionate about providing the assistance and resources our customers need to create bold and beautiful looks. If you have any questions, concerns, or comments, please do not hesitate to contact us. </p>",
-        "link-url": "shopify://pages/contact",
-        "link-text": "Contact us"
-      }
-    },
     "text_columns_DyaLp9": {
       "type": "text-columns",
       "blocks": {
@@ -1017,6 +1000,23 @@
         "link-text": "",
         "mobile-width": "1"
       }
+    },
+    "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "dark",
+        "light-text": true,
+        "heading-type": "section-heading",
+        "container-width": "1",
+        "overline": "Issues or concerns",
+        "heading": "Any questions or concerns about your Eyelace?",
+        "description": "<p>We're passionate about providing the assistance and resources our customers need to create bold and beautiful looks. If you have any questions, concerns, or comments, please do not hesitate to contact us. </p>",
+        "link-url": "shopify://pages/contact",
+        "link-text": "Contact us"
+      }
     }
   },
   "order": [
@@ -1034,6 +1034,7 @@
     "featured_products_GFFf48",
     "featured_video_XRWVTH",
     "featured-collection-slider",
+    "text_columns_DyaLp9",
     "grid_with_overlay_B3dhQ9",
     "custom_content_N3MrPz",
     "17162800996eb192c5",
@@ -1042,7 +1043,6 @@
     "f464cea0-bd7e-46ca-8e5a-57cfc76269da",
     "888c0700-2b7d-4516-8312-8388f1daefac",
     "featured-blog",
-    "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381",
-    "text_columns_DyaLp9"
+    "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381"
   ]
 }
