@@ -41,15 +41,15 @@
         "aspect-ratio": 56,
         "play-button-style": "outline",
         "overlay-style": "darken-bottom",
-        "video-upload": "shopify:\/\/files\/videos\/EyelaceTutDraft4.mp4",
+        "video-upload": "shopify://files/videos/Final_55eb117d-fdf6-4e0f-9928-d230d485900b.mp4",
         "video-url": "",
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-09-10_at_3.20.12_PM.png",
+        "image": "shopify://shop_images/Screenshot_2024-09-10_at_3.20.12_PM.png",
         "overline": "How To",
         "heading": "Learn How To Apply & Your Eyelace Lashes",
-        "description": "<p>Learn how to wear your Eyelace with our video tutorial. We are confident that with practice and support, anyone can achieve a professional lash effect that enhances their natural beauty.<\/p>",
+        "description": "<p>Learn how to wear your Eyelace with our video tutorial. We are confident that with practice and support, anyone can achieve a professional lash effect that enhances their natural beauty.</p>",
         "button-text": "Watch Now",
-        "button-url": "https:\/\/www.youtube.com\/@eyelacelashes",
-        "mobile-thumbnail": "shopify:\/\/shop_images\/TOP_BANNER.png",
+        "button-url": "https://www.youtube.com/@eyelacelashes",
+        "mobile-thumbnail": "shopify://shop_images/TOP_BANNER.png",
         "mobile-image-display-type": "medium",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center",
@@ -63,9 +63,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_1.gif",
+            "image": "shopify://shop_images/Step_1.gif",
             "title": "",
-            "description": "<p>Choose a lash from the Eyelace Collection that fits your mood and the occasion.<\/p>",
+            "description": "<p>Choose a lash from the Eyelace Collection that fits your mood and the occasion.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -74,9 +74,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_2.gif",
+            "image": "shopify://shop_images/Step_2.gif",
             "title": "",
-            "description": "<p>Carefully remove the lash from the stickers using tweezers.<\/p>",
+            "description": "<p>Carefully remove the lash from the stickers using tweezers.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -85,9 +85,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_3.gif",
+            "image": "shopify://shop_images/Step_3.gif",
             "title": "",
-            "description": "<p>Inspect it to ensure it is free of any dust, glue, or debris.<\/p>",
+            "description": "<p>Inspect it to ensure it is free of any dust, glue, or debris.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -96,9 +96,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_4.gif",
+            "image": "shopify://shop_images/Step_4.gif",
             "title": "",
-            "description": "<p>Flex the lash band so that it will more readily fit the shape of your eye.<\/p>",
+            "description": "<p>Flex the lash band so that it will more readily fit the shape of your eye.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -107,9 +107,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_5.gif",
+            "image": "shopify://shop_images/Step_5.gif",
             "title": "",
-            "description": "<p>Trim the plastic ends of the band, steadying the scissors against a finger on the hand holding the lash.<\/p>",
+            "description": "<p>Trim the plastic ends of the band, steadying the scissors against a finger on the hand holding the lash.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -118,9 +118,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_6.gif",
+            "image": "shopify://shop_images/Step_6.gif",
             "title": "",
-            "description": "<p>Always hold the lash firmly at its center and at the top of the band with the sharp end of the tweezers pointing towards the shorter end of the lash.<\/p>",
+            "description": "<p>Always hold the lash firmly at its center and at the top of the band with the sharp end of the tweezers pointing towards the shorter end of the lash.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -129,9 +129,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_7.gif",
+            "image": "shopify://shop_images/Step_7.gif",
             "title": "",
-            "description": "<p>Practice placing your Eyelace to your waterline, so that there are some natural lashes showing on either end.<\/p>",
+            "description": "<p>Practice placing your Eyelace to your waterline, so that there are some natural lashes showing on either end.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -140,9 +140,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_8.gif",
+            "image": "shopify://shop_images/Step_8.gif",
             "title": "",
-            "description": "<p>Adjust and shape your Eyelace so it matches your eye's natural curve. The arch of some eyes is right in the center and for others, it is closer to the shorter end of the lash.<\/p>",
+            "description": "<p>Adjust and shape your Eyelace so it matches your eye's natural curve. The arch of some eyes is right in the center and for others, it is closer to the shorter end of the lash.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -151,9 +151,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_9.gif",
+            "image": "shopify://shop_images/Step_9.gif",
             "title": "",
-            "description": "<p>To apply the glue hold the lash by the tweezers in one hand, and draw the glue carefully across the lash with the other. Create a thin line of glue all the way across the band. Add a tiny tap of more glue on both ends.<\/p>",
+            "description": "<p>To apply the glue hold the lash by the tweezers in one hand, and draw the glue carefully across the lash with the other. Create a thin line of glue all the way across the band. Add a tiny tap of more glue on both ends.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -162,9 +162,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_10.gif",
+            "image": "shopify://shop_images/Step_10.gif",
             "title": "",
-            "description": "<p>Place the lash somewhere to dry where it won’t be disturbed by air current or anything else. Now set a stopwatch. Then, apply glue to the second lash and set it down next to the first, and glance at your stopwatch to keep track of the drying time for each lash. <\/p>",
+            "description": "<p>Place the lash somewhere to dry where it won’t be disturbed by air current or anything else. Now set a stopwatch. Then, apply glue to the second lash and set it down next to the first, and glance at your stopwatch to keep track of the drying time for each lash. </p>",
             "link-url": "",
             "link-text": ""
           }
@@ -173,9 +173,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_11.gif",
+            "image": "shopify://shop_images/Step_11.gif",
             "title": "",
-            "description": "<p>While your glue is drying, apply a thin line of eyeliner from your tear duct to where your eyelashes begin. The objective is to create a seamless line between where the Eyelace band will end, and where the eyeliner begins.<\/p>",
+            "description": "<p>While your glue is drying, apply a thin line of eyeliner from your tear duct to where your eyelashes begin. The objective is to create a seamless line between where the Eyelace band will end, and where the eyeliner begins.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -184,9 +184,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_12.gif",
+            "image": "shopify://shop_images/Step_12.gif",
             "title": "",
-            "description": "<p>To maintain your brush dip it in makeup remover and clean it after each use.<\/p>",
+            "description": "<p>To maintain your brush dip it in makeup remover and clean it after each use.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -195,9 +195,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_13.gif",
+            "image": "shopify://shop_images/Step_13.gif",
             "title": "",
-            "description": "<p>The time it takes to dry your glue depends on how much glue you’ve applied and how much humidity is in the air. Ultimately, you will be able to tell when the glue is dry when it reaches the right color. When it is too wet it is white, and if you try to put it on the wet glue will sting your eye. If it is too dry, it is clear and when you try to put it on the lash won't stick.<\/p>",
+            "description": "<p>The time it takes to dry your glue depends on how much glue you’ve applied and how much humidity is in the air. Ultimately, you will be able to tell when the glue is dry when it reaches the right color. When it is too wet it is white, and if you try to put it on the wet glue will sting your eye. If it is too dry, it is clear and when you try to put it on the lash won't stick.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -206,9 +206,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_14.gif",
+            "image": "shopify://shop_images/Step_14.gif",
             "title": "",
-            "description": "<p>It is ready to apply when it is mostly cloudy and a little clear. It will take approximately 4 to 5 minutes to dry for glue that is about half a millimeter (.5mm) thick, and about 5 to 6 minutes to dry for glue that is about a millimeter (1mm) thick. The ideal glue width is just about three-quarters of a millimeter (.75mm) thick, and it will take about 5 minutes to dry.<\/p>",
+            "description": "<p>It is ready to apply when it is mostly cloudy and a little clear. It will take approximately 4 to 5 minutes to dry for glue that is about half a millimeter (.5mm) thick, and about 5 to 6 minutes to dry for glue that is about a millimeter (1mm) thick. The ideal glue width is just about three-quarters of a millimeter (.75mm) thick, and it will take about 5 minutes to dry.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -217,9 +217,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_15.gif",
+            "image": "shopify://shop_images/Step_15.gif",
             "title": "",
-            "description": "<p>When your glue is ready, stabilize your elbow against a mirror and slowly and decisively bring your lash to the center of your eye, and the top of your waterline. Press your Eyelace into the top of your waterline and hold for ten seconds so the center glue can affix.<\/p>",
+            "description": "<p>When your glue is ready, stabilize your elbow against a mirror and slowly and decisively bring your lash to the center of your eye, and the top of your waterline. Press your Eyelace into the top of your waterline and hold for ten seconds so the center glue can affix.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -228,9 +228,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_16.gif",
+            "image": "shopify://shop_images/Step_16.gif",
             "title": "",
-            "description": "<p>Once you carefully let go, use your tweezers to first press the inner edge down, then move your tweezers to the outer edge and press the outer edge down so that there is no space between the lash and your waterline.<\/p>",
+            "description": "<p>Once you carefully let go, use your tweezers to first press the inner edge down, then move your tweezers to the outer edge and press the outer edge down so that there is no space between the lash and your waterline.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -239,9 +239,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_17.gif",
+            "image": "shopify://shop_images/Step_17.gif",
             "title": "",
-            "description": "<p>After a few seconds of letting the glue settle, carefully use your tweezers to squeeze the base of your natural lashes together with your Eyelace. Squeeze them together all the way across the band.<\/p>",
+            "description": "<p>After a few seconds of letting the glue settle, carefully use your tweezers to squeeze the base of your natural lashes together with your Eyelace. Squeeze them together all the way across the band.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -250,9 +250,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_18.gif",
+            "image": "shopify://shop_images/Step_18.gif",
             "title": "",
-            "description": "<p>Sometimes you can't place your lash perfectly on the first try. If so, remove the tacky glue, reapply fresh glue, and try again.<\/p>",
+            "description": "<p>Sometimes you can't place your lash perfectly on the first try. If so, remove the tacky glue, reapply fresh glue, and try again.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -305,9 +305,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_1_d846c517-6e1b-45c0-887f-8550cca955fd.gif",
+            "image": "shopify://shop_images/Step_1_d846c517-6e1b-45c0-887f-8550cca955fd.gif",
             "title": "",
-            "description": "<p>To remove your Eylace, gently pull it until the glue slowly separates from your natural lash. <\/p>",
+            "description": "<p>To remove your Eylace, gently pull it until the glue slowly separates from your natural lash. </p>",
             "link-url": "",
             "link-text": ""
           }
@@ -316,9 +316,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_2_28c9b56f-a1be-4b7a-b6fd-be1812ee501f.gif",
+            "image": "shopify://shop_images/Step_2_28c9b56f-a1be-4b7a-b6fd-be1812ee501f.gif",
             "title": "",
-            "description": "<p>If you feel any tension use a warm compress, or a shower to melt the glue before you pull.<\/p>",
+            "description": "<p>If you feel any tension use a warm compress, or a shower to melt the glue before you pull.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -327,9 +327,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Step_3_1b2c84b2-e8a4-40a0-8f3a-bc88a1d20d2f.gif",
+            "image": "shopify://shop_images/Step_3_1b2c84b2-e8a4-40a0-8f3a-bc88a1d20d2f.gif",
             "title": "",
-            "description": "<p>Once removed store your lashes on the plastic tray to reuse them.<\/p>",
+            "description": "<p>Once removed store your lashes on the plastic tray to reuse them.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -390,8 +390,8 @@
         "container-width": "4",
         "overline": "Need Help?",
         "heading": "Contact Us Now",
-        "description": "<p>Please do not hesitate to reach out to us if you have any questions or concerns about applying, removing, and caring for your Eyelace Lashes. We are here to help you.<\/p>",
-        "link-url": "shopify:\/\/pages\/contact",
+        "description": "<p>Please do not hesitate to reach out to us if you have any questions or concerns about applying, removing, and caring for your Eyelace Lashes. We are here to help you.</p>",
+        "link-url": "shopify://pages/contact",
         "link-text": "Get Help"
       }
     }
