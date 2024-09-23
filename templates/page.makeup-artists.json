@@ -42,10 +42,10 @@
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-09-07_at_12.21.14_PM_a5ff88b5-0726-4360-bdac-fb29a0da9523.png",
+        "image": "shopify://shop_images/eye_lace_pic_5.heic",
         "overline": "Join our professional community",
         "title": "Makeup Artist Partnership",
-        "description": "<p>Eyelace offers a discount on our Collection Lash Set for Certified Makeup Artists who wish to partner with us and stun their clients with the most natural, elegant faux lashes on the market.<\/p>",
+        "description": "<p>Eyelace offers a discount on our Collection Lash Set for Certified Makeup Artists who wish to partner with us and stun their clients with the most natural, elegant faux lashes on the market.</p>",
         "link-url": "",
         "link-text": "",
         "mobile-overlay": true,
@@ -67,7 +67,7 @@
         "container-width": "3",
         "overline": "Get 30% off Collection Lash Sets",
         "heading": "How To Become A Partner",
-        "description": "<p>The Collection Lash Set includes one pair each of all seven original Eyelace lash designs. Designed for the Starter Kit but sold separately at the request of makeup artists.<br\/><br\/>Upload proof of your state issued Makeup Artist License to receive a 30% discount code made specifically for you to be used on any number of Collection Lash Set purchases.<\/p>",
+        "description": "<p>The Collection Lash Set includes one pair each of all seven original Eyelace lash designs. Designed for the Starter Kit but sold separately at the request of makeup artists.<br/><br/>Upload proof of your state issued Makeup Artist License to receive a 30% discount code made specifically for you to be used on any number of Collection Lash Set purchases.</p>",
         "link-url": "mailto:info@eyelace.com",
         "link-text": ""
       }
@@ -78,11 +78,11 @@
         "image_kxdmY4": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8.jpg",
+            "image": "shopify://shop_images/8.jpg",
             "image-height": 100,
             "link": "",
             "hide-on-desktop": false,
-            "mobile-image": "shopify:\/\/shop_images\/8.jpg",
+            "mobile-image": "shopify://shop_images/8.jpg",
             "mobile-image-height": 70,
             "hide-on-mobile": false
           }
@@ -90,11 +90,11 @@
         "image_7WykgD": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3.jpg",
+            "image": "shopify://shop_images/Screenshot_2024-09-07_at_12.21.14_PM_5656bac0-3644-4438-a980-5d9e6a964776.png",
             "image-height": 100,
             "link": "",
             "hide-on-desktop": false,
-            "mobile-image": "shopify:\/\/shop_images\/3.jpg",
+            "mobile-image": "shopify://shop_images/Screenshot_2024-09-07_at_12.21.14_PM_5656bac0-3644-4438-a980-5d9e6a964776.png",
             "mobile-image-height": 70,
             "hide-on-mobile": false
           }
@@ -188,7 +188,7 @@
       "type": "apps",
       "blocks": {
         "hulk_form_builder_form_block_DWxcb9": {
-          "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/form-block\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+          "type": "shopify://apps/hulk-form-builder/blocks/form-block/b6b8dd14-356b-4725-a4ed-77232212b3c3",
           "settings": {
             "form_uuid": "wiQ5VS8iZPfvgzvlBuq4uw",
             "form_settings": false,
@@ -239,7 +239,7 @@
         "light-text": true,
         "overline": "DISCOUNTS & SPECIAL OFFERS",
         "heading": "Subscribe to our newsletter and receive special offers only for  members!",
-        "description": "<p>Our newsletter is packed full of stories about empowered women empowering others as well as the latest Eyelace deals, trends, tips, and tricks.<\/p>"
+        "description": "<p>Our newsletter is packed full of stories about empowered women empowering others as well as the latest Eyelace deals, trends, tips, and tricks.</p>"
       }
     },
     "featured_blog_rXUqPA": {
