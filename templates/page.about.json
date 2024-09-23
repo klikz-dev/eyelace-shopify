@@ -78,7 +78,7 @@
         "spacing-above": false,
         "spacing-below": true,
         "background-color": "none",
-        "container-width": "2",
+        "container-width": "5",
         "light-text": false,
         "overlap": false,
         "heading-type": "featured-heading",
