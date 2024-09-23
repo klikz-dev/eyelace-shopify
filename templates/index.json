@@ -623,6 +623,68 @@
         "heading": "Eyelace Accessories"
       }
     },
+    "text_columns_DyaLp9": {
+      "type": "text-columns",
+      "blocks": {
+        "image_eqrec3": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.22_AM.png",
+            "title": "Malala Fund",
+            "description": "<p>Working for a world in which every girl can learn and lead</p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "image_PxUCW6": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.09_AM.png",
+            "title": "National Coalition Against Domestic Violence",
+            "description": "<p>Supporting survivors and advocates, holding offenders accountable, and leading, mobilizing, and raising voices to support efforts that demand a change of conditions that lead to domestic violence</p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "image_63Rerb": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.03.57_AM.png",
+            "title": "Working for Women",
+            "description": "<p>Creating pathways for women's financial independence; investing in women, transforming the world</p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        }
+      },
+      "block_order": [
+        "image_eqrec3",
+        "image_PxUCW6",
+        "image_63Rerb"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "block-spacing": true,
+        "background-color": "accent-1",
+        "light-text": false,
+        "container-width": "4",
+        "width": 4,
+        "aspect-ratio": "landscape",
+        "image-width": 0,
+        "text-alignment": "center",
+        "overline": "With every purchase",
+        "heading": "YOU RE-INVEST IN WOMEN WORLDWIDE",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "1"
+      }
+    },
     "grid_with_overlay_B3dhQ9": {
       "type": "grid-with-overlay",
       "blocks": {
@@ -937,68 +999,6 @@
         "blog-heading": "Learn More About Eyelash Care & The Latest Beauty Trends!",
         "heading-alignment": "center",
         "view-more-text": "Learn More"
-      }
-    },
-    "text_columns_DyaLp9": {
-      "type": "text-columns",
-      "blocks": {
-        "image_eqrec3": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.22_AM.png",
-            "title": "Malala Fund",
-            "description": "<p>Working for a world in which every girl can learn and lead</p>",
-            "link-url": "",
-            "link-text": "View more"
-          }
-        },
-        "image_PxUCW6": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.09_AM.png",
-            "title": "National Coalition Against Domestic Violence",
-            "description": "<p>Supporting survivors and advocates, holding offenders accountable, and leading, mobilizing, and raising voices to support efforts that demand a change of conditions that lead to domestic violence</p>",
-            "link-url": "",
-            "link-text": "View more"
-          }
-        },
-        "image_63Rerb": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.03.57_AM.png",
-            "title": "Working for Women",
-            "description": "<p>Creating pathways for women's financial independence; investing in women, transforming the world</p>",
-            "link-url": "",
-            "link-text": "View more"
-          }
-        }
-      },
-      "block_order": [
-        "image_eqrec3",
-        "image_PxUCW6",
-        "image_63Rerb"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "block-spacing": true,
-        "background-color": "none",
-        "light-text": false,
-        "container-width": "4",
-        "width": 4,
-        "aspect-ratio": "square",
-        "image-width": 0,
-        "text-alignment": "center",
-        "overline": "With every purchase",
-        "heading": "YOU RE-INVEST IN WOMEN WORLDWIDE",
-        "description": "",
-        "link-url": "",
-        "link-text": "",
-        "mobile-width": "1"
       }
     },
     "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381": {
