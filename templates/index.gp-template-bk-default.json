@@ -1,0 +1,1048 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "order": [
+    "slideshow",
+    "featured_video_wJUr4J",
+    "image_with_text_xNTJp9",
+    "image_with_text_FQfGti",
+    "image_comparison_CnYa33",
+    "text_columns_VJ8c9w",
+    "countdown_dmABWK",
+    "featured_text_aFcPjY",
+    "testimonials_WhbrEN",
+    "ef31fa12-e7a0-4c66-8567-1cca76a8a029",
+    "scrolling_content_8TVBBx",
+    "featured_products_GFFf48",
+    "featured_video_XRWVTH",
+    "featured-collection-slider",
+    "text_columns_DyaLp9",
+    "grid_with_overlay_B3dhQ9",
+    "custom_content_N3MrPz",
+    "17162800996eb192c5",
+    "featured_text_fPaNCj",
+    "1716280108276ece84",
+    "f464cea0-bd7e-46ca-8e5a-57cfc76269da",
+    "888c0700-2b7d-4516-8312-8388f1daefac",
+    "featured-blog",
+    "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381"
+  ],
+  "sections": {
+    "17162800996eb192c5": {
+      "block_order": [
+        "socialwidget_instagram_feed_base_widget_GzPH4E"
+      ],
+      "blocks": {
+        "socialwidget_instagram_feed_base_widget_GzPH4E": {
+          "disabled": true,
+          "settings": {
+          },
+          "type": "shopify://apps/socialwidget/blocks/base-widget/508b8d5b-b176-4dc6-a0ba-2b222db6eb79"
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "background-color": "none",
+        "container-width": "4",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true
+      },
+      "type": "apps"
+    },
+    "1716280108276ece84": {
+      "block_order": [
+        "juniper_tiktok_feed_mintty_tiktok_feed_hmRVRb"
+      ],
+      "blocks": {
+        "juniper_tiktok_feed_mintty_tiktok_feed_hmRVRb": {
+          "disabled": true,
+          "settings": {
+            "alignment": "center",
+            "html_area": "",
+            "title": "",
+            "title_color": ""
+          },
+          "type": "shopify://apps/juniper-tiktok-feed/blocks/mintty-tiktok-feed/fa514c33-5475-4484-b270-5f1e7eb87a9a"
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "background-color": "none",
+        "container-width": "4",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true
+      },
+      "type": "apps"
+    },
+    "79cdc2f8-dc2d-4924-bfd4-2f03cdbe0381": {
+      "settings": {
+        "background-color": "dark",
+        "container-width": "1",
+        "description": "<p>We're passionate about providing the assistance and resources our customers need to create bold and beautiful looks. If you have any questions, concerns, or comments, please do not hesitate to contact us. </p>",
+        "heading": "Any questions or concerns about your Eyelace?",
+        "heading-type": "section-heading",
+        "light-text": true,
+        "link-text": "Contact us",
+        "link-url": "shopify://pages/contact",
+        "overline": "Issues or concerns",
+        "spacing-above": true,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "featured-text"
+    },
+    "888c0700-2b7d-4516-8312-8388f1daefac": {
+      "settings": {
+        "background-color": "accent-2",
+        "description": "<p>Read about empowered women empowering others and get the latest Eyelace beauty tips and trends.</p>",
+        "heading": "Subscribe to Our Newsletter",
+        "light-text": false,
+        "overline": "Discounts & Special Offers",
+        "spacing-above": true,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "newsletter"
+    },
+    "countdown_dmABWK": {
+      "settings": {
+        "background-color": "dark",
+        "container-width": "3",
+        "description": "<p>Hurry and Get 10% off our premiere Starter Kit as a part of our opening sale!</p>",
+        "expiry-date": "01-07-2024",
+        "expiry-hours": 0,
+        "expiry-minutes": 0,
+        "heading": "Opening Sale!",
+        "hide-when-expired": true,
+        "light-number": true,
+        "light-text": true,
+        "link-text": "Get Yours Now",
+        "link-url": "shopify://products/starter-kit",
+        "mobile-number-size": 20,
+        "number-size": 40,
+        "overlay-style": "darken-bottom",
+        "overline": "Get Your Starter Kit Now",
+        "parallax-enabled": false,
+        "show-button-when": "always",
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-style": "none",
+        "timer-bg-color": "dark",
+        "top-border": false
+      },
+      "type": "countdown"
+    },
+    "custom_content_N3MrPz": {
+      "settings": {
+        "background-color": "accent-1",
+        "container-width": "4",
+        "custom_html": "<div>\n  <h1 style=\"text-align:center;font-size:30px;font-family:cormorant;\"> \n    Follow Us On Social Media \n  </h1>\n\n  <p style=\"text-align:center;margin-top:40px;margin-bottom:40px;font-family:montserrat;\">\n    Join a growing community of women empowering each other to look and feel their best, and stay up to date on new products, deals, tips, and tricks to unleash your inner beauty.\n  </p>\n\n  <!-- Social Media Icons by NiftyButtons https://niftybuttons.com -->\n  <div style=\"display: flex; flex-wrap:wrap; align-items: center; justify-content: center;\">\n    <a href=\"https://facebook.com/eyelace\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:none;border:0;width:48px;height:48px;padding:2px;margin:5px;color:#ffffff;border-radius:35%;background-color:#0d2744;\">\n      <svg class=\"niftybutton-facebook\" style=\"display:block;fill:currentColor\" data-donate=\"true\" data-tag=\"fac\" data-name=\"Facebook\" viewbox=\"0 0 512 512\" preserveaspectratio=\"xMidYMid meet\">\n        <title>Facebook social icon</title>\n        <path d=\"M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z\"></path>\n      </svg>\n    </a>\n    <a href=\"https://tiktok.com/@eyelace\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:none;border:0;width:48px;height:48px;padding:2px;margin:5px;color:#ffffff;border-radius:35%;background-color:#0d2744;\">\n      <svg class=\"niftybutton-tiktok\" style=\"display:block;fill:currentColor\" data-donate=\"true\" data-tag=\"tic\" data-name=\"TikTok\" viewbox=\"0 0 512 512\" preserveaspectratio=\"xMidYMid meet\">\n        <title>TikTok social icon</title>\n        <path d=\"M 386.160156 141.550781 C 383.457031 140.15625 380.832031 138.625 378.285156 136.964844 C 370.878906 132.070312 364.085938 126.300781 358.058594 119.785156 C 342.976562 102.523438 337.339844 85.015625 335.265625 72.757812 L 335.351562 72.757812 C 333.617188 62.582031 334.332031 56 334.441406 56 L 265.742188 56 L 265.742188 321.648438 C 265.742188 325.214844 265.742188 328.742188 265.589844 332.226562 C 265.589844 332.660156 265.550781 333.058594 265.523438 333.523438 C 265.523438 333.714844 265.523438 333.917969 265.484375 334.117188 C 265.484375 334.167969 265.484375 334.214844 265.484375 334.265625 C 264.011719 353.621094 253.011719 370.976562 236.132812 380.566406 C 227.472656 385.496094 217.675781 388.078125 207.707031 388.066406 C 175.699219 388.066406 149.757812 361.964844 149.757812 329.734375 C 149.757812 297.5 175.699219 271.398438 207.707031 271.398438 C 213.765625 271.394531 219.789062 272.347656 225.550781 274.226562 L 225.632812 204.273438 C 190.277344 199.707031 154.621094 210.136719 127.300781 233.042969 C 115.457031 243.328125 105.503906 255.605469 97.882812 269.316406 C 94.984375 274.316406 84.042969 294.410156 82.714844 327.015625 C 81.882812 345.523438 87.441406 364.699219 90.089844 372.625 L 90.089844 372.792969 C 91.757812 377.457031 98.214844 393.382812 108.742188 406.808594 C 117.230469 417.578125 127.253906 427.035156 138.5 434.882812 L 138.5 434.714844 L 138.667969 434.882812 C 171.925781 457.484375 208.800781 456 208.800781 456 C 215.183594 455.742188 236.566406 456 260.851562 444.492188 C 287.785156 431.734375 303.117188 412.726562 303.117188 412.726562 C 312.914062 401.367188 320.703125 388.425781 326.148438 374.449219 C 332.367188 358.109375 334.441406 338.507812 334.441406 330.675781 L 334.441406 189.742188 C 335.273438 190.242188 346.375 197.582031 346.375 197.582031 C 346.375 197.582031 362.367188 207.832031 387.316406 214.507812 C 405.214844 219.257812 429.332031 220.257812 429.332031 220.257812 L 429.332031 152.058594 C 420.882812 152.976562 403.726562 150.308594 386.160156 141.550781 Z M 386.160156 141.550781\"></path>\n      </svg>\n    </a>\n    <a href=\"https://instagram.com/eyelacelashes\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:none;border:0;width:48px;height:48px;padding:2px;margin:5px;color:#ffffff;border-radius:35%;background-color:#0d2744;\">\n      <svg class=\"niftybutton-instagram\" style=\"display:block;fill:currentColor\" data-donate=\"true\" data-tag=\"ins\" data-name=\"Instagram\" viewbox=\"0 0 512 512\" preserveaspectratio=\"xMidYMid meet\">\n        <title>Instagram social icon</title>\n        <path d=\"M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z\"></path>\n        <path d=\"M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z\"></path>\n        <circle cx=\"351.5\" cy=\"160.5\" r=\"21.5\"></circle>\n      </svg>\n    </a>\n    <a href=\"https://www.youtube.com/@eyelacelashes\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:none;border:0;width:48px;height:48px;padding:2px;margin:5px;color:#ffffff;border-radius:35%;background-color:#0d2744;\">\n      <svg class=\"niftybutton-youtube\" style=\"display:block;fill:currentColor\" data-donate=\"true\" data-tag=\"you\" data-name=\"YouTube\" viewbox=\"0 0 512 512\" preserveaspectratio=\"xMidYMid meet\">\n        <title>YouTube social icon</title>\n        <path d=\"M422.6 193.6c-5.3-45.3-23.3-51.6-59-54 -50.8-3.5-164.3-3.5-215.1 0 -35.7 2.4-53.7 8.7-59 54 -4 33.6-4 91.1 0 124.8 5.3 45.3 23.3 51.6 59 54 50.9 3.5 164.3 3.5 215.1 0 35.7-2.4 53.7-8.7 59-54C426.6 284.8 426.6 227.3 422.6 193.6zM222.2 303.4v-94.6l90.7 47.3L222.2 303.4z\"></path>\n      </svg>\n    </a>\n    <a href=\"https://pinterest.com/eyelace\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:none;border:0;width:48px;height:48px;padding:2px;margin:5px;color:#ffffff;border-radius:35%;background-color:#0d2744;\">\n      <svg class=\"niftybutton-pinterest\" style=\"display:block;fill:currentColor\" data-donate=\"true\" data-tag=\"pin\" data-name=\"Pinterest\" viewbox=\"0 0 512 512\" preserveaspectratio=\"xMidYMid meet\">\n        <title>Pinterest social icon</title>\n        <path d=\"M266.6 76.5c-100.2 0-150.7 71.8-150.7 131.7 0 36.3 13.7 68.5 43.2 80.6 4.8 2 9.2 0.1 10.6-5.3 1-3.7 3.3-13 4.3-16.9 1.4-5.3 0.9-7.1-3-11.8 -8.5-10-13.9-23-13.9-41.3 0-53.3 39.9-101 103.8-101 56.6 0 87.7 34.6 87.7 80.8 0 60.8-26.9 112.1-66.8 112.1 -22.1 0-38.6-18.2-33.3-40.6 6.3-26.7 18.6-55.5 18.6-74.8 0-17.3-9.3-31.7-28.4-31.7 -22.5 0-40.7 23.3-40.7 54.6 0 19.9 6.7 33.4 6.7 33.4s-23.1 97.8-27.1 114.9c-8.1 34.1-1.2 75.9-0.6 80.1 0.3 2.5 3.6 3.1 5 1.2 2.1-2.7 28.9-35.9 38.1-69 2.6-9.4 14.8-58 14.8-58 7.3 14 28.7 26.3 51.5 26.3 67.8 0 113.8-61.8 113.8-144.5C400.1 134.7 347.1 76.5 266.6 76.5z\"></path>\n      </svg>\n    </a>\n  </div>\n</div>",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "custom-content"
+    },
+    "ef31fa12-e7a0-4c66-8567-1cca76a8a029": {
+      "block_order": [
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-0",
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-1",
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-2"
+      ],
+      "blocks": {
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-0": {
+          "settings": {
+            "description": "",
+            "image": "shopify://shop_images/Screenshot_2024-09-10_at_1.46.39_PM.png",
+            "link-text": "",
+            "link-url": "",
+            "show-image": true,
+            "title": "BOLD"
+          },
+          "type": "image"
+        },
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-1": {
+          "settings": {
+            "description": "",
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.56.48_AM.png",
+            "link-text": "",
+            "link-url": "",
+            "show-image": true,
+            "title": "ELEGANT"
+          },
+          "type": "image"
+        },
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-2": {
+          "settings": {
+            "description": "",
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_2.04.20_PM.png",
+            "link-text": "",
+            "link-url": "",
+            "show-image": true,
+            "title": "NATURAL"
+          },
+          "type": "image"
+        }
+      },
+      "settings": {
+        "aspect-ratio": "square",
+        "background-color": "dark",
+        "block-spacing": true,
+        "container-width": "4",
+        "description": "",
+        "heading": "Eyelace Is",
+        "image-width": 0,
+        "light-text": true,
+        "link-text": "",
+        "link-url": "",
+        "mobile-width": "1",
+        "overline": "Enhancing Your Natural Beauty",
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-alignment": "center",
+        "top-border": false,
+        "width": 3
+      },
+      "type": "text-columns"
+    },
+    "f464cea0-bd7e-46ca-8e5a-57cfc76269da": {
+      "block_order": [
+        "template--14865991630929__f464cea0-bd7e-46ca-8e5a-57cfc76269da-16866969207649ce86-0",
+        "template--14865991630929__f464cea0-bd7e-46ca-8e5a-57cfc76269da-16866969207649ce86-1",
+        "template--14865991630929__f464cea0-bd7e-46ca-8e5a-57cfc76269da-16866969207649ce86-2",
+        "collapsible_row_D8th9T",
+        "collapsible_row_TyiVUe",
+        "collapsible_row_iWUM84",
+        "collapsible_row_nkUxcE",
+        "collapsible_row_ejPqNN",
+        "collapsible_row_9mpQgM",
+        "collapsible_row_3hdJ6G"
+      ],
+      "blocks": {
+        "collapsible_row_3hdJ6G": {
+          "settings": {
+            "default-open": false,
+            "description": "<p>Yes, Eyelace lashes are cruelty-free and made from synthetic fibers, ensuring no harm to animals.</p>",
+            "heading": "Are Eyelace lashes cruelty-free?",
+            "page-content": ""
+          },
+          "type": "collapsible-row"
+        },
+        "collapsible_row_9mpQgM": {
+          "settings": {
+            "default-open": false,
+            "description": "<p>Consider the occasion and the look you want to achieve. For everyday wear, opt for more natural styles like Natural Beauty or Day Dream. For a night out or special event, bolder styles like Night Life or Ball Gown will provide the dramatic effect you desire. If you wear glasses, choose shorter styles to ensure comfort. Try our Starter Kit and receive a set of each of our seven lashes so you can try them all and find your favorites!</p>",
+            "heading": "How do I choose the right lash style for me?",
+            "page-content": ""
+          },
+          "type": "collapsible-row"
+        },
+        "collapsible_row_D8th9T": {
+          "settings": {
+            "default-open": false,
+            "description": "<p>Absolutely. Eyelace faux lashes are hypoallergenic and latex-free, making them suitable for those with sensitive eyes and skin. Additionally, our Eyelace White Lash Glue is formulated to be gentle and non-irritating.</p>",
+            "heading": "Are Eyelace lashes suitable for sensitive eyes?",
+            "page-content": ""
+          },
+          "type": "collapsible-row"
+        },
+        "collapsible_row_TyiVUe": {
+          "settings": {
+            "default-open": false,
+            "description": "<p>To remove your Eylace, gently pull it until the glue slowly separates from your natural lash. <br/>If you feel any tension use a warm compress, or a shower to melt the glue before you pull.<br/>Once removed store your lashes on the plastic tray to reuse them.</p>",
+            "heading": "How do I remove Eyelace lashes?",
+            "page-content": ""
+          },
+          "type": "collapsible-row"
+        },
+        "collapsible_row_ejPqNN": {
+          "settings": {
+            "default-open": false,
+            "description": "<p>Each Eyelace lash style is designed to offer a different look and level of drama:Natural Beauty: Subtle enhancement for everyday wear.</p><ul><li>Ball Gown: Dramatic and classy, perfect for photos and formal events. </li><li>Night Life: Extra dark and sexy, ideal for nights out. </li><li>Day Dream: Long and full-bodied, made to charm. </li><li>Social Butterfly: Dark and striking but shorter and easy to apply.</li><li>Perfect Poise: Designed to mimic a fully natural lash at its healthiest; perfect for professional settings. </li><li>Natural Beauty: Made to blend in seamlessly with natural lashes but add extra length. </li><li>Elegant Effect: Simple and elegant, adding a refined and under stated touch.</li></ul>",
+            "heading": "What is the difference between the various Eyelace lash styles?",
+            "page-content": ""
+          },
+          "type": "collapsible-row"
+        },
+        "collapsible_row_iWUM84": {
+          "settings": {
+            "default-open": false,
+            "description": "<p>Yes, Eyelace offers a variety of false eyelash styles suitable for wear with glasses. Opt for shorter and more natural styles like Natural Beauty or Elegant Effect to ensure they don’t interfere with your eyewear.</p>",
+            "heading": "Can I wear Eyelace lashes with glasses?",
+            "page-content": ""
+          },
+          "type": "collapsible-row"
+        },
+        "collapsible_row_nkUxcE": {
+          "settings": {
+            "default-open": false,
+            "description": "<p>The longevity of Eyelace faux eyelashes depends on how well they are cared for. With proper maintenance, they can be reused multiple times. Always handle them gently, clean them after use, and store them in a safe place.</p>",
+            "heading": "How long do Eyelace lashes last?",
+            "page-content": ""
+          },
+          "type": "collapsible-row"
+        },
+        "template--14865991630929__f464cea0-bd7e-46ca-8e5a-57cfc76269da-16866969207649ce86-0": {
+          "settings": {
+            "default-open": false,
+            "description": "<p>Eyelace false lashes are crafted from high-quality PBT fiber, a polyester polymer known for its durability and natural look. They are also latex-free and hypoallergenic, ensuring they are safe for sensitive skin.</p>",
+            "heading": "What are Eyelace lashes made from?",
+            "page-content": ""
+          },
+          "type": "collapsible-row"
+        },
+        "template--14865991630929__f464cea0-bd7e-46ca-8e5a-57cfc76269da-16866969207649ce86-1": {
+          "settings": {
+            "default-open": false,
+            "description": "<p>Watch our tutorial video to find out how to apply and remove your Eyelace Lashes!<br/><br/><a href=\"/pages/how-to\" target=\"_blank\" title=\"How To\">How To Tutorial</a></p>",
+            "heading": "How do I apply Eyelace lashes?",
+            "page-content": ""
+          },
+          "type": "collapsible-row"
+        },
+        "template--14865991630929__f464cea0-bd7e-46ca-8e5a-57cfc76269da-16866969207649ce86-2": {
+          "settings": {
+            "default-open": false,
+            "description": "<p>Yes, Eyelace false lashes are designed for multiple uses. With proper care and cleaning, you can reuse them several times. Be sure to gently remove any adhesive residue after each use and store them in their original packaging.</p>",
+            "heading": "Can I reuse Eyelace lashes?",
+            "page-content": ""
+          },
+          "type": "collapsible-row"
+        }
+      },
+      "settings": {
+        "background-color": "dark",
+        "container-width": "1",
+        "heading": "FAQS",
+        "heading-alignment": "center",
+        "light-text": true,
+        "spacing-above": true,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "collapsible-rows"
+    },
+    "featured-blog": {
+      "settings": {
+        "background-color": "accent-1",
+        "blog": "eyelash-health",
+        "blog-heading": "Learn More About Eyelash Care & The Latest Beauty Trends!",
+        "container-width": "4",
+        "heading-alignment": "center",
+        "light-text": false,
+        "show-date": true,
+        "show-excerpt": true,
+        "spacing-above": true,
+        "spacing-below": true,
+        "tag-select": "pinned",
+        "top-border": false,
+        "view-more-text": "Learn More"
+      },
+      "type": "featured-blog"
+    },
+    "featured-collection-slider": {
+      "settings": {
+        "background-color": "dark",
+        "collection": "accessories",
+        "display-type": "grid",
+        "featured-collection--description--show": false,
+        "featured-collection--image--show": false,
+        "heading": "Eyelace Accessories",
+        "light-text": true,
+        "max-products": 8,
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1",
+        "spacing-above": true,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "featured-collection"
+    },
+    "featured_products_GFFf48": {
+      "settings": {
+        "background-color": "none",
+        "display-type": "grid",
+        "heading": "LASH COLLECTION",
+        "heading-alignment": "center",
+        "light-text": false,
+        "link-text": "",
+        "link-url": "",
+        "product-list": [
+          "ball-gown-lash-set",
+          "night-life-lash-set",
+          "day-dream-lash-set",
+          "social-butterfly-lash-set",
+          "perfect-poise-lash-set",
+          "natural-beauty-lash-set",
+          "elegant-effect-lash-set",
+          "collection-lash-set"
+        ],
+        "products-per-row--desktop": "4",
+        "products-per-row--mobile": "2",
+        "spacing-above": true,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "featured-products"
+    },
+    "featured_text_aFcPjY": {
+      "settings": {
+        "background-color": "accent-1",
+        "container-width": "4",
+        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are obtainable in their home makeup routines.</p>",
+        "heading": "We wear Eyelace not because we WANT to be beautiful, but because we ARE!",
+        "heading-type": "section-heading",
+        "light-text": false,
+        "link-text": "Learn More",
+        "link-url": "shopify://pages/our-mission",
+        "overline": "Our Mission",
+        "spacing-above": true,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "featured-text"
+    },
+    "featured_text_fPaNCj": {
+      "disabled": true,
+      "settings": {
+        "background-color": "none",
+        "container-width": "4",
+        "description": "<p>Tag @eyelacelashes on your Instagram or TikTok Post showing off your lashes for a chance to be featured!</p>",
+        "heading": "",
+        "heading-type": "section-heading",
+        "light-text": false,
+        "link-text": "",
+        "link-url": "/",
+        "overline": "",
+        "spacing-above": false,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "featured-text"
+    },
+    "featured_video_XRWVTH": {
+      "settings": {
+        "aspect-ratio": 48,
+        "autoplay": false,
+        "background-color": "none",
+        "button-text": "Learn How",
+        "button-url": "shopify://pages/how-to",
+        "container-width": "6",
+        "description": "",
+        "heading": "Instructional Video",
+        "heading-type": "banner-heading",
+        "image": "shopify://shop_images/Screenshot_2024-09-10_at_3.20.12_PM.png",
+        "light-text": true,
+        "mobile-aspect-ratio": 134,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-text-alignment": "center",
+        "overlay-style": "darken",
+        "overline": "",
+        "play-button-style": "solid",
+        "spacing-above": false,
+        "spacing-below": false,
+        "text-background-color": "transparent",
+        "text-horizontal-alignment": "center",
+        "text-style": "eclipse-shadow",
+        "text-vertical-alignment": "bottom",
+        "text-width": "medium",
+        "top-border": false,
+        "video-display-type": "aspect-ratio",
+        "video-upload": "shopify://files/videos/Final.mp4",
+        "video-url": ""
+      },
+      "type": "featured-video"
+    },
+    "featured_video_wJUr4J": {
+      "settings": {
+        "aspect-ratio": 56,
+        "autoplay": true,
+        "background-color": "none",
+        "button-text": "Shop Now",
+        "button-url": "shopify://products/starter-kit",
+        "container-width": "6",
+        "description": "<p>Where you will experience the most natural, elegant, single-placement Faux Lash on the market.</p>",
+        "heading": "EYELACE",
+        "heading-type": "banner-heading",
+        "image": "shopify://shop_images/Screenshot_2024-02-14_at_9.02.17_AM.png",
+        "light-text": true,
+        "mobile-aspect-ratio": 132,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-text-alignment": "center",
+        "mobile-thumbnail": "shopify://shop_images/Screenshot_2024-02-14_at_9.02.17_AM.png",
+        "overlay-style": "darken-bottom",
+        "overline": "welcome to",
+        "play-button-style": "solid",
+        "spacing-above": false,
+        "spacing-below": false,
+        "text-background-color": "transparent",
+        "text-horizontal-alignment": "center",
+        "text-style": "eclipse-shadow",
+        "text-vertical-alignment": "bottom",
+        "text-width": "large",
+        "top-border": false,
+        "video-display-type": "aspect-ratio",
+        "video-upload": "shopify://files/videos/EyelaceClip01.mp4",
+        "video-url": ""
+      },
+      "type": "featured-video"
+    },
+    "grid_with_overlay_B3dhQ9": {
+      "block_order": [
+        "image_qLWmqt",
+        "image_KJJai8",
+        "image_Tjmffx",
+        "image_4AfCyJ"
+      ],
+      "blocks": {
+        "image_4AfCyJ": {
+          "settings": {
+            "aspect-ratio": 56,
+            "image": "shopify://shop_images/Screenshot_2024-09-07_at_12.10.39_PM_5a6dd6ca-ec55-459c-8e7b-3a2828d5da6f.png",
+            "image-display-type": "fill",
+            "link-text": "Share",
+            "link-url": "https://eyelace.com/pages/community-stories",
+            "mobile-image": "shopify://shop_images/Screenshot_2024-09-07_at_12.10.39_PM_5a6dd6ca-ec55-459c-8e7b-3a2828d5da6f.png",
+            "title": "Contribute Photos & Videos to Receive Free Lash Sets",
+            "x-blocks": "2",
+            "y-blocks": "1"
+          },
+          "type": "image"
+        },
+        "image_KJJai8": {
+          "settings": {
+            "aspect-ratio": 56,
+            "image": "shopify://shop_images/Screenshot_2024-09-07_at_12.21.14_PM.png",
+            "image-display-type": "fill",
+            "link-text": "Apply Now",
+            "link-url": "https://eyelace.com/pages/makeup-artists-partnership",
+            "mobile-image": "shopify://shop_images/Screenshot_2024-09-07_at_12.21.14_PM.png",
+            "title": "Partner as a Makeup Artist",
+            "x-blocks": "1",
+            "y-blocks": "1"
+          },
+          "type": "image"
+        },
+        "image_Tjmffx": {
+          "settings": {
+            "aspect-ratio": 56,
+            "image": "shopify://shop_images/Photo_Sep_07_2024_12_03_43_PM.jpg",
+            "image-display-type": "fill",
+            "link-text": "Submit Entry",
+            "link-url": "https://eyelace.com/pages/drawing-contest",
+            "mobile-image": "shopify://shop_images/Photo_Sep_07_2024_12_03_43_PM.jpg",
+            "title": "Enter Drawing Contest",
+            "x-blocks": "1",
+            "y-blocks": "1"
+          },
+          "type": "image"
+        },
+        "image_qLWmqt": {
+          "settings": {
+            "aspect-ratio": 56,
+            "image": "shopify://shop_images/photo_4a24deb6-1179-4b4e-8e86-5e6f59fa1ac9.jpg",
+            "image-display-type": "fill",
+            "link-text": "View more",
+            "link-url": "https://eyelace.com/pages/community-stories",
+            "mobile-image": "shopify://shop_images/photo_4a24deb6-1179-4b4e-8e86-5e6f59fa1ac9.jpg",
+            "title": "Read Community Stories",
+            "x-blocks": "2",
+            "y-blocks": "1"
+          },
+          "type": "image"
+        }
+      },
+      "settings": {
+        "background-color": "none",
+        "container-width": "4",
+        "description": "<p>Eyelace believes in being more than just an eyelash, a cosmetic intervention, or a financial transaction. We want to be a community that inspires, supports, & connects women across the globe.  Share your unique beauty and story; become part of our community today!</p>",
+        "heading": "Become Part of our Growing Community",
+        "heading-light-text": false,
+        "heading-type": "section-heading",
+        "light-text": true,
+        "link-text": "",
+        "link-url": "",
+        "mobile-aspect-ratio": 134,
+        "mobile-image-display-type": "original",
+        "mobile-overlay": true,
+        "mobile-width": "2",
+        "overlay-style": "darken-bottom",
+        "overline": "Buliding A Community",
+        "spacing": true,
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-style": "none",
+        "top-border": false,
+        "width": 3
+      },
+      "type": "grid-with-overlay"
+    },
+    "image_comparison_CnYa33": {
+      "block_order": [
+        "before_t7gwCV",
+        "after_nqrq9A"
+      ],
+      "blocks": {
+        "after_nqrq9A": {
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-08-22_at_3.31.07_PM.png",
+            "mobile-image": "shopify://shop_images/Screenshot_2024-08-22_at_3.31.07_PM.png"
+          },
+          "type": "after"
+        },
+        "before_t7gwCV": {
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_9.04.19_AM.png",
+            "mobile-image": "shopify://shop_images/Screenshot_2024-02-14_at_9.04.19_AM.png"
+          },
+          "type": "before"
+        }
+      },
+      "settings": {
+        "aspect-ratio": 56,
+        "background-color": "light",
+        "container-width": "4",
+        "cursor-direction": "horizontal",
+        "cursor-position": 50,
+        "heading": "Because You're Beautiful",
+        "image-display-type": "medium",
+        "light-text": false,
+        "link-text": "Shop Now",
+        "link-url": "shopify://collections/lashes-collection",
+        "mobile-aspect-ratio": 134,
+        "mobile-image-display-type": "original",
+        "overline": "Stunning Lashes For Everyone",
+        "spacing-above": true,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "image-comparison"
+    },
+    "image_with_text_FQfGti": {
+      "settings": {
+        "aspect-ratio": 56,
+        "background-color": "none",
+        "container-width": "6",
+        "description": "<p>Seven innovatively designed, unique waterline lashes that augment your natural lashes while seamlessly blending in with them for a stunningly elegant, natural lash effect.</p>",
+        "heading-type": "featured-heading",
+        "image": "shopify://shop_images/Photo_Sep_13_2024_2_01_22_PM_a62ecb6f-fcc9-4ae3-83ab-96f3717a0bd7.jpg",
+        "image-display-type": "medium",
+        "light-text": false,
+        "link-text": "",
+        "link-url": "",
+        "mobile-aspect-ratio": 134,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-overlay": true,
+        "mobile-text-alignment": "center",
+        "overlap": false,
+        "overlay-style": "darken-bottom",
+        "overline": "Because You're Beautiful",
+        "parallax-enabled": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "text-background-color": "transparent",
+        "text-horizontal-alignment": "left",
+        "text-position": "overlay",
+        "text-style": "none",
+        "text-vertical-alignment": "center",
+        "text-width": "large",
+        "title": "EYELACE LASH COLLECTION",
+        "top-border": false
+      },
+      "type": "image-with-text"
+    },
+    "image_with_text_xNTJp9": {
+      "settings": {
+        "aspect-ratio": 56,
+        "background-color": "dark",
+        "container-width": "6",
+        "description": "<p>A whole new experience in lashes, our Starter Kit features a collection of all of our lashes and accessories along with detailed instructions for use in one convenient box. Try yours today!</p>",
+        "heading-type": "featured-heading",
+        "image": "shopify://shop_images/Photo_Sep_13_2024_1_34_27_PM.png",
+        "image-display-type": "aspect-ratio",
+        "light-text": true,
+        "link-text": "Get Started",
+        "link-url": "shopify://products/starter-kit",
+        "mobile-aspect-ratio": 134,
+        "mobile-hide-description": false,
+        "mobile-image": "shopify://shop_images/Starter_Kit_Placeholder.png",
+        "mobile-image-display-type": "large",
+        "mobile-overlay": true,
+        "mobile-text-alignment": "center",
+        "overlap": false,
+        "overlay-style": "darken-bottom",
+        "overline": "Be Bold; Be Beautiful",
+        "parallax-enabled": true,
+        "spacing-above": false,
+        "spacing-below": false,
+        "text-background-color": "transparent",
+        "text-horizontal-alignment": "right",
+        "text-position": "overlay",
+        "text-style": "eclipse-shadow",
+        "text-vertical-alignment": "center",
+        "text-width": "large",
+        "title": "EYELACE STARTER KIT",
+        "top-border": false
+      },
+      "type": "image-with-text"
+    },
+    "scrolling_content_8TVBBx": {
+      "block_order": [
+        "image_YnY3EQ",
+        "text_9NKXVh",
+        "image_V4zhDm",
+        "text_xVhmtU"
+      ],
+      "blocks": {
+        "image_V4zhDm": {
+          "settings": {
+            "hide-on-desktop": false,
+            "hide-on-mobile": false,
+            "image": "shopify://shop_images/Screenshot_2024-02-15_at_11.53.52_AM_medium-removebg-preview.png",
+            "image-height": 100,
+            "link": "",
+            "mobile-image-height": 70
+          },
+          "type": "image"
+        },
+        "image_YnY3EQ": {
+          "settings": {
+            "hide-on-desktop": false,
+            "hide-on-mobile": false,
+            "image": "shopify://shop_images/EE_package_square.jpg",
+            "image-height": 100,
+            "link": "",
+            "mobile-image-height": 70
+          },
+          "type": "image"
+        },
+        "text_9NKXVh": {
+          "settings": {
+            "hide-on-desktop": false,
+            "hide-on-mobile": false,
+            "link": "",
+            "text": "Become a Member Today!"
+          },
+          "type": "text"
+        },
+        "text_xVhmtU": {
+          "settings": {
+            "hide-on-desktop": false,
+            "hide-on-mobile": false,
+            "link": "",
+            "text": "Subscribe and Save"
+          },
+          "type": "text"
+        }
+      },
+      "settings": {
+        "animation-direction": "left",
+        "animation-speed": 6,
+        "background-color": "accent-2",
+        "background-image": "shopify://shop_images/Creative_Banner_4.jpg",
+        "light-text": false,
+        "mobile-image": "shopify://shop_images/Creative_Banner_4.jpg",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "pause-on-hover": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-size": "section-heading",
+        "top-border": false
+      },
+      "type": "scrolling-content"
+    },
+    "slideshow": {
+      "block_order": [
+        "slide-0",
+        "slide-1",
+        "slide-2"
+      ],
+      "blocks": {
+        "slide-0": {
+          "settings": {
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_9.02.30_AM.png",
+            "link-text": "SHOP NOW",
+            "link-url": "/",
+            "mobile-hide-description": false,
+            "mobile-text-alignment": "center",
+            "overline": "",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "text-width": "small",
+            "title": "Because Your Beautiful"
+          },
+          "type": "image"
+        },
+        "slide-1": {
+          "settings": {
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
+            "link-text": "View more",
+            "link-url": "/",
+            "mobile-hide-description": false,
+            "mobile-text-alignment": "center",
+            "overline": "",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "text-width": "small",
+            "title": "Slide heading"
+          },
+          "type": "image"
+        },
+        "slide-2": {
+          "settings": {
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
+            "link-text": "View more",
+            "link-url": "/",
+            "mobile-hide-description": false,
+            "mobile-text-alignment": "center",
+            "overline": "",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "text-width": "small",
+            "title": "Slide heading"
+          },
+          "type": "image"
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "arrows-enabled": true,
+        "aspect-ratio": 56,
+        "auto-rotate": false,
+        "background-color": "none",
+        "blocks_per_slide": 1,
+        "blocks_per_slide_mobile": "1",
+        "heading-type": "featured-heading",
+        "image-display-type": "x-large",
+        "light-text": true,
+        "mobile-aspect-ratio": 134,
+        "mobile-image-display-type": "original",
+        "mobile-overlay": true,
+        "overlay-style": "darken-bottom",
+        "rotate-frequency": 4,
+        "spacing-above": false,
+        "spacing-around-blocks": false,
+        "spacing-below": false,
+        "text-background-color": "transparent",
+        "text-style": "eclipse-shadow",
+        "top-border": false,
+        "transition_type": "slide"
+      },
+      "type": "slideshow"
+    },
+    "testimonials_WhbrEN": {
+      "block_order": [
+        "testimonial_Rp8Vb6",
+        "testimonial_MjhCez",
+        "testimonial_RrKatf",
+        "testimonial_jwdbtX"
+      ],
+      "blocks": {
+        "testimonial_MjhCez": {
+          "settings": {
+            "author-name": "Bri W.",
+            "author-role": "Entrepreneur",
+            "description": "<p>\"As a black, female entrepreneur, confidence is key, and your eyes are the focal point of your connections and communication.\" @thebrittanybrand01</p>",
+            "icon": "quote",
+            "image": "shopify://shop_images/IMG_4696_e6be543d-92b9-45e9-9488-7e13a561cd7e.png"
+          },
+          "type": "testimonial"
+        },
+        "testimonial_Rp8Vb6": {
+          "settings": {
+            "author-name": "Elle E.",
+            "author-role": "Student Athlete",
+            "description": "<p>\"On the days I'm gonna get a sweat on, but I want to look good, feel confident, have a little flair...I always go with Eyelace.\" @elleevancasselman</p>",
+            "icon": "quote",
+            "image": "shopify://shop_images/Screenshot_2024-08-22_at_3.05.42_PM_d0bb8150-ec1e-44e8-b65c-8786bccdff7d.png"
+          },
+          "type": "testimonial"
+        },
+        "testimonial_RrKatf": {
+          "settings": {
+            "author-name": "Melissa C.",
+            "author-role": "Designer & Stylist",
+            "description": "<p>\"It's just so much fun to play with beauty and try new things. Expressing myself creatively is essential to who I am both personally and professionally.\"        @mchoi.design</p>",
+            "icon": "quote",
+            "image": "shopify://shop_images/IMG_4888.png"
+          },
+          "type": "testimonial"
+        },
+        "testimonial_jwdbtX": {
+          "settings": {
+            "author-name": "Wade's Mom",
+            "author-role": "Proud Mama",
+            "description": "<p>\"You just never outgrow the desire to feel beautiful in your own skin. You just don't. Most things change, but that remains the same. (And use my son's social media. I'm not on all that).\" @powerhouse_wade</p>",
+            "icon": "quote",
+            "image": "shopify://shop_images/IMG_4890.png"
+          },
+          "type": "testimonial"
+        }
+      },
+      "settings": {
+        "background-color": "none",
+        "container-width": "4",
+        "heading": "THE EYELACE EXPERIENCE",
+        "image-shape": "portrait",
+        "light-text": false,
+        "mobile-width": "1",
+        "overline": "Our Customers Love",
+        "spacing-above": true,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "testimonials"
+    },
+    "text_columns_DyaLp9": {
+      "block_order": [
+        "image_eqrec3",
+        "image_PxUCW6",
+        "image_63Rerb"
+      ],
+      "blocks": {
+        "image_63Rerb": {
+          "settings": {
+            "description": "<p>Creating pathways for women's financial independence; investing in women, transforming the world</p>",
+            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.03.57_AM.png",
+            "link-text": "View more",
+            "link-url": "",
+            "show-image": true,
+            "title": "Working for Women"
+          },
+          "type": "image"
+        },
+        "image_PxUCW6": {
+          "settings": {
+            "description": "<p>Supporting survivors and advocates, holding offenders accountable, and leading, mobilizing, and raising voices to support efforts that demand a change of conditions that lead to domestic violence</p>",
+            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.09_AM.png",
+            "link-text": "View more",
+            "link-url": "",
+            "show-image": true,
+            "title": "National Coalition Against Domestic Violence"
+          },
+          "type": "image"
+        },
+        "image_eqrec3": {
+          "settings": {
+            "description": "<p>Working for a world in which every girl can learn and lead</p>",
+            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.22_AM.png",
+            "link-text": "View more",
+            "link-url": "",
+            "show-image": true,
+            "title": "Malala Fund"
+          },
+          "type": "image"
+        }
+      },
+      "settings": {
+        "aspect-ratio": "landscape",
+        "background-color": "accent-1",
+        "block-spacing": true,
+        "container-width": "4",
+        "description": "",
+        "heading": "YOU RE-INVEST IN WOMEN WORLDWIDE",
+        "image-width": 0,
+        "light-text": false,
+        "link-text": "",
+        "link-url": "",
+        "mobile-width": "1",
+        "overline": "With every purchase",
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-alignment": "center",
+        "top-border": false,
+        "width": 3
+      },
+      "type": "text-columns"
+    },
+    "text_columns_VJ8c9w": {
+      "block_order": [
+        "image_6kceWh",
+        "image_mJ9pqG",
+        "image_LXCtzj",
+        "image_fY9g3R"
+      ],
+      "blocks": {
+        "image_6kceWh": {
+          "settings": {
+            "description": "<p>No matter which lash you choose, Eyelace strip lashes are all designed to seamlessly accentuate your natural beauty. The only difference others will notice is how good you look.</p>",
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_9.04.48_AM.png",
+            "link-text": "View more",
+            "link-url": "shopify://products/starter-kit",
+            "show-image": true,
+            "title": "Stunning & Natural Look"
+          },
+          "type": "image"
+        },
+        "image_LXCtzj": {
+          "settings": {
+            "description": "<p>After applying, you'll forget you're wearing your Eyelace eyelashes. They'll remain right where you've put them and feel weightless and look flawless until the end of the day when you take them off—just as easily!</p>",
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.32.02_PM.png",
+            "link-text": "View more",
+            "link-url": "shopify://products/starter-kit",
+            "show-image": true,
+            "title": "Comfortable For Any Occasion"
+          },
+          "type": "image"
+        },
+        "image_fY9g3R": {
+          "settings": {
+            "description": "<p>Extensions require harsh chemicals to be removed; can permanently damage your ability to grow lashes as they sit directly on your follicles; and inhibit thorough daily hygiene. Eyelace lashes are safe for your natural eyelashes, skin, eyelids, and eyes.</p>",
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.59.02_AM.png",
+            "link-text": "View more",
+            "link-url": "",
+            "show-image": true,
+            "title": "Non-Damaging to Your Natural Lash Line"
+          },
+          "type": "image"
+        },
+        "image_mJ9pqG": {
+          "settings": {
+            "description": "<p>Eyelace false lashes are designed to be easy for anyone to apply and remove. Whether you are on the go or perfecting your look for a shoot, Eyelace lashes will make lash perfection obtainable every wear.</p>",
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.34.06_PM.png",
+            "link-text": "View more",
+            "link-url": "shopify://products/starter-kit",
+            "show-image": true,
+            "title": "Easy To Apply & Remove"
+          },
+          "type": "image"
+        }
+      },
+      "settings": {
+        "aspect-ratio": "square",
+        "background-color": "none",
+        "block-spacing": true,
+        "container-width": "4",
+        "description": "",
+        "heading": "Quality Made For Beauty",
+        "image-width": 0,
+        "light-text": false,
+        "link-text": "",
+        "link-url": "",
+        "mobile-width": "1",
+        "overline": "Professional False Lashes",
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-alignment": "center",
+        "top-border": false,
+        "width": 4
+      },
+      "type": "text-columns"
+    }
+  }
+}

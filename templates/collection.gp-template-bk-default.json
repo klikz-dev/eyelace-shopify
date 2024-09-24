@@ -1,0 +1,74 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "order": [
+    "collection-header",
+    "navigation",
+    "main",
+    "recent-products"
+  ],
+  "sections": {
+    "collection-header": {
+      "settings": {
+        "aspect-ratio": 56,
+        "description-alignment": "with-title",
+        "heading-alignment": "center",
+        "heading-type": "featured-heading",
+        "image-display-type": "medium",
+        "light-text": true,
+        "mobile-aspect-ratio": 134,
+        "mobile-image-display-type": "original",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "show-description": true,
+        "show-image": true,
+        "show-title": true,
+        "text-style": "none",
+        "use-image-fallback": true
+      },
+      "type": "collection--header"
+    },
+    "main": {
+      "settings": {
+        "number-of-rows": 4,
+        "products-per-row--desktop": 4,
+        "products-per-row--mobile": "1"
+      },
+      "type": "collection--body"
+    },
+    "navigation": {
+      "settings": {
+        "custom-list-collections": "",
+        "show-browse-button": true,
+        "show-collections-list": true,
+        "show-layout-buttons": true,
+        "show-refine-button": true,
+        "show-refine-list": true,
+        "show-search-link": true,
+        "show-sort-button": true,
+        "show-sort-list": true,
+        "swatches-enabled": false
+      },
+      "type": "collection--navigation"
+    },
+    "recent-products": {
+      "settings": {
+        "background-color": "none",
+        "heading": "Recently viewed",
+        "heading-alignment": "center",
+        "light-text": false,
+        "spacing-above": false,
+        "spacing-below": true,
+        "top-border": false
+      },
+      "type": "recent-products"
+    }
+  }
+}
