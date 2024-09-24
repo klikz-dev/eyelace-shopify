@@ -77,7 +77,7 @@
       "type": "image-with-text",
       "settings": {
         "top-border": false,
-        "spacing-above": false,
+        "spacing-above": true,
         "spacing-below": false,
         "background-color": "none",
         "container-width": "6",
