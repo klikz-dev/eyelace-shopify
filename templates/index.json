@@ -673,7 +673,7 @@
         "background-color": "accent-1",
         "light-text": false,
         "container-width": "4",
-        "width": 4,
+        "width": 3,
         "aspect-ratio": "landscape",
         "image-width": 0,
         "text-alignment": "center",
