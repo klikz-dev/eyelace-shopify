@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "blog": {
     "all": "Everything",
@@ -44,7 +53,7 @@
     "all_items_added": "All items have been added to the cart.",
     "checkout": "Checkout",
     "continue": "Continue Shopping",
-    "empty_html": "<span data-item='rte-content'>Your cart is currently empty.<br\/> <a href='{{ collections_url }}'>Click here to continue shopping<\/a>.<\/span>",
+    "empty_html": "<span data-item='rte-content'>Your cart is currently empty.<br/> <a href='{{ collections_url }}'>Click here to continue shopping</a>.</span>",
     "minus": "Minus",
     "order_notes": "Leave a note with your order",
     "plus": "Plus",
@@ -108,7 +117,7 @@
       "phone": "Phone",
       "set_default": "Set as default address",
       "update": "Update Address",
-      "zip": "Postal\/Zip Code"
+      "zip": "Postal/Zip Code"
     },
     "login": {
       "cancel": "Cancel",
@@ -296,9 +305,9 @@
       "other_pickup_locations": "View pickup locations",
       "map": "map",
       "available": "Pickup available",
-      "available_at_html": "Pickup available at <strong>{{ location_name }}<\/strong>",
+      "available_at_html": "Pickup available at <strong>{{ location_name }}</strong>",
       "unavailable": "Pickup currently unavailable",
-      "unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}<\/strong>",
+      "unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}</strong>",
       "return": "Return to product",
       "view_store_info": "View store information"
     },
@@ -369,6 +378,11 @@
       "price": "34.99",
       "product_title": "Product title",
       "vendor": "Vendor"
+    }
+  },
+  "shopify": {
+    "links": {
+      "powered_by_shopify": " "
     }
   }
 }
