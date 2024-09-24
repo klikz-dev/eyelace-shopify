@@ -34,7 +34,7 @@
         "heading-type": "featured-heading",
         "text-position": "overlay",
         "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
+        "text-vertical-alignment": "bottom",
         "text-width": "large",
         "text-style": "none",
         "text-background-color": "transparent",
