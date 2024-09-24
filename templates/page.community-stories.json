@@ -72,7 +72,7 @@
       "settings": {
         "background-color": "dark",
         "light-text": true,
-        "container-width": "5",
+        "container-width": "4",
         "spacing-above": true,
         "spacing-below": true
       }
