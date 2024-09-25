@@ -9,6 +9,87 @@
 */
 {
   "sections": {
+    "featured_text_Q84yEH": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "heading-type": "section-heading",
+        "container-width": "4",
+        "overline": "become an eyelace artist",
+        "heading": "Submit Your Drawing!",
+        "description": "<p>We don’t just want to sell lashes, we want to be a community of individuals committed to the belief in our worth and beauty. Contribute to our creative community by submitting a drawing of our Eyelace icon.</p>",
+        "link-url": "/",
+        "link-text": ""
+      }
+    },
+    "scrolling_content_gQQxAa": {
+      "type": "scrolling-content",
+      "blocks": {
+        "image_nfTBB6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-09-25_at_3.17.56_PM.png",
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "text_d3PWaz": {
+          "type": "text",
+          "settings": {
+            "text": "And submit your drawing!",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        },
+        "image_mztEdJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-09-25_at_3.17.56_PM.png",
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "text_pyELwT": {
+          "type": "text",
+          "settings": {
+            "text": "Color in the Eyelace icon",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "image_nfTBB6",
+        "text_d3PWaz",
+        "image_mztEdJ",
+        "text_pyELwT"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "parallax-enabled": false,
+        "overlay-style": "darken-bottom",
+        "light-text": false,
+        "text-size": "section-heading",
+        "animation-direction": "left",
+        "animation-speed": 6,
+        "pause-on-hover": false
+      }
+    },
     "main": {
       "type": "page",
       "disabled": true,
@@ -23,6 +104,7 @@
     },
     "image_with_text_icCnx9": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
@@ -379,72 +461,11 @@
         "heading": "Subscribe to our newsletter",
         "description": "<p>Read about the lives of the empowered women in our community and stay on top of our latest tips and tricks.</p>"
       }
-    },
-    "scrolling_content_gQQxAa": {
-      "type": "scrolling-content",
-      "blocks": {
-        "image_nfTBB6": {
-          "type": "image",
-          "settings": {
-            "image-height": 100,
-            "link": "",
-            "hide-on-desktop": false,
-            "mobile-image-height": 70,
-            "hide-on-mobile": false
-          }
-        },
-        "text_d3PWaz": {
-          "type": "text",
-          "settings": {
-            "text": "And submit your drawing!",
-            "link": "",
-            "hide-on-mobile": false,
-            "hide-on-desktop": false
-          }
-        },
-        "image_mztEdJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Screenshot_2024-09-25_at_3.17.56_PM.png",
-            "image-height": 100,
-            "link": "",
-            "hide-on-desktop": false,
-            "mobile-image-height": 70,
-            "hide-on-mobile": false
-          }
-        },
-        "text_pyELwT": {
-          "type": "text",
-          "settings": {
-            "text": "Color in the Eyelace icon",
-            "link": "",
-            "hide-on-mobile": false,
-            "hide-on-desktop": false
-          }
-        }
-      },
-      "block_order": [
-        "image_nfTBB6",
-        "text_d3PWaz",
-        "image_mztEdJ",
-        "text_pyELwT"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "none",
-        "parallax-enabled": false,
-        "overlay-style": "darken-bottom",
-        "light-text": false,
-        "text-size": "section-heading",
-        "animation-direction": "left",
-        "animation-speed": 6,
-        "pause-on-hover": false
-      }
     }
   },
   "order": [
+    "featured_text_Q84yEH",
+    "scrolling_content_gQQxAa",
     "main",
     "image_with_text_icCnx9",
     "slideshow_RcC4xz",
@@ -453,7 +474,6 @@
     "custom_content_Lkn7MJ",
     "171628409637ba12a9",
     "grid_with_overlay_FwKAGf",
-    "newsletter_X7w3UT",
-    "scrolling_content_gQQxAa"
+    "newsletter_X7w3UT"
   ]
 }
