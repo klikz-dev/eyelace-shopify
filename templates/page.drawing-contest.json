@@ -19,8 +19,8 @@
         "light-text": false,
         "heading-type": "section-heading",
         "container-width": "4",
-        "overline": "become an eyelace artist",
-        "heading": "Submit Your Drawing!",
+        "overline": "",
+        "heading": "We want to celebrate YOU!",
         "description": "<p>We don’t just want to sell lashes, we want to be a community of individuals committed to the belief in our worth and beauty. Contribute to our creative community by submitting a drawing of our Eyelace icon.</p>",
         "link-url": "/",
         "link-text": ""
@@ -76,6 +76,7 @@
         "image_mztEdJ",
         "text_pyELwT"
       ],
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
