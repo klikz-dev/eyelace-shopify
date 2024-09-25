@@ -21,6 +21,41 @@
         "spacing-below": true
       }
     },
+    "image_with_text_icCnx9": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": false,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "bottom",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "bottom",
+        "text-width": "large",
+        "text-style": "eclipse-shadow",
+        "text-background-color": "transparent",
+        "image-display-type": "x-large",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/one_c5d8a353-7091-440a-8275-ff863d73e3ac.jpg",
+        "overline": "BECOME AN EYELACE ARTIST",
+        "title": "Drawing Contest",
+        "description": "<p>We don’t just want to sell lashes, we want to be a community of individuals committed to the belief in our worth and beauty. Contribute to our creative community by submitting a drawing of our Eyelace icon.</p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-image": "shopify://shop_images/one_046152df-3225-49e5-a024-0dde995f7242.jpg",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
     "slideshow_RcC4xz": {
       "type": "slideshow",
       "blocks": {
@@ -107,7 +142,7 @@
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
-        "image-display-type": "large",
+        "image-display-type": "x-large",
         "aspect-ratio": 56,
         "overlay-style": "none",
         "auto-rotate": false,
@@ -117,41 +152,6 @@
         "mobile-aspect-ratio": 134,
         "blocks_per_slide_mobile": "1",
         "mobile-overlay": true
-      }
-    },
-    "image_with_text_icCnx9": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": false,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "bottom",
-        "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "bottom",
-        "text-width": "large",
-        "text-style": "eclipse-shadow",
-        "text-background-color": "transparent",
-        "image-display-type": "x-large",
-        "aspect-ratio": 56,
-        "overlay-style": "none",
-        "parallax-enabled": false,
-        "image": "shopify://shop_images/one_c5d8a353-7091-440a-8275-ff863d73e3ac.jpg",
-        "overline": "BECOME AN EYELACE ARTIST",
-        "title": "Drawing Contest",
-        "description": "<p>We don’t just want to sell lashes, we want to be a community of individuals committed to the belief in our worth and beauty. Contribute to our creative community by submitting a drawing of our Eyelace icon.</p>",
-        "link-url": "",
-        "link-text": "",
-        "mobile-image": "shopify://shop_images/one_046152df-3225-49e5-a024-0dde995f7242.jpg",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
       }
     },
     "featured_text_NyAgx9": {
