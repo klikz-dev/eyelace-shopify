@@ -142,7 +142,7 @@
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
-        "image-display-type": "large",
+        "image-display-type": "medium",
         "aspect-ratio": 56,
         "overlay-style": "none",
         "auto-rotate": false,
