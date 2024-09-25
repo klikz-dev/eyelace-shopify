@@ -94,11 +94,11 @@
         "image_8kTYLj": {
           "type": "image",
           "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
+            "text-width": "large",
+            "text-horizontal-alignment": "left",
+            "text-vertical-alignment": "top",
             "image": "shopify://shop_images/Ariella_age_7_1.png",
-            "overline": "",
+            "overline": "ariella, age 7",
             "title": "",
             "description": "",
             "link-url": "/",
