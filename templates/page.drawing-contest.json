@@ -36,7 +36,7 @@
         "text-horizontal-alignment": "center",
         "text-vertical-alignment": "bottom",
         "text-width": "large",
-        "text-style": "eclipse-shadow",
+        "text-style": "none",
         "text-background-color": "transparent",
         "image-display-type": "original",
         "aspect-ratio": 56,
