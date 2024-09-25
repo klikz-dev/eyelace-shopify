@@ -15,7 +15,7 @@
         "top-border": false,
         "spacing-above": true,
         "spacing-below": true,
-        "background-color": "none",
+        "background-color": "accent-2",
         "light-text": false,
         "heading-type": "section-heading",
         "container-width": "4",
