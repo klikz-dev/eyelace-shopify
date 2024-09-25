@@ -149,7 +149,7 @@
           "type": "image",
           "settings": {
             "text-width": "small",
-            "text-horizontal-alignment": "center",
+            "text-horizontal-alignment": "left",
             "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/Photo_Dec_01_9_58_20_AM_1.jpg",
             "overline": "",
@@ -157,7 +157,7 @@
             "description": "<p>Pedro Bauza</p>",
             "link-url": "/",
             "link-text": "",
-            "mobile-text-alignment": "center",
+            "mobile-text-alignment": "bottom",
             "mobile-hide-description": false
           }
         },
