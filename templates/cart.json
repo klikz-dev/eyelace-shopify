@@ -13,13 +13,14 @@
       "type": "apps",
       "blocks": {
         "w3_share_the_love_cause_selector_ekTypf": {
-          "type": "shopify:\/\/apps\/w3-share-the-love\/blocks\/cause-selector\/b55be288-4b15-45c3-ac82-5cee6259fdc8",
+          "type": "shopify://apps/w3-share-the-love/blocks/cause-selector/b55be288-4b15-45c3-ac82-5cee6259fdc8",
+          "disabled": true,
           "settings": {
             "text_alignment": "left",
             "title": "Choose a Cause to Support",
             "title_tag": "h3",
             "title_classes": "",
-            "intro": "<p>Help us make a difference! Select an organization from the list below, and we’ll donate a portion of your purchase at no extra cost to you. Your choice empowers women and supports meaningful change.<\/p>",
+            "intro": "<p>Help us make a difference! Select an organization from the list below, and we’ll donate a portion of your purchase at no extra cost to you. Your choice empowers women and supports meaningful change.</p>",
             "select_classes": "",
             "link_classes": "",
             "form_name": "",
