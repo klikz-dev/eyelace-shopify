@@ -21,10 +21,17 @@
       "settings": {
         "checksum": "b71ad948100c0cca80630796a1077423b5c127e7abf9b42863aea8dd09898803"
       }
+    },
+    "gp_section_533093235833177064": {
+      "type": "gp-section-533093235833177064",
+      "settings": {
+        "checksum": "fc0835699a563be874c1209aada535c38ffa9079ed58e1bc1e415eaec92bb3a2"
+      }
     }
   },
   "order": [
     "gp_section_532979664969270030",
-    "gp_section_532980922639713287"
+    "gp_section_532980922639713287",
+    "gp_section_533093235833177064"
   ]
 }
