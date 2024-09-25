@@ -500,7 +500,7 @@
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
-        "image-display-type": "x-small",
+        "image-display-type": "small",
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "auto-rotate": false,
