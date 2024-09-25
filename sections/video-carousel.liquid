@@ -1,6 +1,85 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Video Carousel",
+  "settings": [
+    {
+      "type": "url",
+      "id": "video_1",
+      "label": "Video URL 1",
+      "default": "/"
+    },
+    {
+      "type": "url",
+      "id": "video_2",
+      "label": "Video URL 2",
+      "default": "/"
+    },
+    {
+      "type": "url",
+      "id": "video_3",
+      "label": "Video URL 3",
+      "default": "/"
+    }
+  ]
+}
 {% endschema %}
+
+<div class="video-carousel">
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <video controls>
+        <source src="{{ settings.video_1 }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="carousel-slide">
+      <video controls>
+        <source src="{{ settings.video_2 }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="carousel-slide">
+      <video controls>
+        <source src="{{ settings.video_3 }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</div>
+
+<style>
+.video-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.carousel-slide');
+  let currentIndex = 0;
+
+  function showNextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    document.querySelector('.carousel-container').style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  setInterval(showNextSlide, 5000); // Change slide every 5 seconds
+});
+</script>
