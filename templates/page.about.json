@@ -142,41 +142,6 @@
         "mobile-text-alignment": "center"
       }
     },
-    "image_with_text_c3Qgpx": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "overlay",
-        "text-horizontal-alignment": "left",
-        "text-vertical-alignment": "center",
-        "text-width": "large",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "image": "shopify://shop_images/Creative_Banner_5_Brighter_4233c816-0fca-434d-b58f-2f99df1b801c.jpg",
-        "overline": "Get Started With Eyelace",
-        "title": "The Eyelace Starter Kit",
-        "description": "<p>A new experience in lashes. The Eyelace Starter Kit is the best way to get started with Eyelace. Featuring a collection of all of our lashes and accessories in one box at a discounted price. Find your look and bring out your inner beauty with lashes for every occasion, style, and person.</p>",
-        "link-url": "shopify://products/starter-kit",
-        "link-text": "Shop Now",
-        "mobile-image": "shopify://shop_images/Starter_Kit_Placeholder_807e278c-b1a3-49d9-b5bf-33e1b8fa7ab6.png",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
-      }
-    },
     "slideshow_D8FBxJ": {
       "type": "slideshow",
       "blocks": {
@@ -410,6 +375,41 @@
         "blocks_per_slide_mobile": "1",
         "mobile-overlay": true
       }
+    },
+    "image_with_text_c3Qgpx": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "left",
+        "text-vertical-alignment": "center",
+        "text-width": "large",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/Creative_Banner_5_Brighter_4233c816-0fca-434d-b58f-2f99df1b801c.jpg",
+        "overline": "Get Started With Eyelace",
+        "title": "The Eyelace Starter Kit",
+        "description": "<p>A new experience in lashes. The Eyelace Starter Kit is the best way to get started with Eyelace. Featuring a collection of all of our lashes and accessories in one box at a discounted price. Find your look and bring out your inner beauty with lashes for every occasion, style, and person.</p>",
+        "link-url": "shopify://products/starter-kit",
+        "link-text": "Shop Now",
+        "mobile-image": "shopify://shop_images/Starter_Kit_Placeholder_807e278c-b1a3-49d9-b5bf-33e1b8fa7ab6.png",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
     }
   },
   "order": [
@@ -418,7 +418,7 @@
     "featured_text_47R4j9",
     "image_with_text_gGMaDL",
     "163247330191cc65e8",
-    "image_with_text_c3Qgpx",
-    "slideshow_D8FBxJ"
+    "slideshow_D8FBxJ",
+    "image_with_text_c3Qgpx"
   ]
 }
