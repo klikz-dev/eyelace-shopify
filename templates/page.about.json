@@ -496,7 +496,7 @@
         "arrows-enabled": true,
         "blocks_per_slide": 4,
         "background-color": "none",
-        "light-text": false,
+        "light-text": true,
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
