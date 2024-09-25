@@ -146,7 +146,7 @@
         "aspect-ratio": 56,
         "overlay-style": "none",
         "auto-rotate": true,
-        "rotate-frequency": 7,
+        "rotate-frequency": 3,
         "transition_type": "fade",
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
