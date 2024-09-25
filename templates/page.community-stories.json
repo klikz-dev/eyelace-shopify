@@ -303,6 +303,18 @@
         "heading": "Testimonials",
         "mobile-width": "1"
       }
+    },
+    "custom_liquid_3bm6Et": {
+      "type": "custom-liquid",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "custom-liquid": "<div class=\"video-carousel\">\n  <div class=\"carousel-container\">\n    <div class=\"carousel-slide\">\n      <video controls>\n        <source src=\"your-video-url-1.mp4\" type=\"video/mp4\">\n        Your browser does not support the video tag.\n      </video>\n    </div>\n    <div class=\"carousel-slide\">\n      <video controls>\n        <source src=\"your-video-url-2.mp4\" type=\"video/mp4\">\n        Your browser does not support the video tag.\n      </video>\n    </div>\n    <div class=\"carousel-slide\">\n      <video controls>\n        <source src=\"your-video-url-3.mp4\" type=\"video/mp4\">\n        Your browser does not support the video tag.\n      </video>\n    </div>\n  </div>\n</div>\n\n<style>\n.video-carousel {\n  width: 100%;\n  overflow: hidden;\n  position: relative;\n}\n\n.carousel-container {\n  display: flex;\n  transition: transform 0.5s ease-in-out;\n}\n\n.carousel-slide {\n  min-width: 100%;\n  box-sizing: border-box;\n}\n\nvideo {\n  width: 100%;\n  height: auto;\n}\n</style>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  const slides = document.querySelectorAll('.carousel-slide');\n  let currentIndex = 0;\n\n  function showNextSlide() {\n    currentIndex = (currentIndex + 1) % slides.length;\n    document.querySelector('.carousel-container').style.transform = `translateX(-${currentIndex * 100}%)`;\n  }\n\n  setInterval(showNextSlide, 5000); // Change slide every 5 seconds\n});\n</script>"
+      }
     }
   },
   "order": [
@@ -317,6 +329,7 @@
     "171628108183c7a010",
     "newsletter_fUFC9X",
     "featured_blog_gJXFW8",
-    "testimonials_MTMTNn"
+    "testimonials_MTMTNn",
+    "custom_liquid_3bm6Et"
   ]
 }
