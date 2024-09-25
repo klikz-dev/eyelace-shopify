@@ -21,6 +21,104 @@
         "spacing-below": true
       }
     },
+    "slideshow_RcC4xz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_i6PgKk": {
+          "type": "image",
+          "settings": {
+            "text-width": "small",
+            "text-horizontal-alignment": "left",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Adalynn_age_6.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_9U4pdj": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Isabella_age_12.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_8kTYLj": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Ariella_age_7_1.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_Wk9yxJ": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Alexandra_age_8_b44e37cd-5c2e-49cd-a99e-58872c045f10.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        }
+      },
+      "block_order": [
+        "image_i6PgKk",
+        "image_9U4pdj",
+        "image_8kTYLj",
+        "image_Wk9yxJ"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "arrows-enabled": true,
+        "blocks_per_slide": 2,
+        "background-color": "none",
+        "light-text": true,
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "image-display-type": "large",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
     "image_with_text_icCnx9": {
       "type": "image-with-text",
       "settings": {
@@ -264,115 +362,17 @@
         "heading": "Subscribe to our newsletter",
         "description": "<p>Read about the lives of the empowered women in our community and stay on top of our latest tips and tricks.</p>"
       }
-    },
-    "slideshow_RcC4xz": {
-      "type": "slideshow",
-      "blocks": {
-        "image_i6PgKk": {
-          "type": "image",
-          "settings": {
-            "text-width": "small",
-            "text-horizontal-alignment": "left",
-            "text-vertical-alignment": "bottom",
-            "image": "shopify://shop_images/Adalynn_age_6.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_9U4pdj": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Isabella_age_12.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_8kTYLj": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Ariella_age_7_1.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_Wk9yxJ": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Alexandra_age_8_b44e37cd-5c2e-49cd-a99e-58872c045f10.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        }
-      },
-      "block_order": [
-        "image_i6PgKk",
-        "image_9U4pdj",
-        "image_8kTYLj",
-        "image_Wk9yxJ"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "spacing-around-blocks": false,
-        "arrows-enabled": true,
-        "blocks_per_slide": 2,
-        "background-color": "none",
-        "light-text": true,
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "heading-type": "featured-heading",
-        "image-display-type": "large",
-        "aspect-ratio": 56,
-        "overlay-style": "none",
-        "auto-rotate": false,
-        "rotate-frequency": 7,
-        "transition_type": "slide",
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "blocks_per_slide_mobile": "1",
-        "mobile-overlay": true
-      }
     }
   },
   "order": [
     "main",
     "image_with_text_icCnx9",
+    "slideshow_RcC4xz",
     "featured_text_NyAgx9",
     "image_with_text_KnRDRq",
     "custom_content_Lkn7MJ",
     "171628409637ba12a9",
     "grid_with_overlay_FwKAGf",
-    "newsletter_X7w3UT",
-    "slideshow_RcC4xz"
+    "newsletter_X7w3UT"
   ]
 }
