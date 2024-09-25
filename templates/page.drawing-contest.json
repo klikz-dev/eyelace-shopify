@@ -113,8 +113,24 @@
             "text-width": "medium",
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Alexandra_age_8_b44e37cd-5c2e-49cd-a99e-58872c045f10.png",
+            "image": "shopify://shop_images/Jocelyn_age_44.jpg",
             "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_A9NaLd": {
+          "type": "image",
+          "settings": {
+            "text-width": "small",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "top",
+            "image": "shopify://shop_images/Alexandra_age_8_b44e37cd-5c2e-49cd-a99e-58872c045f10.png",
+            "overline": "Alexandra, age 8",
             "title": "",
             "description": "",
             "link-url": "/",
@@ -128,7 +144,8 @@
         "image_i6PgKk",
         "image_9U4pdj",
         "image_8kTYLj",
-        "image_Wk9yxJ"
+        "image_Wk9yxJ",
+        "image_A9NaLd"
       ],
       "settings": {
         "top-border": false,
