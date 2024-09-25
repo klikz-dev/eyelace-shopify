@@ -633,7 +633,7 @@
             "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.22_AM.png",
             "title": "Malala Fund",
             "description": "<p>Working for a world in which every girl can learn and lead</p>",
-            "link-url": "",
+            "link-url": "shopify://pages/organizations-we-support",
             "link-text": "View more"
           }
         },
@@ -644,7 +644,7 @@
             "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.09_AM.png",
             "title": "National Coalition Against Domestic Violence",
             "description": "<p>Supporting survivors and advocates, holding offenders accountable, and leading, mobilizing, and raising voices to support efforts that demand a change of conditions that lead to domestic violence</p>",
-            "link-url": "",
+            "link-url": "shopify://pages/organizations-we-support",
             "link-text": "View more"
           }
         },
@@ -655,7 +655,7 @@
             "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.03.57_AM.png",
             "title": "Working for Women",
             "description": "<p>Creating pathways for women's financial independence; investing in women, transforming the world</p>",
-            "link-url": "",
+            "link-url": "shopify://pages/organizations-we-support",
             "link-text": "View more"
           }
         }
