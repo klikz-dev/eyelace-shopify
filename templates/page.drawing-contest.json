@@ -396,7 +396,7 @@
         "text_d3PWaz": {
           "type": "text",
           "settings": {
-            "text": "Submit your drawing!",
+            "text": "And submit your drawing!",
             "link": "",
             "hide-on-mobile": false,
             "hide-on-desktop": false
