@@ -148,13 +148,13 @@
         "image_hHLi9t": {
           "type": "image",
           "settings": {
-            "text-width": "medium",
+            "text-width": "small",
             "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
+            "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/Photo_Dec_01_9_58_20_AM_1.jpg",
             "overline": "",
             "title": "",
-            "description": "",
+            "description": "<p>Pedro Bauza</p>",
             "link-url": "/",
             "link-text": "",
             "mobile-text-alignment": "center",
@@ -336,6 +336,134 @@
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
+        },
+        "image_gUGG9z": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Photo_Dec_01_9_21_50_AM_fba03301-f1da-4f4c-9ca6-9a95d2c8c853.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_f9mxR9": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Jocelyn_MiamiPhotoshoot_VillasChannelPhoto-38.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_Qfzw9P": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Jocelyn_MiamiPhotoshoot_VillasChannelPhoto-189_fd2b1621-c7e1-4ca9-b651-adf65b2348b6.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_N4ADKD": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Jocelyn_MiamiPhotoshoot_VillasChannelPhoto-96.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_yzYgtL": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Photo_Dec_01_9_22_18_AM.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_rELi7P": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Photo_Mar_07_5_06_52_PM.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_GJbYDC": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Photo_Dec_01_10_40_00_AM.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_U7axrF": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Photo_Dec_01_5_11_23_PM.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
         }
       },
       "block_order": [
@@ -350,7 +478,15 @@
         "image_fikfpz",
         "image_aNRRgW",
         "image_EEnUKT",
-        "image_UbgPYd"
+        "image_UbgPYd",
+        "image_gUGG9z",
+        "image_f9mxR9",
+        "image_Qfzw9P",
+        "image_N4ADKD",
+        "image_yzYgtL",
+        "image_rELi7P",
+        "image_GJbYDC",
+        "image_U7axrF"
       ],
       "settings": {
         "top-border": false,
