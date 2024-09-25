@@ -42,10 +42,10 @@
         "aspect-ratio": 56,
         "overlay-style": "none",
         "parallax-enabled": false,
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_9.15.51_AM.png",
+        "image": "shopify://shop_images/Screenshot_2024-02-14_at_9.15.51_AM.png",
         "overline": "",
-        "title": "Our Mission",
-        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are attainable in one’s home makeup routine. <\/p><p>We are also committed to creating an experience where each woman's  investment in herself is also an investment in the betterment of women worldwide.<\/p>",
+        "title": "OUR MISSION",
+        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are attainable in one’s home makeup routine.</p>",
         "link-url": "",
         "link-text": "",
         "mobile-overlay": true,
@@ -54,10 +54,29 @@
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
       }
+    },
+    "map_8zKRF9": {
+      "type": "map",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "theme": "grayscale",
+        "heading": "OUR COMMITMENT",
+        "address": "",
+        "hours": "<p>We are committed to creating an experience where each woman's  investment in herself is also an investment in the betterment of women worldwide.</p>",
+        "image": "shopify://shop_images/Photo_Sep_24_2024_1_07_45_PM_56341fb0-b51e-4166-a359-d1481b5240bd.png",
+        "api-key": "",
+        "map-address": "391 Sunrise Blvd, Los Angeles"
+      }
     }
   },
   "order": [
     "main",
-    "16324732604d3e7054"
+    "16324732604d3e7054",
+    "map_8zKRF9"
   ]
 }

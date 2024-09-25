@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "type": "header",
   "name": "Header Group",
@@ -22,10 +31,66 @@
         "mobile-logo-height": 30,
         "menu": "header"
       }
+    },
+    "image_with_text_wGHeGD": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/Photo_Sep_24_2024_1_07_45_PM.jpg",
+        "overline": "Overline text",
+        "title": "Image with text",
+        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "map_Xxjacy": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "theme": "grayscale",
+        "heading": "OUR MISSION",
+        "address": "<p>We don’t just want to sell lashes, we want to be a community of individuals committed to the belief in our worth and beauty. Contribute to our creative community by submitting a drawing of our Eyelace icon.</p>",
+        "hours": "",
+        "image": "shopify://shop_images/Photo_Sep_24_2024_1_07_45_PM_5b324f51-1c9c-4f5e-ba45-48cb6bbffd02.png",
+        "api-key": "",
+        "map-address": ""
+      }
     }
   },
   "order": [
     "announcement",
-    "header"
+    "header",
+    "image_with_text_wGHeGD",
+    "map_Xxjacy"
   ]
 }
