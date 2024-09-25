@@ -110,11 +110,11 @@
         "image_Wk9yxJ": {
           "type": "image",
           "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
+            "text-width": "large",
+            "text-horizontal-alignment": "left",
+            "text-vertical-alignment": "top",
             "image": "shopify://shop_images/Jocelyn_age_44.jpg",
-            "overline": "",
+            "overline": "Aunt Joce, age 44",
             "title": "",
             "description": "",
             "link-url": "/",
