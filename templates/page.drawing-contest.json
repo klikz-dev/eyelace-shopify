@@ -78,11 +78,11 @@
         "image_9U4pdj": {
           "type": "image",
           "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
+            "text-width": "large",
+            "text-horizontal-alignment": "left",
+            "text-vertical-alignment": "top",
             "image": "shopify://shop_images/Isabella_age_12.png",
-            "overline": "",
+            "overline": "Isabella, age 12",
             "title": "",
             "description": "",
             "link-url": "/",
