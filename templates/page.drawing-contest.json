@@ -32,7 +32,7 @@
         "image_nfTBB6": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2024-09-25_at_3.17.56_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-09-25_at_3.20.50_PM.png",
             "image-height": 100,
             "link": "",
             "hide-on-desktop": false,
@@ -80,7 +80,7 @@
         "top-border": false,
         "spacing-above": true,
         "spacing-below": true,
-        "background-color": "none",
+        "background-color": "accent-1",
         "parallax-enabled": false,
         "overlay-style": "darken-bottom",
         "light-text": false,
