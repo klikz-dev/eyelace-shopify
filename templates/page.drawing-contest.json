@@ -136,7 +136,7 @@
         "spacing-below": false,
         "spacing-around-blocks": false,
         "arrows-enabled": true,
-        "blocks_per_slide": 2,
+        "blocks_per_slide": 1,
         "background-color": "none",
         "light-text": true,
         "text-style": "none",
