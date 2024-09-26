@@ -262,72 +262,6 @@
         "mobile-width": "1"
       }
     },
-    "scrolling_content_8TVBBx": {
-      "type": "scrolling-content",
-      "blocks": {
-        "image_YnY3EQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/EE_package_square.jpg",
-            "image-height": 100,
-            "link": "",
-            "hide-on-desktop": false,
-            "mobile-image-height": 70,
-            "hide-on-mobile": false
-          }
-        },
-        "text_9NKXVh": {
-          "type": "text",
-          "settings": {
-            "text": "Become a Member Today!",
-            "link": "",
-            "hide-on-mobile": false,
-            "hide-on-desktop": false
-          }
-        },
-        "image_V4zhDm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Screenshot_2024-02-15_at_11.53.52_AM_medium-removebg-preview.png",
-            "image-height": 100,
-            "link": "",
-            "hide-on-desktop": false,
-            "mobile-image-height": 70,
-            "hide-on-mobile": false
-          }
-        },
-        "text_xVhmtU": {
-          "type": "text",
-          "settings": {
-            "text": "Subscribe and Save",
-            "link": "",
-            "hide-on-mobile": false,
-            "hide-on-desktop": false
-          }
-        }
-      },
-      "block_order": [
-        "image_YnY3EQ",
-        "text_9NKXVh",
-        "image_V4zhDm",
-        "text_xVhmtU"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "accent-2",
-        "background-image": "shopify://shop_images/Creative_Banner_4.jpg",
-        "parallax-enabled": false,
-        "overlay-style": "darken-bottom",
-        "light-text": false,
-        "text-size": "section-heading",
-        "animation-direction": "left",
-        "animation-speed": 6,
-        "pause-on-hover": false,
-        "mobile-image": "shopify://shop_images/Creative_Banner_4.jpg"
-      }
-    },
     "countdown_dmABWK": {
       "type": "countdown",
       "settings": {
@@ -451,6 +385,72 @@
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
+      }
+    },
+    "scrolling_content_8TVBBx": {
+      "type": "scrolling-content",
+      "blocks": {
+        "image_YnY3EQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/EE_package_square.jpg",
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "text_9NKXVh": {
+          "type": "text",
+          "settings": {
+            "text": "Become a Member Today!",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        },
+        "image_V4zhDm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-02-15_at_11.53.52_AM_medium-removebg-preview.png",
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "text_xVhmtU": {
+          "type": "text",
+          "settings": {
+            "text": "Subscribe and Save",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "image_YnY3EQ",
+        "text_9NKXVh",
+        "image_V4zhDm",
+        "text_xVhmtU"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-2",
+        "background-image": "shopify://shop_images/Creative_Banner_4.jpg",
+        "parallax-enabled": false,
+        "overlay-style": "darken-bottom",
+        "light-text": false,
+        "text-size": "section-heading",
+        "animation-direction": "left",
+        "animation-speed": 6,
+        "pause-on-hover": false,
+        "mobile-image": "shopify://shop_images/Creative_Banner_4.jpg"
       }
     },
     "featured_products_GFFf48": {
@@ -1025,10 +1025,10 @@
     "image_with_text_xNTJp9",
     "image_comparison_CnYa33",
     "ef31fa12-e7a0-4c66-8567-1cca76a8a029",
-    "scrolling_content_8TVBBx",
     "countdown_dmABWK",
     "testimonials_WhbrEN",
     "image_with_text_FQfGti",
+    "scrolling_content_8TVBBx",
     "featured_products_GFFf48",
     "featured_text_aFcPjY",
     "text_columns_VJ8c9w",
