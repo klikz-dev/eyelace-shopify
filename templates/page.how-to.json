@@ -472,7 +472,7 @@
       ],
       "settings": {
         "top-border": false,
-        "spacing-above": false,
+        "spacing-above": true,
         "spacing-below": false,
         "spacing-around-blocks": false,
         "arrows-enabled": true,
@@ -482,7 +482,7 @@
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
-        "image-display-type": "medium",
+        "image-display-type": "small",
         "aspect-ratio": 56,
         "overlay-style": "none",
         "auto-rotate": false,
