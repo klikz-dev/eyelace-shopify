@@ -753,7 +753,7 @@
       ],
       "settings": {
         "top-border": false,
-        "spacing-above": true,
+        "spacing-above": false,
         "spacing-below": true,
         "background-color": "none",
         "heading-light-text": false,
