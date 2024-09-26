@@ -234,80 +234,6 @@
         "mobile-aspect-ratio": 134
       }
     },
-    "text_columns_VJ8c9w": {
-      "type": "text-columns",
-      "blocks": {
-        "image_6kceWh": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-02-14_at_9.04.48_AM.png",
-            "title": "Stunning & Natural Look",
-            "description": "<p>No matter which lash you choose, Eyelace strip lashes are all designed to seamlessly accentuate your natural beauty. The only difference others will notice is how good you look.</p>",
-            "link-url": "shopify://products/starter-kit",
-            "link-text": "View more"
-          }
-        },
-        "image_mJ9pqG": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.34.06_PM.png",
-            "title": "Easy To Apply & Remove",
-            "description": "<p>Eyelace false lashes are designed to be easy for anyone to apply and remove. Whether you are on the go or perfecting your look for a shoot, Eyelace lashes will make lash perfection obtainable every wear.</p>",
-            "link-url": "shopify://products/starter-kit",
-            "link-text": "View more"
-          }
-        },
-        "image_LXCtzj": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.32.02_PM.png",
-            "title": "Comfortable For Any Occasion",
-            "description": "<p>After applying, you'll forget you're wearing your Eyelace eyelashes. They'll remain right where you've put them and feel weightless and look flawless until the end of the day when you take them off—just as easily!</p>",
-            "link-url": "shopify://products/starter-kit",
-            "link-text": "View more"
-          }
-        },
-        "image_fY9g3R": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.59.02_AM.png",
-            "title": "Non-Damaging to Your Natural Lash Line",
-            "description": "<p>Extensions require harsh chemicals to be removed; can permanently damage your ability to grow lashes as they sit directly on your follicles; and inhibit thorough daily hygiene. Eyelace lashes are safe for your natural eyelashes, skin, eyelids, and eyes.</p>",
-            "link-url": "",
-            "link-text": "View more"
-          }
-        }
-      },
-      "block_order": [
-        "image_6kceWh",
-        "image_mJ9pqG",
-        "image_LXCtzj",
-        "image_fY9g3R"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "block-spacing": true,
-        "background-color": "none",
-        "light-text": false,
-        "container-width": "4",
-        "width": 4,
-        "aspect-ratio": "square",
-        "image-width": 0,
-        "text-alignment": "center",
-        "overline": "Professional False Lashes",
-        "heading": "Quality Made For Beauty",
-        "description": "",
-        "link-url": "",
-        "link-text": "",
-        "mobile-width": "1"
-      }
-    },
     "countdown_dmABWK": {
       "type": "countdown",
       "settings": {
@@ -472,6 +398,80 @@
         "text-alignment": "center",
         "overline": "Enhancing Your Natural Beauty",
         "heading": "EYELACE IS",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "1"
+      }
+    },
+    "text_columns_VJ8c9w": {
+      "type": "text-columns",
+      "blocks": {
+        "image_6kceWh": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_9.04.48_AM.png",
+            "title": "Stunning & Natural Look",
+            "description": "<p>No matter which lash you choose, Eyelace strip lashes are all designed to seamlessly accentuate your natural beauty. The only difference others will notice is how good you look.</p>",
+            "link-url": "shopify://products/starter-kit",
+            "link-text": "View more"
+          }
+        },
+        "image_mJ9pqG": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.34.06_PM.png",
+            "title": "Easy To Apply & Remove",
+            "description": "<p>Eyelace false lashes are designed to be easy for anyone to apply and remove. Whether you are on the go or perfecting your look for a shoot, Eyelace lashes will make lash perfection obtainable every wear.</p>",
+            "link-url": "shopify://products/starter-kit",
+            "link-text": "View more"
+          }
+        },
+        "image_LXCtzj": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.32.02_PM.png",
+            "title": "Comfortable For Any Occasion",
+            "description": "<p>After applying, you'll forget you're wearing your Eyelace eyelashes. They'll remain right where you've put them and feel weightless and look flawless until the end of the day when you take them off—just as easily!</p>",
+            "link-url": "shopify://products/starter-kit",
+            "link-text": "View more"
+          }
+        },
+        "image_fY9g3R": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.59.02_AM.png",
+            "title": "Non-Damaging to Your Natural Lash Line",
+            "description": "<p>Extensions require harsh chemicals to be removed; can permanently damage your ability to grow lashes as they sit directly on your follicles; and inhibit thorough daily hygiene. Eyelace lashes are safe for your natural eyelashes, skin, eyelids, and eyes.</p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        }
+      },
+      "block_order": [
+        "image_6kceWh",
+        "image_mJ9pqG",
+        "image_LXCtzj",
+        "image_fY9g3R"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "block-spacing": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "width": 4,
+        "aspect-ratio": "square",
+        "image-width": 0,
+        "text-alignment": "center",
+        "overline": "Professional False Lashes",
+        "heading": "Quality Made For Beauty",
         "description": "",
         "link-url": "",
         "link-text": "",
@@ -1023,14 +1023,14 @@
     "slideshow",
     "featured_video_wJUr4J",
     "image_with_text_xNTJp9",
-    "image_with_text_FQfGti",
     "image_comparison_CnYa33",
-    "text_columns_VJ8c9w",
+    "image_with_text_FQfGti",
+    "scrolling_content_8TVBBx",
+    "ef31fa12-e7a0-4c66-8567-1cca76a8a029",
     "countdown_dmABWK",
     "featured_text_aFcPjY",
     "testimonials_WhbrEN",
-    "ef31fa12-e7a0-4c66-8567-1cca76a8a029",
-    "scrolling_content_8TVBBx",
+    "text_columns_VJ8c9w",
     "featured_products_GFFf48",
     "featured_video_XRWVTH",
     "featured-collection-slider",
