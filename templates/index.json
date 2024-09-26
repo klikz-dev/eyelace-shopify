@@ -159,40 +159,6 @@
         "mobile-text-alignment": "center"
       }
     },
-    "image_with_text_FQfGti": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": false,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "overlay",
-        "text-horizontal-alignment": "left",
-        "text-vertical-alignment": "center",
-        "text-width": "large",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "image": "shopify://shop_images/Photo_Sep_13_2024_2_01_22_PM_a62ecb6f-fcc9-4ae3-83ab-96f3717a0bd7.jpg",
-        "overline": "Because You're Beautiful",
-        "title": "LASH COLLECTION",
-        "description": "<p>Seven innovatively designed, unique waterline lashes that augment your natural lashes while seamlessly blending in with them for a stunningly elegant, natural lash effect.</p>",
-        "link-url": "",
-        "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
-      }
-    },
     "image_comparison_CnYa33": {
       "type": "image-comparison",
       "blocks": {
@@ -232,6 +198,168 @@
         "cursor-position": 50,
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134
+      }
+    },
+    "image_with_text_FQfGti": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": false,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "left",
+        "text-vertical-alignment": "center",
+        "text-width": "large",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/Photo_Sep_13_2024_2_01_22_PM_a62ecb6f-fcc9-4ae3-83ab-96f3717a0bd7.jpg",
+        "overline": "Because You're Beautiful",
+        "title": "LASH COLLECTION",
+        "description": "<p>Seven innovatively designed, unique waterline lashes that augment your natural lashes while seamlessly blending in with them for a stunningly elegant, natural lash effect.</p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "scrolling_content_8TVBBx": {
+      "type": "scrolling-content",
+      "blocks": {
+        "image_YnY3EQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/EE_package_square.jpg",
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "text_9NKXVh": {
+          "type": "text",
+          "settings": {
+            "text": "Become a Member Today!",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        },
+        "image_V4zhDm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-02-15_at_11.53.52_AM_medium-removebg-preview.png",
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "text_xVhmtU": {
+          "type": "text",
+          "settings": {
+            "text": "Subscribe and Save",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "image_YnY3EQ",
+        "text_9NKXVh",
+        "image_V4zhDm",
+        "text_xVhmtU"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-2",
+        "background-image": "shopify://shop_images/Creative_Banner_4.jpg",
+        "parallax-enabled": false,
+        "overlay-style": "darken-bottom",
+        "light-text": false,
+        "text-size": "section-heading",
+        "animation-direction": "left",
+        "animation-speed": 6,
+        "pause-on-hover": false,
+        "mobile-image": "shopify://shop_images/Creative_Banner_4.jpg"
+      }
+    },
+    "ef31fa12-e7a0-4c66-8567-1cca76a8a029": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-0": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-09-10_at_1.46.39_PM.png",
+            "title": "BOLD",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-1": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.56.48_AM.png",
+            "title": "ELEGANT",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-2": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_2.04.20_PM.png",
+            "title": "NATURAL",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-0",
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-1",
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-2"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "block-spacing": true,
+        "background-color": "dark",
+        "light-text": true,
+        "container-width": "4",
+        "width": 3,
+        "aspect-ratio": "square",
+        "image-width": 0,
+        "text-alignment": "center",
+        "overline": "Enhancing Your Natural Beauty",
+        "heading": "EYELACE IS",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "1"
       }
     },
     "countdown_dmABWK": {
@@ -342,66 +470,31 @@
         "mobile-width": "1"
       }
     },
-    "ef31fa12-e7a0-4c66-8567-1cca76a8a029": {
-      "type": "text-columns",
-      "blocks": {
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-0": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-09-10_at_1.46.39_PM.png",
-            "title": "BOLD",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
-          }
-        },
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-1": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.56.48_AM.png",
-            "title": "ELEGANT",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
-          }
-        },
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-2": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-26_at_2.04.20_PM.png",
-            "title": "NATURAL",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-0",
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-1",
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-2"
-      ],
+    "featured_products_GFFf48": {
+      "type": "featured-products",
       "settings": {
         "top-border": false,
         "spacing-above": true,
         "spacing-below": true,
-        "block-spacing": true,
-        "background-color": "dark",
-        "light-text": true,
-        "container-width": "4",
-        "width": 3,
-        "aspect-ratio": "square",
-        "image-width": 0,
-        "text-alignment": "center",
-        "overline": "Enhancing Your Natural Beauty",
-        "heading": "EYELACE IS",
-        "description": "",
+        "background-color": "none",
+        "light-text": false,
+        "display-type": "grid",
+        "products-per-row--desktop": "4",
+        "products-per-row--mobile": "2",
+        "product-list": [
+          "ball-gown-lash-set",
+          "night-life-lash-set",
+          "day-dream-lash-set",
+          "social-butterfly-lash-set",
+          "perfect-poise-lash-set",
+          "natural-beauty-lash-set",
+          "elegant-effect-lash-set",
+          "collection-lash-set"
+        ],
+        "heading": "LASH COLLECTION",
+        "heading-alignment": "center",
         "link-url": "",
-        "link-text": "",
-        "mobile-width": "1"
+        "link-text": ""
       }
     },
     "text_columns_VJ8c9w": {
@@ -476,99 +569,6 @@
         "link-url": "",
         "link-text": "",
         "mobile-width": "1"
-      }
-    },
-    "scrolling_content_8TVBBx": {
-      "type": "scrolling-content",
-      "blocks": {
-        "image_YnY3EQ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/EE_package_square.jpg",
-            "image-height": 100,
-            "link": "",
-            "hide-on-desktop": false,
-            "mobile-image-height": 70,
-            "hide-on-mobile": false
-          }
-        },
-        "text_9NKXVh": {
-          "type": "text",
-          "settings": {
-            "text": "Become a Member Today!",
-            "link": "",
-            "hide-on-mobile": false,
-            "hide-on-desktop": false
-          }
-        },
-        "image_V4zhDm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Screenshot_2024-02-15_at_11.53.52_AM_medium-removebg-preview.png",
-            "image-height": 100,
-            "link": "",
-            "hide-on-desktop": false,
-            "mobile-image-height": 70,
-            "hide-on-mobile": false
-          }
-        },
-        "text_xVhmtU": {
-          "type": "text",
-          "settings": {
-            "text": "Subscribe and Save",
-            "link": "",
-            "hide-on-mobile": false,
-            "hide-on-desktop": false
-          }
-        }
-      },
-      "block_order": [
-        "image_YnY3EQ",
-        "text_9NKXVh",
-        "image_V4zhDm",
-        "text_xVhmtU"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "accent-2",
-        "background-image": "shopify://shop_images/Creative_Banner_4.jpg",
-        "parallax-enabled": false,
-        "overlay-style": "darken-bottom",
-        "light-text": false,
-        "text-size": "section-heading",
-        "animation-direction": "left",
-        "animation-speed": 6,
-        "pause-on-hover": false,
-        "mobile-image": "shopify://shop_images/Creative_Banner_4.jpg"
-      }
-    },
-    "featured_products_GFFf48": {
-      "type": "featured-products",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "none",
-        "light-text": false,
-        "display-type": "grid",
-        "products-per-row--desktop": "4",
-        "products-per-row--mobile": "2",
-        "product-list": [
-          "ball-gown-lash-set",
-          "night-life-lash-set",
-          "day-dream-lash-set",
-          "social-butterfly-lash-set",
-          "perfect-poise-lash-set",
-          "natural-beauty-lash-set",
-          "elegant-effect-lash-set",
-          "collection-lash-set"
-        ],
-        "heading": "LASH COLLECTION",
-        "heading-alignment": "center",
-        "link-url": "",
-        "link-text": ""
       }
     },
     "featured_video_XRWVTH": {
@@ -1024,14 +1024,14 @@
     "featured_video_wJUr4J",
     "image_with_text_xNTJp9",
     "image_comparison_CnYa33",
-    "image_with_text_FQfGti",
-    "scrolling_content_8TVBBx",
     "ef31fa12-e7a0-4c66-8567-1cca76a8a029",
+    "scrolling_content_8TVBBx",
     "countdown_dmABWK",
-    "featured_text_aFcPjY",
     "testimonials_WhbrEN",
-    "text_columns_VJ8c9w",
+    "image_with_text_FQfGti",
     "featured_products_GFFf48",
+    "featured_text_aFcPjY",
+    "text_columns_VJ8c9w",
     "featured_video_XRWVTH",
     "featured-collection-slider",
     "text_columns_DyaLp9",
