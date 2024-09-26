@@ -91,9 +91,10 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "title": "Add a title or tagline",
-            "description": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.</p>",
-            "link-url": "",
+            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.09_AM.png",
+            "title": "National Coalition Against Domestic Violence",
+            "description": "<p>Supporting survivors and advocates, holding offenders accountable, and leading, mobilizing, and raising voices to support efforts that demand a change of conditions that lead to domestic violence</p>",
+            "link-url": "shopify://pages/organizations-we-support",
             "link-text": "View more"
           }
         },
