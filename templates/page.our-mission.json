@@ -102,9 +102,10 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "title": "Add a title or tagline",
-            "description": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.</p>",
-            "link-url": "",
+            "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.03.57_AM.png",
+            "title": "Working for Women",
+            "description": "<p>Creating pathways for women's financial independence; investing in women, transforming the world</p>",
+            "link-url": "shopify://pages/organizations-we-support",
             "link-text": "View more"
           }
         }
