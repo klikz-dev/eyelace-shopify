@@ -59,9 +59,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-09-10_at_1.30.53_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-09-10_at_1.30.53_PM.png",
             "title": "Stunning & Natural Look",
-            "description": "<p>Eyelace strip lashes are meant to accentuate your natural beauty, that is why we designed them to look so natural the only difference you’ll notice is how good you look.<\/p>",
+            "description": "<p>Eyelace strip lashes are meant to accentuate your natural beauty, that is why we designed them to look so natural the only difference you’ll notice is how good you look.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -70,9 +70,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-09-10_at_1.28.14_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-09-10_at_1.28.14_PM.png",
             "title": "Easy To Apply & Remove",
-            "description": "<p>Eyelace false lashes are designed to be easy to apply and remove for anyone. Whether you are on the go or perfecting your look they are simple to make a part of your routine.<\/p>",
+            "description": "<p>Eyelace false lashes are designed to be easy to apply and remove for anyone. Whether you are on the go or perfecting your look they are simple to make a part of your routine.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -81,9 +81,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-09-10_at_1.22.37_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-09-10_at_1.22.37_PM.png",
             "title": "Made for Any Occasion",
-            "description": "<p>Eyelace eyelashes are comfortable, natural, and designed to not only look flawless but feel flawless so you can be your best self whenever and wherever you are.<\/p>",
+            "description": "<p>Eyelace eyelashes are comfortable, natural, and designed to not only look flawless but feel flawless so you can be your best self whenever and wherever you are.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -92,9 +92,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-09-10_at_1.24.11_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-09-10_at_1.24.11_PM.png",
             "title": "Non-Damaging & Made For Your Skin",
-            "description": "<p>Your natural beauty is a priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.<\/p>",
+            "description": "<p>Your natural beauty is a priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -119,7 +119,7 @@
         "image-width": 0,
         "text-alignment": "center",
         "overline": "WHY EYELACE?",
-        "heading": "Enhancing Your Natural Beauty",
+        "heading": "ENHANCING YOUR NATURAL BEAUTY",
         "description": "",
         "link-url": "",
         "link-text": "",
@@ -146,13 +146,13 @@
         "aspect-ratio": 56,
         "play-button-style": "solid",
         "overlay-style": "darken-bottom",
-        "video-upload": "shopify:\/\/files\/videos\/EyelaceTutDraft4.mp4",
+        "video-upload": "shopify://files/videos/EyelaceTutDraft4.mp4",
         "video-url": "",
         "overline": "HOW TO",
         "heading": "Eyelace Is Easy & Convenient",
-        "description": "<p>Learn how to wear your Eyelace with our video tutorial. Anyone can achieve a professional cosmetic effect that enhances your natural beauty.<\/p>",
+        "description": "<p>Learn how to wear your Eyelace with our video tutorial. Anyone can achieve a professional cosmetic effect that enhances your natural beauty.</p>",
         "button-text": "Learn How",
-        "button-url": "shopify:\/\/pages\/how-to",
+        "button-url": "shopify://pages/how-to",
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center",
@@ -176,8 +176,8 @@
         "container-width": "3",
         "overline": "OPENING SALE",
         "heading": "Get 10% Off Your Starter Kit",
-        "description": "<p>For our opening sale get 10% off your Eyelace Starter Kit when you puchase now!<\/p>",
-        "link-url": "shopify:\/\/products\/starter-kit",
+        "description": "<p>For our opening sale get 10% off your Eyelace Starter Kit when you puchase now!</p>",
+        "link-url": "shopify://products/starter-kit",
         "link-text": "Shop The Sale",
         "expiry-date": "01-01-2026",
         "expiry-hours": 0,
@@ -209,7 +209,7 @@
         "light-text": false,
         "overline": "DISCOUNTS & SPECIAL OFFERS",
         "heading": "Subscribe to our newsletter and receive 10% off your next order.",
-        "description": "<p>Our newsletter is packed full of the latest deals, tips, tricks, and trends so you can always stay ahead and get the most out of Eyelace.<\/p>"
+        "description": "<p>Our newsletter is packed full of the latest deals, tips, tricks, and trends so you can always stay ahead and get the most out of Eyelace.</p>"
       }
     }
   },
