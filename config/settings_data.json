@@ -121,6 +121,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "6478312753674380289": {
+        "type": "shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
