@@ -191,7 +191,7 @@
         "light-text": false,
         "container-width": "4",
         "overline": "Stunning Lashes For Everyone",
-        "heading": "Because You're Beautiful",
+        "heading": "BECAUSE YOU'RE BEAUTIFUL",
         "link-url": "shopify://collections/lashes-collection",
         "link-text": "Shop Now",
         "cursor-direction": "horizontal",
@@ -200,38 +200,66 @@
         "mobile-aspect-ratio": 134
       }
     },
-    "image_with_text_FQfGti": {
-      "type": "image-with-text",
+    "ef31fa12-e7a0-4c66-8567-1cca76a8a029": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-0": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-09-10_at_1.46.39_PM.png",
+            "title": "BOLD",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-1": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.56.48_AM.png",
+            "title": "ELEGANT",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-2": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_2.04.20_PM.png",
+            "title": "NATURAL",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-0",
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-1",
+        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-2"
+      ],
       "settings": {
         "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": false,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "overlay",
-        "text-horizontal-alignment": "left",
-        "text-vertical-alignment": "center",
-        "text-width": "large",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "image": "shopify://shop_images/Photo_Sep_13_2024_2_01_22_PM_a62ecb6f-fcc9-4ae3-83ab-96f3717a0bd7.jpg",
-        "overline": "Because You're Beautiful",
-        "title": "LASH COLLECTION",
-        "description": "<p>Seven innovatively designed, unique waterline lashes that augment your natural lashes while seamlessly blending in with them for a stunningly elegant, natural lash effect.</p>",
+        "spacing-above": true,
+        "spacing-below": true,
+        "block-spacing": true,
+        "background-color": "dark",
+        "light-text": true,
+        "container-width": "4",
+        "width": 3,
+        "aspect-ratio": "square",
+        "image-width": 0,
+        "text-alignment": "center",
+        "overline": "Enhancing Your Natural Beauty",
+        "heading": "EYELACE IS",
+        "description": "",
         "link-url": "",
         "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
+        "mobile-width": "1"
       }
     },
     "scrolling_content_8TVBBx": {
@@ -300,68 +328,6 @@
         "mobile-image": "shopify://shop_images/Creative_Banner_4.jpg"
       }
     },
-    "ef31fa12-e7a0-4c66-8567-1cca76a8a029": {
-      "type": "text-columns",
-      "blocks": {
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-0": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-09-10_at_1.46.39_PM.png",
-            "title": "BOLD",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
-          }
-        },
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-1": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.56.48_AM.png",
-            "title": "ELEGANT",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
-          }
-        },
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-2": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-26_at_2.04.20_PM.png",
-            "title": "NATURAL",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-0",
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-1",
-        "template--14865991630929__ef31fa12-e7a0-4c66-8567-1cca76a8a029-168670132626cd7253-2"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "block-spacing": true,
-        "background-color": "dark",
-        "light-text": true,
-        "container-width": "4",
-        "width": 3,
-        "aspect-ratio": "square",
-        "image-width": 0,
-        "text-alignment": "center",
-        "overline": "Enhancing Your Natural Beauty",
-        "heading": "EYELACE IS",
-        "description": "",
-        "link-url": "",
-        "link-text": "",
-        "mobile-width": "1"
-      }
-    },
     "countdown_dmABWK": {
       "type": "countdown",
       "settings": {
@@ -388,23 +354,6 @@
         "hide-when-expired": true,
         "show-button-when": "always",
         "mobile-number-size": 20
-      }
-    },
-    "featured_text_aFcPjY": {
-      "type": "featured-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "accent-1",
-        "light-text": false,
-        "heading-type": "section-heading",
-        "container-width": "4",
-        "overline": "Our Mission",
-        "heading": "We wear Eyelace not because we WANT to be beautiful, but because we ARE!",
-        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are obtainable in their home makeup routines.</p>",
-        "link-url": "shopify://pages/our-mission",
-        "link-text": "Learn More"
       }
     },
     "testimonials_WhbrEN": {
@@ -470,6 +419,40 @@
         "mobile-width": "1"
       }
     },
+    "image_with_text_FQfGti": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": false,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "left",
+        "text-vertical-alignment": "center",
+        "text-width": "large",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/Photo_Sep_13_2024_2_01_22_PM_a62ecb6f-fcc9-4ae3-83ab-96f3717a0bd7.jpg",
+        "overline": "Because You're Beautiful",
+        "title": "LASH COLLECTION",
+        "description": "<p>Seven innovatively designed, unique waterline lashes that augment your natural lashes while seamlessly blending in with them for a stunningly elegant, natural lash effect.</p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
     "featured_products_GFFf48": {
       "type": "featured-products",
       "settings": {
@@ -495,6 +478,23 @@
         "heading-alignment": "center",
         "link-url": "",
         "link-text": ""
+      }
+    },
+    "featured_text_aFcPjY": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-1",
+        "light-text": false,
+        "heading-type": "section-heading",
+        "container-width": "4",
+        "overline": "Our Mission",
+        "heading": "We wear Eyelace not because we WANT to be beautiful, but because we ARE!",
+        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are obtainable in their home makeup routines.</p>",
+        "link-url": "shopify://pages/our-mission",
+        "link-text": "Learn More"
       }
     },
     "text_columns_VJ8c9w": {
