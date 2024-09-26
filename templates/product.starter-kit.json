@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_with_text_pJGaga": {
@@ -21,10 +30,10 @@
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
-        "image": "shopify:\/\/shop_images\/Starter_Kit_Placeholder_807e278c-b1a3-49d9-b5bf-33e1b8fa7ab6.png",
+        "image": "shopify://shop_images/Starter_Kit_Placeholder_807e278c-b1a3-49d9-b5bf-33e1b8fa7ab6.png",
         "overline": "Be Bold; Be Beautiful",
         "title": "Get Started With Eyelace",
-        "description": "<p>A new experience in lashes. The Eyelace Starter Kit is the best way to get started with Eyelace. Featuring a collection of all of our lashes and must-have accessories in one box at a discounted price. Find your look and bring out your inner beauty with lashes for every occasion, style, and person.<\/p>",
+        "description": "<p>A new experience in lashes. The Eyelace Starter Kit is the best way to get started with Eyelace. Featuring a collection of all of our lashes and must-have accessories in one box at a discounted price. Find your look and bring out your inner beauty with lashes for every occasion, style, and person.</p>",
         "link-url": "",
         "link-text": "",
         "mobile-overlay": true,
@@ -138,9 +147,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.53.37_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-08-22_at_2.53.37_PM.png",
             "title": "Stunning & Natural Look",
-            "description": "<p>Eyelace Strip Lashes are designed to accentuate your natural beauty and blend in seamlessly with your natural lash.<\/p>",
+            "description": "<p>Eyelace Strip Lashes are designed to accentuate your natural beauty and blend in seamlessly with your natural lash.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -149,9 +158,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-26_at_1.34.06_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.34.06_PM.png",
             "title": "Easy To Apply & Remove",
-            "description": "<p>Eyelace false lashes are designed to  give the user full control over application and removal. Learn how in our instructional video & booklet.<\/p>",
+            "description": "<p>Eyelace false lashes are designed to  give the user full control over application and removal. Learn how in our instructional video & booklet.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -160,9 +169,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-26_at_1.32.02_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.32.02_PM.png",
             "title": "Comfortable For Any Occasion",
-            "description": "<p>Eyelace eyelashes come in a number of diverse designs to augment your lash look in any setting. See your lash choices to choose the perfect look for you.<\/p>",
+            "description": "<p>Eyelace eyelashes come in a number of diverse designs to augment your lash look in any setting. See your lash choices to choose the perfect look for you.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -171,9 +180,9 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.59.02_AM.png",
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.59.02_AM.png",
             "title": "Non-Damaging & Made For Your Skin",
-            "description": "<p>Your natural beauty is our priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.<\/p>",
+            "description": "<p>Your natural beauty is our priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.</p>",
             "link-url": "",
             "link-text": ""
           }
@@ -222,7 +231,7 @@
         "container-width": "3",
         "overline": "Opening Sale",
         "heading": "Get 10% Off Your Starter Kit",
-        "description": "<p>For our opening sale get 10% off your Eyelace Starter Kit when you puchase now!<\/p>",
+        "description": "<p>For our opening sale get 10% off your Eyelace Starter Kit when you puchase now!</p>",
         "link-url": "",
         "link-text": "",
         "expiry-date": "01-01-2026",
@@ -253,13 +262,13 @@
         "aspect-ratio": 56,
         "play-button-style": "solid",
         "overlay-style": "darken-bottom",
-        "video-upload": "shopify:\/\/files\/videos\/EyelaceTutDraft4.mp4",
+        "video-upload": "shopify://files/videos/EyelaceTutDraft4.mp4",
         "video-url": "",
         "overline": "How To",
         "heading": "Eyelace Is Easy & Convenient",
-        "description": "<p>Learn how to wear your Eyelace with our video tutorial. Anyone can achieve a professional cosmetic effect that enhances your natural beauty.<\/p>",
+        "description": "<p>Learn how to wear your Eyelace with our video tutorial. Anyone can achieve a professional cosmetic effect that enhances your natural beauty.</p>",
         "button-text": "Learn How",
-        "button-url": "shopify:\/\/pages\/how-to",
+        "button-url": "shopify://pages/how-to",
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center",
@@ -273,7 +282,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "What are Eyelace Faux Lashes made from?",
-            "description": "<p>Eyelace lashes are crafted from high-quality PBT fiber, a polyester polymer known for its durability and natural look. They are also latex-free and hypoallergenic, ensuring they are safe for sensitive skin.<\/p>",
+            "description": "<p>Eyelace lashes are crafted from high-quality PBT fiber, a polyester polymer known for its durability and natural look. They are also latex-free and hypoallergenic, ensuring they are safe for sensitive skin.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -282,7 +291,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "How do I apply Eyelace lashes?",
-            "description": "<p>Watch our tutorial video to find out how to apply and remove your Eyelace Lashes!<\/p><p><a href=\"\/pages\/how-to\" target=\"_blank\" title=\"How To\">How To Tutorial<\/a><\/p>",
+            "description": "<p>Watch our tutorial video to find out how to apply and remove your Eyelace Lashes!</p><p><a href=\"/pages/how-to\" target=\"_blank\" title=\"How To\">How To Tutorial</a></p>",
             "page-content": "",
             "default-open": false
           }
@@ -291,7 +300,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "Can I reuse Eyelace lashes?",
-            "description": "<p>Yes, Eyelace lashes are designed for multiple uses. With proper care and cleaning, you can reuse them several times. Be sure to gently remove any adhesive residue after each use and store them in their original packaging.<\/p>",
+            "description": "<p>Yes, Eyelace lashes are designed for multiple uses. With proper care and cleaning, you can reuse them several times. Be sure to gently remove any adhesive residue after each use and store them in their original packaging.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -300,7 +309,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "Are Eyelace lashes suitable for sensitive eyes?",
-            "description": "<p>Absolutely. Eyelace lashes are hypoallergenic and latex-free, making them suitable for those with sensitive eyes and skin. Additionally, our Eyelace White Lash Glue is formulated to be gentle and non-irritating.<\/p>",
+            "description": "<p>Absolutely. Eyelace lashes are hypoallergenic and latex-free, making them suitable for those with sensitive eyes and skin. Additionally, our Eyelace White Lash Glue is formulated to be gentle and non-irritating.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -309,7 +318,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "How do I remove Eyelace lashes?",
-            "description": "<p>To remove your Eylace, gently pull it until the glue slowly separates from your natural lash. <br\/>If you feel any tension use a warm compress, or a shower to melt the glue before you pull.<br\/>Once removed store your lashes on the plastic tray to reuse them.<\/p>",
+            "description": "<p>To remove your Eylace, gently pull it until the glue slowly separates from your natural lash. <br/>If you feel any tension use a warm compress, or a shower to melt the glue before you pull.<br/>Once removed store your lashes on the plastic tray to reuse them.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -318,7 +327,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "Can I wear Eyelace lashes with glasses?",
-            "description": "<p>Yes, Eyelace offers a variety of lash styles suitable for wear with glasses. Opt for shorter and more natural styles like Natural Beauty or Elegant Effect to ensure they don’t interfere with your eyewear.<\/p>",
+            "description": "<p>Yes, Eyelace offers a variety of lash styles suitable for wear with glasses. Opt for shorter and more natural styles like Natural Beauty or Elegant Effect to ensure they don’t interfere with your eyewear.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -327,7 +336,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "How long do Eyelace lashes last?",
-            "description": "<p>The longevity of Eyelace lashes depends on how well they are cared for. With proper maintenance, they can be reused multiple times. Always handle them gently, clean them after use, and store them in a safe place.<\/p>",
+            "description": "<p>The longevity of Eyelace lashes depends on how well they are cared for. With proper maintenance, they can be reused multiple times. Always handle them gently, clean them after use, and store them in a safe place.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -336,7 +345,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "What is the difference between the various Eyelace lash styles?",
-            "description": "<p>Each Eyelace false lash style is designed to offer a different look and level of drama:<\/p><ul><li>Natural Beauty: Subtle enhancement for everyday wear.<\/li><li>Perfect Poise: Dark and dramatic, ideal for professional settings.<\/li><li>Elegant Effect: Wispy and elegant, adding a refined touch.<\/li><li>Day Dream: Full-bodied and charming, perfect for work and play.<\/li><li>Social Butterfly: Bold yet natural, suitable for any occasion.<\/li><li>Night Life: Extra sexy and glamorous, perfect for nights out.<\/li><li>Ball Gown: Dramatic and classy, ideal for formal events.<\/li><\/ul>",
+            "description": "<p>Each Eyelace false lash style is designed to offer a different look and level of drama:</p><ul><li>Natural Beauty: Subtle enhancement for everyday wear.</li><li>Perfect Poise: Dark and dramatic, ideal for professional settings.</li><li>Elegant Effect: Wispy and elegant, adding a refined touch.</li><li>Day Dream: Full-bodied and charming, perfect for work and play.</li><li>Social Butterfly: Bold yet natural, suitable for any occasion.</li><li>Night Life: Extra sexy and glamorous, perfect for nights out.</li><li>Ball Gown: Dramatic and classy, ideal for formal events.</li></ul>",
             "page-content": "",
             "default-open": false
           }
@@ -345,7 +354,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "How do I choose the right lash style for me?",
-            "description": "<p>Consider the occasion and the look you want to achieve. For everyday wear, opt for more natural styles like Natural Beauty or Day Dream. For a night out or special event, bolder styles like Night Life or Ball Gown will provide the dramatic effect you desire. If you wear glasses, choose shorter styles to ensure comfort.<\/p>",
+            "description": "<p>Consider the occasion and the look you want to achieve. For everyday wear, opt for more natural styles like Natural Beauty or Day Dream. For a night out or special event, bolder styles like Night Life or Ball Gown will provide the dramatic effect you desire. If you wear glasses, choose shorter styles to ensure comfort.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -354,7 +363,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "Are Eyelace lashes cruelty-free?",
-            "description": "<p>Yes, Eyelace lashes are cruelty-free and made from synthetic fibers, ensuring no harm to animals.<\/p>",
+            "description": "<p>Yes, Eyelace lashes are cruelty-free and made from synthetic fibers, ensuring no harm to animals.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -401,52 +410,52 @@
         "image_4g9CFc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/unnamed_10_3.png",
+            "image": "shopify://shop_images/unnamed_10_3.png",
             "x-blocks": "2",
             "y-blocks": "1",
             "image-display-type": "fill",
             "aspect-ratio": 56,
             "title": "Community Stories",
-            "link-url": "shopify:\/\/pages\/community-stories",
+            "link-url": "shopify://pages/community-stories-1",
             "link-text": "Read more"
           }
         },
         "image_AEtkRF": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/unnamed_9_1.png",
+            "image": "shopify://shop_images/unnamed_9_1.png",
             "x-blocks": "1",
             "y-blocks": "1",
             "image-display-type": "fill",
             "aspect-ratio": 56,
             "title": "Makeup Artist Partnership",
-            "link-url": "shopify:\/\/pages\/makeup-artists-partnership",
+            "link-url": "shopify://pages/makeup-artists-partnership",
             "link-text": "Apply Now"
           }
         },
         "image_3aMzWQ": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_9.05.24_AM.png",
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_9.05.24_AM.png",
             "x-blocks": "1",
             "y-blocks": "1",
             "image-display-type": "fill",
             "aspect-ratio": 56,
             "title": "Drawing Contest",
-            "link-url": "shopify:\/\/pages\/share-your-experience",
+            "link-url": "shopify://pages/share-your-experience",
             "link-text": "Submit a drawing"
           }
         },
         "image_JHch7Q": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.59.43_AM.png",
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.59.43_AM.png",
             "x-blocks": "2",
             "y-blocks": "1",
             "image-display-type": "fill",
             "aspect-ratio": 56,
             "title": "Contribute & Receive Rewards",
-            "link-url": "shopify:\/\/pages\/drawing-contest",
+            "link-url": "shopify://pages/drawing-contest",
             "link-text": "Submit Photos & Videos"
           }
         }
@@ -472,7 +481,7 @@
         "overlay-style": "darken-bottom",
         "overline": "EXPLORE OUR COMMUNITY",
         "heading": "A Community of Women Embracing Their Inner Beauty",
-        "description": "<p>Eyelace is creating a community of empowered women who support each in other in achieving lives where they feel bold and beautiful. Contribute to our community and be a part of our story while earning yourself free gifts and access to the best deals, tips, and trends.<\/p>",
+        "description": "<p>Eyelace is creating a community of empowered women who support each in other in achieving lives where they feel bold and beautiful. Contribute to our community and be a part of our story while earning yourself free gifts and access to the best deals, tips, and trends.</p>",
         "link-url": "",
         "link-text": "",
         "mobile-width": "2",
@@ -494,7 +503,7 @@
         "overline": "PLACEHOLDER",
         "heading": "REVIEWS WIDGET",
         "description": "",
-        "link-url": "\/",
+        "link-url": "/",
         "link-text": ""
       }
     },
@@ -502,7 +511,7 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_KiJAaK": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
