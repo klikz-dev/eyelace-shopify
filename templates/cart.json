@@ -44,10 +44,23 @@
       "type": "cart",
       "settings": {
       }
+    },
+    "custom_liquid_zJxhEJ": {
+      "type": "custom-liquid",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "custom-liquid": "{% if cart.item_count < 2 %}\n  <div style=\"background-color:#fff3cd; padding:15px; border:1px solid #ffeeba; color:#856404; margin-top:10px;\">\n    <strong>Important:</strong> Our <strong>25% off subscription offer</strong> with <strong>free shipping</strong> is available only for orders of 2 or more items. Please ensure you have at least 2 items to qualify for this offer.\n  </div>\n{% endif %}"
+      }
     }
   },
   "order": [
     "1726468789aa6fed02",
-    "main"
+    "main",
+    "custom_liquid_zJxhEJ"
   ]
 }
