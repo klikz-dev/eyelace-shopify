@@ -147,7 +147,7 @@
         "parallax-enabled": true,
         "image": "shopify://shop_images/Photo_Sep_13_2024_1_34_27_PM.png",
         "overline": "Be Bold; Be Beautiful",
-        "title": "EYELACE STARTER KIT",
+        "title": "STARTER KIT",
         "description": "<p>A whole new experience in lashes, our Starter Kit features a collection of all of our lashes and accessories along with detailed instructions for use in one convenient box. Try yours today!</p>",
         "link-url": "shopify://products/starter-kit",
         "link-text": "Get Started",
@@ -182,7 +182,7 @@
         "parallax-enabled": false,
         "image": "shopify://shop_images/Photo_Sep_13_2024_2_01_22_PM_a62ecb6f-fcc9-4ae3-83ab-96f3717a0bd7.jpg",
         "overline": "Because You're Beautiful",
-        "title": "EYELACE LASH COLLECTION",
+        "title": "LASH COLLECTION",
         "description": "<p>Seven innovatively designed, unique waterline lashes that augment your natural lashes while seamlessly blending in with them for a stunningly elegant, natural lash effect.</p>",
         "link-url": "",
         "link-text": "",
@@ -633,7 +633,7 @@
             "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.22_AM.png",
             "title": "Malala Fund",
             "description": "<p>Working for a world in which every girl can learn and lead</p>",
-            "link-url": "shopify://pages/organizations-we-support",
+            "link-url": "",
             "link-text": "View more"
           }
         },
@@ -644,7 +644,7 @@
             "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.04.09_AM.png",
             "title": "National Coalition Against Domestic Violence",
             "description": "<p>Supporting survivors and advocates, holding offenders accountable, and leading, mobilizing, and raising voices to support efforts that demand a change of conditions that lead to domestic violence</p>",
-            "link-url": "shopify://pages/organizations-we-support",
+            "link-url": "",
             "link-text": "View more"
           }
         },
@@ -655,7 +655,7 @@
             "image": "shopify://shop_images/Screenshot_2024-09-23_at_10.03.57_AM.png",
             "title": "Working for Women",
             "description": "<p>Creating pathways for women's financial independence; investing in women, transforming the world</p>",
-            "link-url": "shopify://pages/organizations-we-support",
+            "link-url": "",
             "link-text": "View more"
           }
         }
