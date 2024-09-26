@@ -32,7 +32,7 @@
         "light-text": true,
         "text-width": "large",
         "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
+        "text-vertical-alignment": "bottom",
         "text-style": "eclipse-shadow",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
