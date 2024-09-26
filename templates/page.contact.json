@@ -30,13 +30,13 @@
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-09-12_at_12.38.52_PM.png",
+        "image": "shopify://shop_images/Screenshot_2024-09-12_at_12.38.52_PM.png",
         "overline": "Contact us",
-        "title": "Get in Touch",
-        "description": "<p>We want to stay connected with you as we build a community of bold and beautiful, empowered women.<\/p>",
+        "title": "GET IN TOUCH",
+        "description": "<p>We want to stay connected with you as we build a community of bold and beautiful, empowered women.</p>",
         "link-url": "",
         "link-text": "",
-        "mobile-image": "shopify:\/\/shop_images\/Screenshot_2024-09-12_at_12.38.52_PM.png",
+        "mobile-image": "shopify://shop_images/Screenshot_2024-09-12_at_12.38.52_PM.png",
         "mobile-overlay": true,
         "mobile-hide-description": false,
         "mobile-image-display-type": "original",
@@ -67,8 +67,8 @@
         "container-width": "4",
         "overline": "",
         "heading": "",
-        "description": "<p>We are a small, female owned business that has many innovative ideas about expanding our product collection. If you have product dreams you would like to share with us or ideas for how we could improve our existing products to serve you better, we would be honored to hear from you. Please leave us a message in the form below!<\/p>",
-        "link-url": "\/",
+        "description": "<p>We are a small, female owned business that has many innovative ideas about expanding our product collection. If you have product dreams you would like to share with us or ideas for how we could improve our existing products to serve you better, we would be honored to hear from you. Please leave us a message in the form below!</p>",
+        "link-url": "/",
         "link-text": ""
       }
     },
@@ -99,8 +99,8 @@
         "container-width": "4",
         "overline": "",
         "heading": "Makeup Artist Partnership Program",
-        "description": "<p>Eyelace offers a discount on our Collection Lash Set for Certified Makeup Artists who wish to partner with us and stun their clients with the highest quality lashes.<\/p>",
-        "link-url": "shopify:\/\/pages\/makeup-artists-partnership",
+        "description": "<p>Eyelace offers a discount on our Collection Lash Set for Certified Makeup Artists who wish to partner with us and stun their clients with the highest quality lashes.</p>",
+        "link-url": "shopify://pages/makeup-artists-partnership",
         "link-text": "Apply Now"
       }
     },
@@ -114,7 +114,7 @@
         "light-text": true,
         "overline": "Discounts & Special Offers",
         "heading": "Subscribe to our newsletter and receive special offers only for our members!",
-        "description": "<p>Our newsletter is packed full of the latest deals, tips, tricks, and trends as well as personal stories about our bold and beautiful female community.<\/p>"
+        "description": "<p>Our newsletter is packed full of the latest deals, tips, tricks, and trends as well as personal stories about our bold and beautiful female community.</p>"
       }
     }
   },
