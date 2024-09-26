@@ -9,6 +9,11 @@
 */
 {
   "sections": {
+    "main": {
+      "type": "cart",
+      "settings": {
+      }
+    },
     "1726468789aa6fed02": {
       "type": "apps",
       "blocks": {
@@ -40,11 +45,6 @@
         "spacing-below": true
       }
     },
-    "main": {
-      "type": "cart",
-      "settings": {
-      }
-    },
     "custom_liquid_zJxhEJ": {
       "type": "custom-liquid",
       "settings": {
@@ -59,8 +59,8 @@
     }
   },
   "order": [
-    "1726468789aa6fed02",
     "main",
+    "1726468789aa6fed02",
     "custom_liquid_zJxhEJ"
   ]
 }
