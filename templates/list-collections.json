@@ -19,10 +19,10 @@
         "container-width": "6",
         "light-text": true,
         "overlap": false,
-        "heading-type": "section-heading",
+        "heading-type": "featured-heading",
         "text-position": "overlay",
         "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
+        "text-vertical-alignment": "bottom",
         "text-width": "large",
         "text-style": "none",
         "text-background-color": "transparent",
@@ -30,10 +30,10 @@
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-02-14_at_8.56.15_AM.png",
+        "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.56.15_AM.png",
         "overline": "WELCOME TO",
         "title": "THE EYELACE EXPERIENCE",
-        "description": "<p>where you will encounter the most natural, elegant, single-placement Faux Lashes on the market.<\/p>",
+        "description": "<p>Encounter the most natural, elegant Faux Lash on the market.</p>",
         "link-url": "",
         "link-text": "",
         "mobile-overlay": true,
@@ -73,41 +73,41 @@
         "testimonial_X9xDEV": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_3.05.42_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-08-22_at_3.05.42_PM.png",
             "icon": "10",
             "author-role": "@elleevancasselman",
             "author-name": "",
-            "description": "<p>\"On the days I'm gonna get a sweat on, but I want to look good, feel confident, have a little flair...I always go to Eyelace.\"<\/p>"
+            "description": "<p>\"On the days I'm gonna get a sweat on, but I want to look good, feel confident, have a little flair...I always go to Eyelace.\"</p>"
           }
         },
         "testimonial_GjUmHH": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_4696_a30fb336-c87f-41e5-8bf9-96b22611eef0.jpg",
+            "image": "shopify://shop_images/IMG_4696_a30fb336-c87f-41e5-8bf9-96b22611eef0.jpg",
             "icon": "10",
             "author-role": "",
             "author-name": "@thebrittanybrand01",
-            "description": "<p>\"As a black, female entrepreneur, confidence is key, and your eyes are the focal point of your connections and communication.\"<\/p>"
+            "description": "<p>\"As a black, female entrepreneur, confidence is key, and your eyes are the focal point of your connections and communication.\"</p>"
           }
         },
         "testimonial_D3HChJ": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_4888_e8c194c7-28bc-473d-91b4-cd4dc3852fb3.jpg",
+            "image": "shopify://shop_images/IMG_4888_e8c194c7-28bc-473d-91b4-cd4dc3852fb3.jpg",
             "icon": "10",
             "author-role": "",
-            "author-name": "@melissa_choi",
-            "description": "<p>\"It's just so much fun to be play with beauty and try new things. Expressing myself creatively is essential to who I am both personally and professionally.\"<\/p>"
+            "author-name": "@mchoi.design",
+            "description": "<p>\"It's just so much fun to play with beauty and try new things. Expressing myself creatively is essential to who I am both personally and professionally.\"</p>"
           }
         },
         "testimonial_PRLKtw": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_4890.jpg",
+            "image": "shopify://shop_images/IMG_4890.jpg",
             "icon": "10",
             "author-role": "@powerhouse_wade",
             "author-name": "",
-            "description": "<p>\"You just never outgrow the desire to feel beautiful in your own skin. You just don't. Most things change, but that remains the same. (And use my son's social media. I'm not on all that).\"<\/p>"
+            "description": "<p>\"You never outgrow the desire to feel beautiful in your own skin. Most things change, but that remains the same. (And use my son's social media. I'm not on all that).\"</p>"
           }
         }
       },
@@ -126,7 +126,7 @@
         "container-width": "4",
         "image-shape": "circle",
         "overline": "Our Customers Love",
-        "heading": "The Eyelace Experience",
+        "heading": "THE EYELACE EXPERIENCE",
         "mobile-width": "1"
       }
     },
@@ -140,15 +140,16 @@
         "light-text": false,
         "heading-type": "section-heading",
         "container-width": "4",
-        "overline": "OUR MISSION",
-        "heading": "We wear our Eyelace not because we WANT to be beautiful, but because we ARE!",
-        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are attainable at home.<\/p>",
-        "link-url": "\/",
+        "overline": "our motivation",
+        "heading": "NOT BECAUSE WE WANT TO BE BEAUTIFUL, BUT BECAUSE WE ARE",
+        "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are attainable at home.</p>",
+        "link-url": "/",
         "link-text": "Learn More"
       }
     },
     "countdown_yDf74X": {
       "type": "countdown",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -164,8 +165,8 @@
         "container-width": "3",
         "overline": "OPENING SALE",
         "heading": "Get 10% Off Your Starter Kit",
-        "description": "<p>To celebrate our launch, enjoy a discount on our Starter Kit by purchasing today!<\/p>",
-        "link-url": "shopify:\/\/products\/starter-kit",
+        "description": "<p>To celebrate our launch, enjoy a discount on our Starter Kit by purchasing today!</p>",
+        "link-url": "shopify://products/starter-kit",
         "link-text": "Shop The Sale",
         "expiry-date": "15-11-2024",
         "expiry-hours": 0,
@@ -249,7 +250,7 @@
         "light-text": true,
         "text-width": "medium",
         "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
+        "text-vertical-alignment": "bottom",
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
@@ -258,13 +259,13 @@
         "aspect-ratio": 56,
         "play-button-style": "solid",
         "overlay-style": "darken-bottom",
-        "video-upload": "shopify:\/\/files\/videos\/EyelaceTutDraft4.mp4",
+        "video-upload": "shopify://files/videos/EyelaceTutDraft4.mp4",
         "video-url": "",
-        "overline": "HOW TO",
-        "heading": "Eyelace Is Easy & Convenient",
-        "description": "<p>Learn how to wear your Eyelace with our video tutorial. With enough practice and support, we are confident anyone can achieve a perfect lash look with our groundbreaking Eyelace lash tools.<\/p>",
+        "overline": "",
+        "heading": "LEARN HOW",
+        "description": "<p>With enough practice and support, we are confident anyone can achieve a perfect lash look with our groundbreaking Eyelace lash tools.</p>",
         "button-text": "Learn How",
-        "button-url": "shopify:\/\/pages\/how-to",
+        "button-url": "shopify://pages/how-to",
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center",
@@ -278,10 +279,10 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.53.37_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-08-22_at_2.53.37_PM.png",
             "title": "Stunning & Natural Look",
-            "description": "<p>Eyelace Strip Lashes are meant to accentuate your natural beauty, that is why we designed them to look so natural the only difference you’ll notice is how good you look.<\/p>",
-            "link-url": "shopify:\/\/collections\/lashes-collection",
+            "description": "<p>Eyelace Strip Lashes are meant to accentuate your natural beauty, that is why we designed them to look so natural the only difference you’ll notice is how good you look.</p>",
+            "link-url": "shopify://collections/lashes-collection",
             "link-text": "View more"
           }
         },
@@ -289,10 +290,10 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.51.52_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-08-22_at_2.51.52_PM.png",
             "title": "Easy To Apply & Remove",
-            "description": "<p>Eyelace false lashes are designed to be easy to apply and remove for anyone. Whether you are on the go or perfecting your look they are simple to make a part of your routine.<\/p>",
-            "link-url": "shopify:\/\/collections\/lashes-collection",
+            "description": "<p>Eyelace false lashes are designed to be easy to apply and remove for anyone. Whether you are on the go or perfecting your look they are simple to make a part of your routine.</p>",
+            "link-url": "shopify://collections/lashes-collection",
             "link-text": "View more"
           }
         },
@@ -300,10 +301,10 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.56.06_PM_dfca52b1-9acb-475e-9fc7-b1754e14c47b.png",
+            "image": "shopify://shop_images/Screenshot_2024-08-22_at_2.56.06_PM_dfca52b1-9acb-475e-9fc7-b1754e14c47b.png",
             "title": "Comfortable For Any Occasion",
-            "description": "<p>Eyelace eyelashes are comfortable, natural, and designed to not only look flawless but feel flawless so you can be your best self whenever and wherever you are.<\/p>",
-            "link-url": "shopify:\/\/collections\/lashes-collection",
+            "description": "<p>Eyelace eyelashes are comfortable, natural, and designed to not only look flawless but feel flawless so you can be your best self whenever and wherever you are.</p>",
+            "link-url": "shopify://collections/lashes-collection",
             "link-text": "View more"
           }
         },
@@ -311,10 +312,10 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-08-22_at_2.49.17_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-08-22_at_2.49.17_PM.png",
             "title": "Non-Damaging & Made For Your Skin",
-            "description": "<p>Your natural beauty is a priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.<\/p>",
-            "link-url": "shopify:\/\/collections\/lashes-collection",
+            "description": "<p>Your natural beauty is a priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.</p>",
+            "link-url": "shopify://collections/lashes-collection",
             "link-text": "View more"
           }
         }
@@ -338,7 +339,7 @@
         "image-width": 0,
         "text-alignment": "center",
         "overline": "WHY EYELACE?",
-        "heading": "Enhancing Your Natural Beauty",
+        "heading": "ENHANCING YOUR NATURAL BEAUTY",
         "description": "",
         "link-url": "",
         "link-text": "",
