@@ -404,7 +404,7 @@
         "text_9NKXVh": {
           "type": "text",
           "settings": {
-            "text": "Become a Member Today!",
+            "text": "JOIN TODAY",
             "link": "",
             "hide-on-mobile": false,
             "hide-on-desktop": false
@@ -424,7 +424,7 @@
         "text_xVhmtU": {
           "type": "text",
           "settings": {
-            "text": "Subscribe and Save",
+            "text": "SUBSCRIBE & SAVE",
             "link": "",
             "hide-on-mobile": false,
             "hide-on-desktop": false
@@ -563,8 +563,8 @@
         "aspect-ratio": "square",
         "image-width": 0,
         "text-alignment": "center",
-        "overline": "Professional False Lashes",
-        "heading": "Quality Made For Beauty",
+        "overline": "The perfect false lash",
+        "heading": "QUALITY MADE FOR BEAUTY",
         "description": "",
         "link-url": "",
         "link-text": "",
