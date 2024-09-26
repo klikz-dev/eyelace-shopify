@@ -697,9 +697,9 @@
             "y-blocks": "1",
             "image-display-type": "fill",
             "aspect-ratio": 56,
-            "title": "Read Community Stories",
+            "title": "View Our Community Videos",
             "link-url": "https://eyelace.com/pages/community-stories",
-            "link-text": "View more"
+            "link-text": "View Now"
           }
         },
         "image_KJJai8": {
@@ -713,7 +713,7 @@
             "aspect-ratio": 56,
             "title": "Partner as a Makeup Artist",
             "link-url": "https://eyelace.com/pages/makeup-artists-partnership",
-            "link-text": "Apply Now"
+            "link-text": "Apply Today"
           }
         },
         "image_Tjmffx": {
@@ -725,9 +725,9 @@
             "y-blocks": "1",
             "image-display-type": "fill",
             "aspect-ratio": 56,
-            "title": "Enter Drawing Contest",
+            "title": "Submit Your Drawing",
             "link-url": "https://eyelace.com/pages/drawing-contest",
-            "link-text": "Submit Entry"
+            "link-text": "Learn More"
           }
         },
         "image_4AfCyJ": {
@@ -741,7 +741,7 @@
             "aspect-ratio": 56,
             "title": "Contribute Photos & Videos to Receive Free Lash Sets",
             "link-url": "https://eyelace.com/pages/community-stories",
-            "link-text": "Share"
+            "link-text": "Share Pix & Vids"
           }
         }
       },
