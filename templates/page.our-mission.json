@@ -38,7 +38,7 @@
         "text-width": "large",
         "text-style": "none",
         "text-background-color": "transparent",
-        "image-display-type": "original",
+        "image-display-type": "x-small",
         "aspect-ratio": 56,
         "overlay-style": "none",
         "parallax-enabled": false,
