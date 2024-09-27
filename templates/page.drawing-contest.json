@@ -9,19 +9,19 @@
 */
 {
   "sections": {
-    "featured_text_Q84yEH": {
+    "featured_text_MfTG4X": {
       "type": "featured-text",
       "settings": {
         "top-border": false,
         "spacing-above": true,
         "spacing-below": true,
-        "background-color": "accent-2",
+        "background-color": "none",
         "light-text": false,
         "heading-type": "featured-heading",
-        "container-width": "4",
+        "container-width": "3",
         "overline": "",
-        "heading": "WE WANT TO CELEBRATE YOU!",
-        "description": "<p>We don’t just want to sell lashes, we want to be a community of individuals committed to the belief in our worth and beauty. Contribute to our creative community by submitting a drawing of our Eyelace icon.</p>",
+        "heading": "ART & AFFIRMATION",
+        "description": "",
         "link-url": "/",
         "link-text": ""
       }
@@ -254,6 +254,23 @@
         "mobile-overlay": true
       }
     },
+    "featured_text_Q84yEH": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-2",
+        "light-text": false,
+        "heading-type": "featured-heading",
+        "container-width": "4",
+        "overline": "",
+        "heading": "WE WANT TO CELEBRATE YOU!",
+        "description": "<p>We don’t just want to sell lashes, we want to be a community of individuals committed to the belief in our worth and beauty. Contribute to our creative community by submitting a drawing of our Eyelace icon.</p>",
+        "link-url": "/",
+        "link-text": ""
+      }
+    },
     "featured_text_NyAgx9": {
       "type": "featured-text",
       "disabled": true,
@@ -465,11 +482,12 @@
     }
   },
   "order": [
-    "featured_text_Q84yEH",
+    "featured_text_MfTG4X",
     "scrolling_content_gQQxAa",
     "main",
     "image_with_text_icCnx9",
     "slideshow_RcC4xz",
+    "featured_text_Q84yEH",
     "featured_text_NyAgx9",
     "image_with_text_KnRDRq",
     "custom_content_Lkn7MJ",
