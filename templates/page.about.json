@@ -514,6 +514,7 @@
     },
     "image_with_text_c3Qgpx": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
