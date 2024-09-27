@@ -242,7 +242,7 @@
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
-        "image-display-type": "original",
+        "image-display-type": "x-large",
         "aspect-ratio": 56,
         "overlay-style": "none",
         "auto-rotate": true,
