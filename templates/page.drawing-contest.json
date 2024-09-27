@@ -236,7 +236,7 @@
         "spacing-below": false,
         "spacing-around-blocks": false,
         "arrows-enabled": true,
-        "blocks_per_slide": 3,
+        "blocks_per_slide": 1,
         "background-color": "none",
         "light-text": false,
         "text-style": "none",
