@@ -12,7 +12,7 @@
     "4e9385a7-14ff-4617-8542-ed651a7ec51f": {
       "type": "image-with-text",
       "settings": {
-        "top-border": false,
+        "top-border": true,
         "spacing-above": false,
         "spacing-below": false,
         "background-color": "none",
