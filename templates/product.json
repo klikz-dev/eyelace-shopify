@@ -20,7 +20,7 @@
         "light-text": false,
         "overlap": false,
         "heading-type": "featured-heading",
-        "text-position": "overlay",
+        "text-position": "bottom",
         "text-horizontal-alignment": "center",
         "text-vertical-alignment": "center",
         "text-width": "medium",
@@ -30,10 +30,10 @@
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
-        "image": "shopify:\/\/shop_images\/Creative_Banner_1.jpg",
-        "overline": "",
-        "title": "Buy More, Pay Less",
-        "description": "<p>Get up to 30% off when you buy more!<\/p>",
+        "image": "shopify://shop_images/Creative_Banner_6.jpg",
+        "overline": "bringing you the highest quality tools",
+        "title": "OUR CURATED COLLECTION",
+        "description": "<p>Where research meets art</p>",
         "link-url": "",
         "link-text": "",
         "mobile-overlay": true,
@@ -148,7 +148,7 @@
           "settings": {
             "show-image": true,
             "title": "Add a title or tagline",
-            "description": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.<\/p>",
+            "description": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.</p>",
             "link-url": "",
             "link-text": "View more"
           }
@@ -158,7 +158,7 @@
           "settings": {
             "show-image": true,
             "title": "Add a title or tagline",
-            "description": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.<\/p>",
+            "description": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.</p>",
             "link-url": "",
             "link-text": "View more"
           }
@@ -168,7 +168,7 @@
           "settings": {
             "show-image": true,
             "title": "Add a title or tagline",
-            "description": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.<\/p>",
+            "description": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.</p>",
             "link-url": "",
             "link-text": "View more"
           }
@@ -178,7 +178,7 @@
           "settings": {
             "show-image": true,
             "title": "Add a title or tagline",
-            "description": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.<\/p>",
+            "description": "<p>Explain a set of product features, add illustrations, infographics, logo lists, or link to pages.</p>",
             "link-url": "",
             "link-text": "View more"
           }
@@ -251,7 +251,7 @@
         "video-url": "",
         "overline": "Overline text",
         "heading": "Video",
-        "description": "<p>Add a description here<\/p>",
+        "description": "<p>Add a description here</p>",
         "button-text": "button",
         "button-url": "",
         "mobile-image-display-type": "original",
@@ -267,7 +267,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "Collapsible row",
-            "description": "<p>Use rows to highlight unique features, <br\/>sizing information, <br\/>or other sales information.<\/p>",
+            "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -276,7 +276,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "Collapsible row",
-            "description": "<p>Use rows to highlight unique features, <br\/>sizing information, <br\/>or other sales information.<\/p>",
+            "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -285,7 +285,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "Collapsible row",
-            "description": "<p>Use rows to highlight unique features, <br\/>sizing information, <br\/>or other sales information.<\/p>",
+            "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -294,7 +294,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "Collapsible row",
-            "description": "<p>Use rows to highlight unique features, <br\/>sizing information, <br\/>or other sales information.<\/p>",
+            "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
             "page-content": "",
             "default-open": false
           }
