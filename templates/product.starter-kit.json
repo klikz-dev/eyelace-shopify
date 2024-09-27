@@ -22,7 +22,7 @@
         "heading-type": "featured-heading",
         "text-position": "overlay",
         "text-horizontal-alignment": "left",
-        "text-vertical-alignment": "center",
+        "text-vertical-alignment": "top",
         "text-width": "large",
         "text-style": "none",
         "text-background-color": "transparent",
@@ -37,6 +37,40 @@
         "link-url": "",
         "link-text": "",
         "mobile-image": "shopify://shop_images/Creative_Banner_5_Brighter.jpg",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "image_with_text_b7WwPk": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/Screenshot_2024-09-27_at_4.08.09_AM_07b3a8ee-e75a-4ae4-adc9-41f183faffb1.png",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
         "mobile-overlay": true,
         "mobile-hide-description": false,
         "mobile-image-display-type": "original",
@@ -215,34 +249,6 @@
         "mobile-width": "1"
       }
     },
-    "countdown_PmmbiF": {
-      "type": "countdown",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "dark",
-        "light-text": true,
-        "text-style": "none",
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "timer-bg-color": "dark",
-        "light-number": true,
-        "number-size": 40,
-        "container-width": "3",
-        "overline": "celebrate launch day",
-        "heading": "Get 15% Off Your Starter Kit",
-        "description": "<p>To celebrate our launch, get 15% off your Eyelace Starter Kit when you use code LAUNCH15</p>",
-        "link-url": "",
-        "link-text": "",
-        "expiry-date": "15-11-2024",
-        "expiry-hours": 0,
-        "expiry-minutes": 0,
-        "hide-when-expired": true,
-        "show-button-when": "always",
-        "mobile-number-size": 20
-      }
-    },
     "featured_video_hn6PAf": {
       "type": "featured-video",
       "settings": {
@@ -274,6 +280,18 @@
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center",
         "mobile-hide-description": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "title": "You may also like"
       }
     },
     "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92": {
@@ -393,18 +411,6 @@
         "heading-alignment": "center"
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "none",
-        "light-text": false,
-        "container-width": "4",
-        "title": "You may also like"
-      }
-    },
     "grid_with_overlay_CEw3iK": {
       "type": "grid-with-overlay",
       "blocks": {
@@ -498,6 +504,7 @@
     },
     "featured_text_qpBF4k": {
       "type": "featured-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -513,37 +520,45 @@
         "link-text": ""
       }
     },
-    "1717121944de3a5e71": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_KiJAaK": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_KiJAaK"
-      ],
+    "countdown_PmmbiF": {
+      "type": "countdown",
       "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "container-width": "4",
+        "top-border": false,
         "spacing-above": true,
-        "spacing-below": true
+        "spacing-below": true,
+        "background-color": "accent-2",
+        "light-text": true,
+        "text-style": "none",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "timer-bg-color": "dark",
+        "light-number": true,
+        "number-size": 40,
+        "container-width": "3",
+        "overline": "celebrate launch day",
+        "heading": "Get 15% Off Your Starter Kit",
+        "description": "<p>To celebrate our launch, get 15% off your Eyelace Starter Kit when you use code LAUNCH15</p>",
+        "link-url": "",
+        "link-text": "",
+        "expiry-date": "15-11-2024",
+        "expiry-hours": 0,
+        "expiry-minutes": 0,
+        "hide-when-expired": true,
+        "show-button-when": "always",
+        "mobile-number-size": 20
       }
     }
   },
   "order": [
     "image_with_text_pJGaga",
+    "image_with_text_b7WwPk",
     "main",
     "text_columns_ANhjXW",
-    "countdown_PmmbiF",
     "featured_video_hn6PAf",
-    "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92",
     "related-products",
+    "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92",
     "grid_with_overlay_CEw3iK",
     "featured_text_qpBF4k",
-    "1717121944de3a5e71"
+    "countdown_PmmbiF"
   ]
 }
