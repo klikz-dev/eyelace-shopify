@@ -24,7 +24,7 @@
     "image_with_text_BP6LU4": {
       "type": "image-with-text",
       "settings": {
-        "top-border": false,
+        "top-border": true,
         "spacing-above": false,
         "spacing-below": false,
         "background-color": "none",
