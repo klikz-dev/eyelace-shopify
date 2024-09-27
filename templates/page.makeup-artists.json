@@ -422,6 +422,7 @@
     },
     "featured_blog_rXUqPA": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
