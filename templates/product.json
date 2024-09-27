@@ -155,7 +155,7 @@
         "products-per-row--mobile": "1",
         "collection": "accessories",
         "max-products": 8,
-        "heading": "Essential Accessories"
+        "heading": "ESSENTIAL ACCESSORIES"
       }
     },
     "5041891c-740e-40b2-a00d-936d32f31a4c": {
@@ -189,18 +189,6 @@
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center",
         "mobile-hide-description": false
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "none",
-        "light-text": false,
-        "container-width": "4",
-        "title": "You may also like"
       }
     },
     "slideshow_qLm4Hp": {
@@ -334,6 +322,18 @@
         "blocks_per_slide_mobile": "1",
         "mobile-overlay": true
       }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "title": "You may also like"
+      }
     }
   },
   "order": [
@@ -341,7 +341,7 @@
     "main",
     "edb6b679-1b0d-4698-be1b-efe7bb590de9",
     "5041891c-740e-40b2-a00d-936d32f31a4c",
-    "related-products",
-    "slideshow_qLm4Hp"
+    "slideshow_qLm4Hp",
+    "related-products"
   ]
 }
