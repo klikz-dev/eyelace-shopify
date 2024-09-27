@@ -22,7 +22,7 @@
         "heading-type": "featured-heading",
         "text-position": "overlay",
         "text-horizontal-alignment": "left",
-        "text-vertical-alignment": "top",
+        "text-vertical-alignment": "center",
         "text-width": "medium",
         "text-style": "none",
         "text-background-color": "transparent",
