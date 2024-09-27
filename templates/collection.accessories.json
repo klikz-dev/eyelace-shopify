@@ -91,7 +91,7 @@
         "text-width": "medium",
         "text-style": "none",
         "text-background-color": "transparent",
-        "image-display-type": "medium",
+        "image-display-type": "original",
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
