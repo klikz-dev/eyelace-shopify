@@ -142,6 +142,22 @@
     "slideshow_RcC4xz": {
       "type": "slideshow",
       "blocks": {
+        "image_Wk9yxJ": {
+          "type": "image",
+          "settings": {
+            "text-width": "large",
+            "text-horizontal-alignment": "left",
+            "text-vertical-alignment": "top",
+            "image": "shopify://shop_images/Screenshot_2024-09-27_at_5.35.04_AM_054444e6-ef44-49c5-8a43-a102a5dc5a36.png",
+            "overline": "Age 6",
+            "title": "Adalynn",
+            "description": "<p>\"I like that I have pretty eyes\"</p>",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
         "image_i6PgKk": {
           "type": "image",
           "settings": {
@@ -190,22 +206,6 @@
             "mobile-hide-description": false
           }
         },
-        "image_Wk9yxJ": {
-          "type": "image",
-          "settings": {
-            "text-width": "large",
-            "text-horizontal-alignment": "left",
-            "text-vertical-alignment": "top",
-            "image": "shopify://shop_images/Screenshot_2024-09-27_at_5.35.04_AM_054444e6-ef44-49c5-8a43-a102a5dc5a36.png",
-            "overline": "Age 6",
-            "title": "Adalynn",
-            "description": "<p>\"I like that I have pretty eyes\"</p>",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
         "image_A9NaLd": {
           "type": "image",
           "disabled": true,
@@ -225,10 +225,10 @@
         }
       },
       "block_order": [
+        "image_Wk9yxJ",
         "image_i6PgKk",
         "image_9U4pdj",
         "image_8kTYLj",
-        "image_Wk9yxJ",
         "image_A9NaLd"
       ],
       "settings": {
