@@ -148,7 +148,7 @@
             "text-width": "large",
             "text-horizontal-alignment": "left",
             "text-vertical-alignment": "top",
-            "image": "shopify://shop_images/Adalynn_age_6.png",
+            "image": "shopify://shop_images/Screenshot_2024-09-27_at_5.07.53_AM_bf54b742-9a39-4559-adce-99d5aacb7c56.png",
             "overline": "Adalynn, age 6",
             "title": "",
             "description": "",
@@ -160,6 +160,7 @@
         },
         "image_9U4pdj": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-width": "large",
             "text-horizontal-alignment": "left",
@@ -176,6 +177,7 @@
         },
         "image_8kTYLj": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-width": "large",
             "text-horizontal-alignment": "left",
@@ -192,11 +194,12 @@
         },
         "image_Wk9yxJ": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-width": "large",
             "text-horizontal-alignment": "left",
             "text-vertical-alignment": "top",
-            "image": "shopify://shop_images/Jocelyn_age_44_f4af0445-e6b6-4d74-8f32-07fd5969583b.png",
+            "image": "shopify://shop_images/Jocelyn_age_44_2b803502-a5c3-4b38-853f-cb35d19e0a02.png",
             "overline": "Aunt Joce, age 44",
             "title": "",
             "description": "",
@@ -208,6 +211,7 @@
         },
         "image_A9NaLd": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-width": "large",
             "text-horizontal-alignment": "left",
@@ -242,7 +246,7 @@
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
-        "image-display-type": "original",
+        "image-display-type": "x-large",
         "aspect-ratio": 132,
         "overlay-style": "none",
         "auto-rotate": true,
