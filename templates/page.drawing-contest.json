@@ -241,7 +241,7 @@
         "light-text": false,
         "text-style": "none",
         "text-background-color": "transparent",
-        "heading-type": "featured-heading",
+        "heading-type": "block-heading",
         "image-display-type": "aspect-ratio",
         "aspect-ratio": 132,
         "overlay-style": "none",
