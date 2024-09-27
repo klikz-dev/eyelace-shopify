@@ -48,7 +48,7 @@
         "text-background-color": "transparent",
         "image-display-type": "fit-screen",
         "aspect-ratio": 56,
-        "overlay-style": "none",
+        "overlay-style": "darken-bottom",
         "parallax-enabled": false,
         "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.06.24_AM_ba38d090-3c28-4a13-a088-0fdbd8f4d97c.png",
         "overline": "",
