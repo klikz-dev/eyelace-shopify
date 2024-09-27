@@ -246,7 +246,7 @@
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
-        "image-display-type": "medium",
+        "image-display-type": "small",
         "aspect-ratio": 132,
         "overlay-style": "none",
         "auto-rotate": true,
