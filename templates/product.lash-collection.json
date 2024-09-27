@@ -141,6 +141,87 @@
         "mobile-media-layout": "slideshow"
       }
     },
+    "slideshow_c8incK": {
+      "type": "slideshow",
+      "blocks": {
+        "image_JBx6Af": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.35.26_AM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_Wbxiet": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.39.41_AM_b59a97ac-f754-47de-bed2-fda8265c67e5.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_zRTpTJ": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.37.45_AM_297756c6-bd8d-4386-8847-5589d470a467.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        }
+      },
+      "block_order": [
+        "image_JBx6Af",
+        "image_Wbxiet",
+        "image_zRTpTJ"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "arrows-enabled": true,
+        "blocks_per_slide": 3,
+        "background-color": "none",
+        "light-text": true,
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
     "text_columns_geTnDr": {
       "type": "text-columns",
       "blocks": {
@@ -513,6 +594,7 @@
     },
     "featured_text_EKYTYx": {
       "type": "featured-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -547,98 +629,17 @@
         "spacing-above": true,
         "spacing-below": true
       }
-    },
-    "slideshow_c8incK": {
-      "type": "slideshow",
-      "blocks": {
-        "image_JBx6Af": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.35.26_AM.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_Wbxiet": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.39.41_AM_b59a97ac-f754-47de-bed2-fda8265c67e5.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_zRTpTJ": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.37.45_AM_297756c6-bd8d-4386-8847-5589d470a467.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        }
-      },
-      "block_order": [
-        "image_JBx6Af",
-        "image_Wbxiet",
-        "image_zRTpTJ"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "spacing-around-blocks": false,
-        "arrows-enabled": true,
-        "blocks_per_slide": 3,
-        "background-color": "none",
-        "light-text": true,
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "heading-type": "featured-heading",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "auto-rotate": false,
-        "rotate-frequency": 7,
-        "transition_type": "slide",
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "blocks_per_slide_mobile": "1",
-        "mobile-overlay": true
-      }
     }
   },
   "order": [
     "4e9385a7-14ff-4617-8542-ed651a7ec51f",
     "main",
     "slideshow_c8incK",
-    "text_columns_geTnDr",
     "edb6b679-1b0d-4698-be1b-efe7bb590de9",
     "5041891c-740e-40b2-a00d-936d32f31a4c",
     "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92",
     "featured_text_g4i9Qi",
+    "text_columns_geTnDr",
     "related-products",
     "9122b6fc-3d6e-4f6b-8054-88ddcb8687a7",
     "featured_text_EKYTYx",
