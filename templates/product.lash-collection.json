@@ -383,6 +383,7 @@
         "collapsible_row_RzLa3L",
         "collapsible_row_3xpyCr"
       ],
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -406,7 +407,7 @@
         "container-width": "4",
         "overline": "",
         "heading": "Makeup Artist Partnership Program",
-        "description": "<p>Eyelace offers a discount on our Collection Lash Set for Certified Makeup Artists who wish to partner with us and stun their clients with the highest quality lashes.</p>",
+        "description": "<p>Eyelace offers a discount on our Collection Lash Set for certified or licensed makeup artists who wish to partner with us and stun their clients with the most natural, elegant faux lashes on the market.</p>",
         "link-url": "shopify://pages/makeup-artists-partnership",
         "link-text": "APPLY NOW"
       }
@@ -485,6 +486,7 @@
         "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2",
         "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-3"
       ],
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
