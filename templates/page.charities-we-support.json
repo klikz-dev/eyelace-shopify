@@ -138,6 +138,23 @@
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
       }
+    },
+    "featured_text_8Ln7GM": {
+      "type": "featured-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "heading-type": "section-heading",
+        "container-width": "4",
+        "overline": "Because",
+        "heading": "WHEN WOMEN SUPPORT WOMEN, WE ARE UNSTOPPABLE",
+        "description": "<p>So let's join arms in empowerment, boldness, and beauty.</p>",
+        "link-url": "/",
+        "link-text": "Link text"
+      }
     }
   },
   "order": [
@@ -145,6 +162,7 @@
     "featured_text_mHrnyP",
     "image_with_text_KqkFLB",
     "image_with_text_dNXHyK",
-    "image_with_text_j3gfyd"
+    "image_with_text_j3gfyd",
+    "featured_text_8Ln7GM"
   ]
 }
