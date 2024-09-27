@@ -60,6 +60,7 @@
     },
     "navigation": {
       "type": "collection--navigation",
+      "disabled": true,
       "settings": {
         "show-browse-button": true,
         "show-sort-button": true,
@@ -71,6 +72,40 @@
         "show-refine-list": true,
         "swatches-enabled": false,
         "show-search-link": true
+      }
+    },
+    "image_with_text_YXRwxn": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": true,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/Screenshot_2024-09-27_at_4.32.23_AM.png",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
       }
     },
     "main": {
@@ -224,6 +259,7 @@
     "collection-header",
     "countdown_DrenzC",
     "navigation",
+    "image_with_text_YXRwxn",
     "main",
     "featured_video_yfmy74",
     "text_columns_WPWBdB",
