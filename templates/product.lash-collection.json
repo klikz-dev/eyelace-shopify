@@ -210,7 +210,7 @@
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "featured-heading",
-        "image-display-type": "medium",
+        "image-display-type": "original",
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "auto-rotate": false,
@@ -220,80 +220,6 @@
         "mobile-aspect-ratio": 134,
         "blocks_per_slide_mobile": "1",
         "mobile-overlay": true
-      }
-    },
-    "text_columns_geTnDr": {
-      "type": "text-columns",
-      "blocks": {
-        "image_gNjPH4": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-22_at_2.53.37_PM.png",
-            "title": "Stunning & Natural Look",
-            "description": "<p>Designed to blend into your natural lash, Eyelace lashes accentuate your natural beauty and create a natural effect that will stun your friends when you tell them they are false lashes.</p>",
-            "link-url": "",
-            "link-text": ""
-          }
-        },
-        "image_qLKWEd": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.32.02_PM.png",
-            "title": "Diverse Lash Looks For All Occasions",
-            "description": "<p>Eyelace lashes vary in dramatic effect, so that you can wear the right lash that fits the look you desire on every occasion.</p>",
-            "link-url": "",
-            "link-text": ""
-          }
-        },
-        "image_bzUVEN": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.34.06_PM.png",
-            "title": "Easy to Apply & Remove",
-            "description": "<p>Unlike strip lashes that are messy and unpredictable or individual eyelash extensions that rely on someone else to apply, Eyelace lashes give you full control over lash application and removal.</p>",
-            "link-url": "",
-            "link-text": ""
-          }
-        },
-        "image_m34KRG": {
-          "type": "image",
-          "settings": {
-            "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.33.02_PM.png",
-            "title": "Non-Damaging & Made For Your Skin",
-            "description": "<p>Designed with as little material as possible and sourced from the highest quality ingredients, Eyelace lashes enhance your lashes without damaging them.</p>",
-            "link-url": "",
-            "link-text": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_gNjPH4",
-        "image_qLKWEd",
-        "image_bzUVEN",
-        "image_m34KRG"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "block-spacing": true,
-        "background-color": "dark",
-        "light-text": true,
-        "container-width": "4",
-        "width": 4,
-        "aspect-ratio": "square",
-        "image-width": 0,
-        "text-alignment": "center",
-        "overline": "where you become the pro",
-        "heading": "BEAUTY YOU CAN RELY ON",
-        "description": "",
-        "link-url": "",
-        "link-text": "",
-        "mobile-width": "1"
       }
     },
     "edb6b679-1b0d-4698-be1b-efe7bb590de9": {
@@ -491,6 +417,80 @@
         "description": "<p>Eyelace offers a discount on our Collection Lash Set for certified or licensed makeup artists who wish to partner with us and stun their clients with the most natural, elegant faux lashes on the market.</p>",
         "link-url": "shopify://pages/makeup-artists-partnership",
         "link-text": "APPLY NOW"
+      }
+    },
+    "text_columns_geTnDr": {
+      "type": "text-columns",
+      "blocks": {
+        "image_gNjPH4": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-22_at_2.53.37_PM.png",
+            "title": "Stunning & Natural Look",
+            "description": "<p>Designed to blend into your natural lash, Eyelace lashes accentuate your natural beauty and create a natural effect that will stun your friends when you tell them they are false lashes.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_qLKWEd": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.32.02_PM.png",
+            "title": "Diverse Lash Looks For All Occasions",
+            "description": "<p>Eyelace lashes vary in dramatic effect, so that you can wear the right lash that fits the look you desire on every occasion.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_bzUVEN": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.34.06_PM.png",
+            "title": "Easy to Apply & Remove",
+            "description": "<p>Unlike strip lashes that are messy and unpredictable or individual eyelash extensions that rely on someone else to apply, Eyelace lashes give you full control over lash application and removal.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_m34KRG": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.33.02_PM.png",
+            "title": "Non-Damaging & Made For Your Skin",
+            "description": "<p>Designed with as little material as possible and sourced from the highest quality ingredients, Eyelace lashes enhance your lashes without damaging them.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gNjPH4",
+        "image_qLKWEd",
+        "image_bzUVEN",
+        "image_m34KRG"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "block-spacing": true,
+        "background-color": "dark",
+        "light-text": true,
+        "container-width": "4",
+        "width": 4,
+        "aspect-ratio": "square",
+        "image-width": 0,
+        "text-alignment": "center",
+        "overline": "where you become the pro",
+        "heading": "BEAUTY YOU CAN RELY ON",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "1"
       }
     },
     "related-products": {
