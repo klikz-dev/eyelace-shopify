@@ -160,6 +160,7 @@
     },
     "5041891c-740e-40b2-a00d-936d32f31a4c": {
       "type": "featured-video",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
@@ -297,6 +298,7 @@
         "collapsible_row_JFHYyz",
         "collapsible_row_eEciBQ"
       ],
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -306,88 +308,6 @@
         "container-width": "1",
         "heading": "Frequently Asked Questions",
         "heading-alignment": "center"
-      }
-    },
-    "9122b6fc-3d6e-4f6b-8054-88ddcb8687a7": {
-      "type": "grid-with-overlay",
-      "blocks": {
-        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-0": {
-          "type": "image",
-          "settings": {
-            "x-blocks": "2",
-            "y-blocks": "1",
-            "image-display-type": "fill",
-            "aspect-ratio": 56,
-            "title": "Best Sellers of all time",
-            "link-url": "",
-            "link-text": "View more"
-          }
-        },
-        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-1": {
-          "type": "image",
-          "settings": {
-            "x-blocks": "1",
-            "y-blocks": "1",
-            "image-display-type": "fill",
-            "aspect-ratio": 56,
-            "title": "Just Released",
-            "link-url": "",
-            "link-text": "View more"
-          }
-        },
-        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2": {
-          "type": "image",
-          "settings": {
-            "x-blocks": "1",
-            "y-blocks": "1",
-            "image-display-type": "fill",
-            "aspect-ratio": 56,
-            "title": "On Sale",
-            "link-url": "",
-            "link-text": "View more"
-          }
-        },
-        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-3": {
-          "type": "image",
-          "settings": {
-            "x-blocks": "2",
-            "y-blocks": "1",
-            "image-display-type": "fill",
-            "aspect-ratio": 56,
-            "title": "Trending this month",
-            "link-url": "",
-            "link-text": "View more"
-          }
-        }
-      },
-      "block_order": [
-        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-0",
-        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-1",
-        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2",
-        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-3"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "none",
-        "heading-light-text": false,
-        "container-width": "4",
-        "spacing": true,
-        "width": 3,
-        "light-text": false,
-        "text-style": "light-with-darken",
-        "heading-type": "block-heading",
-        "overlay-style": "darken-bottom",
-        "overline": "",
-        "heading": "",
-        "description": "",
-        "link-url": "",
-        "link-text": "",
-        "mobile-width": "2",
-        "mobile-overlay": true,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134
       }
     },
     "related-products": {
@@ -409,7 +329,6 @@
     "edb6b679-1b0d-4698-be1b-efe7bb590de9",
     "5041891c-740e-40b2-a00d-936d32f31a4c",
     "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92",
-    "9122b6fc-3d6e-4f6b-8054-88ddcb8687a7",
     "related-products"
   ]
 }
