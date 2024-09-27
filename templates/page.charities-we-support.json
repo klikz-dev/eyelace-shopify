@@ -37,6 +37,40 @@
         "link-text": ""
       }
     },
+    "image_with_text_KqkFLB": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "right",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "accent-2",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/ncadv.jpg",
+        "overline": "",
+        "title": "National Coalition Against Domestic Violence (NCADV)",
+        "description": "<p><strong>Ending Domestic Violence and Supporting Survivors<br/></strong><br/>The National Coalition Against Domestic Violence (NCADV) works tirelessly to end domestic violence and support those affected by it. They provide resources, advocacy, and support for victims and survivors of domestic violence, working to create a society where violence is no longer tolerated. Through education, outreach, and legislative efforts, NCADV ensures survivors have a voice and a path toward healing. Eyelace stands with NCADV in their mission to empower survivors and break the cycle of violence.</p>",
+        "link-url": "https://ncadv.org/",
+        "link-text": "LEARN MORE",
+        "mobile-overlay": true,
+        "mobile-hide-description": true,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
     "image_with_text_dNXHyK": {
       "type": "image-with-text",
       "settings": {
@@ -104,47 +138,13 @@
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
       }
-    },
-    "image_with_text_KqkFLB": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "right",
-        "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
-        "text-width": "medium",
-        "text-style": "none",
-        "text-background-color": "accent-2",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "image": "shopify://shop_images/ncadv.jpg",
-        "overline": "",
-        "title": "National Coalition Against Domestic Violence (NCADV)",
-        "description": "<p><strong>Ending Domestic Violence and Supporting Survivors<br/></strong><br/>The National Coalition Against Domestic Violence (NCADV) works tirelessly to end domestic violence and support those affected by it. They provide resources, advocacy, and support for victims and survivors of domestic violence, working to create a society where violence is no longer tolerated. Through education, outreach, and legislative efforts, NCADV ensures survivors have a voice and a path toward healing. Eyelace stands with NCADV in their mission to empower survivors and break the cycle of violence.</p>",
-        "link-url": "https://ncadv.org/",
-        "link-text": "LEARN MORE",
-        "mobile-overlay": true,
-        "mobile-hide-description": true,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
-      }
     }
   },
   "order": [
     "main",
     "featured_text_mHrnyP",
+    "image_with_text_KqkFLB",
     "image_with_text_dNXHyK",
-    "image_with_text_j3gfyd",
-    "image_with_text_KqkFLB"
+    "image_with_text_j3gfyd"
   ]
 }
