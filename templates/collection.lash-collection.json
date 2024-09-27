@@ -29,6 +29,40 @@
         "parallax-enabled": false
       }
     },
+    "image_with_text_xRfTzX": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "original",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.06.24_AM.png",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
     "navigation": {
       "type": "collection--navigation",
       "settings": {
@@ -211,51 +245,17 @@
         "heading": "Subscribe to our newsletter and receive 10% off your next order.",
         "description": "<p>Our newsletter is packed full of the latest deals, tips, tricks, and trends so you can always stay ahead and get the most out of Eyelace.</p>"
       }
-    },
-    "image_with_text_xRfTzX": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "overlay",
-        "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
-        "text-width": "medium",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "original",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.06.24_AM.png",
-        "overline": "",
-        "title": "",
-        "description": "",
-        "link-url": "",
-        "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
-      }
     }
   },
   "order": [
     "collection-header",
+    "image_with_text_xRfTzX",
     "navigation",
     "main",
     "text_columns_BgyhLQ",
     "featured_video_9P8HAn",
     "countdown_843Cmn",
     "recent-products",
-    "newsletter_FB8aUp",
-    "image_with_text_xRfTzX"
+    "newsletter_FB8aUp"
   ]
 }
