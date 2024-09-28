@@ -145,7 +145,14 @@
         "light-text": false,
         "container-width": "4",
         "spacing-above": true,
-        "spacing-below": true
+        "spacing-below": false
+      }
+    },
+    "gp_global_section_533434228419855367_KVYXGD": {
+      "type": "gp-global-section-533434228419855367",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": ""
       }
     },
     "custom_content_4G3ELC": {
@@ -253,13 +260,6 @@
         "blog-heading": "Learn More About Eyelash Care & The Latest Beauty Trends!",
         "heading-alignment": "center",
         "view-more-text": "View more"
-      }
-    },
-    "gp_global_section_533434228419855367_KVYXGD": {
-      "type": "gp-global-section-533434228419855367",
-      "settings": {
-        "section_preload": "off_lazy_script",
-        "checksum": ""
       }
     }
   },
