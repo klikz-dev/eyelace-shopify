@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "type": "aside",
   "name": "Overlay Group",
@@ -14,7 +23,7 @@
             "position": "right",
             "text-alignment": "center",
             "heading": "Sign Up and Get 10% Off",
-            "description": "<p>Sign Up to receive our newsletter and receive 10% Off Your next purchase. Stay up to date on deals, new products, and tips and tricks to make the most of your Eyelace experience.<\/p>",
+            "description": "<p>Sign Up to receive our newsletter and receive 10% Off Your next purchase. Stay up to date on deals, new products, and tips and tricks to make the most of your Eyelace experience.</p>",
             "social-title": "Follow Us",
             "social-enabled": true,
             "delay": 5,
@@ -41,7 +50,7 @@
             "referrer-enabled": false,
             "referrer-url": "",
             "page-enabled": false,
-            "page-url": "shopify:\/\/products\/day-dream-lash-set",
+            "page-url": "shopify://products/day-dream-lash-set",
             "scroll-text": true,
             "animation-speed": 7.5
           }
@@ -54,9 +63,9 @@
             "light-text": true,
             "position": "left",
             "text-alignment": "center",
-            "heading": "To celebrate our launch, get 10% off your Starter Kit!",
+            "heading": "To celebrate our launch, get 15% off your Starter Kit with code LAUNCH15!",
             "description": "",
-            "link-url": "shopify:\/\/products\/starter-kit",
+            "link-url": "shopify://products/starter-kit",
             "link-text": "Shop the sale",
             "delay": 3,
             "show-at-bottom": true,
@@ -68,7 +77,7 @@
             "countdown-enabled": true,
             "timer-bg-color": "dark",
             "light-number": true,
-            "expiry-date": "12-25-2024",
+            "expiry-date": "15-11-2024",
             "expiry-hours": 0,
             "expiry-minutes": 0,
             "hide-when-expired": true,
@@ -84,7 +93,7 @@
             "position": "left",
             "text-alignment": "center",
             "heading": "Cookie consent",
-            "description": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.<\/p>"
+            "description": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.</p>"
           }
         }
       },
@@ -106,11 +115,11 @@
         "translucent": true,
         "light-text": true,
         "heading": "Confirm your age",
-        "description": "<p>Are you 18 years old or older?<\/p>",
+        "description": "<p>Are you 18 years old or older?</p>",
         "decline-text": "No I'm not",
         "approve-text": "Yes I am",
         "declined-heading": "Come back when you're older",
-        "declined-description": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.<\/p>",
+        "declined-description": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.</p>",
         "return-text": "Oops, I entered incorrectly"
       }
     }
