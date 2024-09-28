@@ -392,7 +392,7 @@
             "image-display-type": "fill",
             "aspect-ratio": 56,
             "title": "View Our Community Videos",
-            "link-url": "shopify://pages/community-stories-1",
+            "link-url": "shopify://pages/community-stories",
             "link-text": "View Videos"
           }
         },
