@@ -64,7 +64,7 @@
             "text-width": "medium",
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/8_9c1b7f1d-5a13-4945-ba37-0208e5d5c75a.png",
+            "image": "shopify://shop_images/Screenshot_2024-09-28_at_7.46.02_PM_fab73af2-c3df-48ba-a39b-bfca8edbd0ca.png",
             "overline": "",
             "title": "",
             "description": "",
@@ -305,7 +305,7 @@
         "buy_buttons_pL9dUT": {
           "type": "buy-buttons",
           "settings": {
-            "smart-payment-enabled": false
+            "smart-payment-enabled": true
           }
         }
       },
