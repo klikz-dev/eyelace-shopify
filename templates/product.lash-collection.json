@@ -166,7 +166,7 @@
             "text-width": "medium",
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.39.41_AM_b59a97ac-f754-47de-bed2-fda8265c67e5.png",
+            "image": "shopify://shop_images/Screenshot_2024-09-28_at_7.46.19_PM_ce57e114-e85e-4ff5-b645-72a127175e61.png",
             "overline": "",
             "title": "",
             "description": "",
@@ -486,7 +486,7 @@
         "image-width": 0,
         "text-alignment": "center",
         "overline": "where you become the pro",
-        "heading": "BEAUTY YOU CAN RELY ON",
+        "heading": "BEAUTY YOU CAN DEPEND ON",
         "description": "",
         "link-url": "",
         "link-text": "",
@@ -517,7 +517,7 @@
             "image-display-type": "fill",
             "aspect-ratio": 56,
             "title": "Engage with Community Stories",
-            "link-url": "shopify://pages/community-stories",
+            "link-url": "shopify://pages/community-stories-1",
             "link-text": "Read More"
           }
         },
