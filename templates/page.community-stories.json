@@ -26,7 +26,7 @@
       "settings": {
         "top-border": false,
         "spacing-above": false,
-        "spacing-below": false,
+        "spacing-below": true,
         "background-color": "none",
         "container-width": "6",
         "light-text": true,
@@ -55,6 +55,13 @@
         "mobile-text-alignment": "center"
       }
     },
+    "gp_global_section_533116896220808439_UNpTkV": {
+      "type": "gp-global-section-533116896220808439",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": ""
+      }
+    },
     "17162756717a17c541": {
       "type": "apps",
       "blocks": {
@@ -69,6 +76,7 @@
       "block_order": [
         "ghost_shoppable_ugc_video_ghost_shoppable_videos_pwE4jR"
       ],
+      "disabled": true,
       "settings": {
         "background-color": "dark",
         "light-text": true,
@@ -164,6 +172,7 @@
       "block_order": [
         "socialwidget_instagram_feed_base_widget_irL773"
       ],
+      "disabled": true,
       "settings": {
         "background-color": "none",
         "light-text": false,
@@ -174,6 +183,7 @@
     },
     "featured_text_wVBi4C": {
       "type": "featured-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
@@ -205,6 +215,7 @@
       "block_order": [
         "juniper_tiktok_feed_mintty_tiktok_feed_W4amYc"
       ],
+      "disabled": true,
       "settings": {
         "background-color": "none",
         "light-text": false,
@@ -244,79 +255,27 @@
         "view-more-text": "View more"
       }
     },
-    "testimonials_MTMTNn": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_iMj9J3": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "author-role": "",
-            "author-name": "",
-            "description": "<p>Here you can include a short description about the author or their testimonial.</p>"
-          }
-        },
-        "testimonial_iY6NkV": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "author-role": "",
-            "author-name": "",
-            "description": "<p>Here you can include a short description about the author or their testimonial.</p>"
-          }
-        },
-        "testimonial_jnHFHN": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "author-role": "",
-            "author-name": "",
-            "description": "<p>Here you can include a short description about the author or their testimonial.</p>"
-          }
-        },
-        "testimonial_3Yz9hH": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "author-role": "",
-            "author-name": "",
-            "description": "<p>Here you can include a short description about the author or their testimonial.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_iMj9J3",
-        "testimonial_iY6NkV",
-        "testimonial_jnHFHN",
-        "testimonial_3Yz9hH"
-      ],
-      "disabled": true,
+    "gp_global_section_533434228419855367_KVYXGD": {
+      "type": "gp-global-section-533434228419855367",
       "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "none",
-        "light-text": false,
-        "container-width": "4",
-        "image-shape": "circle",
-        "overline": "Overline text",
-        "heading": "Testimonials",
-        "mobile-width": "1"
+        "section_preload": "off_lazy_script",
+        "checksum": ""
       }
     }
   },
   "order": [
     "main",
     "image_with_text_EAQ3ww",
+    "gp_global_section_533116896220808439_UNpTkV",
     "17162756717a17c541",
     "featured_text_zxTzQR",
     "1726092639ea92d46f",
+    "gp_global_section_533434228419855367_KVYXGD",
     "custom_content_4G3ELC",
     "1716281049b0d047be",
     "featured_text_wVBi4C",
     "171628108183c7a010",
     "newsletter_fUFC9X",
-    "featured_blog_gJXFW8",
-    "testimonials_MTMTNn"
+    "featured_blog_gJXFW8"
   ]
 }
