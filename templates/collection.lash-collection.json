@@ -210,7 +210,7 @@
         "container-width": "3",
         "overline": "OPENING SALE",
         "heading": "Get 15% Off Your Starter Kit",
-        "description": "<p>To celebrate our launch, get 15% off your Starter Kit when you use code LAUNCH15</p>",
+        "description": "<p>Pre-order your Starter Kit today and get an additional 15% off with code LAUNCH15</p>",
         "link-url": "shopify://products/starter-kit",
         "link-text": "Shop The Sale",
         "expiry-date": "15-11-2024",
@@ -241,9 +241,9 @@
         "spacing-below": true,
         "background-color": "accent-1",
         "light-text": false,
-        "overline": "DISCOUNTS & SPECIAL OFFERS",
-        "heading": "Subscribe to our newsletter and receive 10% off your next order.",
-        "description": "<p>Our newsletter is packed full of the latest deals, tips, tricks, and trends so you can always stay ahead and get the most out of Eyelace.</p>"
+        "overline": "JOIN OUR READING LIST",
+        "heading": "SIGN UP FOR 10% OFF!",
+        "description": "<p>Sign up to receive our latest articles on art, beauty, inspiration, and entrepreneurialism in your inbox and receive an additional 10% off today</p>"
       }
     }
   },
