@@ -37,7 +37,7 @@
         "light-text": false,
         "container-width": "4",
         "spacing-above": true,
-        "spacing-below": true
+        "spacing-below": false
       }
     },
     "main": {
