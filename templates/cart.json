@@ -16,10 +16,10 @@
           "type": "shopify://apps/w3-share-the-love/blocks/cause-selector/b55be288-4b15-45c3-ac82-5cee6259fdc8",
           "settings": {
             "text_alignment": "left",
-            "title": "Choose a Cause to Support",
+            "title": "Before you Checkout, Choose a Cause to Support!",
             "title_tag": "h3",
             "title_classes": "",
-            "intro": "<p>Help us make a difference! Select an organization from the list below, and we’ll donate a portion of your purchase at no extra cost to you. Your choice empowers women and supports meaningful change.</p>",
+            "intro": "<p>Make investing in yourself an investment in women worldwide: Select an organization from the list below to which you would like a portion of your purchase to support—at no extra cost to you!</p>",
             "select_classes": "",
             "link_classes": "",
             "form_name": "",
