@@ -54,7 +54,7 @@
         "top-border": false,
         "spacing-above": true,
         "spacing-below": true,
-        "background-color": "accent-2",
+        "background-color": "accent-1",
         "light-text": false,
         "container-width": "4",
         "custom-liquid": "{% assign eligible_products = \"Elegant Effect Lash Set,Natural Beauty Lash Set,Perfect Poise Lash Set,Social Butterfly Lash Set,Day Dream Lash Set,Night Life Lash Set,Ball Gown Lash Set\" | split: \",\" %}\n{% assign eligible_count = 0 %}\n\n{% for item in cart.items %}\n  {% if eligible_products contains item.product.title %}\n    {% assign eligible_count = eligible_count | plus: item.quantity %}\n  {% endif %}\n{% endfor %}\n\n{% if eligible_count < 2 %}\n  <div style=\"background-color:#f7f7f7; padding:15px; border:1px solid #f06c9b; color:#333333; margin-top:10px;\">\n    <strong>Important:</strong> Our <strong>20% off subscription offer</strong> with <strong>free shipping</strong> is only available for orders of 2 or more select Lash Sets. Please ensure you have at least 2 eligible Lash Sets in your cart to qualify for this offer.\n  </div>\n{% endif %}"
