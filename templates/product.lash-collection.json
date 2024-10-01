@@ -54,6 +54,7 @@
         },
         "vendor": {
           "type": "vendor",
+          "disabled": true,
           "settings": {
           }
         },
@@ -75,7 +76,7 @@
         "buy-buttons": {
           "type": "buy-buttons",
           "settings": {
-            "smart-payment-enabled": true
+            "smart-payment-enabled": false
           }
         },
         "pickup": {
