@@ -152,7 +152,7 @@
         "background-color": "none",
         "light-text": false,
         "display-type": "slideshow",
-        "products-per-row--desktop": "3",
+        "products-per-row--desktop": "4",
         "products-per-row--mobile": "1",
         "collection": "accessories",
         "max-products": 8,
