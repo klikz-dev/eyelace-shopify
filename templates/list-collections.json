@@ -294,7 +294,7 @@
         "buy_buttons_zEegFF": {
           "type": "buy-buttons",
           "settings": {
-            "smart-payment-enabled": true
+            "smart-payment-enabled": false
           }
         }
       },
