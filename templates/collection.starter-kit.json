@@ -1,24 +1,81 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "collection-header": {
       "type": "collection--header",
       "settings": {
+        "show-title": true,
+        "heading-type": "featured-heading",
+        "heading-alignment": "center",
+        "show-description": true,
+        "description-alignment": "with-title",
+        "light-text": true,
+        "show-image": true,
+        "use-image-fallback": true,
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "text-style": "none",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false
       }
     },
     "header-promo": {
       "type": "image-with-text",
       "settings": {
+        "top-border": false,
         "spacing-above": true,
         "spacing-below": true,
         "background-color": "light",
         "container-width": "5",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "overline": "Overline text",
         "title": "Collection Promotion",
-        "description": "<p>A collection-wide promotion for sales, product announcements and more.<\/p>"
+        "description": "<p>A collection-wide promotion for sales, product announcements and more.</p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
       }
     },
     "navigation": {
       "type": "collection--navigation",
+      "disabled": true,
       "settings": {
+        "show-browse-button": true,
+        "show-sort-button": true,
+        "show-refine-button": true,
+        "show-layout-buttons": true,
+        "show-collections-list": true,
+        "custom-list-collections": "",
+        "show-sort-list": true,
+        "show-refine-list": true,
+        "swatches-enabled": false,
+        "show-search-link": true
       }
     },
     "main": {
@@ -26,17 +83,31 @@
       "blocks": {
         "grid-promo-1": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "row-number": 2,
             "column-number": 2,
             "promo-width": 2,
+            "heading-type": "featured-heading",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "text-width": "medium",
+            "text-style": "none",
+            "text-background-color": "light",
             "overlay-style": "darken-bottom",
-            "light-text": "false",
+            "image-display-type": "medium",
+            "aspect-ratio": 56,
+            "parallax-enabled": false,
+            "light-text": false,
             "overline": "Overline text",
             "title": "Grid promotion",
-            "description": "<p>Create eye-catching promos within collection grids to increase discoverability and accelerate conversions.<\/p>",
+            "description": "<p>Create eye-catching promos within collection grids to increase discoverability and accelerate conversions.</p>",
             "link-url": "",
-            "link-text": "Optional link"
+            "link-text": "Optional link",
+            "mobile-hide-description": false,
+            "mobile-image-display-type": "original",
+            "mobile-aspect-ratio": 134,
+            "mobile-text-alignment": "center"
           }
         }
       },
@@ -44,22 +115,54 @@
         "grid-promo-1"
       ],
       "settings": {
+        "products-per-row--desktop": 4,
+        "products-per-row--mobile": "1",
+        "number-of-rows": 4
       }
     },
     "recent-products": {
       "type": "recent-products",
       "settings": {
-        "spacing-above": false
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "heading-alignment": "center",
+        "heading": "Recently viewed"
       }
     },
     "footer-promo": {
       "type": "image-with-text",
       "settings": {
+        "top-border": false,
         "spacing-above": false,
         "spacing-below": false,
+        "background-color": "none",
         "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "overline": "Overline text",
         "title": "Collection Promotion",
-        "description": "<p>A collection-wide promotion for sales, product announcements and more.<\/p>"
+        "description": "<p>A collection-wide promotion for sales, product announcements and more.</p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
       }
     }
   },
