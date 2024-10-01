@@ -284,6 +284,7 @@
         },
         "vendor_9iFDFi": {
           "type": "vendor",
+          "disabled": true,
           "settings": {
           }
         },
@@ -305,7 +306,7 @@
         "buy_buttons_pL9dUT": {
           "type": "buy-buttons",
           "settings": {
-            "smart-payment-enabled": true
+            "smart-payment-enabled": false
           }
         }
       },
