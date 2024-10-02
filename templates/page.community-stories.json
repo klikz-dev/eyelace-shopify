@@ -636,6 +636,7 @@
     },
     "featured_blog_gJXFW8": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
