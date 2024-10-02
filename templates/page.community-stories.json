@@ -404,7 +404,7 @@
         "image_9XR8DL"
       ],
       "settings": {
-        "top-border": false,
+        "top-border": true,
         "spacing-above": false,
         "spacing-below": false,
         "spacing-around-blocks": false,
