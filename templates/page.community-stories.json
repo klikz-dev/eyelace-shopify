@@ -55,6 +55,87 @@
         "mobile-text-alignment": "center"
       }
     },
+    "slideshow_RhmyAC": {
+      "type": "slideshow",
+      "blocks": {
+        "image_ki4PYP": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.08.30_AM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/https://admin.shopify.com/store/7e97c3-3/themes/140961382549/editor?previewPath=%2Fcollections%2Flashes-collection%2Fproducts%2Fday-dream-lash-set",
+            "link-text": "day dream",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_dJVMqq": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.29.01_AM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/https://eyelace.com/collections/lashes-collection/products/day-dream-lash-set",
+            "link-text": "Day Dream",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_q7fL4J": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.12.23_AM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "day dream",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        }
+      },
+      "block_order": [
+        "image_ki4PYP",
+        "image_dJVMqq",
+        "image_q7fL4J"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "arrows-enabled": true,
+        "blocks_per_slide": 3,
+        "background-color": "none",
+        "light-text": true,
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
     "gp_global_section_533116896220808439_UNpTkV": {
       "type": "gp-global-section-533116896220808439",
       "settings": {
@@ -376,87 +457,6 @@
         "blog-heading": "Learn More About Eyelash Care & The Latest Beauty Trends!",
         "heading-alignment": "center",
         "view-more-text": "View more"
-      }
-    },
-    "slideshow_RhmyAC": {
-      "type": "slideshow",
-      "blocks": {
-        "image_ki4PYP": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "bottom",
-            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.08.30_AM.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/https://admin.shopify.com/store/7e97c3-3/themes/140961382549/editor?previewPath=%2Fcollections%2Flashes-collection%2Fproducts%2Fday-dream-lash-set",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_dJVMqq": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "bottom",
-            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.29.01_AM.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/https://eyelace.com/collections/lashes-collection/products/day-dream-lash-set",
-            "link-text": "Day Dream",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_q7fL4J": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "bottom",
-            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.12.23_AM.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        }
-      },
-      "block_order": [
-        "image_ki4PYP",
-        "image_dJVMqq",
-        "image_q7fL4J"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "spacing-around-blocks": false,
-        "arrows-enabled": true,
-        "blocks_per_slide": 3,
-        "background-color": "none",
-        "light-text": true,
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "heading-type": "featured-heading",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "auto-rotate": false,
-        "rotate-frequency": 7,
-        "transition_type": "slide",
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "blocks_per_slide_mobile": "1",
-        "mobile-overlay": true
       }
     }
   },
