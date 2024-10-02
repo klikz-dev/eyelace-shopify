@@ -26,7 +26,7 @@
       "settings": {
         "top-border": false,
         "spacing-above": false,
-        "spacing-below": true,
+        "spacing-below": false,
         "background-color": "none",
         "container-width": "6",
         "light-text": true,
