@@ -294,7 +294,7 @@
             "title": "",
             "description": "",
             "link-url": "/https://admin.shopify.com/store/7e97c3-3/themes/140961382549/editor?previewPath=%2Fcollections%2Flashes-collection%2Fproducts%2Fday-dream-lash-set",
-            "link-text": "Day Dream",
+            "link-text": "",
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
@@ -309,8 +309,8 @@
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "/",
-            "link-text": "View more",
+            "link-url": "/https://eyelace.com/collections/lashes-collection/products/day-dream-lash-set",
+            "link-text": "Day Dream",
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
@@ -326,22 +326,7 @@
             "title": "",
             "description": "",
             "link-url": "/",
-            "link-text": "View more",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_yfAVkA": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "overline": "Overline text",
-            "title": "Slide heading",
-            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
-            "link-url": "/",
-            "link-text": "View more",
+            "link-text": "",
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
@@ -350,8 +335,7 @@
       "block_order": [
         "image_ki4PYP",
         "image_dJVMqq",
-        "image_q7fL4J",
-        "image_yfAVkA"
+        "image_q7fL4J"
       ],
       "settings": {
         "top-border": false,
@@ -360,6 +344,104 @@
         "spacing-around-blocks": false,
         "arrows-enabled": true,
         "blocks_per_slide": 3,
+        "background-color": "none",
+        "light-text": true,
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
+    "slideshow_Ni9dGF": {
+      "type": "slideshow",
+      "blocks": {
+        "image_tgcBDW": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.27.37_AM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "Day Dream",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_9cJ8KW": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.22.39_AM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "Elegant Effect",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_EV797W": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.12.40_AM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "Ball Gown",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_9XR8DL": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.26.21_AM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "Perfect Poise",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        }
+      },
+      "block_order": [
+        "image_tgcBDW",
+        "image_9cJ8KW",
+        "image_EV797W",
+        "image_9XR8DL"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "arrows-enabled": true,
+        "blocks_per_slide": 4,
         "background-color": "none",
         "light-text": true,
         "text-style": "none",
@@ -393,6 +475,7 @@
     "171628108183c7a010",
     "newsletter_fUFC9X",
     "featured_blog_gJXFW8",
-    "slideshow_RhmyAC"
+    "slideshow_RhmyAC",
+    "slideshow_Ni9dGF"
   ]
 }
