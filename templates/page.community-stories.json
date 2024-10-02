@@ -245,7 +245,7 @@
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "/",
+            "link-url": "/https://eyelace.com/collections/lashes-collection/products/perfect-poise-lash-set",
             "link-text": "Perfect Poise",
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
@@ -261,7 +261,7 @@
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "/",
+            "link-url": "/https://eyelace.com/collections/lashes-collection/products/perfect-poise-lash-set",
             "link-text": "perfect poise",
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
@@ -282,28 +282,12 @@
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
-        },
-        "image_n9F3Ln": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "overline": "Overline text",
-            "title": "Slide heading",
-            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
-            "link-url": "/",
-            "link-text": "View more",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
         }
       },
       "block_order": [
         "image_AVUe4x",
         "image_VmnayN",
-        "image_e4GDWU",
-        "image_n9F3Ln"
+        "image_e4GDWU"
       ],
       "settings": {
         "top-border": true,
