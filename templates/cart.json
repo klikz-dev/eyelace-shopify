@@ -18,7 +18,7 @@
             "text_alignment": "center",
             "title": "BEFORE YOU CHECKOUT, CHOOSE A CAUSE TO SUPPORT!",
             "title_tag": "h3",
-            "title_classes": "",
+            "title_classes": "custom-title",
             "intro": "<p>Make investing in yourself an investment in women worldwide: Select an organization from the list below to which you would like a portion of your purchase to support—at no extra cost to you!</p>",
             "select_classes": "",
             "link_classes": "",
