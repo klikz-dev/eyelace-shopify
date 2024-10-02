@@ -55,13 +55,6 @@
         "section_preload": "false",
         "checksum": "0307dda37dbed73a576ef65bbffbe4b89e73cbddd9199302ae7f6d20fff94932"
       }
-    },
-    "gp_global_section_533434228419855367_bzCBFf": {
-      "type": "gp-global-section-533434228419855367",
-      "settings": {
-        "section_preload": "off_lazy_script",
-        "checksum": ""
-      }
     }
   },
   "order": [
@@ -69,7 +62,6 @@
     "gp_section_534053528595858405",
     "gp_section_534118371243853036",
     "gp_section_534054686794187546",
-    "gp_section_534053573089035018",
-    "gp_global_section_533434228419855367_bzCBFf"
+    "gp_section_534053573089035018"
   ]
 }
