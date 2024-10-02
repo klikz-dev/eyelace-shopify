@@ -113,7 +113,7 @@
         "image_q7fL4J"
       ],
       "settings": {
-        "top-border": false,
+        "top-border": true,
         "spacing-above": false,
         "spacing-below": false,
         "spacing-around-blocks": false,
