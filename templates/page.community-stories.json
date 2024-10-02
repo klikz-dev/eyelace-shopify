@@ -434,6 +434,13 @@
         "checksum": ""
       }
     },
+    "gp_global_section_533434228419855367_KVYXGD": {
+      "type": "gp-global-section-533434228419855367",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": ""
+      }
+    },
     "17162756717a17c541": {
       "type": "apps",
       "blocks": {
@@ -520,13 +527,6 @@
         "spacing-below": false
       }
     },
-    "gp_global_section_533434228419855367_KVYXGD": {
-      "type": "gp-global-section-533434228419855367",
-      "settings": {
-        "section_preload": "off_lazy_script",
-        "checksum": ""
-      }
-    },
     "featured_collection_PhLUQd": {
       "type": "featured-collection",
       "settings": {
@@ -564,6 +564,19 @@
         "container-width": "4",
         "spacing-above": true,
         "spacing-below": true
+      }
+    },
+    "newsletter_fUFC9X": {
+      "type": "newsletter",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "dark",
+        "light-text": true,
+        "overline": "Join Today!",
+        "heading": "THE EYELACE JOURNAL",
+        "description": "<p>The Eyelace articles feature beauty tips, women in business, and the real life stories of community members. Join today to receive our lateset articles in your inbox!</p>"
       }
     },
     "custom_content_4G3ELC": {
@@ -621,19 +634,6 @@
         "spacing-below": true
       }
     },
-    "newsletter_fUFC9X": {
-      "type": "newsletter",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "dark",
-        "light-text": true,
-        "overline": "Join Today!",
-        "heading": "THE EYELACE JOURNAL",
-        "description": "<p>The Eyelace articles feature beauty tips, women in business, and the real life stories of community members. Join today to receive our lateset articles in your inbox!</p>"
-      }
-    },
     "featured_blog_gJXFW8": {
       "type": "featured-blog",
       "disabled": true,
@@ -668,10 +668,10 @@
     "1726092639ea92d46f",
     "featured_collection_PhLUQd",
     "1716281049b0d047be",
+    "newsletter_fUFC9X",
     "custom_content_4G3ELC",
     "featured_text_wVBi4C",
     "171628108183c7a010",
-    "newsletter_fUFC9X",
     "featured_blog_gJXFW8"
   ]
 }
