@@ -403,7 +403,7 @@
     "checkout": {
       "shipping_errors": {
         "shipping_method_not_available_generic": {
-          "one": "Your order cannot be shipped to the selected address. Please review your address to ensure it's correct and try again. If your address is correct, ensure that your cart meets the minimum requirement of 2 eligible subscription lash sets for shipping."
+          "one": "There is an error processing your shipping. Please review your address to ensure it's correct. If your address is correct, ensure that your cart meets the requirement for free shipping of 2 subscription lash sets."
         }
       }
     }
