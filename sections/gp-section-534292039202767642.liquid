@@ -2034,6 +2034,7 @@
       <p>{{ "gempages.ProductTitle.product_not_found" | t }}</p>
     {%- else -%}
       
+        <a href="{{ product.url }}" title="{{ product.title }}" class="gp-product-title-link-wrapper">
         
     <div
       
@@ -2044,11 +2045,12 @@
         <h2
           
           data-gp-text
-          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-product-title gp-text-g-text-1"
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text-g-text-1"
           style="--w:100%;--ts:none;--ta:center;--line-clamp:2;--line-clamp-tablet:2;--line-clamp-mobile:0;--c:var(--g-c-text-1, text-1);--ff:var(--g-font-Montserrat, 'Montserrat'), var(--g-font-heading, heading);--weight:400;--size:18px;--size-tablet:18px;--size-mobile:16px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;word-break:break-word;overflow:hidden"
         >{{ product.title }}</h2>
       </div>
     </div>
+        </a>
       
     {%- endunless -%}
   
