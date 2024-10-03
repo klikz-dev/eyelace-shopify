@@ -378,11 +378,34 @@
       "price": "34.99",
       "product_title": "Product title",
       "vendor": "Vendor"
+    },
+    "gp-global-section-533434228419855367": {
+      "ggdhhLjj2_O_text_html": "<p>OUR CUSTOMERS LOVE</p>",
+      "ggb_CAR9a4q_text_html": "THE EYELACE EXPERIENCE",
+      "ggCdRUSCHSd_text_html": "<p>STUDENT ATHLETE</p>",
+      "ggqGpVk7Qaw_text_html": "<p>Elle E.</p>",
+      "ggBEmWPJnUf_text_html": "<p>\"On the days I'm gonna get a sweat on, but I want to look good, feel confident, have a little flair...I always go with Eyelace.\" @elleevancasselman</p>",
+      "gguccPMenEG_text_html": "<p>ENTREPRENEUR</p>",
+      "gg-krwudywN_text_html": "<p>Bri W.</p>",
+      "ggirSy-6SIE_text_html": "<p>\"As a black, female entrepreneur, confidence is key, and your eyes are the focal point of your connections and communication.\" @thebrittanybrand01</p>",
+      "ggHQcFVHvDS_text_html": "<p>DESIGNER &amp; STYLIST</p>",
+      "ggVnZ2lJhw4_text_html": "<p>Melissa C.</p>",
+      "ggMQUlJ3dUs_text_html": "<p>\"It's just fun to play with beauty and try new things. Expressing myself creatively is essential to who I am both personally and professionally.\" @mchoi.design</p>",
+      "ggSPyq-Pk4K_text_html": "<p>PROUD MAMA</p>",
+      "ggVF4SKYGmd_text_html": "<p>Wade's Mom</p>",
+      "ggHzO0jDKBx_text_html": "<p>\"You never outgrow the desire to feel beautiful in your own skin. Most things change, but that remains the same. (And use my son's social media. I'm not on all that).\" @powerhouse_wade</p>"
     }
   },
   "shopify": {
     "links": {
       "powered_by_shopify": " "
+    },
+    "checkout": {
+      "shipping_errors": {
+        "shipping_method_not_available_generic": {
+          "one": "Your order cannot be shipped to the selected address. Please review your address to ensure it's correct and try again. If your address is correct, ensure that your cart meets the minimum requirement of 2 eligible subscription lash sets for shipping."
+        }
+      }
     }
   },
   "gempages": {
