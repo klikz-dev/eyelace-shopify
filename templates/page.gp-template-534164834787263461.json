@@ -61,7 +61,7 @@
     "gp_section_534171360503530469": {
       "type": "gp-section-534171360503530469",
       "settings": {
-        "checksum": "ef9bef8cf7dea6a38e01b82de50d2f1e0092c9d1e67ed9ee0cb267af183f49f5"
+        "checksum": "94b04a0e1e4a9559c694a5b1ef999cd3b73ceee10640de0dbed0b47a44a38509"
       }
     },
     "gp_section_534171360537085164": {
@@ -123,12 +123,6 @@
       "settings": {
         "checksum": "6c788af4e84b14fc53937e75686c1c670b2f77ee0be9f5217a2a304e965b5b18"
       }
-    },
-    "gp_section_534171430850397420": {
-      "type": "gp-section-534171430850397420",
-      "settings": {
-        "checksum": "772390b697ce453b23fd1800890831d8e38cc40910b8e99f842ecc8fede7de0f"
-      }
     }
   },
   "order": [
@@ -150,7 +144,6 @@
     "gp_section_534171410113758304",
     "gp_section_534171410281530341",
     "gp_section_534171410382193760",
-    "gp_section_534171410080204012",
-    "gp_section_534171430850397420"
+    "gp_section_534171410080204012"
   ]
 }
