@@ -67,6 +67,7 @@
     },
     "recents": {
       "type": "article-recents",
+      "disabled": true,
       "settings": {
       }
     },
