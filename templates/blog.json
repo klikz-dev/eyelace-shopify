@@ -11,9 +11,10 @@
   "sections": {
     "main": {
       "type": "blog",
+      "disabled": true,
       "settings": {
         "show-title": true,
-        "show-date": false,
+        "show-date": true,
         "show-tag-filter": true,
         "show-author": true,
         "show-excerpt": true,
