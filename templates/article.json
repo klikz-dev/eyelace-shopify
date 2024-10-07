@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "article",
+      "disabled": true,
       "settings": {
         "show-featured": true,
         "heading-position": "below",
@@ -50,13 +51,13 @@
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
-        "image": "shopify:\/\/shop_images\/Creative_Banner_4.jpg",
+        "image": "shopify://shop_images/Creative_Banner_4.jpg",
         "overline": "Eyelace",
         "title": "Be Bold; Beautiful",
-        "description": "<p>Let your beauty inform your power.<\/p>",
+        "description": "<p>Let your beauty inform your power.</p>",
         "link-url": "",
         "link-text": "",
-        "mobile-image": "shopify:\/\/shop_images\/Creative_Banner_4.jpg",
+        "mobile-image": "shopify://shop_images/Creative_Banner_4.jpg",
         "mobile-overlay": true,
         "mobile-hide-description": false,
         "mobile-image-display-type": "original",

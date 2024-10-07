@@ -18,7 +18,7 @@
           "type": "about",
           "settings": {
             "about-title": "Because You're Beautiful.",
-            "text": "<p>[current_year] © Eyelace LLC<\/p>",
+            "text": "<p>[current_year] © Eyelace LLC</p>",
             "subscribe--show-social-icons": true
           }
         },
@@ -33,8 +33,8 @@
         "4bbc4d2e-97a8-4d59-87f2-9195c41265ab": {
           "type": "subscribe",
           "settings": {
-            "newsletter--heading": "Subscribe to our Newsletter",
-            "newsletter--info": "<p>Read about the lives of the empowered women in our community and stay up to date on our latest tips and tricks.<\/p>",
+            "newsletter--heading": "SUBSCRIBE TO THE EYELACE JOURNAL",
+            "newsletter--info": "<p>Our journal features interviews with artists, women in business, and the people behind the scenes at Eyelace as well as beauty tips and tricks and more. Join today to receive notifications of our latest articles!</p>",
             "subscribe--show-newsletter": true
           }
         }
