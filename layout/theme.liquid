@@ -126,8 +126,8 @@
   {%- render "ecom_footer"-%}
   
   <style>
-    .drawer--root {
-//      overflow: hidden;
+    .layout--viewport:not([data-drawer-status=closed]) .drawer--root {
+      overflow: hidden;
     }
   </style>
   </body>
