@@ -1,0 +1,155 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "gp_section_534747059815711545": {
+      "type": "gp-section-534747059815711545",
+      "settings": {
+        "section_preload": "true",
+        "checksum": "01cd9274188fcb8f2ceae39989ba6d21299211daa52a3c920e3c4ddd7adcb59d"
+      }
+    },
+    "gp_section_534747059765379897": {
+      "type": "gp-section-534747059765379897",
+      "settings": {
+        "checksum": "470c35fc12cad4f8041730566723433d37e8f5b30c94d5ff0ad26cfff94ec596"
+      }
+    },
+    "gp_section_534747059798934329": {
+      "type": "gp-section-534747059798934329",
+      "settings": {
+        "checksum": "01518b68e760833c7eda1be61d87277571e7b27f38d354b462c332193c4599f9"
+      }
+    },
+    "gp_section_534747059681493817": {
+      "type": "gp-section-534747059681493817",
+      "settings": {
+        "checksum": "32917eb9bf4a7f06485a867cc61c2b55007a73f0ed82b0e6f93a81c88f13d9b6"
+      }
+    },
+    "gp_section_534747059698271033": {
+      "type": "gp-section-534747059698271033",
+      "settings": {
+        "checksum": "9505b5c717f2f220dbd25f218980de4ce866e50b42452450c59bb3050857f954"
+      }
+    },
+    "gp_section_534747059614450489": {
+      "type": "gp-section-534747059614450489",
+      "settings": {
+        "checksum": "1cc4a02178bd8d10fab13e7763c95890354f86cc5919071dc1bee13ce112c1b3"
+      }
+    },
+    "gp_section_534747059899597625": {
+      "type": "gp-section-534747059899597625",
+      "settings": {
+        "checksum": "abd45fae77153ddfc218a6266570a00f208a4e07b1332465c142d75b234f352a"
+      }
+    },
+    "gp_section_534747059866043193": {
+      "type": "gp-section-534747059866043193",
+      "settings": {
+        "checksum": "0b27739d1420c046fc954f77db7d926f473311a0d484806540ad279b2aeed69d"
+      }
+    },
+    "gp_section_534747059882820409": {
+      "type": "gp-section-534747059882820409",
+      "settings": {
+        "checksum": "0e633b5e8ef6799476466d45dea8d3481982bd825f836d00f3465032aab99e02"
+      }
+    },
+    "gp_section_534747059614384953": {
+      "type": "gp-section-534747059614384953",
+      "settings": {
+        "checksum": "36e2cfdeeb7f2dd4dfae05f32b8f284c063205b8e7f772da71fbe0e2e30ae77c"
+      }
+    },
+    "gp_section_534747059580830521": {
+      "type": "gp-section-534747059580830521",
+      "settings": {
+        "checksum": "c50240eab598c76f613623408307d639ac445f0f487e1a879628c0eee9e4a5fe"
+      }
+    },
+    "gp_section_534747059664716601": {
+      "type": "gp-section-534747059664716601",
+      "settings": {
+        "checksum": "ca4c906246f0e698c67a4bd87356aeb8ee3357e3dc56782ac58d70cd6cb624d5"
+      }
+    },
+    "gp_section_534747059631162169": {
+      "type": "gp-section-534747059631162169",
+      "settings": {
+        "checksum": "f9739006b7626c039109889d0a1759189485285185334a50c99d9d2a4921ca5c"
+      }
+    },
+    "gp_section_534747059815777081": {
+      "type": "gp-section-534747059815777081",
+      "settings": {
+        "checksum": "81d7a6a77f87f322a39db43e75596c81384b64d313a323d74d7748d488a864fc"
+      }
+    },
+    "gp_section_534747059647939385": {
+      "type": "gp-section-534747059647939385",
+      "settings": {
+        "checksum": "8b129181cd74d8c8fa22f5e50e5d6983e56b19dac6c8718c834df529896807b8"
+      }
+    },
+    "gp_global_section_533434228419855367-1": {
+      "type": "gp-global-section-533434228419855367",
+      "settings": {
+      }
+    },
+    "gp_section_534747059715048249": {
+      "type": "gp-section-534747059715048249",
+      "settings": {
+        "checksum": "7e706d1297317afc7db3b93de8d4509a09742c8ed10c71f64749f270373e4b13"
+      }
+    },
+    "gp_section_534747059849265977": {
+      "type": "gp-section-534747059849265977",
+      "settings": {
+        "checksum": "7760ec6c836c5b192726ca5286f4e213cb046cb33aa99361ba6d3c35dc45eb5e"
+      }
+    },
+    "gp_section_534747059731825465": {
+      "type": "gp-section-534747059731825465",
+      "settings": {
+        "checksum": "a9b27cc52695bb35a4e9cb44ac85350b0fb9962cf3881ae82521625f11eebf5e"
+      }
+    },
+    "gp_section_534747059849331513": {
+      "type": "gp-section-534747059849331513",
+      "settings": {
+        "checksum": "63ee2c8970549d19e541d40c2844bdb54491efd26b138da181796d90da671bd0"
+      }
+    }
+  },
+  "order": [
+    "gp_section_534747059815711545",
+    "gp_section_534747059765379897",
+    "gp_section_534747059798934329",
+    "gp_section_534747059681493817",
+    "gp_section_534747059698271033",
+    "gp_section_534747059614450489",
+    "gp_section_534747059899597625",
+    "gp_section_534747059866043193",
+    "gp_section_534747059882820409",
+    "gp_section_534747059614384953",
+    "gp_section_534747059580830521",
+    "gp_section_534747059664716601",
+    "gp_section_534747059631162169",
+    "gp_section_534747059815777081",
+    "gp_section_534747059647939385",
+    "gp_global_section_533434228419855367-1",
+    "gp_section_534747059715048249",
+    "gp_section_534747059849265977",
+    "gp_section_534747059731825465",
+    "gp_section_534747059849331513"
+  ]
+}
