@@ -13,12 +13,12 @@
       "type": "blog",
       "settings": {
         "show-title": true,
-        "show-date": true,
-        "show-tag-filter": true,
+        "show-date": false,
+        "show-tag-filter": false,
         "show-author": true,
         "show-excerpt": true,
-        "columns": 2,
-        "show-rss": true,
+        "columns": 1,
+        "show-rss": false,
         "show-featured": false,
         "image-display-type": "small",
         "aspect-ratio": 56,
@@ -28,7 +28,7 @@
         "light-text": true,
         "text-style": "eclipse-shadow",
         "overlay-style": "darken-bottom",
-        "parallax-enabled": true
+        "parallax-enabled": false
       }
     }
   },
