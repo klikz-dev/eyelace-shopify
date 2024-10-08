@@ -20,7 +20,7 @@
         "columns": 3,
         "show-rss": false,
         "show-featured": true,
-        "image-display-type": "small",
+        "image-display-type": "medium",
         "aspect-ratio": 56,
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
@@ -28,7 +28,7 @@
         "light-text": true,
         "text-style": "eclipse-shadow",
         "overlay-style": "darken-bottom",
-        "parallax-enabled": false
+        "parallax-enabled": true
       }
     }
   },
