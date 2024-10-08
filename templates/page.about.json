@@ -502,12 +502,13 @@
           "settings": {
             "text-width": "medium",
             "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "overline": "Overline text",
-            "title": "Slide heading",
-            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Screenshot_2024-10-08_at_1.18.50_AM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
             "link-url": "/",
-            "link-text": "View more",
+            "link-text": "By Fred Marque",
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
