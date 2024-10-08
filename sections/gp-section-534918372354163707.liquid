@@ -19,7 +19,7 @@
       style="--jc:start"
       class="g8UB5QiufG gp-relative gp-flex gp-flex-col"
     >
-      <div style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--animation:[object Object]" class="g43TG8NIen ">
+      <div style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%" class="g43TG8NIen ">
       
 
     <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product.v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
@@ -33,7 +33,7 @@
       assign target_collection = null
       assign productSrc = 'Collection'
       assign c = 0
-      assign limit = 4
+      assign limit = 8
       if request.page_type == 'collection' or preview_page_type == 'collection'
         assign target_collection = collection
         if target_collection == empty or target_collection == null
@@ -48,7 +48,7 @@
             endfor
           endif
         endif
-        paginate target_collection.products by 4
+        paginate target_collection.products by 8
           assign products = target_collection.products  
         endpaginate
       else
@@ -82,7 +82,7 @@
               endif
             endfor
           endif
-          paginate target_collection.products by 4
+          paginate target_collection.products by 8
             assign products = target_collection.products  
           endpaginate
         endif
@@ -125,7 +125,7 @@
       
     <div
       parentTag="ProductList" id="g-JXTGO4RJ"
-        style="--bs:solid;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-1, line-1);--border:[object Object];--radius:var(--g-radius-medium);--rounded:[object Object];--d:grid;--d-tablet:grid;--d-mobile:grid;--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--animation:[object Object];--cg:var(--g-s-2xl);--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        style="--bs:solid;--bw:1px 1px 1px 1px;--bc:var(--g-c-line-1, line-1);--border:[object Object];--radius:var(--g-radius-medium);--rounded:[object Object];--d:grid;--d-tablet:grid;--d-mobile:grid;--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--cg:var(--g-s-2xl);--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
         class="g-JXTGO4RJ gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
     >
     <div
@@ -147,7 +147,7 @@
     }
   '
       section-id="{{section.id}}"
-      style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--animation:[object Object]"
+      style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%"
       class="gp-overflow-hidden"
     >
       <div
@@ -2027,7 +2027,7 @@
       </div>
     </gp-product-images-v2>
     <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-images-v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
-  <div style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--animation:[object Object]" class="gc69MbxyxR ">
+  <div style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%" class="gc69MbxyxR ">
       
     {%- unless product -%}
       <p>{{ "gempages.ProductTitle.product_not_found" | t }}</p>
@@ -2056,7 +2056,7 @@
       
     <div
       parentTag="Col" id="gVrebaIPSH"
-        style="--mb:var(--g-s-l);--d:grid;--d-tablet:grid;--d-mobile:grid;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--animation:[object Object];--cg:16px;--pc:start;--gtc:minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        style="--mb:var(--g-s-l);--d:grid;--d-tablet:grid;--d-mobile:grid;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--cg:16px;--pc:start;--gtc:minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
         class="gVrebaIPSH gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
     >
     <div
@@ -2070,7 +2070,7 @@
         class="gKiYeNZK_k gp-product-price group-data-[state=loading]:gp-invisible data-[hidden=true]:gp-hidden"
         gp-data='{"priceType":"regular","uid":"gKiYeNZK_k","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
         
-        style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--animation:[object Object]"
+        style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%"
         data-hidden="false"
       >
         
@@ -2106,7 +2106,7 @@
         class="gYANXQCgRs gp-product-price group-data-[state=loading]:gp-invisible data-[hidden=true]:gp-hidden"
         gp-data='{"priceType":"compare","uid":"gYANXQCgRs","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
         
-        style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--animation:[object Object]"
+        style="--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%"
         data-hidden="{% if variant.compare_at_price > variant.price and variant.compare_at_price >= 0 %}false{% else %}true{% endif %}"
       >
         
@@ -2136,7 +2136,7 @@
     </div>
     </div>
   
-    <div style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--animation:[object Object]" class="g16cLPt9vc ">
+    <div style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%" class="g16cLPt9vc ">
       
   <gp-product-variants
     
@@ -2712,7 +2712,7 @@
   <gp-button >
   <div
     
-    style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--animation:[object Object];--ta:left"
+    style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--ta:left"
     class="{% unless variant.available %} !gp-hidden {% endunless %}"
   >
     <style>
@@ -2817,7 +2817,7 @@
   <gp-button >
   <div
     
-    style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--animation:[object Object];--ta:left"
+    style="--mb:var(--g-s-l);--d:block;--d-tablet:block;--d-mobile:block;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--border:[object Object];--rounded:[object Object];--hasBoxShadow:[object Object];--shadow:none;--boxShadow:[object Object];--op:100%;--ta:left"
     class="{% if variant.available %} !gp-hidden {% endif %}"
   >
     <style>
@@ -2940,7 +2940,7 @@
 {% schema %}
   {
     
-    "name": "Section 10",
+    "name": "Section 8",
     "tag": "section",
     "class": "gps-534918372354163707 gps gpsi",
     "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/7e97c3-3/apps/gempages-cro/app/shopify/edit?pageType=GP_STATIC&editorId=534164834787263461&sectionId=534918372354163707)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"},{"type":"html","id":"ggEgSGOMqxq_label","label":"ggEgSGOMqxq_label","default":"Add To cart"},{"type":"html","id":"ggEgSGOMqxq_outOfStockLabel","label":"ggEgSGOMqxq_outOfStockLabel","default":"Out Of Stock"},{"type":"html","id":"ggEgSGOMqxq_unavailableLabel","label":"ggEgSGOMqxq_unavailableLabel","default":"Unavailable"}],
