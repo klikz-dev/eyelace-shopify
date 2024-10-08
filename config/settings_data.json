@@ -133,6 +133,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "3710365891230691787": {
+        "type": "shopify://apps/accessibility/blocks/aca-block/7fc368d3-1043-4955-8c86-8afc04c8a479",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
