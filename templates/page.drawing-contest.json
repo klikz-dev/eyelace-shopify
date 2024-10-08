@@ -323,6 +323,13 @@
         "mobile-text-alignment": "center"
       }
     },
+    "gp_global_section_534931480745346209_BwJKE7": {
+      "type": "gp-global-section-534931480745346209",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": ""
+      }
+    },
     "171628409637ba12a9": {
       "type": "apps",
       "blocks": {
@@ -467,13 +474,6 @@
         "heading": "Subscribe to our newsletter",
         "description": "<p>Read about the lives of the empowered women in our community and stay on top of our latest tips and tricks.</p>"
       }
-    },
-    "gp_global_section_534930842321945740_i9kPfd": {
-      "type": "gp-global-section-534930842321945740",
-      "settings": {
-        "section_preload": "off_lazy_script",
-        "checksum": ""
-      }
     }
   },
   "order": [
@@ -485,9 +485,9 @@
     "featured_text_Q84yEH",
     "featured_text_NyAgx9",
     "image_with_text_KnRDRq",
+    "gp_global_section_534931480745346209_BwJKE7",
     "171628409637ba12a9",
     "grid_with_overlay_FwKAGf",
-    "newsletter_X7w3UT",
-    "gp_global_section_534930842321945740_i9kPfd"
+    "newsletter_X7w3UT"
   ]
 }
