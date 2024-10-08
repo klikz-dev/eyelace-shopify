@@ -86,6 +86,7 @@
         },
         "consent-tracking": {
           "type": "consent-tracking",
+          "disabled": true,
           "settings": {
             "background-color": "dark",
             "translucent": true,
