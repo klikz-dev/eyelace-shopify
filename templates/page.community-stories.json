@@ -161,11 +161,12 @@
             "text-width": "medium",
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/IMG_6194.jpg",
             "overline": "",
             "title": "",
             "description": "",
             "link-url": "/",
-            "link-text": "View more",
+            "link-text": "Ball Gown",
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
@@ -192,11 +193,12 @@
             "text-width": "medium",
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/IMG_6193.jpg",
             "overline": "",
             "title": "",
             "description": "",
             "link-url": "/",
-            "link-text": "View more",
+            "link-text": "Ball Gown",
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
@@ -322,12 +324,12 @@
             "text-width": "medium",
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "bottom",
-            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.26.43_AM.png",
+            "image": "shopify://shop_images/Screenshot_2024-10-02_at_10.26.21_AM.png",
             "overline": "",
             "title": "",
             "description": "",
             "link-url": "/https://eyelace.com/collections/lashes-collection/products/ball-gown-lash-set",
-            "link-text": "ball gown",
+            "link-text": "Perfect Poise",
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
