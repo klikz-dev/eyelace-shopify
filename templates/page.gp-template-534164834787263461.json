@@ -103,7 +103,6 @@
     "gp_global_section_533434228419855367-1": {
       "type": "gp-global-section-533434228419855367",
       "settings": {
-        "section_preload": "false"
       }
     },
     "gp_section_534171410113758304": {
@@ -121,7 +120,7 @@
     "gp_section_534171410382193760": {
       "type": "gp-section-534171410382193760",
       "settings": {
-        "checksum": "a8d95eb6f951c480a0d4deee1c75bcf1af25c5c932f28b71b6ee2dda5c9dc365"
+        "checksum": "2d5c6071d9a173da5a7e0dec1385646e462551c83349a9a09c8abbde95514b0e"
       }
     },
     "gp_section_534171410080204012": {
