@@ -19,7 +19,7 @@
         "show-excerpt": true,
         "columns": 2,
         "show-rss": true,
-        "show-featured": true,
+        "show-featured": false,
         "image-display-type": "small",
         "aspect-ratio": 56,
         "mobile-image-display-type": "original",
