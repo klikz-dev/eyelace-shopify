@@ -8,14 +8,14 @@
 * ------------------------------------------------------------
 */
 {
-                "sections": {
-                  "blog": {
-                    "type": "main-bloggle-article",
-                    "settings": {
-                    }
-                  }
-                },
-                "order": [
-                  "blog"
-                ]
+            "sections": {
+              "blog": {
+                "type": "main-bloggle-article",
+                "settings": {
+                }
               }
+            },
+            "order": [
+              "blog"
+            ]
+          }
