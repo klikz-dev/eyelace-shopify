@@ -235,7 +235,7 @@
         "light-text": false,
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
-        "products-per-row--mobile": "1",
+        "products-per-row--mobile": "2",
         "collection": "accessories",
         "max-products": 8,
         "heading": "Essential Accessories"
