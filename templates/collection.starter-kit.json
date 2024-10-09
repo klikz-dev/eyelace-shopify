@@ -9,8 +9,139 @@
 */
 {
   "sections": {
+    "image_with_text_iCWwg7": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": true,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "original",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/Creative_Banner_5_Brighter.png",
+        "overline": "Be Bold; be beautiful",
+        "title": "A NEW LASH EXPERIENCE",
+        "description": "<p>Designed to solve the problems of strip lashes, extensions and even mascara, our new waterline lash redefines the lash experience. The Starter Kit comes with everything you will need, including step by step video and booklet instructions, so you can recreate your lash game. </p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-image": "shopify://shop_images/Creative_Banner_5_Brighter.png",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "image_with_text_atXMBH": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": true,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/Screenshot_2024-09-27_at_4.08.09_AM_07b3a8ee-e75a-4ae4-adc9-41f183faffb1.png",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "featured_product_eaqLBL": {
+      "type": "featured-product",
+      "blocks": {
+        "heading_tHAjjU": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "price_p3rx7j": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "options_ENPrfK": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": false,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "buy_buttons_nR68mt": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": false
+          }
+        },
+        "social_sharing_p9mnKk": {
+          "type": "social-sharing",
+          "settings": {
+            "facebook-enabled": true,
+            "x-enabled": true,
+            "pinterest-enabled": true,
+            "email-enabled": true,
+            "url-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_tHAjjU",
+        "price_p3rx7j",
+        "options_ENPrfK",
+        "buy_buttons_nR68mt",
+        "social_sharing_p9mnKk"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "container-width": "4",
+        "text-column-width": 30,
+        "thumbnail-width": 80,
+        "media-gap": 8,
+        "text-alignment": "left",
+        "featured_product": "starter-kit",
+        "loop-enabled": false
+      }
+    },
     "collection-header": {
       "type": "collection--header",
+      "disabled": true,
       "settings": {
         "show-title": true,
         "heading-type": "featured-heading",
@@ -31,6 +162,7 @@
     },
     "header-promo": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -114,6 +246,7 @@
       "block_order": [
         "grid-promo-1"
       ],
+      "disabled": true,
       "settings": {
         "products-per-row--desktop": 4,
         "products-per-row--mobile": "1",
@@ -122,6 +255,7 @@
     },
     "recent-products": {
       "type": "recent-products",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
@@ -134,6 +268,7 @@
     },
     "footer-promo": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
@@ -167,6 +302,9 @@
     }
   },
   "order": [
+    "image_with_text_iCWwg7",
+    "image_with_text_atXMBH",
+    "featured_product_eaqLBL",
     "collection-header",
     "header-promo",
     "navigation",
