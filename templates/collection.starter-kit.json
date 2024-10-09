@@ -307,6 +307,7 @@
           "type": "image",
           "settings": {
             "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-22_at_2.53.37_PM.png",
             "title": "Stunning & Natural Look",
             "description": "<p>Eyelace Strip Lashes are designed to accentuate your natural beauty and blend in seamlessly with your natural lash.</p>",
             "link-url": "",
@@ -317,6 +318,7 @@
           "type": "image",
           "settings": {
             "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.34.06_PM.png",
             "title": "Easy To Apply & Remove",
             "description": "<p>Eyelace false lashes are designed to  give the user full control over application and removal. Learn how in our instructional video & booklet.</p>",
             "link-url": "",
@@ -327,6 +329,7 @@
           "type": "image",
           "settings": {
             "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.32.02_PM.png",
             "title": "Comfortable For Any Occasion",
             "description": "<p>Eyelace eyelashes come in a number of diverse designs to augment your lash look in any setting. See your lash choices to choose the perfect look for you.</p>",
             "link-url": "",
@@ -337,6 +340,7 @@
           "type": "image",
           "settings": {
             "show-image": true,
+            "image": "shopify://shop_images/Screenshot_2024-02-14_at_8.59.02_AM.png",
             "title": "Non-Damaging & Made For Your Skin",
             "description": "<p>Your natural beauty is our priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.</p>",
             "link-url": "",
