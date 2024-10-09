@@ -169,9 +169,9 @@
         "heading-sizes-enabled": true,
         "heading-size": 40,
         "breadcrumbs-enabled": true,
-        "modal-enabled": true,
-        "variant-scroll-enabled": true,
-        "image-zoom-enabled": true,
+        "modal-enabled": false,
+        "variant-scroll-enabled": false,
+        "image-zoom-enabled": false,
         "loop-enabled": false,
         "mobile-media-layout": "slideshow"
       }
