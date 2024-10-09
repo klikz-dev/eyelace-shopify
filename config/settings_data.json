@@ -116,12 +116,6 @@
         "settings": {
         }
       },
-      "9365423049038898845": {
-        "type": "shopify://apps/tawk-to-live-chat/blocks/widget-embed-code/91169e75-f163-40ce-90e0-9059f3c9b772",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "3710365891230691787": {
         "type": "shopify://apps/accessibility/blocks/aca-block/7fc368d3-1043-4955-8c86-8afc04c8a479",
         "disabled": false,
@@ -155,6 +149,12 @@
       "6468128024931565999": {
         "type": "shopify://apps/seguno-popups/blocks/popup-app-embed/f53bd66f-9a20-4ce2-ae2e-ccbd0148bd4b",
         "disabled": false,
+        "settings": {
+        }
+      },
+      "9365423049038898845": {
+        "type": "shopify://apps/tawk-to-live-chat/blocks/widget-embed-code/91169e75-f163-40ce-90e0-9059f3c9b772",
+        "disabled": true,
         "settings": {
         }
       }
