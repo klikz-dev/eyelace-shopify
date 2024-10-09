@@ -344,7 +344,7 @@
             "title": "Non-Damaging & Made For Your Skin",
             "description": "<p>Your natural beauty is our priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.</p>",
             "link-url": "",
-            "link-text": "View more"
+            "link-text": ""
           }
         }
       },
@@ -373,6 +373,167 @@
         "link-text": "",
         "mobile-width": "1"
       }
+    },
+    "featured_video_prCc47": {
+      "type": "featured-video",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "text-width": "medium",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "bottom",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "autoplay": true,
+        "video-display-type": "aspect-ratio",
+        "aspect-ratio": 56,
+        "play-button-style": "solid",
+        "overlay-style": "darken-bottom",
+        "video-upload": "shopify://files/videos/EyelaceTutDraft4.mp4",
+        "overline": "Instructional video",
+        "heading": "BEAUTY YOU CONTROL",
+        "description": "<p>With practice, anyone can achieve perfect lashes every day.</p>",
+        "button-text": "Learn How",
+        "button-url": "shopify://pages/how-to",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center",
+        "mobile-hide-description": false
+      }
+    },
+    "recent_products_hBi6HF": {
+      "type": "recent-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "heading-alignment": "center",
+        "heading": "You may also like"
+      }
+    },
+    "collapsible_rows_eHpAJ7": {
+      "type": "collapsible-rows",
+      "blocks": {
+        "collapsible_row_FYnAQd": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What are Eyelace Faux Lashes made from?",
+            "description": "<p>Eyelace lashes are crafted from high-quality PBT fiber, a polyester polymer known for its durability and natural look. They are also latex-free and hypoallergenic, ensuring they are safe for sensitive skin.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_TWAfjY": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I apply Eyelace lashes?",
+            "description": "<p>Watch our tutorial video to find out how to apply and remove your Eyelace Lashes!</p><p><a href=\"/pages/how-to\" target=\"_blank\" title=\"How To\">How To Tutorial</a></p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_JMhmFR": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Can I reuse Eyelace lashes?",
+            "description": "<p>Yes, Eyelace lashes are designed for multiple uses. With proper care and cleaning, you can reuse them several times. Be sure to gently remove any adhesive residue after each use and store them in their original packaging.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_aWrUJi": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Are Eyelace lashes suitable for sensitive eyes?",
+            "description": "<p>Absolutely. Eyelace lashes are hypoallergenic and latex-free, making them suitable for those with sensitive eyes and skin. Additionally, our Eyelace White Lash Glue is formulated to be gentle and non-irritating.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_4D6gYi": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I remove Eyelace lashes?",
+            "description": "<p>To remove your Eylace, gently pull it until the glue slowly separates from your natural lash. <br/>If you feel any tension use a warm compress, or a shower to melt the glue before you pull.<br/>Once removed store your lashes on the plastic tray to reuse them.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_PYKKKU": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Can I wear Eyelace lashes with glasses?",
+            "description": "<p>Yes, Eyelace offers a variety of lash styles suitable for wear with glasses. Opt for shorter and more natural styles like Natural Beauty or Elegant Effect to ensure they don’t interfere with your eyewear.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_zxd8Mh": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How long do Eyelace lashes last?",
+            "description": "<p>The longevity of Eyelace lashes depends on how well they are cared for. With proper maintenance, they can be reused multiple times. Always handle them gently, clean them after use, and store them in a safe place.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_Vz4J3Q": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "What is the difference between the various Eyelace lash styles?",
+            "description": "<p>Each Eyelace false lash style is designed to offer a different look and level of drama:</p><ul><li>Natural Beauty: Subtle enhancement for everyday wear.</li><li>Perfect Poise: Dark and dramatic, ideal for professional settings.</li><li>Elegant Effect: Wispy and elegant, adding a refined touch.</li><li>Day Dream: Full-bodied and charming, perfect for work and play.</li><li>Social Butterfly: Bold yet natural, suitable for any occasion.</li><li>Night Life: Extra sexy and glamorous, perfect for nights out.</li><li>Ball Gown: Dramatic and classy, ideal for formal events.</li></ul>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_6hxaxm": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "How do I choose the right lash style for me?",
+            "description": "<p>Consider the occasion and the look you want to achieve. For everyday wear, opt for more natural styles like Natural Beauty or Day Dream. For a night out or special event, bolder styles like Night Life or Ball Gown will provide the dramatic effect you desire. If you wear glasses, choose shorter styles to ensure comfort.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "collapsible_row_maNknp": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Are Eyelace lashes cruelty-free?",
+            "description": "<p>Yes, Eyelace lashes are cruelty-free and made from synthetic fibers, ensuring no harm to animals.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_FYnAQd",
+        "collapsible_row_TWAfjY",
+        "collapsible_row_JMhmFR",
+        "collapsible_row_aWrUJi",
+        "collapsible_row_4D6gYi",
+        "collapsible_row_PYKKKU",
+        "collapsible_row_zxd8Mh",
+        "collapsible_row_Vz4J3Q",
+        "collapsible_row_6hxaxm",
+        "collapsible_row_maNknp"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "1",
+        "heading": "Collapsible rows",
+        "heading-alignment": "center"
+      }
     }
   },
   "order": [
@@ -385,6 +546,9 @@
     "main",
     "recent-products",
     "footer-promo",
-    "text_columns_GD3efk"
+    "text_columns_GD3efk",
+    "featured_video_prCc47",
+    "recent_products_hBi6HF",
+    "collapsible_rows_eHpAJ7"
   ]
 }
