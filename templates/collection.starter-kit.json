@@ -299,6 +299,76 @@
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
       }
+    },
+    "text_columns_GD3efk": {
+      "type": "text-columns",
+      "blocks": {
+        "image_Xy83k3": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "title": "Stunning & Natural Look",
+            "description": "<p>Eyelace Strip Lashes are designed to accentuate your natural beauty and blend in seamlessly with your natural lash.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_t6kRea": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "title": "Easy To Apply & Remove",
+            "description": "<p>Eyelace false lashes are designed to  give the user full control over application and removal. Learn how in our instructional video & booklet.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_7cW4JG": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "title": "Comfortable For Any Occasion",
+            "description": "<p>Eyelace eyelashes come in a number of diverse designs to augment your lash look in any setting. See your lash choices to choose the perfect look for you.</p>",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "image_hj6j7r": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "title": "Non-Damaging & Made For Your Skin",
+            "description": "<p>Your natural beauty is our priority. Our lashes are designed to complement your skin and eye shape. They are safe and non-harmful for your natural eyelashes, skin, eyelids, and eyes.</p>",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        }
+      },
+      "block_order": [
+        "image_Xy83k3",
+        "image_t6kRea",
+        "image_7cW4JG",
+        "image_hj6j7r"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "block-spacing": true,
+        "background-color": "light",
+        "light-text": false,
+        "container-width": "4",
+        "width": 4,
+        "aspect-ratio": "square",
+        "image-width": 0,
+        "text-alignment": "center",
+        "overline": "Why Eyelace?",
+        "heading": "ENHANCING YOUR NATURAL BEAUTY",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "1"
+      }
     }
   },
   "order": [
@@ -310,6 +380,7 @@
     "navigation",
     "main",
     "recent-products",
-    "footer-promo"
+    "footer-promo",
+    "text_columns_GD3efk"
   ]
 }
