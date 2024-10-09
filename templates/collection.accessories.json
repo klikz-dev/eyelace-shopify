@@ -112,7 +112,7 @@
       "type": "collection--body",
       "settings": {
         "products-per-row--desktop": 3,
-        "products-per-row--mobile": "1",
+        "products-per-row--mobile": "2",
         "number-of-rows": 3
       }
     },
