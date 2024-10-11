@@ -469,7 +469,7 @@
           "type": "image",
           "settings": {
             "text-width": "medium",
-            "text-horizontal-alignment": "center",
+            "text-horizontal-alignment": "left",
             "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/Jocelyn_MiamiPhotoshoot_VillasChannelPhoto-96_7e9dc8ff-91c8-499f-a2e7-6704d46a618e.jpg",
             "overline": "By Villatoro",
@@ -485,7 +485,7 @@
           "type": "image",
           "settings": {
             "text-width": "medium",
-            "text-horizontal-alignment": "center",
+            "text-horizontal-alignment": "left",
             "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/E90B1EDC-0E56-4E03-B70C-137646995BAD.jpg",
             "overline": "By marque",
@@ -501,7 +501,7 @@
           "type": "image",
           "settings": {
             "text-width": "medium",
-            "text-horizontal-alignment": "center",
+            "text-horizontal-alignment": "left",
             "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/marque_wall.heic",
             "overline": "by marque",
@@ -517,7 +517,7 @@
           "type": "image",
           "settings": {
             "text-width": "medium",
-            "text-horizontal-alignment": "center",
+            "text-horizontal-alignment": "left",
             "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/Screenshot_2024-10-08_at_1.18.50_AM.png",
             "overline": "by marque",
