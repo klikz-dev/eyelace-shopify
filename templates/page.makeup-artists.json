@@ -334,25 +334,9 @@
           "settings": {
           }
         },
-        "vendor_9iFDFi": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "price_JcKgpg": {
           "type": "price",
           "settings": {
-          }
-        },
-        "options_EhBpkQ": {
-          "type": "options",
-          "settings": {
-            "variant-style": "buttons",
-            "swatches-enabled": true,
-            "size-chart-enabled": true,
-            "size-chart-option": "size",
-            "size-chart-content": ""
           }
         },
         "buy_buttons_pL9dUT": {
@@ -364,9 +348,7 @@
       },
       "block_order": [
         "heading_9mbnia",
-        "vendor_9iFDFi",
         "price_JcKgpg",
-        "options_EhBpkQ",
         "buy_buttons_pL9dUT"
       ],
       "settings": {
@@ -380,6 +362,45 @@
         "media-gap": 8,
         "text-alignment": "left",
         "featured_product": "collection-lash-set",
+        "loop-enabled": false
+      }
+    },
+    "featured_product_gffXfG": {
+      "type": "featured-product",
+      "blocks": {
+        "heading_PqatLd": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "price_nbw74g": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "buy_buttons_qeQPxP": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PqatLd",
+        "price_nbw74g",
+        "buy_buttons_qeQPxP"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "light",
+        "container-width": "4",
+        "text-column-width": 30,
+        "thumbnail-width": 80,
+        "media-gap": 8,
+        "text-alignment": "left",
+        "featured_product": "lash-glue",
         "loop-enabled": false
       }
     },
@@ -471,6 +492,7 @@
     "scrolling_content_V6dWf7",
     "slideshow_Fy7DLH",
     "featured_product_WdmnFy",
+    "featured_product_gffXfG",
     "1726094955c8b50914",
     "newsletter_nN7dWf",
     "featured_blog_rXUqPA"
