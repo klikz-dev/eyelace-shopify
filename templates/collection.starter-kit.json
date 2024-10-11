@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_with_text_iCWwg7": {
@@ -31,12 +31,46 @@
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
         "image": "shopify://shop_images/Creative_Banner_5_Brighter.png",
-        "overline": "Be Bold; be beautiful",
-        "title": "A NEW LASH EXPERIENCE",
-        "description": "<p>Designed to solve the problems of strip lashes, extensions and even mascara, our new waterline lash redefines the lash experience. The Starter Kit comes with everything you will need, including step by step video and booklet instructions, so you can recreate your lash game. </p>",
+        "overline": "",
+        "title": "",
+        "description": "",
         "link-url": "",
         "link-text": "",
         "mobile-image": "shopify://shop_images/Creative_Banner_5_Brighter.png",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "image_with_text_mCVFnc": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": true,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "banner-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "large",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "original",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/2D9E174D-0ED7-4A07-996A-B26469B484D3.jpg",
+        "overline": "",
+        "title": "A WHOLE NEW LASH EXPERIENCE",
+        "description": "<p>Designed to solve the problems of strip lashes, extensions and even mascara, our new waterline lash redefines the faux lash experience.</p>",
+        "link-url": "",
+        "link-text": "",
         "mobile-overlay": true,
         "mobile-hide-description": false,
         "mobile-image-display-type": "original",
@@ -395,6 +429,7 @@
         "play-button-style": "solid",
         "overlay-style": "darken-bottom",
         "video-upload": "shopify://files/videos/EyelaceTutDraft4.mp4",
+        "video-url": "",
         "overline": "Instructional video",
         "heading": "BEAUTY YOU CONTROL",
         "description": "<p>With practice, anyone can achieve perfect lashes every day.</p>",
@@ -538,6 +573,7 @@
   },
   "order": [
     "image_with_text_iCWwg7",
+    "image_with_text_mCVFnc",
     "image_with_text_atXMBH",
     "featured_product_eaqLBL",
     "collection-header",
