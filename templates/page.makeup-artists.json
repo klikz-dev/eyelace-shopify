@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -365,6 +365,71 @@
         "loop-enabled": false
       }
     },
+    "scrolling_content_yJFP83": {
+      "type": "scrolling-content",
+      "blocks": {
+        "image_gjNjRD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/GroupLashes_square.jpg",
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "text_qkMNda": {
+          "type": "text",
+          "settings": {
+            "text": "Lash Set: From $23 to $16",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        },
+        "image_aG3cWp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Glue_square.jpg",
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "text_GGy4V6": {
+          "type": "text",
+          "settings": {
+            "text": "3 Glue: from $40 to $28",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "image_gjNjRD",
+        "text_qkMNda",
+        "image_aG3cWp",
+        "text_GGy4V6"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "background-image": "shopify://shop_images/2D9E174D-0ED7-4A07-996A-B26469B484D3.jpg",
+        "parallax-enabled": false,
+        "overlay-style": "darken-bottom",
+        "light-text": true,
+        "text-size": "section-heading",
+        "animation-direction": "left",
+        "animation-speed": 6,
+        "pause-on-hover": false
+      }
+    },
     "featured_product_gffXfG": {
       "type": "featured-product",
       "blocks": {
@@ -492,6 +557,7 @@
     "scrolling_content_V6dWf7",
     "slideshow_Fy7DLH",
     "featured_product_WdmnFy",
+    "scrolling_content_yJFP83",
     "featured_product_gffXfG",
     "1726094955c8b50914",
     "newsletter_nN7dWf",
