@@ -14,7 +14,7 @@
       "settings": {
         "top-border": false,
         "spacing-above": false,
-        "spacing-below": true,
+        "spacing-below": false,
         "background-color": "none",
         "container-width": "6",
         "light-text": true,
@@ -31,12 +31,46 @@
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
         "image": "shopify://shop_images/Screenshot_2024-09-12_at_12.38.52_PM.png",
-        "overline": "Stay in touch",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-image": "shopify://shop_images/Screenshot_2024-09-12_at_12.38.52_PM.png",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "image_with_text_KcMtVK": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/2D9E174D-0ED7-4A07-996A-B26469B484D3.jpg",
+        "overline": "stay in touch",
         "title": "CONTACT US",
         "description": "<p>We want to stay connected with you as we build a community of bold and beautiful, empowered women.</p>",
         "link-url": "",
         "link-text": "",
-        "mobile-image": "shopify://shop_images/Screenshot_2024-09-12_at_12.38.52_PM.png",
         "mobile-overlay": true,
         "mobile-hide-description": false,
         "mobile-image-display-type": "original",
@@ -59,7 +93,7 @@
       "type": "featured-text",
       "settings": {
         "top-border": false,
-        "spacing-above": false,
+        "spacing-above": true,
         "spacing-below": true,
         "background-color": "none",
         "light-text": false,
@@ -67,7 +101,7 @@
         "container-width": "4",
         "overline": "",
         "heading": "",
-        "description": "<p>We are a small, female owned business that has many innovative ideas about expanding our product collection. If you have product dreams you would like to share with us or ideas for how we could improve our existing products to serve you better, we would be honored to hear from you. Please leave us a message in the form below!</p>",
+        "description": "<p>We are a small, female owned business that has many innovative ideas about expanding our product collection. If you have product dreams you would like to share with us or ideas for how we could improve our existing products to serve you better, we would be honored to hear from you. Please leave us a message in the form below.</p>",
         "link-url": "/",
         "link-text": ""
       }
@@ -99,7 +133,7 @@
         "container-width": "4",
         "overline": "Join our community",
         "heading": "MAKEUP ARTIST PARTNERSHIP PROGRAM",
-        "description": "<p>Eyelace offers a discount on our Collection Lash Set for certified or licensed makeup artists who wish to partner with us and stun their clients with their natural lashes.</p>",
+        "description": "<p>Eyelace offers a discount on our glue and Collection Lash Set for certified or licensed makeup artists who wish to partner with us and stun their clients with their natural lashes.</p>",
         "link-url": "shopify://pages/makeup-artists-partnership",
         "link-text": "Apply Now"
       }
@@ -112,14 +146,15 @@
         "spacing-below": true,
         "background-color": "dark",
         "light-text": true,
-        "overline": "Discounts & Special Offers",
-        "heading": "Subscribe to our newsletter and receive special offers only for our members!",
-        "description": "<p>Our newsletter is packed full of the latest deals, tips, tricks, and trends as well as personal stories about our bold and beautiful female community.</p>"
+        "overline": "Sign up today",
+        "heading": "THE EYELACE JOURNAL",
+        "description": "<p>The Eyelace Journal features articles about artists in our community and women in business as well as beauty tips and tricks and product discounts.</p>"
       }
     }
   },
   "order": [
     "1632436597fbc1d0e4",
+    "image_with_text_KcMtVK",
     "main",
     "16324378141979f11c",
     "1632180071f18cee62",
