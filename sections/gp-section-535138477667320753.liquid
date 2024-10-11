@@ -6,12 +6,12 @@
       
             <section
               class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
-              style="--w:100%;--w-tablet:calc(var(--g-ct-w, 100%) + 2 * var(--g-ct-p, 15px));--w-mobile:calc(var(--g-ct-w, 100%) + 2 * var(--g-ct-p, 15px));--pl:0px;--pl-tablet:var(--g-ct-p, 15px);--pl-mobile:var(--g-ct-p, 15px);--pr:0px;--pr-tablet:var(--g-ct-p, 15px);--pr-mobile:var(--g-ct-p, 15px)"
+              style="--w:100%;--w-tablet:calc(var(--g-ct-w, 100%) + 2 * var(--g-ct-p, 15px));--w-mobile:100%;--pl:0px;--pl-tablet:var(--g-ct-p, 15px);--pl-mobile:0px;--pr:0px;--pr-tablet:var(--g-ct-p, 15px);--pr-mobile:0px"
             >
               
     <div
       id="i2l80a0dc152d" data-id="i2l80a0dc152d"
-        style="--mt:0px;--ml:auto;--mb:0px;--mr:auto;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--cg:32px;--cg-tablet:32px;--pc:start;--gtc:minmax(0, 12fr);--gtc-tablet:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--w:100%;--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:rgb(26, 26, 26)"
+        style="--mt:0px;--ml:auto;--mb:0px;--mr:auto;--pt:0px;--pl:0px;--pb:0px;--pr:0px;--cg:32px;--cg-tablet:32px;--pc:start;--gtc:minmax(0, 12fr);--gtc-tablet:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--w:100%;--w-tablet:var(--g-ct-w, 100%);--w-mobile:100%;--bgc:rgb(26, 26, 26)"
         class="i2l80a0dc152d gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
     >
     <div
@@ -78,7 +78,7 @@
              >
              
   {%- liquid
-    assign isFetchPriorityHigh = false 
+    assign isFetchPriorityHigh = true 
     
   -%}
 
@@ -88,7 +88,43 @@
       
       draggable="false"
       isNotLazyload="true"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg undefined undefined"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg  gp_lazybg_mb"
+      src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354" width="2237" height="1678" alt="lazy image mobile"
+      fetchpriority="high"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      srcset=""
+      sizes="100vw"
+      
+    />
+  {%- else -%}
+    <img
+      
+      
+      draggable="false"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg  gp_lazybg_mb gp_lazyload"
+      data-src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354" data-srcset="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 768w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 1024w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="2237" height="1678" alt="lazy image mobile"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      
+    />
+  {%- endif -%}
+  
+  {%- liquid
+    assign isFetchPriorityHigh = true 
+    
+  -%}
+
+  {%- if isFetchPriorityHigh == true or isFetchPriorityHigh == 'true' -%}
+    <img
+      
+      
+      draggable="false"
+      isNotLazyload="true"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg  "
       src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354" width="2237" height="1678" alt="lazy image desktop"
       fetchpriority="high"
       quality-type={}
@@ -103,7 +139,7 @@
       
       
       draggable="false"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg undefined undefined gp_lazyload"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg   gp_lazyload"
       data-src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354" data-srcset="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 768w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 1024w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="2237" height="1678" alt="lazy image desktop"
       quality-type={}
       quality-percent={}
@@ -112,9 +148,9 @@
       
     />
   {%- endif -%}
-  ,
+  
   {%- liquid
-    assign isFetchPriorityHigh = false 
+    assign isFetchPriorityHigh = true 
     
   -%}
 
@@ -124,8 +160,8 @@
       
       draggable="false"
       isNotLazyload="true"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg  gp_lazybg_tl undefined"
-      src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354" width="2237" height="1678" alt="lazy image desktop"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg gp_lazybg_tl "
+      src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354" width="2237" height="1678" alt="lazy image tablet"
       fetchpriority="high"
       quality-type={}
       quality-percent={}
@@ -139,44 +175,8 @@
       
       
       draggable="false"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg  gp_lazybg_tl undefined gp_lazyload"
-      data-src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354" data-srcset="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 768w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 1024w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="2237" height="1678" alt="lazy image desktop"
-      quality-type={}
-      quality-percent={}
-      data-sizes="auto"
-      sizes="100vw"
-      
-    />
-  {%- endif -%}
-  ,
-  {%- liquid
-    assign isFetchPriorityHigh = false 
-    
-  -%}
-
-  {%- if isFetchPriorityHigh == true or isFetchPriorityHigh == 'true' -%}
-    <img
-      
-      
-      draggable="false"
-      isNotLazyload="true"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg undefined  gp_lazybg_mb"
-      src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354" width="2237" height="1678" alt="lazy image desktop"
-      fetchpriority="high"
-      quality-type={}
-      quality-percent={}
-      data-sizes="auto"
-      srcset=""
-      sizes="100vw"
-      
-    />
-  {%- else -%}
-    <img
-      
-      
-      draggable="false"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg undefined  gp_lazybg_mb gp_lazyload"
-      data-src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354" data-srcset="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 768w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 1024w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="2237" height="1678" alt="lazy image desktop"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg gp_lazybg_tl  gp_lazyload"
+      data-src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354" data-srcset="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 768w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 1024w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/Photo_Sep_13_2024_1_34_27_PM.png?v=1726249354 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="2237" height="1678" alt="lazy image tablet"
       quality-type={}
       quality-percent={}
       data-sizes="auto"
