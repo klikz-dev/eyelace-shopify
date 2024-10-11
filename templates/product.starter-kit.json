@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_with_text_pJGaga": {
@@ -31,9 +31,9 @@
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
         "image": "shopify://shop_images/Creative_Banner_5_Brighter.png",
-        "overline": "Be Bold; be beautiful",
-        "title": "A NEW LASH EXPERIENCE",
-        "description": "<p>Designed to solve the problems of strip lashes, extensions and even mascara, our new waterline lash redefines the lash experience. The Starter Kit comes with everything you will need, including step by step video and booklet instructions, so you can recreate your lash game. </p>",
+        "overline": "Beauty you can control",
+        "title": "A WHOLE NEW LASH EXPERIENCE",
+        "description": "<p>Designed to solve the problems of strip lashes, extensions and even mascara, our new waterline lash redefines the faux lash experience. </p><p>The Starter Kit comes with everything you will need, including  the lashes, the tools, and step by step video and booklet instructions. </p>",
         "link-url": "",
         "link-text": "",
         "mobile-image": "shopify://shop_images/Creative_Banner_5_Brighter.jpg",
