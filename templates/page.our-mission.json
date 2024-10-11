@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -42,7 +42,7 @@
         "aspect-ratio": 56,
         "overlay-style": "none",
         "parallax-enabled": false,
-        "image": "shopify://shop_images/Screenshot_2024-02-14_at_9.15.51_AM.png",
+        "image": "shopify://shop_images/Screenshot_2024-10-11_at_1.22.44_PM.png",
         "overline": "",
         "title": "OUR MISSION",
         "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are attainable at home.</p>",
