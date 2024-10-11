@@ -477,7 +477,7 @@
             "description": "",
             "link-url": "/",
             "link-text": "",
-            "mobile-text-alignment": "bottom",
+            "mobile-text-alignment": "center",
             "mobile-hide-description": true
           }
         },
@@ -493,7 +493,7 @@
             "description": "",
             "link-url": "/",
             "link-text": "",
-            "mobile-text-alignment": "bottom",
+            "mobile-text-alignment": "center",
             "mobile-hide-description": true
           }
         },
