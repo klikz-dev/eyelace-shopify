@@ -171,7 +171,7 @@
             "link-url": "/",
             "link-text": "",
             "mobile-text-alignment": "center",
-            "mobile-hide-description": false
+            "mobile-hide-description": true
           }
         },
         "image_9U4pdj": {
@@ -209,17 +209,17 @@
         "image_A9NaLd": {
           "type": "image",
           "settings": {
-            "text-width": "large",
+            "text-width": "small",
             "text-horizontal-alignment": "left",
-            "text-vertical-alignment": "top",
+            "text-vertical-alignment": "center",
             "image": "shopify://shop_images/Screenshot_2024-09-27_at_5.41.07_AM_bc6dc14c-4329-4aaa-9bba-1fefbe090f71.png",
             "overline": "age 44",
             "title": "Aunt Joce",
             "description": "<p>\"I like that I persevere\"</p>",
             "link-url": "/",
             "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
+            "mobile-text-alignment": "bottom",
+            "mobile-hide-description": true
           }
         }
       },
