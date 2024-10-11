@@ -478,7 +478,7 @@
             "link-url": "/",
             "link-text": "",
             "mobile-text-alignment": "bottom",
-            "mobile-hide-description": false
+            "mobile-hide-description": true
           }
         },
         "image_TjzmJw": {
@@ -494,7 +494,7 @@
             "link-url": "/",
             "link-text": "",
             "mobile-text-alignment": "bottom",
-            "mobile-hide-description": false
+            "mobile-hide-description": true
           }
         },
         "image_NE46CJ": {
