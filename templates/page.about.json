@@ -382,7 +382,7 @@
             "link-url": "/",
             "link-text": "",
             "mobile-text-alignment": "center",
-            "mobile-hide-description": false
+            "mobile-hide-description": true
           }
         },
         "image_N4ADKD": {
@@ -398,7 +398,7 @@
             "link-url": "/",
             "link-text": "",
             "mobile-text-alignment": "center",
-            "mobile-hide-description": false
+            "mobile-hide-description": true
           }
         },
         "image_yzYgtL": {
