@@ -78,7 +78,7 @@
              >
              
   {%- liquid
-    assign isFetchPriorityHigh = false 
+    assign isFetchPriorityHigh = true 
     
   -%}
 
@@ -88,7 +88,43 @@
       
       draggable="false"
       isNotLazyload="true"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg undefined undefined"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg  gp_lazybg_mb"
+      src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg" width="2237" height="1678" alt="lazy image mobile"
+      fetchpriority="high"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      srcset=""
+      sizes="100vw"
+      
+    />
+  {%- else -%}
+    <img
+      
+      
+      draggable="false"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg  gp_lazybg_mb gp_lazyload"
+      data-src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg" data-srcset="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 768w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 1024w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="2237" height="1678" alt="lazy image mobile"
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      
+    />
+  {%- endif -%}
+  
+  {%- liquid
+    assign isFetchPriorityHigh = true 
+    
+  -%}
+
+  {%- if isFetchPriorityHigh == true or isFetchPriorityHigh == 'true' -%}
+    <img
+      
+      
+      draggable="false"
+      isNotLazyload="true"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg  "
       src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg" width="2237" height="1678" alt="lazy image desktop"
       fetchpriority="high"
       quality-type={}
@@ -103,7 +139,7 @@
       
       
       draggable="false"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg undefined undefined gp_lazyload"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg   gp_lazyload"
       data-src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg" data-srcset="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 768w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 1024w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="2237" height="1678" alt="lazy image desktop"
       quality-type={}
       quality-percent={}
@@ -112,9 +148,9 @@
       
     />
   {%- endif -%}
-  ,
+  
   {%- liquid
-    assign isFetchPriorityHigh = false 
+    assign isFetchPriorityHigh = true 
     
   -%}
 
@@ -124,8 +160,8 @@
       
       draggable="false"
       isNotLazyload="true"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg  gp_lazybg_tl undefined"
-      src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg" width="2237" height="1678" alt="lazy image desktop"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg gp_lazybg_tl "
+      src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg" width="2237" height="1678" alt="lazy image tablet"
       fetchpriority="high"
       quality-type={}
       quality-percent={}
@@ -139,44 +175,8 @@
       
       
       draggable="false"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg  gp_lazybg_tl undefined gp_lazyload"
-      data-src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg" data-srcset="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 768w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 1024w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="2237" height="1678" alt="lazy image desktop"
-      quality-type={}
-      quality-percent={}
-      data-sizes="auto"
-      sizes="100vw"
-      
-    />
-  {%- endif -%}
-  ,
-  {%- liquid
-    assign isFetchPriorityHigh = false 
-    
-  -%}
-
-  {%- if isFetchPriorityHigh == true or isFetchPriorityHigh == 'true' -%}
-    <img
-      
-      
-      draggable="false"
-      isNotLazyload="true"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg undefined  gp_lazybg_mb"
-      src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg" width="2237" height="1678" alt="lazy image desktop"
-      fetchpriority="high"
-      quality-type={}
-      quality-percent={}
-      data-sizes="auto"
-      srcset=""
-      sizes="100vw"
-      
-    />
-  {%- else -%}
-    <img
-      
-      
-      draggable="false"
-      class="gp-invisible gp-w-full gp-h-full gp_lazyforbg undefined  gp_lazybg_mb gp_lazyload"
-      data-src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg" data-srcset="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 768w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 1024w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="2237" height="1678" alt="lazy image desktop"
+      class="gp-invisible gp-w-full gp_lazyload gp-h-full gp_lazyforbg gp_lazybg_tl  gp_lazyload"
+      data-src="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg" data-srcset="https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 768w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 1024w,https://cdn.shopify.com/s/files/1/0648/3220/9045/files/gempages_532871831896458163-2bdca6dd-bd11-4ee5-bdd5-79bd554f4078.jpg 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" width="2237" height="1678" alt="lazy image tablet"
       quality-type={}
       quality-percent={}
       data-sizes="auto"
@@ -235,7 +235,7 @@
           
           data-gp-text
           class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
-          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-CormorantGaramond, 'CormorantGaramond'), var(--g-font-body, body);--size:12px;--size-tablet:14px;--size-mobile:12px;--weight:bold;--c:rgb(33, 33, 33);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--ff:var(--g-font-CormorantGaramond, 'CormorantGaramond'), var(--g-font-body, body);--size:23px;--size-tablet:14px;--size-mobile:12px;--weight:bold;--c:rgb(33, 33, 33);word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
         >{{ section.settings.gOBPdRtisfDbP_text }}</div>
       </div>
     </div>
@@ -307,7 +307,7 @@
 {% schema %}
   {
     
-    "name": "Section 6",
+    "name": "Section 7",
     "tag": "section",
     "class": "gps-535138477549814705 gps gpsi",
     "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/7e97c3-3/apps/gempages-cro/app/shopify/edit?pageType=GP_INDEX&editorId=535138477415596977&sectionId=535138477549814705)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"},{"type":"html","id":"gOBPdRtisfDbP_text","label":"gOBPdRtisfDbP_text","default":"<p>BECAUSE YOU'RE BEAUTIFUL</p>"},{"type":"html","id":"gTycOCyfZjiCR_text","label":"gTycOCyfZjiCR_text","default":"LASH COLLECTION"},{"type":"html","id":"gTXfKrDmiSvWu_text","label":"gTXfKrDmiSvWu_text","default":"Seven innovatively designed, unique waterline lashes that augment your natural lashes while seamlessly blending in with them for a stunningly elegant, natural lash effect."}],
