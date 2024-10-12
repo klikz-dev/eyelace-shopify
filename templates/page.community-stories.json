@@ -447,13 +447,6 @@
         "mobile-overlay": true
       }
     },
-    "gp_global_section_533116896220808439_UNpTkV": {
-      "type": "gp-global-section-533116896220808439",
-      "settings": {
-        "section_preload": "off_lazy_script",
-        "checksum": ""
-      }
-    },
     "gp_global_section_533434228419855367_KVYXGD": {
       "type": "gp-global-section-533434228419855367",
       "disabled": true,
@@ -654,6 +647,13 @@
         "heading-alignment": "center",
         "view-more-text": "View more"
       }
+    },
+    "gp_global_section_535598115755918230_iwyfFF": {
+      "type": "gp-global-section-535598115755918230",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": ""
+      }
     }
   },
   "order": [
@@ -664,7 +664,7 @@
     "slideshow_RAqRqw",
     "slideshow_dVdTb3",
     "slideshow_Ni9dGF",
-    "gp_global_section_533116896220808439_UNpTkV",
+    "gp_global_section_535598115755918230_iwyfFF",
     "gp_global_section_533434228419855367_KVYXGD",
     "17162756717a17c541",
     "featured_text_zxTzQR",
