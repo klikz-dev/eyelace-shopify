@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "featured_text_MfTG4X": {
@@ -230,6 +230,7 @@
         "image_8kTYLj",
         "image_A9NaLd"
       ],
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
@@ -474,6 +475,13 @@
         "heading": "Subscribe to our newsletter",
         "description": "<p>Read about the lives of the empowered women in our community and stay on top of our latest tips and tricks.</p>"
       }
+    },
+    "gp_global_section_535489571815687219_tytCzn": {
+      "type": "gp-global-section-535489571815687219",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": ""
+      }
     }
   },
   "order": [
@@ -481,6 +489,7 @@
     "scrolling_content_gQQxAa",
     "main",
     "image_with_text_icCnx9",
+    "gp_global_section_535489571815687219_tytCzn",
     "slideshow_RcC4xz",
     "featured_text_Q84yEH",
     "featured_text_NyAgx9",
