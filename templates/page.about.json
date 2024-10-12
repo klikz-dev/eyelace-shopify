@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16324732604d3e7054": {
@@ -468,7 +468,7 @@
         "image_RtQXRg": {
           "type": "image",
           "settings": {
-            "text-width": "medium",
+            "text-width": "small",
             "text-horizontal-alignment": "left",
             "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/Jocelyn_MiamiPhotoshoot_VillasChannelPhoto-96_7e9dc8ff-91c8-499f-a2e7-6704d46a618e.jpg",
@@ -484,7 +484,7 @@
         "image_TjzmJw": {
           "type": "image",
           "settings": {
-            "text-width": "medium",
+            "text-width": "small",
             "text-horizontal-alignment": "left",
             "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/E90B1EDC-0E56-4E03-B70C-137646995BAD.jpg",
@@ -493,6 +493,7 @@
             "description": "",
             "link-url": "/",
             "link-text": "",
+            "mobile-image": "shopify://shop_images/E90B1EDC-0E56-4E03-B70C-137646995BAD.jpg",
             "mobile-text-alignment": "center",
             "mobile-hide-description": true
           }
@@ -500,7 +501,7 @@
         "image_NE46CJ": {
           "type": "image",
           "settings": {
-            "text-width": "medium",
+            "text-width": "small",
             "text-horizontal-alignment": "left",
             "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/marque_wall.heic",
@@ -516,7 +517,7 @@
         "image_y7XLAQ": {
           "type": "image",
           "settings": {
-            "text-width": "medium",
+            "text-width": "small",
             "text-horizontal-alignment": "left",
             "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/Screenshot_2024-10-08_at_1.18.50_AM.png",
