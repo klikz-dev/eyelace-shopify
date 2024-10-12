@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -832,6 +832,18 @@
         "link-url": "shopify://pages/contact",
         "link-text": "Get Help"
       }
+    },
+    "custom_liquid_MtqaqH": {
+      "type": "custom-liquid",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "custom-liquid": "<style>\n/* Ensure there's no horizontal overflow on the How To page */\nhtml, body {\n    overflow-x: hidden;\n}\n\n/* Adjust the container to fit the screen width on mobile */\n@media only screen and (max-width: 767px) {\n    .container {\n        max-width: 100%;\n        overflow-x: hidden;\n    }\n}\n</style>"
+      }
     }
   },
   "order": [
@@ -841,6 +853,7 @@
     "text_columns_nARqn6",
     "text_columns_UgCPm9",
     "featured_blog_f6GfVF",
-    "featured_text_83ikLR"
+    "featured_text_83ikLR",
+    "custom_liquid_MtqaqH"
   ]
 }
