@@ -66,25 +66,6 @@
         "settings": {
         }
       },
-      "12657775114333427046": {
-        "type": "shopify://apps/essential-countdown/blocks/app_embed/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "15079184273603081885": {
-        "type": "shopify://apps/essential-shipping-bar/blocks/app_embed/4125375e-37c8-4137-949d-c4e1a3aac572",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "14710238943034738919": {
-        "type": "shopify://apps/air-product-reviews/blocks/app-embed/c4e1e9ca-4d46-4e76-bc39-7e42417cb327",
-        "disabled": true,
-        "settings": {
-          "air_reviews_json_ld_v2": "{\n\"@context\": \"http://schema.org\",\n\"@type\": \"Product\",\n\"name\": {{ product.title | json }},\n\"description\": {{ product.description | escape | truncate: 150 | json }},\n\"image\": {{ product.featured_image | json }},\n\"aggregateRating\": {\n  \"@type\": \"AggregateRating\",\n  \"ratingValue\": {{ product.metafields.reviews.rating.value.rating | json }},\n  \"bestRating\": {{ product.metafields.reviews.rating.value.scale_max | json }},\n  \"reviewCount\": {{ product.metafields.air_reviews_product.review_count | json }}\n }{% if shop.metafields.air_reviews_has_ugc_content.data.value == true %}, \n  \"review\":[{% assign reviewsData = product.metafields.air_reviews_product.data.value.reviews %}\n  {% for review in reviewsData limit:10 %}\n    {\n      \"@type\": \"Review\",\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": {{ review.firstName | json }}\n      },\n      \"reviewRating\": {\n          \"@type\": \"Rating\",\n          \"bestRating\": {{ product.metafields.reviews.rating.value.scale_max | json }},\n          \"ratingValue\": {{ review.rate | json }},\n          \"worstRating\": {{ product.metafields.reviews.rating.value.scale_min | json }}\n      },\n      \"reviewBody\": {{ review.content | json }},\n      \"datePublished\": {{ review.createdAt | date: \"%Y-%m-%d %H:%M:%S\" | json }}\n    }{% unless forloop.last %},{% endunless %} \n  {% endfor %}]{% endif %}\n}"
-        }
-      },
       "341186785192672687": {
         "type": "shopify://apps/seal-subscriptions/blocks/subscription-script-append/13b25004-a140-4ab7-b5fe-29918f759699",
         "disabled": false,
@@ -109,12 +90,6 @@
         "settings": {
         }
       },
-      "1232542678405107163": {
-        "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "1592368672439559791": {
         "type": "shopify://apps/bixgrow-affiliate/blocks/toolbar/b4f8e2e0-5ee6-49dd-b333-2e5542feb60a",
         "disabled": false,
@@ -133,23 +108,11 @@
         "settings": {
         }
       },
-      "15179280101827346836": {
-        "type": "shopify://apps/juniper-tiktok-feed/blocks/head-block/fa514c33-5475-4484-b270-5f1e7eb87a9a",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "16064005293743155225": {
         "type": "shopify://apps/ghost-shoppable-ugc-video/blocks/ghost_embed_js/0c680c94-9038-480e-8e79-1229a9895cfb",
         "disabled": true,
         "settings": {
           "devUrl": ""
-        }
-      },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": true,
-        "settings": {
         }
       }
     }
