@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1726468789aa6fed02": {
@@ -56,7 +56,7 @@
         "spacing-below": true,
         "background-color": "accent-1",
         "light-text": false,
-        "container-width": "4",
+        "container-width": "6",
         "custom-liquid": "{% assign eligible_products = \"Elegant Effect Lash Set,Natural Beauty Lash Set,Perfect Poise Lash Set,Social Butterfly Lash Set,Day Dream Lash Set,Night Life Lash Set,Ball Gown Lash Set\" | split: \",\" %}\n{% assign subscription_quantity = 0 %}\n\n{% for item in cart.items %}\n  {% if eligible_products contains item.product.title %}\n    {% if item.selling_plan_allocation %}\n      {% assign subscription_quantity = subscription_quantity | plus: item.quantity %}\n    {% endif %}\n  {% endif %}\n{% endfor %}\n\n{% if subscription_quantity == 1 %}\n  <div style=\"background-color:#f7f7f7; padding:15px; color:#333333; margin-top:10px;\">\n    <p><strong>Attention:</strong> Our 20% off subscription offer with free shipping is only available for orders of 2 or more Lash Sets. Please ensure you have at least 2 Lash Sets in your cart to qualify for the discounted subscription offer and free shipping.</p>\n  </div>\n{% else %}\n  <div style=\"font-family: 'Cormorant', serif; font-weight: 600; text-align: center; padding: 15px; font-size: 2.25rem;\">\n    <p>BECAUSE YOU'RE BEAUTIFUL</p>\n  </div>\n{% endif %}"
       }
     }
