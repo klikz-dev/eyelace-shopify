@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "color--accent-1": "#e6cabe",
@@ -54,13 +54,6 @@
 
     ],
     "blocks": {
-      "16064005293743155225": {
-        "type": "shopify://apps/ghost-shoppable-ugc-video/blocks/ghost_embed_js/0c680c94-9038-480e-8e79-1229a9895cfb",
-        "disabled": false,
-        "settings": {
-          "devUrl": ""
-        }
-      },
       "7709396684840320309": {
         "type": "shopify://apps/socialwidget-instagram-feed/blocks/social-widget/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
         "disabled": false,
@@ -92,12 +85,6 @@
           "air_reviews_json_ld_v2": "{\n\"@context\": \"http://schema.org\",\n\"@type\": \"Product\",\n\"name\": {{ product.title | json }},\n\"description\": {{ product.description | escape | truncate: 150 | json }},\n\"image\": {{ product.featured_image | json }},\n\"aggregateRating\": {\n  \"@type\": \"AggregateRating\",\n  \"ratingValue\": {{ product.metafields.reviews.rating.value.rating | json }},\n  \"bestRating\": {{ product.metafields.reviews.rating.value.scale_max | json }},\n  \"reviewCount\": {{ product.metafields.air_reviews_product.review_count | json }}\n }{% if shop.metafields.air_reviews_has_ugc_content.data.value == true %}, \n  \"review\":[{% assign reviewsData = product.metafields.air_reviews_product.data.value.reviews %}\n  {% for review in reviewsData limit:10 %}\n    {\n      \"@type\": \"Review\",\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": {{ review.firstName | json }}\n      },\n      \"reviewRating\": {\n          \"@type\": \"Rating\",\n          \"bestRating\": {{ product.metafields.reviews.rating.value.scale_max | json }},\n          \"ratingValue\": {{ review.rate | json }},\n          \"worstRating\": {{ product.metafields.reviews.rating.value.scale_min | json }}\n      },\n      \"reviewBody\": {{ review.content | json }},\n      \"datePublished\": {{ review.createdAt | date: \"%Y-%m-%d %H:%M:%S\" | json }}\n    }{% unless forloop.last %},{% endunless %} \n  {% endfor %}]{% endif %}\n}"
         }
       },
-      "15179280101827346836": {
-        "type": "shopify://apps/juniper-tiktok-feed/blocks/head-block/fa514c33-5475-4484-b270-5f1e7eb87a9a",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "341186785192672687": {
         "type": "shopify://apps/seal-subscriptions/blocks/subscription-script-append/13b25004-a140-4ab7-b5fe-29918f759699",
         "disabled": false,
@@ -118,12 +105,6 @@
       },
       "3710365891230691787": {
         "type": "shopify://apps/accessibility/blocks/aca-block/7fc368d3-1043-4955-8c86-8afc04c8a479",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {
         }
@@ -149,6 +130,25 @@
       "6468128024931565999": {
         "type": "shopify://apps/seguno-popups/blocks/popup-app-embed/f53bd66f-9a20-4ce2-ae2e-ccbd0148bd4b",
         "disabled": false,
+        "settings": {
+        }
+      },
+      "15179280101827346836": {
+        "type": "shopify://apps/juniper-tiktok-feed/blocks/head-block/fa514c33-5475-4484-b270-5f1e7eb87a9a",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "16064005293743155225": {
+        "type": "shopify://apps/ghost-shoppable-ugc-video/blocks/ghost_embed_js/0c680c94-9038-480e-8e79-1229a9895cfb",
+        "disabled": true,
+        "settings": {
+          "devUrl": ""
+        }
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": true,
         "settings": {
         }
       }
