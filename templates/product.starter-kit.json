@@ -38,7 +38,7 @@
         "link-text": "",
         "mobile-image": "shopify://shop_images/Creative_Banner_5_Brighter.jpg",
         "mobile-overlay": true,
-        "mobile-hide-description": false,
+        "mobile-hide-description": true,
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
