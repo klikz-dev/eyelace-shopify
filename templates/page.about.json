@@ -484,7 +484,7 @@
         "image_TjzmJw": {
           "type": "image",
           "settings": {
-            "text-width": "medium",
+            "text-width": "small",
             "text-horizontal-alignment": "left",
             "text-vertical-alignment": "bottom",
             "image": "shopify://shop_images/E90B1EDC-0E56-4E03-B70C-137646995BAD.jpg",
