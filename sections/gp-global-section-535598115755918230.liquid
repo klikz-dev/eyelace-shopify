@@ -1,0 +1,601 @@
+
+{% render 'gp-head', 'isThemeSection: true' %}
+<style>.gps-535598115755918230 .gp-rotate-0,.gps-535598115755918230 .gp-rotate-180,.gps-535598115755918230 .mobile\:gp-rotate-0,.gps-535598115755918230 .mobile\:gp-rotate-180,.gps-535598115755918230 .tablet\:gp-rotate-0,.gps-535598115755918230 .tablet\:gp-rotate-180{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1}.gps-535598115755918230 .gp-shadow-md{--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}.gps-535598115755918230 .gp-absolute{position:absolute}.gps-535598115755918230 .\!gp-relative{position:relative!important}.gps-535598115755918230 .gp-relative{position:relative}.gps-535598115755918230 .gp-left-0{left:0}.gps-535598115755918230 .gp-right-0{right:0}.gps-535598115755918230 .gp-z-1{z-index:1}.gps-535598115755918230 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-535598115755918230 .gp-my-0{margin-bottom:0;margin-top:0}.gps-535598115755918230 .gp-mb-0{margin-bottom:0}.gps-535598115755918230 .gp-block{display:block}.gps-535598115755918230 .\!gp-flex{display:flex!important}.gps-535598115755918230 .gp-flex{display:flex}.gps-535598115755918230 .gp-grid{display:grid}.gps-535598115755918230 .\!gp-hidden{display:none!important}.gps-535598115755918230 .gp-hidden{display:none}.gps-535598115755918230 .gp-aspect-square{aspect-ratio:1/1}.gps-535598115755918230 .gp-h-full{height:100%}.gps-535598115755918230 .\!gp-min-h-full{min-height:100%!important}.gps-535598115755918230 .gp-w-\[12px\]{width:12px}.gps-535598115755918230 .gp-w-full{width:100%}.gps-535598115755918230 .\!gp-max-w-none{max-width:none!important}.gps-535598115755918230 .gp-max-w-full{max-width:100%}.gps-535598115755918230 .gp-shrink-0{flex-shrink:0}.gps-535598115755918230 .gp-rotate-0{--tw-rotate:0deg}.gps-535598115755918230 .gp-rotate-0,.gps-535598115755918230 .gp-rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-535598115755918230 .gp-rotate-180{--tw-rotate:180deg}.gps-535598115755918230 .gp-cursor-pointer{cursor:pointer}.gps-535598115755918230 .gp-select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.gps-535598115755918230 .\!gp-flex-row{flex-direction:row!important}.gps-535598115755918230 .gp-flex-row{flex-direction:row}.gps-535598115755918230 .gp-flex-col{flex-direction:column}.gps-535598115755918230 .\!gp-flex-nowrap{flex-wrap:nowrap!important}.gps-535598115755918230 .gp-items-center{align-items:center}.gps-535598115755918230 .gp-justify-center{justify-content:center}.gps-535598115755918230 .gp-justify-between{justify-content:space-between}.gps-535598115755918230 .gp-gap-2{gap:8px}.gps-535598115755918230 .gp-gap-y-0{row-gap:0}.gps-535598115755918230 .gp-overflow-hidden{overflow:hidden}.gps-535598115755918230 .gp-rounded-full{border-radius:9999px}.gps-535598115755918230 .gp-text-center{text-align:center}.gps-535598115755918230 .gp-text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.gps-535598115755918230 .gp-shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.gps-535598115755918230 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-535598115755918230 .gp-duration-200{transition-duration:.2s}.gps-535598115755918230 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (max-width:1023px){.gps-535598115755918230 .tablet\:gp-absolute{position:absolute}.gps-535598115755918230 .tablet\:\!gp-relative{position:relative!important}.gps-535598115755918230 .tablet\:gp-left-0{left:0}.gps-535598115755918230 .tablet\:gp-right-0{right:0}.gps-535598115755918230 .tablet\:gp-block{display:block}.gps-535598115755918230 .tablet\:\!gp-flex{display:flex!important}.gps-535598115755918230 .tablet\:\!gp-hidden{display:none!important}.gps-535598115755918230 .tablet\:gp-hidden{display:none}.gps-535598115755918230 .tablet\:\!gp-min-h-full{min-height:100%!important}.gps-535598115755918230 .tablet\:gp-rotate-0{--tw-rotate:0deg}.gps-535598115755918230 .tablet\:gp-rotate-0,.gps-535598115755918230 .tablet\:gp-rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-535598115755918230 .tablet\:gp-rotate-180{--tw-rotate:180deg}.gps-535598115755918230 .tablet\:\!gp-flex-row{flex-direction:row!important}.gps-535598115755918230 .tablet\:gp-flex-row{flex-direction:row}.gps-535598115755918230 .tablet\:\!gp-flex-nowrap{flex-wrap:nowrap!important}.gps-535598115755918230 .tablet\:gp-px-0{padding-left:0;padding-right:0}}@media (max-width:767px){.gps-535598115755918230 .mobile\:gp-absolute{position:absolute}.gps-535598115755918230 .mobile\:\!gp-relative{position:relative!important}.gps-535598115755918230 .mobile\:gp-left-0{left:0}.gps-535598115755918230 .mobile\:gp-right-0{right:0}.gps-535598115755918230 .mobile\:gp-block{display:block}.gps-535598115755918230 .mobile\:\!gp-flex{display:flex!important}.gps-535598115755918230 .mobile\:\!gp-hidden{display:none!important}.gps-535598115755918230 .mobile\:gp-hidden{display:none}.gps-535598115755918230 .mobile\:\!gp-min-h-full{min-height:100%!important}.gps-535598115755918230 .mobile\:gp-rotate-0{--tw-rotate:0deg}.gps-535598115755918230 .mobile\:gp-rotate-0,.gps-535598115755918230 .mobile\:gp-rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-535598115755918230 .mobile\:gp-rotate-180{--tw-rotate:180deg}.gps-535598115755918230 .mobile\:\!gp-flex-row{flex-direction:row!important}.gps-535598115755918230 .mobile\:gp-flex-row{flex-direction:row}.gps-535598115755918230 .mobile\:\!gp-flex-nowrap{flex-wrap:nowrap!important}.gps-535598115755918230 .mobile\:gp-px-0{padding-left:0;padding-right:0}}.gps-535598115755918230 .\[\&\>svg\]\:gp-h-full>svg{height:100%}.gps-535598115755918230 .\[\&\>svg\]\:gp-w-full>svg{width:100%}.gps-535598115755918230 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-535598115755918230 .\[\&_\>_article\]\:gp-aspect-\[var\(--aspect\)\]>article{aspect-ratio:var(--aspect)}@media (max-width:1023px){.gps-535598115755918230 .tablet\:\[\&_\>_article\]\:gp-aspect-\[var\(--aspect-tablet\2c _var\(--aspect\)\)\]>article{aspect-ratio:var(--aspect-tablet,var(--aspect))}}@media (max-width:767px){.gps-535598115755918230 .mobile\:\[\&_\>_article\]\:gp-aspect-\[var\(--aspect-mobile\2c _var\(--aspect-tablet\2c _var\(--aspect\)\)\)\]>article{aspect-ratio:var(--aspect-mobile,var(--aspect-tablet,var(--aspect)))}}</style>
+
+       
+      
+            <section
+              class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      id="ggr5RKL8dO" data-id="ggr5RKL8dO"
+        style="--blockPadding:base;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--pt:var(--g-s-2xl);--pb:var(--g-s-2xl);--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#000000;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="ggr5RKL8dO gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="ggq-spmT6s gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      parentTag="Col" id="gCFtrlia9R" data-id="gCFtrlia9R"
+        style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--mb:var(--g-s-l);--cg:8px;--pc:start;--gtc:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--w:100%;--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gCFtrlia9R gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gCewRop4e8 gp-relative gp-flex gp-flex-col"
+    >
+      
+    <gp-carousel data-id="gJPLHMaYC_"  id="gp-root-carousel-gJPLHMaYC_-{{section.id}}" class="  gp-group/carousel gp-flex" gp-data='{"id":"gJPLHMaYC_-{{section.id}}","setting":{"animationMode":"ease-in","arrowBackgroundColor":"transparent","arrowBorder":{"desktop":{"border":"none","borderType":"none","borderWidth":"1px","isCustom":false,"width":"1px 1px 1px 1px"}},"arrowButtonSize":{"desktop":{"gap":"","height":"100px","padding":{"linked":true},"shapeLinked":true,"shapeValue":"1/1","width":"100px"}},"arrowCustom":"<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n              <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.62204 5.13313C7.78476 4.95562 8.04858 4.95562 8.21129 5.13313L12.378 9.67859C12.5407 9.8561 12.5407 10.1439 12.378 10.3214L8.21129 14.8669C8.04858 15.0444 7.78476 15.0444 7.62204 14.8669C7.45932 14.6894 7.45932 14.4016 7.62204 14.224L11.4941 10L7.62204 5.77596C7.45932 5.59845 7.45932 5.31064 7.62204 5.13313Z\"/>\n              </svg>\n              ","arrowCustomColor":"#000000","arrowGapToEachSide":"16","arrowIconSize":{"desktop":100},"autoplay":false,"autoplayTimeout":2,"background":{"desktop":{"attachment":"scroll","color":"#00000000","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color","video":"","videoHtml5":""}},"childItem":["Slide 3","Slide 1","Slide 2"],"controlOverContent":{"desktop":true},"dot":{"desktop":true,"mobile":true,"tablet":true},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"dotGapToCarousel":{"desktop":16},"dotSize":{"desktop":12},"dotStyle":{"desktop":"inside"},"enableDrag":{"desktop":false},"itemNumber":{"desktop":3,"mobile":2,"tablet":2},"label":true,"loop":{"desktop":true},"navigationStyle":{"desktop":"outside"},"pauseOnHover":true,"roundedArrow":{"desktop":{"radiusType":"small"}},"rtl":false,"runPreview":false,"showWhenHover":false,"sneakPeak":{"desktop":false},"sneakPeakOffsetCenter":{"desktop":50},"sneakPeakOffsetForward":{"desktop":50},"sneakPeakType":{"desktop":"center"},"vertical":{"desktop":false}},"styles":{"align":{"desktop":"center"},"borderContent":{"border":"none","borderType":"none","borderWidth":"1px","color":"#121212","isCustom":true,"position":"all","width":"1px 1px 1px 1px"},"carouselShadow":{"angle":90,"blur":"12px","color":"#121212","distance":"4px","spread":"0px","type":"shadow-1"},"fullWidth":{"desktop":false,"mobile":false,"tablet":false},"hasActiveShadow":false,"playSpeed":500,"roundedContent":{"radiusType":"none"},"sizeSetting":{"desktop":{"height":"auto","shapeLinked":false,"width":"default"}},"spacing":{"desktop":16}},"isHiddenArrowWhenDisabled":true}' style="--jc:center">
+      <div class="gp-hidden gp-aspect-square gp-w-[12px] gp-rounded-full gp-shadow-md"></div>
+      <div
+        
+        class="gp-relative gp-my-0 tablet:gp-px-0 gp-max-w-full mobile:gp-px-0 gp-carousel-wrapper mobile:gp-block tablet:gp-block gp-block gJPLHMaYC_"
+        style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:none;--d-tablet:block;--op:100%;--w:var(--g-ct-w);--w-tablet:var(--g-ct-w);--w-mobile:var(--g-ct-w);--h:auto;--h-tablet:auto;--h-mobile:auto"
+      >
+        <div
+          class="gp-h-full gp-relative gp-mx-auto gp-flex gp-items-center gp-justify-between mobile:!gp-flex-row tablet:!gp-flex-row !gp-flex-row"
+          style="--h:100%;--h-tablet:100%;--h-mobile:100%;gap:16px"
+        >
+          
+    <button
+      type="button"
+      aria-label='Carousel Back Arrow'
+      class="gp-z-1 gp-carousel-action-back gem-slider-previous gJPLHMaYC_-{{section.id}} gp-carousel-arrow-gJPLHMaYC_ gp-items-center gp-justify-center gp-overflow-hidden gp-shrink-0  gp-cursor-pointer gp-text-gray-500 !gp-flex !gp-relative  tablet:!gp-flex tablet:!gp-relative  mobile:!gp-flex mobile:!gp-relative "
+      style="--left:initial;--top:initial;--right:initial;--bottom:;--left-tablet:initial;--top-tablet:initial;--right-tablet:initial;--bottom-tablet:;--left-mobile:initial;--top-mobile:initial;--right-mobile:initial;--bottom-mobile:;--d:flex;--d-tablet:flex;--d-mobile:flex;background-color:transparent;--w:100px;--h:100px"
+      onClick={onClick}
+      
+    >
+      <div 
+  class="gp-flex gp-items-center gp-justify-center [&>svg]:gp-h-full [&>svg]:gp-w-full gp-rotate-180 tablet:gp-rotate-180 mobile:gp-rotate-180"
+  style="--c:#000000;--w:100px;--w-tablet:100px;--w-mobile:100px;--h:100px;--h-tablet:100px;--h-mobile:100px"
+  >
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.62204 5.13313C7.78476 4.95562 8.04858 4.95562 8.21129 5.13313L12.378 9.67859C12.5407 9.8561 12.5407 10.1439 12.378 10.3214L8.21129 14.8669C8.04858 15.0444 7.78476 15.0444 7.62204 14.8669C7.45932 14.6894 7.45932 14.4016 7.62204 14.224L11.4941 10L7.62204 5.77596C7.45932 5.59845 7.45932 5.31064 7.62204 5.13313Z"/>
+              </svg>
+              
+    </div>
+      <style>
+    .gp-carousel-arrow-gJPLHMaYC_ {
+      border-radius: var(--g-radius-small);
+    }
+    .gp-carousel-arrow-gJPLHMaYC_::before {
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      z-index: 10;
+      border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+      border-radius: var(--g-radius-small);
+    }
+    @media only screen and (max-width: 1023px) and (min-width: 768px) {
+      .gp-carousel-arrow-gJPLHMaYC_ {
+        border-radius: var(--g-radius-small);
+      }
+      .gp-carousel-arrow-gJPLHMaYC_::before {
+        border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+        border-radius: var(--g-radius-small);
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .gp-carousel-arrow-gJPLHMaYC_ {
+        border-radius: var(--g-radius-small);
+      }
+      .gp-carousel-arrow-gJPLHMaYC_::before {
+        border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+        border-radius: var(--g-radius-small);
+      }
+    }
+  </style>
+    </button>
+  
+          <div id="gp-carousel-gJPLHMaYC_-{{section.id}}" class="gem-slider gp-h-full gp-overflow-hidden gp-select-none mobile:!gp-flex-nowrap tablet:!gp-flex-nowrap !gp-flex-nowrap mobile:!gp-min-h-full tablet:!gp-min-h-full !gp-min-h-full"
+          style="--cg-mobile:16px;--cg-tablet:16px;--cg:16px">
+          
+    <div
+      media-type="{{media.media_type}}"
+      media-poster="{{media.preview_image.src}}"
+      media-source-url="{{media.sources.first.url}}"
+      media-last-source-url="{{mediaSourceUrl}}"
+      external-id="{{media.external_id}}"
+      grid-index="{{forloop.index}}"
+      
+      label="Carousel Item" tag="CarouselItem" type="component"
+      style="--bgc:#00000000;--minw:calc(100% / 3 - 10.666666666666666px);--minw-tablet:calc(100% / 2 - 8px);--minw-mobile:calc(100% / 2 - 8px);--maxw:calc(100% / 3 - 10.666666666666666px);--maxw-tablet:calc(100% / 2 - 8px);--maxw-mobile:calc(100% / 2 - 8px);--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ml:0px;--ml-tablet:0px;--ml-mobile:0px"
+      class="gem-slider-item gp-w-full gem-slider-item- gp-child-item-gJPLHMaYC_ gAcDDEFueh"
+    >
+      
+    <div
+      
+      data-id="gBm5ZJR6r8"
+      class="!gp-max-w-none gp-overflow-hidden [&_>_article]:gp-aspect-[var(--aspect)] tablet:[&_>_article]:gp-aspect-[var(--aspect-tablet,_var(--aspect))] mobile:[&_>_article]:gp-aspect-[var(--aspect-mobile,_var(--aspect-tablet,_var(--aspect)))] gBm5ZJR6r8"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--aspect:9/16"
+    >
+      
+    
+    <video
+      id="gp-video-gBm5ZJR6r8"
+      class="lazy gp-w-full"
+      style="--aspect:9/16"
+      controls
+      loop
+      
+      
+      title="Video"
+      preload="none"
+      data-src="https://cdn.shopify.com/videos/c/o/v/2e3790c817f74ff183ae6da6b02fad83.mov"
+      poster="{{ 'gempages_532871831896458163-2a4f6c9a-1a3c-48e4-9f58-7f0a43e41a94.png' | file_url }}"
+      playsinline
+    >
+      
+    </video>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        if(lazyLoadInstance){lazyLoadInstance.update()}else{var lazyLoadInstance = new LazyLoad()}
+    </script>
+  
+    </div>
+  
+    </div>
+  
+    <div
+      media-type="{{media.media_type}}"
+      media-poster="{{media.preview_image.src}}"
+      media-source-url="{{media.sources.first.url}}"
+      media-last-source-url="{{mediaSourceUrl}}"
+      external-id="{{media.external_id}}"
+      grid-index="{{forloop.index}}"
+      
+      label="Carousel Item" tag="CarouselItem" type="component"
+      style="--bgc:#00000000;--minw:calc(100% / 3 - 10.666666666666666px);--minw-tablet:calc(100% / 2 - 8px);--minw-mobile:calc(100% / 2 - 8px);--maxw:calc(100% / 3 - 10.666666666666666px);--maxw-tablet:calc(100% / 2 - 8px);--maxw-mobile:calc(100% / 2 - 8px);--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ml:0px;--ml-tablet:0px;--ml-mobile:0px"
+      class="gem-slider-item gp-w-full gem-slider-item- gp-child-item-gJPLHMaYC_ gx9VeU7cP0"
+    >
+      
+    </div>
+  
+    <div
+      media-type="{{media.media_type}}"
+      media-poster="{{media.preview_image.src}}"
+      media-source-url="{{media.sources.first.url}}"
+      media-last-source-url="{{mediaSourceUrl}}"
+      external-id="{{media.external_id}}"
+      grid-index="{{forloop.index}}"
+      
+      label="Carousel Item" tag="CarouselItem" type="component"
+      style="--bgc:#00000000;--minw:calc(100% / 3 - 10.666666666666666px);--minw-tablet:calc(100% / 2 - 8px);--minw-mobile:calc(100% / 2 - 8px);--maxw:calc(100% / 3 - 10.666666666666666px);--maxw-tablet:calc(100% / 2 - 8px);--maxw-mobile:calc(100% / 2 - 8px);--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ml:0px;--ml-tablet:0px;--ml-mobile:0px"
+      class="gem-slider-item gp-w-full gem-slider-item- gp-child-item-gJPLHMaYC_ g91QqlwOJg"
+    >
+      
+    <div
+      
+      data-id="gVS2kivA_Y"
+      class="!gp-max-w-none gp-overflow-hidden [&_>_article]:gp-aspect-[var(--aspect)] tablet:[&_>_article]:gp-aspect-[var(--aspect-tablet,_var(--aspect))] mobile:[&_>_article]:gp-aspect-[var(--aspect-mobile,_var(--aspect-tablet,_var(--aspect)))] gVS2kivA_Y"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--aspect:9/16"
+    >
+      
+    
+    <video
+      id="gp-video-gVS2kivA_Y"
+      class="lazy gp-w-full"
+      style="--aspect:9/16"
+      controls
+      loop
+      
+      
+      title="Video"
+      preload="none"
+      data-src="https://cdn.shopify.com/videos/c/o/v/035aa44437c14a4d8af87d8a1d707e3a.mov"
+      poster="{{ 'gempages_532871831896458163-db2a8b81-12e8-427f-9ba4-29044ed24c00.jpg' | file_url }}"
+      playsinline
+    >
+      
+    </video>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        if(lazyLoadInstance){lazyLoadInstance.update()}else{var lazyLoadInstance = new LazyLoad()}
+    </script>
+  
+    </div>
+  
+    </div>
+  
+          </div>
+          
+    <button
+      type="button"
+      aria-label='Carousel Next Arrow'
+      class="gp-z-1 gp-carousel-action-next gem-slider-next gJPLHMaYC_-{{section.id}} gp-carousel-arrow-gJPLHMaYC_ gp-items-center gp-justify-center gp-overflow-hidden gp-shrink-0  gp-cursor-pointer gp-text-gray-500 !gp-flex !gp-relative  tablet:!gp-flex tablet:!gp-relative  mobile:!gp-flex mobile:!gp-relative "
+      style="--left:initial;--top:;--right:initial;--bottom:initial;--left-tablet:initial;--top-tablet:;--right-tablet:initial;--bottom-tablet:initial;--left-mobile:initial;--top-mobile:;--right-mobile:initial;--bottom-mobile:initial;--d:flex;--d-tablet:flex;--d-mobile:flex;background-color:transparent;--w:100px;--h:100px"
+      onClick={onClick}
+      
+    >
+      <div 
+  class="gp-flex gp-items-center gp-justify-center [&>svg]:gp-h-full [&>svg]:gp-w-full gp-rotate-0 tablet:gp-rotate-0 mobile:gp-rotate-0"
+  style="--c:#000000;--w:100px;--w-tablet:100px;--w-mobile:100px;--h:100px;--h-tablet:100px;--h-mobile:100px"
+  >
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.62204 5.13313C7.78476 4.95562 8.04858 4.95562 8.21129 5.13313L12.378 9.67859C12.5407 9.8561 12.5407 10.1439 12.378 10.3214L8.21129 14.8669C8.04858 15.0444 7.78476 15.0444 7.62204 14.8669C7.45932 14.6894 7.45932 14.4016 7.62204 14.224L11.4941 10L7.62204 5.77596C7.45932 5.59845 7.45932 5.31064 7.62204 5.13313Z"/>
+              </svg>
+              
+    </div>
+      <style>
+    .gp-carousel-arrow-gJPLHMaYC_ {
+      border-radius: var(--g-radius-small);
+    }
+    .gp-carousel-arrow-gJPLHMaYC_::before {
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      z-index: 10;
+      border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+      border-radius: var(--g-radius-small);
+    }
+    @media only screen and (max-width: 1023px) and (min-width: 768px) {
+      .gp-carousel-arrow-gJPLHMaYC_ {
+        border-radius: var(--g-radius-small);
+      }
+      .gp-carousel-arrow-gJPLHMaYC_::before {
+        border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+        border-radius: var(--g-radius-small);
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .gp-carousel-arrow-gJPLHMaYC_ {
+        border-radius: var(--g-radius-small);
+      }
+      .gp-carousel-arrow-gJPLHMaYC_::before {
+        border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+        border-radius: var(--g-radius-small);
+      }
+    }
+  </style>
+    </button>
+  
+        </div>
+        <div
+    class="gp-items-center gp-justify-center gp-gap-2 gp-text-center gp-carousel-dot-container gp-carousel-dot-container-gJPLHMaYC_-{{section.id}} gp-absolute gp-flex-row gp-left-0 gp-right-0 tablet:gp-absolute tablet:gp-flex-row tablet:gp-left-0 tablet:gp-right-0 mobile:gp-absolute mobile:gp-flex-row mobile:gp-left-0 mobile:gp-right-0"
+    style="--bottom:16px;--bottom-tablet:16px;--bottom-mobile:16px;--d:flex;--d-tablet:flex;--d-mobile:flex"
+ ></div>
+      </div>
+    </gp-carousel>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-carousel-v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+
+  
+    <gp-carousel data-id="gBPAIxQL63"  id="gp-root-carousel-gBPAIxQL63-{{section.id}}" class="  gp-group/carousel gp-flex" gp-data='{"id":"gBPAIxQL63-{{section.id}}","setting":{"animationMode":"ease-in","arrowBackgroundColor":"transparent","arrowBorder":{"desktop":{"border":"none","borderType":"none","borderWidth":"1px","isCustom":false,"width":"1px 1px 1px 1px"}},"arrowButtonSize":{"desktop":{"gap":"","height":"100px","padding":{"linked":true},"shapeLinked":true,"shapeValue":"1/1","width":"100px"},"mobile":{"customShapeValue":"","gap":"","height":"32px","padding":{"linked":true},"shape":"","shapeLinked":true,"shapeValue":"1/1","width":"32px"}},"arrowCustom":"<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n              <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.62204 5.13313C7.78476 4.95562 8.04858 4.95562 8.21129 5.13313L12.378 9.67859C12.5407 9.8561 12.5407 10.1439 12.378 10.3214L8.21129 14.8669C8.04858 15.0444 7.78476 15.0444 7.62204 14.8669C7.45932 14.6894 7.45932 14.4016 7.62204 14.224L11.4941 10L7.62204 5.77596C7.45932 5.59845 7.45932 5.31064 7.62204 5.13313Z\"/>\n              </svg>\n              ","arrowCustomColor":"#000000","arrowGapToEachSide":"16","arrowIconSize":{"desktop":100},"autoplay":false,"autoplayTimeout":2,"background":{"desktop":{"attachment":"scroll","color":"#00000000","image":{"height":0,"src":"","width":0},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"color","video":"","videoHtml5":""}},"childItem":["Slide 1","Slide 2","Slide 3"],"controlOverContent":{"desktop":true},"dot":{"desktop":true,"mobile":true,"tablet":true},"dotActiveColor":{"desktop":"line-3"},"dotColor":{"desktop":"bg-1"},"dotGapToCarousel":{"desktop":16},"dotSize":{"desktop":12},"dotStyle":{"desktop":"inside"},"enableDrag":{"desktop":false},"itemNumber":{"desktop":3,"mobile":1,"tablet":2},"label":true,"loop":{"desktop":true},"navigationStyle":{"desktop":"outside","mobile":"outside"},"pauseOnHover":true,"roundedArrow":{"desktop":{"radiusType":"small"}},"rtl":false,"runPreview":false,"showWhenHover":false,"sneakPeak":{"desktop":false,"mobile":false},"sneakPeakOffsetCenter":{"desktop":50},"sneakPeakOffsetForward":{"desktop":50},"sneakPeakType":{"desktop":"center"},"vertical":{"desktop":false}},"styles":{"align":{"desktop":"center"},"borderContent":{"border":"none","borderType":"none","borderWidth":"1px","color":"#121212","isCustom":true,"position":"all","width":"1px 1px 1px 1px"},"carouselShadow":{"angle":90,"blur":"12px","color":"#121212","distance":"4px","spread":"0px","type":"shadow-1"},"fullWidth":{"desktop":false,"mobile":false,"tablet":false},"hasActiveShadow":false,"playSpeed":500,"roundedContent":{"radiusType":"none"},"sizeSetting":{"desktop":{"height":"auto","shapeLinked":false,"width":"default"}},"spacing":{"desktop":16}},"isHiddenArrowWhenDisabled":true}' style="--jc:center">
+      <div class="gp-hidden gp-aspect-square gp-w-[12px] gp-rounded-full gp-shadow-md"></div>
+      <div
+        
+        class="gp-relative gp-my-0 tablet:gp-px-0 gp-max-w-full mobile:gp-px-0 gp-carousel-wrapper mobile:gp-block tablet:gp-block gp-block gBPAIxQL63"
+        style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:none;--d-mobile:block;--d-tablet:none;--op:100%;--mb-mobile:0px;--w:var(--g-ct-w);--w-tablet:var(--g-ct-w);--w-mobile:var(--g-ct-w);--h:auto;--h-tablet:auto;--h-mobile:auto"
+      >
+        <div
+          class="gp-h-full gp-relative gp-mx-auto gp-flex gp-items-center gp-justify-between mobile:!gp-flex-row tablet:!gp-flex-row !gp-flex-row"
+          style="--h:100%;--h-tablet:100%;--h-mobile:100%;gap:16px"
+        >
+          
+    <button
+      type="button"
+      aria-label='Carousel Back Arrow'
+      class="gp-z-1 gp-carousel-action-back gem-slider-previous gBPAIxQL63-{{section.id}} gp-carousel-arrow-gBPAIxQL63 gp-items-center gp-justify-center gp-overflow-hidden gp-shrink-0  gp-cursor-pointer gp-text-gray-500 !gp-flex !gp-relative  tablet:!gp-flex tablet:!gp-relative  mobile:!gp-flex mobile:!gp-relative "
+      style="--left:initial;--top:initial;--right:initial;--bottom:;--left-tablet:initial;--top-tablet:initial;--right-tablet:initial;--bottom-tablet:;--left-mobile:initial;--top-mobile:initial;--right-mobile:initial;--bottom-mobile:;--d:flex;--d-tablet:flex;--d-mobile:flex;background-color:transparent;--w:100px;--w-mobile:32px;--h:100px;--h-mobile:32px"
+      onClick={onClick}
+      
+    >
+      <div 
+  class="gp-flex gp-items-center gp-justify-center [&>svg]:gp-h-full [&>svg]:gp-w-full gp-rotate-180 tablet:gp-rotate-180 mobile:gp-rotate-180"
+  style="--c:#000000;--w:100px;--w-tablet:100px;--w-mobile:100px;--h:100px;--h-tablet:100px;--h-mobile:100px"
+  >
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.62204 5.13313C7.78476 4.95562 8.04858 4.95562 8.21129 5.13313L12.378 9.67859C12.5407 9.8561 12.5407 10.1439 12.378 10.3214L8.21129 14.8669C8.04858 15.0444 7.78476 15.0444 7.62204 14.8669C7.45932 14.6894 7.45932 14.4016 7.62204 14.224L11.4941 10L7.62204 5.77596C7.45932 5.59845 7.45932 5.31064 7.62204 5.13313Z"/>
+              </svg>
+              
+    </div>
+      <style>
+    .gp-carousel-arrow-gBPAIxQL63 {
+      border-radius: var(--g-radius-small);
+    }
+    .gp-carousel-arrow-gBPAIxQL63::before {
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      z-index: 10;
+      border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+      border-radius: var(--g-radius-small);
+    }
+    @media only screen and (max-width: 1023px) and (min-width: 768px) {
+      .gp-carousel-arrow-gBPAIxQL63 {
+        border-radius: var(--g-radius-small);
+      }
+      .gp-carousel-arrow-gBPAIxQL63::before {
+        border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+        border-radius: var(--g-radius-small);
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .gp-carousel-arrow-gBPAIxQL63 {
+        border-radius: var(--g-radius-small);
+      }
+      .gp-carousel-arrow-gBPAIxQL63::before {
+        border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+        border-radius: var(--g-radius-small);
+      }
+    }
+  </style>
+    </button>
+  
+          <div id="gp-carousel-gBPAIxQL63-{{section.id}}" class="gem-slider gp-h-full gp-overflow-hidden gp-select-none mobile:!gp-flex-nowrap tablet:!gp-flex-nowrap !gp-flex-nowrap mobile:!gp-min-h-full tablet:!gp-min-h-full !gp-min-h-full"
+          style="--cg-mobile:16px;--cg-tablet:16px;--cg:16px">
+          
+    <div
+      media-type="{{media.media_type}}"
+      media-poster="{{media.preview_image.src}}"
+      media-source-url="{{media.sources.first.url}}"
+      media-last-source-url="{{mediaSourceUrl}}"
+      external-id="{{media.external_id}}"
+      grid-index="{{forloop.index}}"
+      
+      label="Carousel Item" tag="CarouselItem" type="component"
+      style="--bgc:#00000000;--minw:calc(100% / 3 - 10.666666666666666px);--minw-tablet:calc(100% / 2 - 8px);--minw-mobile:calc(100% / 1 - 0px);--maxw:calc(100% / 3 - 10.666666666666666px);--maxw-tablet:calc(100% / 2 - 8px);--maxw-mobile:calc(100% / 1 - 0px);--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ml:0px;--ml-tablet:0px;--ml-mobile:0px"
+      class="gem-slider-item gp-w-full gem-slider-item- gp-child-item-gBPAIxQL63 ghjOzte_Ei"
+    >
+      
+    <div
+      
+      data-id="ge3LuGFPIg"
+      class="!gp-max-w-none gp-overflow-hidden [&_>_article]:gp-aspect-[var(--aspect)] tablet:[&_>_article]:gp-aspect-[var(--aspect-tablet,_var(--aspect))] mobile:[&_>_article]:gp-aspect-[var(--aspect-mobile,_var(--aspect-tablet,_var(--aspect)))] ge3LuGFPIg"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--aspect:9/16"
+    >
+      
+    
+    <video
+      id="gp-video-ge3LuGFPIg"
+      class="lazy gp-w-full"
+      style="--aspect:9/16"
+      controls
+      loop
+      
+      
+      title="Video"
+      preload="none"
+      data-src="https://cdn.shopify.com/videos/c/o/v/0b0507be6d5343f39027f9c2e6f1626d.mp4"
+      poster="{{ 'gempages_532871831896458163-84d9d516-5324-4a70-93e9-1d38bfb6e660.jpg' | file_url }}"
+      playsinline
+    >
+      <source data-src="https://cdn.shopify.com/videos/c/o/v/0b0507be6d5343f39027f9c2e6f1626d.mp4" type="video/mp4"></source>
+    </video>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        if(lazyLoadInstance){lazyLoadInstance.update()}else{var lazyLoadInstance = new LazyLoad()}
+    </script>
+  
+    </div>
+  
+    </div>
+  
+    <div
+      media-type="{{media.media_type}}"
+      media-poster="{{media.preview_image.src}}"
+      media-source-url="{{media.sources.first.url}}"
+      media-last-source-url="{{mediaSourceUrl}}"
+      external-id="{{media.external_id}}"
+      grid-index="{{forloop.index}}"
+      
+      label="Carousel Item" tag="CarouselItem" type="component"
+      style="--bgc:#00000000;--minw:calc(100% / 3 - 10.666666666666666px);--minw-tablet:calc(100% / 2 - 8px);--minw-mobile:calc(100% / 1 - 0px);--maxw:calc(100% / 3 - 10.666666666666666px);--maxw-tablet:calc(100% / 2 - 8px);--maxw-mobile:calc(100% / 1 - 0px);--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ml:0px;--ml-tablet:0px;--ml-mobile:0px"
+      class="gem-slider-item gp-w-full gem-slider-item- gp-child-item-gBPAIxQL63 g7C5h0IYG0"
+    >
+      
+    <div
+      
+      data-id="g9N0MqcyvY"
+      class="!gp-max-w-none gp-overflow-hidden [&_>_article]:gp-aspect-[var(--aspect)] tablet:[&_>_article]:gp-aspect-[var(--aspect-tablet,_var(--aspect))] mobile:[&_>_article]:gp-aspect-[var(--aspect-mobile,_var(--aspect-tablet,_var(--aspect)))] g9N0MqcyvY"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--aspect:9/16"
+    >
+      
+    
+    <video
+      id="gp-video-g9N0MqcyvY"
+      class="lazy gp-w-full"
+      style="--aspect:9/16"
+      controls
+      loop
+      
+      
+      title="Video"
+      preload="none"
+      data-src="https://cdn.shopify.com/videos/c/o/v/763cc6b4d7864cedb0dd1b7fe9d33f78.mp4"
+      poster="{{ 'gempages_532871831896458163-9cab806c-6933-4e98-a3ff-cc482284d8a5.jpg' | file_url }}"
+      playsinline
+    >
+      <source data-src="https://cdn.shopify.com/videos/c/o/v/763cc6b4d7864cedb0dd1b7fe9d33f78.mp4" type="video/mp4"></source>
+    </video>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        if(lazyLoadInstance){lazyLoadInstance.update()}else{var lazyLoadInstance = new LazyLoad()}
+    </script>
+  
+    </div>
+  
+    </div>
+  
+    <div
+      media-type="{{media.media_type}}"
+      media-poster="{{media.preview_image.src}}"
+      media-source-url="{{media.sources.first.url}}"
+      media-last-source-url="{{mediaSourceUrl}}"
+      external-id="{{media.external_id}}"
+      grid-index="{{forloop.index}}"
+      
+      label="Carousel Item" tag="CarouselItem" type="component"
+      style="--bgc:#00000000;--minw:calc(100% / 3 - 10.666666666666666px);--minw-tablet:calc(100% / 2 - 8px);--minw-mobile:calc(100% / 1 - 0px);--maxw:calc(100% / 3 - 10.666666666666666px);--maxw-tablet:calc(100% / 2 - 8px);--maxw-mobile:calc(100% / 1 - 0px);--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--ml:0px;--ml-tablet:0px;--ml-mobile:0px"
+      class="gem-slider-item gp-w-full gem-slider-item- gp-child-item-gBPAIxQL63 g0vIAjAsh2"
+    >
+      
+    <div
+      
+      data-id="gbCEDDl6LH"
+      class="!gp-max-w-none gp-overflow-hidden [&_>_article]:gp-aspect-[var(--aspect)] tablet:[&_>_article]:gp-aspect-[var(--aspect-tablet,_var(--aspect))] mobile:[&_>_article]:gp-aspect-[var(--aspect-mobile,_var(--aspect-tablet,_var(--aspect)))] gbCEDDl6LH"
+      style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--aspect:9/16"
+    >
+      
+    
+    <video
+      id="gp-video-gbCEDDl6LH"
+      class="lazy gp-w-full"
+      style="--aspect:9/16"
+      controls
+      loop
+      
+      
+      title="Video"
+      preload="none"
+      data-src="https://cdn.shopify.com/videos/c/o/v/035aa44437c14a4d8af87d8a1d707e3a.mov"
+      poster="{{ 'gempages_532871831896458163-db2a8b81-12e8-427f-9ba4-29044ed24c00.jpg' | file_url }}"
+      playsinline
+    >
+      
+    </video>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+    <script>
+        if(lazyLoadInstance){lazyLoadInstance.update()}else{var lazyLoadInstance = new LazyLoad()}
+    </script>
+  
+    </div>
+  
+    </div>
+  
+          </div>
+          
+    <button
+      type="button"
+      aria-label='Carousel Next Arrow'
+      class="gp-z-1 gp-carousel-action-next gem-slider-next gBPAIxQL63-{{section.id}} gp-carousel-arrow-gBPAIxQL63 gp-items-center gp-justify-center gp-overflow-hidden gp-shrink-0  gp-cursor-pointer gp-text-gray-500 !gp-flex !gp-relative  tablet:!gp-flex tablet:!gp-relative  mobile:!gp-flex mobile:!gp-relative "
+      style="--left:initial;--top:;--right:initial;--bottom:initial;--left-tablet:initial;--top-tablet:;--right-tablet:initial;--bottom-tablet:initial;--left-mobile:initial;--top-mobile:;--right-mobile:initial;--bottom-mobile:initial;--d:flex;--d-tablet:flex;--d-mobile:flex;background-color:transparent;--w:100px;--w-mobile:32px;--h:100px;--h-mobile:32px"
+      onClick={onClick}
+      
+    >
+      <div 
+  class="gp-flex gp-items-center gp-justify-center [&>svg]:gp-h-full [&>svg]:gp-w-full gp-rotate-0 tablet:gp-rotate-0 mobile:gp-rotate-0"
+  style="--c:#000000;--w:100px;--w-tablet:100px;--w-mobile:100px;--h:100px;--h-tablet:100px;--h-mobile:100px"
+  >
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.62204 5.13313C7.78476 4.95562 8.04858 4.95562 8.21129 5.13313L12.378 9.67859C12.5407 9.8561 12.5407 10.1439 12.378 10.3214L8.21129 14.8669C8.04858 15.0444 7.78476 15.0444 7.62204 14.8669C7.45932 14.6894 7.45932 14.4016 7.62204 14.224L11.4941 10L7.62204 5.77596C7.45932 5.59845 7.45932 5.31064 7.62204 5.13313Z"/>
+              </svg>
+              
+    </div>
+      <style>
+    .gp-carousel-arrow-gBPAIxQL63 {
+      border-radius: var(--g-radius-small);
+    }
+    .gp-carousel-arrow-gBPAIxQL63::before {
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      z-index: 10;
+      border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+      border-radius: var(--g-radius-small);
+    }
+    @media only screen and (max-width: 1023px) and (min-width: 768px) {
+      .gp-carousel-arrow-gBPAIxQL63 {
+        border-radius: var(--g-radius-small);
+      }
+      .gp-carousel-arrow-gBPAIxQL63::before {
+        border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+        border-radius: var(--g-radius-small);
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .gp-carousel-arrow-gBPAIxQL63 {
+        border-radius: var(--g-radius-small);
+      }
+      .gp-carousel-arrow-gBPAIxQL63::before {
+        border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+        border-radius: var(--g-radius-small);
+      }
+    }
+  </style>
+    </button>
+  
+        </div>
+        <div
+    class="gp-items-center gp-justify-center gp-gap-2 gp-text-center gp-carousel-dot-container gp-carousel-dot-container-gBPAIxQL63-{{section.id}} gp-absolute gp-flex-row gp-left-0 gp-right-0 tablet:gp-absolute tablet:gp-flex-row tablet:gp-left-0 tablet:gp-right-0 mobile:gp-absolute mobile:gp-flex-row mobile:gp-left-0 mobile:gp-right-0"
+    style="--bottom:16px;--bottom-tablet:16px;--bottom-mobile:16px;--d:flex;--d-tablet:flex;--d-mobile:flex"
+ ></div>
+      </div>
+    </gp-carousel>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-carousel-v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+
+  
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+  
+            </section>
+           
+    
+
+
+{% schema %}
+  {
+    "presets": [{ "name": "Video Carousel 4" }],
+    "name": "Video Carousel 4",
+    "tag": "section",
+    "class": "gps-535598115755918230 gps gpsi",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/7e97c3-3/apps/gempages-cro/app/shopify/edit?pageType=THEME_SECTION&editorId=535598115755918230)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {"en":{}}
+  }
+{% endschema %}
