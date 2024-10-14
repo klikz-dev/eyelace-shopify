@@ -105,6 +105,87 @@
         "checksum": "1932918468748870d2137a07843b7d17dfb073537e987e5527da7305adba2728"
       }
     },
+    "slideshow_V8MrDX": {
+      "type": "slideshow",
+      "blocks": {
+        "image_REY93d": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_2.10.55_PM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_tEMNhJ": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.03.21_PM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_jnrM3y": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_2.15.28_PM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        }
+      },
+      "block_order": [
+        "image_REY93d",
+        "image_tEMNhJ",
+        "image_jnrM3y"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "arrows-enabled": true,
+        "blocks_per_slide": 3,
+        "background-color": "none",
+        "light-text": true,
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
     "gp_section_535138477533103025": {
       "type": "gp-section-535138477533103025",
       "settings": {
@@ -259,87 +340,6 @@
         "gDiopGXDZGXVS_text": "<p>We're passionate about providing the assistance and resources our customers need to create bold and beautiful looks. If you have any questions, concerns, or comments, please do not hesitate to contact us.</p>",
         "gpLOucZyCszLv_label": "CONTACT US"
       }
-    },
-    "slideshow_V8MrDX": {
-      "type": "slideshow",
-      "blocks": {
-        "image_REY93d": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-10-14_at_2.10.55_PM.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_tEMNhJ": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.03.21_PM.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_jnrM3y": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-10-14_at_2.15.28_PM.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        }
-      },
-      "block_order": [
-        "image_REY93d",
-        "image_tEMNhJ",
-        "image_jnrM3y"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "spacing-around-blocks": false,
-        "arrows-enabled": true,
-        "blocks_per_slide": 3,
-        "background-color": "none",
-        "light-text": true,
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "heading-type": "featured-heading",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "none",
-        "auto-rotate": false,
-        "rotate-frequency": 7,
-        "transition_type": "slide",
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "blocks_per_slide_mobile": "1",
-        "mobile-overlay": true
-      }
     }
   },
   "order": [
@@ -354,6 +354,7 @@
     "gp_section_535138477549814705",
     "gp_section_535138477684032433",
     "gp_section_535138477700875185",
+    "slideshow_V8MrDX",
     "gp_section_535138477533103025",
     "gp_section_535138477499483057",
     "gp_section_535138477650478001",
@@ -364,7 +365,6 @@
     "gp_section_535138477583369137",
     "gp_section_535138477616923569",
     "gp_section_535294028330042390",
-    "gp_section_535138477717586865",
-    "slideshow_V8MrDX"
+    "gp_section_535138477717586865"
   ]
 }
