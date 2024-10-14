@@ -233,31 +233,6 @@
         "heading": "Recently viewed"
       }
     },
-    "newsletter_FB8aUp": {
-      "type": "newsletter",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "accent-1",
-        "light-text": false,
-        "overline": "JOIN OUR READING LIST",
-        "heading": "SIGN UP FOR 10% OFF!",
-        "description": "<p>Sign up to receive our latest articles on art, beauty, inspiration, and entrepreneurialism in your inbox and receive an additional 10% off today</p>"
-      }
-    },
-    "custom_liquid_rnCwki": {
-      "type": "custom-liquid",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "none",
-        "light-text": false,
-        "container-width": "4",
-        "custom-liquid": "<style>\n/* Ensure there's no horizontal overflow on the Lashes Collection page */\nhtml, body {\n    overflow-x: hidden;\n}\n\n/* Adjust the container to fit the screen width on mobile */\n@media only screen and (max-width: 767px) {\n    .container {\n        max-width: 100%;\n        overflow-x: hidden;\n    }\n}\n</style>"
-      }
-    },
     "image_with_text_YNqH4V": {
       "type": "image-with-text",
       "settings": {
@@ -291,6 +266,31 @@
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
       }
+    },
+    "newsletter_FB8aUp": {
+      "type": "newsletter",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-1",
+        "light-text": false,
+        "overline": "JOIN OUR READING LIST",
+        "heading": "SIGN UP FOR 10% OFF!",
+        "description": "<p>Sign up to receive our latest articles on art, beauty, inspiration, and entrepreneurialism in your inbox and receive an additional 10% off today</p>"
+      }
+    },
+    "custom_liquid_rnCwki": {
+      "type": "custom-liquid",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": "4",
+        "custom-liquid": "<style>\n/* Ensure there's no horizontal overflow on the Lashes Collection page */\nhtml, body {\n    overflow-x: hidden;\n}\n\n/* Adjust the container to fit the screen width on mobile */\n@media only screen and (max-width: 767px) {\n    .container {\n        max-width: 100%;\n        overflow-x: hidden;\n    }\n}\n</style>"
+      }
     }
   },
   "order": [
@@ -302,8 +302,8 @@
     "featured_video_9P8HAn",
     "countdown_843Cmn",
     "recent-products",
+    "image_with_text_YNqH4V",
     "newsletter_FB8aUp",
-    "custom_liquid_rnCwki",
-    "image_with_text_YNqH4V"
+    "custom_liquid_rnCwki"
   ]
 }
