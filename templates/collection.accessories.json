@@ -224,36 +224,6 @@
         "mobile-width": "1"
       }
     },
-    "recent-products": {
-      "type": "recent-products",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "none",
-        "light-text": false,
-        "heading-alignment": "center",
-        "heading": "Recently viewed"
-      }
-    },
-    "featured_blog_VbQPVw": {
-      "type": "featured-blog",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "accent-2",
-        "light-text": false,
-        "container-width": "4",
-        "tag-select": "pinned",
-        "show-date": true,
-        "show-excerpt": true,
-        "blog": "whats-trending",
-        "blog-heading": "Learn More About Eyelash Care & The Latest Beauty Trends!",
-        "heading-alignment": "center",
-        "view-more-text": "View more"
-      }
-    },
     "slideshow_8fpcjK": {
       "type": "slideshow",
       "blocks": {
@@ -317,6 +287,36 @@
         "blocks_per_slide_mobile": "1",
         "mobile-overlay": true
       }
+    },
+    "recent-products": {
+      "type": "recent-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "heading-alignment": "center",
+        "heading": "Recently viewed"
+      }
+    },
+    "featured_blog_VbQPVw": {
+      "type": "featured-blog",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "accent-2",
+        "light-text": false,
+        "container-width": "4",
+        "tag-select": "pinned",
+        "show-date": true,
+        "show-excerpt": true,
+        "blog": "whats-trending",
+        "blog-heading": "Learn More About Eyelash Care & The Latest Beauty Trends!",
+        "heading-alignment": "center",
+        "view-more-text": "View more"
+      }
     }
   },
   "order": [
@@ -327,8 +327,8 @@
     "main",
     "featured_video_yfmy74",
     "text_columns_WPWBdB",
+    "slideshow_8fpcjK",
     "recent-products",
-    "featured_blog_VbQPVw",
-    "slideshow_8fpcjK"
+    "featured_blog_VbQPVw"
   ]
 }
