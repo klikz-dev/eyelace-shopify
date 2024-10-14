@@ -86,6 +86,87 @@
         "number-of-rows": 4
       }
     },
+    "slideshow_F4X4Cr": {
+      "type": "slideshow",
+      "blocks": {
+        "image_mLDdyr": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.17.52_PM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_UhQyLe": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.01.59_PM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_nJXaaA": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.45.26_PM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        }
+      },
+      "block_order": [
+        "image_mLDdyr",
+        "image_UhQyLe",
+        "image_nJXaaA"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "arrows-enabled": true,
+        "blocks_per_slide": 3,
+        "background-color": "none",
+        "light-text": true,
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
     "text_columns_BgyhLQ": {
       "type": "text-columns",
       "blocks": {
@@ -115,7 +196,7 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-09-10_at_1.22.37_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.03.37_PM.png",
             "title": "Made for Any Occasion",
             "description": "<p>Eyelace eyelashes are comfortable, natural, and designed to not only look flawless but feel flawless so you can be your best self whenever and wherever you are.</p>",
             "link-url": "",
@@ -256,87 +337,6 @@
         "light-text": false,
         "container-width": "4",
         "custom-liquid": "<style>\n/* Ensure there's no horizontal overflow on the Lashes Collection page */\nhtml, body {\n    overflow-x: hidden;\n}\n\n/* Adjust the container to fit the screen width on mobile */\n@media only screen and (max-width: 767px) {\n    .container {\n        max-width: 100%;\n        overflow-x: hidden;\n    }\n}\n</style>"
-      }
-    },
-    "slideshow_F4X4Cr": {
-      "type": "slideshow",
-      "blocks": {
-        "image_mLDdyr": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.17.52_PM.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_UhQyLe": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.01.59_PM.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        },
-        "image_nJXaaA": {
-          "type": "image",
-          "settings": {
-            "text-width": "medium",
-            "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.45.26_PM.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "/",
-            "link-text": "",
-            "mobile-text-alignment": "center",
-            "mobile-hide-description": false
-          }
-        }
-      },
-      "block_order": [
-        "image_mLDdyr",
-        "image_UhQyLe",
-        "image_nJXaaA"
-      ],
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "spacing-around-blocks": false,
-        "arrows-enabled": true,
-        "blocks_per_slide": 3,
-        "background-color": "none",
-        "light-text": true,
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "heading-type": "featured-heading",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "none",
-        "auto-rotate": false,
-        "rotate-frequency": 7,
-        "transition_type": "slide",
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "blocks_per_slide_mobile": "1",
-        "mobile-overlay": true
       }
     }
   },
