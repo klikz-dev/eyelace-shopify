@@ -160,6 +160,34 @@
         "mobile-width": "1"
       }
     },
+    "countdown_843Cmn": {
+      "type": "countdown",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "dark",
+        "light-text": true,
+        "text-style": "none",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "timer-bg-color": "dark",
+        "light-number": true,
+        "number-size": 40,
+        "container-width": "3",
+        "overline": "OPENING SALE",
+        "heading": "Get 15% Off Your Starter Kit",
+        "description": "<p>Pre-order your Starter Kit today and get an additional 15% off with code LAUNCH15</p>",
+        "link-url": "shopify://products/starter-kit",
+        "link-text": "Shop The Sale",
+        "expiry-date": "15-11-2024",
+        "expiry-hours": 0,
+        "expiry-minutes": 0,
+        "hide-when-expired": true,
+        "show-button-when": "always",
+        "mobile-number-size": 20
+      }
+    },
     "featured_video_9P8HAn": {
       "type": "featured-video",
       "settings": {
@@ -191,68 +219,6 @@
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center",
         "mobile-hide-description": false
-      }
-    },
-    "countdown_843Cmn": {
-      "type": "countdown",
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "dark",
-        "light-text": true,
-        "text-style": "none",
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "timer-bg-color": "dark",
-        "light-number": true,
-        "number-size": 40,
-        "container-width": "3",
-        "overline": "OPENING SALE",
-        "heading": "Get 15% Off Your Starter Kit",
-        "description": "<p>Pre-order your Starter Kit today and get an additional 15% off with code LAUNCH15</p>",
-        "link-url": "shopify://products/starter-kit",
-        "link-text": "Shop The Sale",
-        "expiry-date": "15-11-2024",
-        "expiry-hours": 0,
-        "expiry-minutes": 0,
-        "hide-when-expired": true,
-        "show-button-when": "always",
-        "mobile-number-size": 20
-      }
-    },
-    "image_with_text_YNqH4V": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "overlay",
-        "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
-        "text-width": "medium",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.17.52_PM.png",
-        "overline": "",
-        "title": "",
-        "description": "",
-        "link-url": "",
-        "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
       }
     },
     "recent-products": {
@@ -291,6 +257,70 @@
         "container-width": "4",
         "custom-liquid": "<style>\n/* Ensure there's no horizontal overflow on the Lashes Collection page */\nhtml, body {\n    overflow-x: hidden;\n}\n\n/* Adjust the container to fit the screen width on mobile */\n@media only screen and (max-width: 767px) {\n    .container {\n        max-width: 100%;\n        overflow-x: hidden;\n    }\n}\n</style>"
       }
+    },
+    "slideshow_F4X4Cr": {
+      "type": "slideshow",
+      "blocks": {
+        "image_mLDdyr": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.17.52_PM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_UhQyLe": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.45.26_PM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        }
+      },
+      "block_order": [
+        "image_mLDdyr",
+        "image_UhQyLe"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "arrows-enabled": true,
+        "blocks_per_slide": 2,
+        "background-color": "none",
+        "light-text": true,
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
     }
   },
   "order": [
@@ -298,12 +328,12 @@
     "image_with_text_xRfTzX",
     "navigation",
     "main",
-    "image_with_text_YNqH4V",
     "text_columns_BgyhLQ",
     "countdown_843Cmn",
     "featured_video_9P8HAn",
     "recent-products",
     "newsletter_FB8aUp",
-    "custom_liquid_rnCwki"
+    "custom_liquid_rnCwki",
+    "slideshow_F4X4Cr"
   ]
 }
