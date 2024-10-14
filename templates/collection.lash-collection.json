@@ -238,7 +238,7 @@
       "settings": {
         "top-border": false,
         "spacing-above": true,
-        "spacing-below": true,
+        "spacing-below": false,
         "background-color": "accent-1",
         "light-text": false,
         "overline": "JOIN OUR READING LIST",
@@ -250,8 +250,8 @@
       "type": "custom-liquid",
       "settings": {
         "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
+        "spacing-above": false,
+        "spacing-below": false,
         "background-color": "none",
         "light-text": false,
         "container-width": "4",
@@ -345,12 +345,12 @@
     "image_with_text_xRfTzX",
     "navigation",
     "main",
+    "slideshow_F4X4Cr",
     "text_columns_BgyhLQ",
     "countdown_843Cmn",
     "featured_video_9P8HAn",
     "recent-products",
     "newsletter_FB8aUp",
-    "custom_liquid_rnCwki",
-    "slideshow_F4X4Cr"
+    "custom_liquid_rnCwki"
   ]
 }
