@@ -176,6 +176,70 @@
         "mobile-media-layout": "slideshow"
       }
     },
+    "slideshow_dFTam6": {
+      "type": "slideshow",
+      "blocks": {
+        "image_RHKnMh": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.04.21_AM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_XNpXN3": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.03.46_PM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        }
+      },
+      "block_order": [
+        "image_RHKnMh",
+        "image_XNpXN3"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "arrows-enabled": true,
+        "blocks_per_slide": 2,
+        "background-color": "none",
+        "light-text": true,
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
     "text_columns_ANhjXW": {
       "type": "text-columns",
       "blocks": {
@@ -554,6 +618,7 @@
     "image_with_text_pJGaga",
     "image_with_text_b7WwPk",
     "main",
+    "slideshow_dFTam6",
     "text_columns_ANhjXW",
     "featured_video_hn6PAf",
     "related-products",
