@@ -341,7 +341,7 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-22_at_2.53.37_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.02.37_PM.png",
             "title": "Stunning & Natural Look",
             "description": "<p>Eyelace Strip Lashes are designed to accentuate your natural beauty and blend in seamlessly with your natural lash.</p>",
             "link-url": "",
@@ -451,6 +451,40 @@
         "light-text": false,
         "heading-alignment": "center",
         "heading": "You may also like"
+      }
+    },
+    "image_with_text_L3iC8p": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.12.36_PM.png",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
       }
     },
     "collapsible_rows_eHpAJ7": {
@@ -569,40 +603,6 @@
         "heading": "Collapsible rows",
         "heading-alignment": "center"
       }
-    },
-    "image_with_text_L3iC8p": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "overlay",
-        "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
-        "text-width": "medium",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.12.36_PM.png",
-        "overline": "",
-        "title": "",
-        "description": "",
-        "link-url": "",
-        "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
-      }
     }
   },
   "order": [
@@ -619,7 +619,7 @@
     "text_columns_GD3efk",
     "featured_video_prCc47",
     "recent_products_hBi6HF",
-    "collapsible_rows_eHpAJ7",
-    "image_with_text_L3iC8p"
+    "image_with_text_L3iC8p",
+    "collapsible_rows_eHpAJ7"
   ]
 }
