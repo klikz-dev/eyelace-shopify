@@ -258,11 +258,28 @@
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
+        },
+        "image_djQYxt": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-10-14_at_2.23.10_PM.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
         }
       },
       "block_order": [
         "image_wHDDQt",
-        "image_gpwB6X"
+        "image_gpwB6X",
+        "image_djQYxt"
       ],
       "settings": {
         "top-border": false,
@@ -270,7 +287,7 @@
         "spacing-below": false,
         "spacing-around-blocks": false,
         "arrows-enabled": true,
-        "blocks_per_slide": 2,
+        "blocks_per_slide": 3,
         "background-color": "none",
         "light-text": true,
         "text-style": "none",
