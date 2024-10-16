@@ -114,6 +114,12 @@
         "settings": {
           "devUrl": ""
         }
+      },
+      "14724428607702905366": {
+        "type": "shopify://apps/webrex-seo-optimizer/blocks/webrexSeoEmbed/b26797ad-bb4d-48f5-8ef3-7c561521049c",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
