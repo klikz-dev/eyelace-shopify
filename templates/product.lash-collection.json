@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "4e9385a7-14ff-4617-8542-ed651a7ec51f": {
@@ -438,7 +438,7 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.32.02_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-10-18_at_6.43.06_PM.png",
             "title": "Diverse Lash Looks For All Occasions",
             "description": "<p>Eyelace lashes vary in dramatic effect, so that you can wear the right lash that fits the look you desire on every occasion.</p>",
             "link-url": "",
@@ -449,7 +449,7 @@
           "type": "image",
           "settings": {
             "show-image": true,
-            "image": "shopify://shop_images/Screenshot_2024-08-26_at_1.34.06_PM.png",
+            "image": "shopify://shop_images/Screenshot_2024-10-18_at_6.45.36_PM.png",
             "title": "Easy to Apply & Remove",
             "description": "<p>Unlike strip lashes that are messy and unpredictable or individual eyelash extensions that rely on someone else to apply, Eyelace lashes give you full control over lash application and removal.</p>",
             "link-url": "",
@@ -613,16 +613,6 @@
     },
     "1717124400bfcc5742": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_3jbheJ": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_3jbheJ"
-      ],
       "settings": {
         "background-color": "none",
         "light-text": false,
