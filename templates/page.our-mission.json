@@ -48,8 +48,8 @@
         "description": "<p>Eyelace is committed to providing customers with cosmetic experiences that enhance their natural beauty and foster bold, beautiful looks that are attainable at home.</p>",
         "link-url": "",
         "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
+        "mobile-overlay": false,
+        "mobile-hide-description": true,
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
