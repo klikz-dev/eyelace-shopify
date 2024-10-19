@@ -38,7 +38,7 @@
         "link-text": "",
         "mobile-image": "shopify://shop_images/Photo_Sep_12_2024_3_44_51_PM_2f38e387-da34-4fc8-a102-eba5befca94e.jpg",
         "mobile-overlay": true,
-        "mobile-hide-description": false,
+        "mobile-hide-description": true,
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
