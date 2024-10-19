@@ -365,7 +365,7 @@
             "description": "",
             "link-url": "",
             "link-text": "",
-            "mobile-text-alignment": "center",
+            "mobile-text-alignment": "bottom",
             "mobile-hide-description": false
           }
         },
@@ -381,7 +381,7 @@
             "description": "",
             "link-url": "",
             "link-text": "",
-            "mobile-text-alignment": "center",
+            "mobile-text-alignment": "bottom",
             "mobile-hide-description": true
           }
         },
@@ -397,7 +397,7 @@
             "description": "",
             "link-url": "",
             "link-text": "",
-            "mobile-text-alignment": "center",
+            "mobile-text-alignment": "bottom",
             "mobile-hide-description": true
           }
         },
@@ -477,7 +477,7 @@
             "description": "",
             "link-url": "",
             "link-text": "",
-            "mobile-text-alignment": "center",
+            "mobile-text-alignment": "bottom",
             "mobile-hide-description": true
           }
         },
@@ -494,7 +494,7 @@
             "link-url": "",
             "link-text": "",
             "mobile-image": "shopify://shop_images/E90B1EDC-0E56-4E03-B70C-137646995BAD.jpg",
-            "mobile-text-alignment": "center",
+            "mobile-text-alignment": "bottom",
             "mobile-hide-description": true
           }
         },
