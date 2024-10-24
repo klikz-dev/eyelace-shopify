@@ -135,13 +135,6 @@
         "mobile-width": "1"
       }
     },
-    "gp_global_section_534931480745346209_KCxjmL": {
-      "type": "gp-global-section-534931480745346209",
-      "settings": {
-        "section_preload": "off_lazy_script",
-        "checksum": ""
-      }
-    },
     "featured_video_bhmmqC": {
       "type": "featured-video",
       "settings": {
@@ -157,7 +150,7 @@
         "text-style": "none",
         "text-background-color": "transparent",
         "heading-type": "section-heading",
-        "autoplay": true,
+        "autoplay": false,
         "video-display-type": "aspect-ratio",
         "aspect-ratio": 56,
         "play-button-style": "solid",
@@ -173,6 +166,13 @@
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center",
         "mobile-hide-description": true
+      }
+    },
+    "gp_global_section_534931480745346209_KCxjmL": {
+      "type": "gp-global-section-534931480745346209",
+      "settings": {
+        "section_preload": "off_lazy_script",
+        "checksum": ""
       }
     }
   },
