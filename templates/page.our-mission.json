@@ -142,7 +142,7 @@
         "spacing-above": false,
         "spacing-below": false,
         "background-color": "accent-1",
-        "container-width": "6",
+        "container-width": "5",
         "light-text": true,
         "text-width": "large",
         "text-horizontal-alignment": "center",
