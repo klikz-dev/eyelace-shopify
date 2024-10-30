@@ -141,13 +141,13 @@
         "top-border": false,
         "spacing-above": false,
         "spacing-below": false,
-        "background-color": "none",
+        "background-color": "accent-1",
         "container-width": "6",
         "light-text": true,
         "text-width": "medium",
         "text-horizontal-alignment": "center",
         "text-vertical-alignment": "bottom",
-        "text-style": "none",
+        "text-style": "eclipse-shadow",
         "text-background-color": "transparent",
         "heading-type": "section-heading",
         "autoplay": false,
@@ -156,7 +156,8 @@
         "play-button-style": "solid",
         "overlay-style": "none",
         "video-upload": "shopify://files/videos/full eyelace video F 720.MOV",
-        "image": "shopify://shop_images/Screenshot_2024-10-24_at_12.47.22_PM.png",
+        "video-url": "",
+        "image": "shopify://shop_images/Photo_Oct_30_2024_1_07_39_PM.png",
         "overline": "Inception story",
         "heading": "THE EYELACE JOURNEY",
         "description": "<p>How Eyelace came to be</p>",
@@ -165,7 +166,7 @@
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center",
-        "mobile-hide-description": true
+        "mobile-hide-description": false
       }
     },
     "gp_global_section_534931480745346209_KCxjmL": {
