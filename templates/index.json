@@ -93,6 +93,7 @@
         },
         "image_7ki7QB": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-width": "medium",
             "text-horizontal-alignment": "center",
@@ -109,6 +110,7 @@
         },
         "image_66HjJk": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-width": "medium",
             "text-horizontal-alignment": "center",
@@ -125,6 +127,7 @@
         },
         "image_gBt3Ui": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-width": "medium",
             "text-horizontal-alignment": "center",
