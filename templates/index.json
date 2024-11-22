@@ -96,13 +96,14 @@
           "settings": {
             "text-width": "medium",
             "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "overline": "Overline text",
-            "title": "Slide heading",
-            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Screenshot_2024-11-21_at_8.09.07_PM_0d2bfb6d-2611-4e88-bd53-8c6688b29c8d.png",
+            "overline": "BOLD",
+            "title": "",
+            "description": "",
             "link-url": "/",
-            "link-text": "View more",
-            "mobile-text-alignment": "center",
+            "link-text": "",
+            "mobile-text-alignment": "bottom",
             "mobile-hide-description": false
           }
         },
@@ -127,12 +128,13 @@
           "settings": {
             "text-width": "medium",
             "text-horizontal-alignment": "center",
-            "text-vertical-alignment": "center",
-            "overline": "Overline text",
-            "title": "Slide heading",
-            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/Screenshot_2024-11-21_at_8.07.32_PM_a4d0d9e6-264a-442c-85d3-4f364b513fc8.png",
+            "overline": "ELEGANT",
+            "title": "",
+            "description": "",
             "link-url": "/",
-            "link-text": "View more",
+            "link-text": "",
             "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
