@@ -59,19 +59,50 @@
             "mobile-hide-description": false
           }
         },
+        "image_tiLJUE": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/Screenshot_2024-11-21_at_8.07.32_PM_a4d0d9e6-264a-442c-85d3-4f364b513fc8.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
         "image_grG3WK": {
           "type": "image",
           "settings": {
             "text-width": "medium",
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "bottom",
-            "image": "shopify://shop_images/gempages_532871831896458163-7701bbe4-e802-450a-b3cd-0eace7c2acff.jpg",
+            "image": "shopify://shop_images/Screenshot_2024-11-21_at_8.06.42_PM.png",
             "overline": "Bold",
             "title": "",
             "description": "",
             "link-url": "/",
             "link-text": "",
             "mobile-text-alignment": "bottom",
+            "mobile-hide-description": false
+          }
+        },
+        "image_7ki7QB": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "overline": "Overline text",
+            "title": "Slide heading",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
+            "link-url": "/",
+            "link-text": "View more",
+            "mobile-text-alignment": "center",
             "mobile-hide-description": false
           }
         },
@@ -90,12 +121,30 @@
             "mobile-text-alignment": "bottom",
             "mobile-hide-description": false
           }
+        },
+        "image_gBt3Ui": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "overline": "Overline text",
+            "title": "Slide heading",
+            "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
+            "link-url": "/",
+            "link-text": "View more",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
         }
       },
       "block_order": [
         "image_gTCFTM",
+        "image_tiLJUE",
         "image_grG3WK",
-        "image_66HjJk"
+        "image_7ki7QB",
+        "image_66HjJk",
+        "image_gBt3Ui"
       ],
       "settings": {
         "top-border": false,
