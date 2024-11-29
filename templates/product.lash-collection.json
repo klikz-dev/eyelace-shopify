@@ -58,7 +58,7 @@
             "product_exclusion_tag": "reviews-excluded,skip-review-request-email",
             "font_size": 16,
             "text_alignment": "left",
-            "star_color": "#000000",
+            "star_color": "#fed83f",
             "text_color": "#000000"
           }
         },
