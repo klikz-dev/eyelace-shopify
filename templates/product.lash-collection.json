@@ -54,7 +54,7 @@
         "seguno_reviews_review_rating_xhEDdt": {
           "type": "shopify://apps/seguno-reviews/blocks/review_rating/a10c353e-1472-4621-ba04-289c48879459",
           "settings": {
-            "product": "{{product}}",
+            "product": "ball-gown-lash-set",
             "product_exclusion_tag": "reviews-excluded,skip-review-request-email",
             "font_size": 16,
             "text_alignment": "left",
