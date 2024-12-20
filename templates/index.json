@@ -18,6 +18,7 @@
     },
     "gp_section_535138477583434673": {
       "type": "gp-section-535138477583434673",
+      "disabled": true,
       "settings": {
         "section_preload": "off_lazy_script",
         "checksum": "fd9a0dfecf67d4075d9f342dce57ddb66691d9a2458cc07828ae325b121c6fde_0_1"
