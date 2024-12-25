@@ -25,7 +25,7 @@
             "form_name": "",
             "show_links": true,
             "show_descriptions": true,
-            "is_optional": true
+            "is_optional": false
           }
         }
       },
@@ -42,11 +42,8 @@
     },
     "main": {
       "type": "cart",
-      "custom_css": [
-
-      ],
-      "settings": {
-      }
+      "custom_css": [],
+      "settings": {}
     },
     "custom_liquid_zJxhEJ": {
       "type": "custom-liquid",
