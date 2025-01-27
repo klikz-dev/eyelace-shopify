@@ -33,7 +33,7 @@
         "image": "shopify://shop_images/Untitled_design_20.jpg",
         "overline": "Beauty you can control",
         "title": "THE LASH SOLUTION TO ALL YOUR LASH PROBLEMS",
-        "description": "<p>Tired of flaky mascara, heavy strip lashes, and damaging extensions? You’re not alone. Thousands of women have struggled with the same frustrating options—until now.</p><p>The Eyelace Starter Kit is here to change everything. Experience a lash routine that’s effortless, natural, and non-damaging.</p>",
+        "description": "<p>Tired of flaky mascara, heavy strip lashes, and damaging extensions? You’re not alone. Thousands of women have struggled with the same frustrating options—<strong>until now.</strong></p><p>The Eyelace Starter Kit is here to change everything. Experience a lash routine that’s effortless, natural, and non-damaging.</p>",
         "link-url": "shopify://products/starter-kit",
         "link-text": "Shop the Starter Kit",
         "mobile-image": "shopify://shop_images/Untitled_design_21.jpg",
@@ -181,7 +181,7 @@
             "text-width": "medium",
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-09-27_at_3.04.21_AM.png",
+            "image": "shopify://shop_images/1_1000c664-90ac-426a-8ad5-0aff5224a711.jpg",
             "overline": "",
             "title": "",
             "description": "",
@@ -197,7 +197,39 @@
             "text-width": "medium",
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "center",
-            "image": "shopify://shop_images/Screenshot_2024-10-14_at_1.03.46_PM.png",
+            "image": "shopify://shop_images/2_5b79e2d1-46a6-4cb1-a428-ee7d62ada862.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_QkHzY9": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/3_a4759de4-19a9-44f4-8c3d-6255ab92c1e8.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "image_6BEBHz": {
+          "type": "image",
+          "settings": {
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/4.jpg",
             "overline": "",
             "title": "",
             "description": "",
@@ -210,7 +242,9 @@
       },
       "block_order": [
         "image_RHKnMh",
-        "image_XNpXN3"
+        "image_XNpXN3",
+        "image_QkHzY9",
+        "image_6BEBHz"
       ],
       "settings": {
         "top-border": false,
@@ -218,7 +252,7 @@
         "spacing-below": false,
         "spacing-around-blocks": false,
         "arrows-enabled": true,
-        "blocks_per_slide": 2,
+        "blocks_per_slide": 1,
         "background-color": "none",
         "light-text": true,
         "text-style": "none",
@@ -228,7 +262,7 @@
         "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "auto-rotate": false,
-        "rotate-frequency": 7,
+        "rotate-frequency": 5,
         "transition_type": "slide",
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
