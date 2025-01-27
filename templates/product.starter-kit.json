@@ -260,7 +260,7 @@
         "heading-type": "featured-heading",
         "image-display-type": "medium",
         "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
+        "overlay-style": "none",
         "auto-rotate": false,
         "rotate-frequency": 5,
         "transition_type": "slide",
