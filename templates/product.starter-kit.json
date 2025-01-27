@@ -11,6 +11,9 @@
   "sections": {
     "image_with_text_pJGaga": {
       "type": "image-with-text",
+      "custom_css": [
+        "h2 {font-size: 46px;}"
+      ],
       "settings": {
         "top-border": true,
         "spacing-above": false,
@@ -324,6 +327,13 @@
         "image_bpeLpR",
         "image_qYieQk"
       ],
+      "custom_css": [
+        "h2 {font-size: 32px;}",
+        "h3 {font-size: 26px;}",
+        "p {font-size: 15px;}",
+        "h3 {font-weight: bold;}",
+        "h4 {font-size: 16px;}"
+      ],
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -332,7 +342,7 @@
         "background-color": "light",
         "light-text": false,
         "container-width": "4",
-        "width": 4,
+        "width": 2,
         "aspect-ratio": "square",
         "image-width": 0,
         "text-alignment": "center",
@@ -379,6 +389,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
