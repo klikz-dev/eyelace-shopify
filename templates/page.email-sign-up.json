@@ -28,9 +28,9 @@
           "type": "shopify://apps/seguno-popups/blocks/popup-embedded-form-app-block/f53bd66f-9a20-4ce2-ae2e-ccbd0148bd4b",
           "settings": {
             "popup_id": "4d1c1ba758994afd8317d62f399944f6",
-            "background_color": "#f7f7f7",
-            "top_padding": 30,
-            "bottom_padding": 30,
+            "background_color": "#ffffff",
+            "top_padding": 0,
+            "bottom_padding": 0,
             "right_padding": 0,
             "left_padding": 0
           }
