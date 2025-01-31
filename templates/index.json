@@ -101,8 +101,38 @@
     "gp_section_549790644529595296": {
       "type": "gp-section-549790644529595296",
       "settings": {
-        "checksum": "ac908fdcce5f4ab3d03342592f720d4812488f4847531ef73fc86b4738a818f5_0_1"
-      }
+        "checksum": "977e4667db4816afe0d66e04a66348e3d38f2e51c13cb285affb2322293988cf_0_1"
+      },
+      "blocks": {
+        "gp_app_seguno-email-marketing_gVULtIGiTt": {
+          "type": "shopify:\/\/apps\/seguno-email\/blocks\/newsletter_form\/db65571f-fa4d-473d-baa2-283a96dc76bc",
+          "settings": {
+            "heading": "Subscribe to our newsletter",
+            "subheading": "<p>Be the first to know about new collections and exclusive offers.<\/p>",
+            "show_first_name": false,
+            "show_last_name": false,
+            "show_permission_checkbox": false,
+            "tags": "newsletter",
+            "return_to": "",
+            "label_first_name": "First name",
+            "placeholder_first_name": "",
+            "label_last_name": "Last name",
+            "placeholder_last_name": "",
+            "label_email": "Email",
+            "placeholder_email": "",
+            "label_permission": "<p>I agree to receive marketing emails<\/p>",
+            "label_subscribe": "Subscribe",
+            "success_message": "Thanks for subscribing",
+            "background_color": "#ffffff",
+            "text_color": "#1a1b18",
+            "button_background_color": "#445958",
+            "button_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "gp_app_seguno-email-marketing_gVULtIGiTt"
+      ]
     }
   },
   "order": [
