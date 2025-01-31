@@ -21,128 +21,35 @@
         "spacing-below": false
       }
     },
-    "featured_text_FPy4T9": {
-      "type": "featured-text",
+    "173835018256567840": {
+      "type": "apps",
+      "blocks": {
+        "seguno_popups_popup_embedded_form_app_block_tBQtTM": {
+          "type": "shopify://apps/seguno-popups/blocks/popup-embedded-form-app-block/f53bd66f-9a20-4ce2-ae2e-ccbd0148bd4b",
+          "settings": {
+            "popup_id": "4d1c1ba758994afd8317d62f399944f6",
+            "background_color": "#ffffff",
+            "top_padding": 0,
+            "bottom_padding": 0,
+            "right_padding": 0,
+            "left_padding": 0
+          }
+        }
+      },
+      "block_order": [
+        "seguno_popups_popup_embedded_form_app_block_tBQtTM"
+      ],
       "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
         "background-color": "none",
         "light-text": false,
-        "heading-type": "section-heading",
         "container-width": "4",
-        "overline": "Overline text",
-        "heading": "Introduce your brand",
-        "description": "<p>Introduce your brand, products and vision statement and welcome customers to your store.</p>",
-        "link-url": "/",
-        "link-text": "Link text"
-      }
-    },
-    "image_with_text_3AJCA9": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "left",
-        "text-horizontal-alignment": "right",
-        "text-vertical-alignment": "center",
-        "text-width": "medium",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "overline": "Overline text",
-        "title": "Image with text",
-        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
-        "link-url": "",
-        "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
-      }
-    },
-    "image_with_text_Ahad4k": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "right",
-        "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
-        "text-width": "medium",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "overline": "Overline text",
-        "title": "Image with text",
-        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
-        "link-url": "shopify://pages/our-mission",
-        "link-text": "MISSION",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
-      }
-    },
-    "image_with_text_HQEPDt": {
-      "type": "image-with-text",
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "light-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "left",
-        "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
-        "text-width": "medium",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "overline": "Overline text",
-        "title": "Image with text",
-        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
-        "link-url": "",
-        "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
+        "spacing-above": true,
+        "spacing-below": true
       }
     }
   },
   "order": [
     "main",
-    "featured_text_FPy4T9",
-    "image_with_text_3AJCA9",
-    "image_with_text_Ahad4k",
-    "image_with_text_HQEPDt"
+    "173835018256567840"
   ]
 }
