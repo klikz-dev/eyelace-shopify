@@ -28,9 +28,9 @@
           "type": "shopify://apps/seguno-popups/blocks/popup-embedded-form-app-block/f53bd66f-9a20-4ce2-ae2e-ccbd0148bd4b",
           "settings": {
             "popup_id": "4d1c1ba758994afd8317d62f399944f6",
-            "background_color": "#ffffff",
-            "top_padding": 0,
-            "bottom_padding": 0,
+            "background_color": "#f7f7f7",
+            "top_padding": 30,
+            "bottom_padding": 30,
             "right_padding": 0,
             "left_padding": 0
           }
@@ -42,14 +42,49 @@
       "settings": {
         "background-color": "none",
         "light-text": false,
-        "container-width": "4",
+        "container-width": "1",
         "spacing-above": true,
         "spacing-below": true
+      }
+    },
+    "image_with_text_aYR7nE": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "light-text": true,
+        "overlap": false,
+        "heading-type": "banner-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "x-small",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/gempages_532871831896458163-22ccd1f0-1986-4293-a2ef-31562bb44cfb.jpg",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
       }
     }
   },
   "order": [
     "main",
-    "173835018256567840"
+    "173835018256567840",
+    "image_with_text_aYR7nE"
   ]
 }
