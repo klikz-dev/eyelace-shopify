@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "layout": "theme.gempages.blank",
   "sections": {
@@ -14,46 +14,31 @@
       "type": "gp-section-534053528595858186",
       "settings": {
         "section_preload": "true",
-        "checksum": "56560eb038165419bc0fe42f9c6e09340de70617af832d77a4fa657c241b402b"
+        "checksum": "_1_1"
       }
     },
     "gp_section_534053528595858405": {
       "type": "gp-section-534053528595858405",
       "settings": {
-        "section_preload": "false",
-        "checksum": "ac536f76bdf03361b7ea1f200441e529f25b8b2153c1073e5563a6289423bc71"
+        "checksum": "_1_1"
       }
     },
     "gp_section_534118371243853036": {
       "type": "gp-section-534118371243853036",
       "settings": {
-        "section_preload": "false",
-        "checksum": "ee9ebb253e96a6ec97c5768d851c7278399520beabbfae250fa0be779a838959",
-        "ggRm3qfGZLf_text": "<p>Sign up for a notification of our launch date and receive a launch discount code!</p>",
-        "ggXN3flNNDQ_successMessage": "Thanks for contacting us. We'll get back to you as soon as possible.",
-        "ggXN3flNNDQ_errorMessage": "Can’t send email. Please try again later.",
-        "ggG_EaWTbNe_placeholder": "Email",
-        "ggGwcbooLlV_label": "Send"
+        "checksum": "_1_1"
       }
     },
     "gp_section_534054686794187546": {
       "type": "gp-section-534054686794187546",
       "settings": {
-        "section_preload": "false",
-        "checksum": "ad3cf470bfc352dce7c236fdb917851c7db7c4006a183edaa2c9e456f6004732",
-        "ggduj6pcq6e_text": "Pre-order Your Starter Kit Today &amp; Get 20% OFF!",
-        "ggyuzwCCNz4_text": "<p>*The discount is automatically applied at checkout</p>",
-        "ggkurRlIXOI_text": "Quantity",
-        "gg7KvXPruM8_label": "Add to cart",
-        "gg7KvXPruM8_outOfStockLabel": "Out of stock",
-        "gg7KvXPruM8_unavailableLabel": "Unavailable"
+        "checksum": "_1_1"
       }
     },
     "gp_section_534053573089035018": {
       "type": "gp-section-534053573089035018",
       "settings": {
-        "section_preload": "false",
-        "checksum": "0307dda37dbed73a576ef65bbffbe4b89e73cbddd9199302ae7f6d20fff94932"
+        "checksum": "_1_1"
       }
     }
   },
