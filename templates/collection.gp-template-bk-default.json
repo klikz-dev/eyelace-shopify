@@ -8,67 +8,67 @@
  * ------------------------------------------------------------
  */
 {
+  "sections": {
+    "collection-header": {
+      "type": "collection--header",
+      "settings": {
+        "show-title": true,
+        "heading-type": "featured-heading",
+        "heading-alignment": "center",
+        "show-description": true,
+        "description-alignment": "with-title",
+        "light-text": true,
+        "show-image": true,
+        "use-image-fallback": true,
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "text-style": "none",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false
+      }
+    },
+    "navigation": {
+      "type": "collection--navigation",
+      "settings": {
+        "show-browse-button": true,
+        "show-sort-button": true,
+        "show-refine-button": true,
+        "show-layout-buttons": true,
+        "show-collections-list": true,
+        "custom-list-collections": "",
+        "show-sort-list": true,
+        "show-refine-list": true,
+        "swatches-enabled": false,
+        "show-search-link": true
+      }
+    },
+    "main": {
+      "type": "collection--body",
+      "settings": {
+        "products-per-row--desktop": 4,
+        "products-per-row--mobile": "1",
+        "number-of-rows": 4
+      }
+    },
+    "recent-products": {
+      "type": "recent-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": true,
+        "background-color": "none",
+        "light-text": false,
+        "heading-alignment": "center",
+        "heading": "Recently viewed"
+      }
+    }
+  },
   "order": [
     "collection-header",
     "navigation",
     "main",
     "recent-products"
-  ],
-  "sections": {
-    "collection-header": {
-      "settings": {
-        "aspect-ratio": 56,
-        "description-alignment": "with-title",
-        "heading-alignment": "center",
-        "heading-type": "featured-heading",
-        "image-display-type": "medium",
-        "light-text": true,
-        "mobile-aspect-ratio": 134,
-        "mobile-image-display-type": "original",
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "show-description": true,
-        "show-image": true,
-        "show-title": true,
-        "text-style": "none",
-        "use-image-fallback": true
-      },
-      "type": "collection--header"
-    },
-    "main": {
-      "settings": {
-        "number-of-rows": 4,
-        "products-per-row--desktop": 4,
-        "products-per-row--mobile": "1"
-      },
-      "type": "collection--body"
-    },
-    "navigation": {
-      "settings": {
-        "custom-list-collections": "",
-        "show-browse-button": true,
-        "show-collections-list": true,
-        "show-layout-buttons": true,
-        "show-refine-button": true,
-        "show-refine-list": true,
-        "show-search-link": true,
-        "show-sort-button": true,
-        "show-sort-list": true,
-        "swatches-enabled": false
-      },
-      "type": "collection--navigation"
-    },
-    "recent-products": {
-      "settings": {
-        "background-color": "none",
-        "heading": "Recently viewed",
-        "heading-alignment": "center",
-        "light-text": false,
-        "spacing-above": false,
-        "spacing-below": true,
-        "top-border": false
-      },
-      "type": "recent-products"
-    }
-  }
+  ]
 }
