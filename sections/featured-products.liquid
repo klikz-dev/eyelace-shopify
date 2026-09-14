@@ -79,7 +79,7 @@
           echo skip_link_t
         echo '</a>'
 
-        render 'carousel', view: 'product', section_id: section.id, onboarding: onboarding, bg_color: bg_color, blocks: product_list, blocks_per_slide: 4, blocks_per_slide_mobile: 2, dot_nav_enabled: true, total_blocks: product_list.count, total_slides: product_list.count | divided_by: 2, spacing_around_blocks: true, transition_type: 'slide'
+        render 'carousel', view: 'product', section_id: section.id, onboarding: onboarding, bg_color: bg_color, blocks: product_list, blocks_per_slide: 4, blocks_per_slide_mobile: 2, dot_nav_enabled: true, total_blocks: product_list.count, total_slides: product_list.count, divided_by: 2, spacing_around_blocks: true, transition_type: 'slide'
 
       else
         if onboarding
@@ -250,4 +250,19 @@
     "groups": ["aside"]
   }
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "        render 'carousel', view: 'product', section_id: section.id, onboarding:
+    onboarding, bg_color: bg_color, blocks: product_list, blocks_per_slide: 4, blocks_per_slide_mobile:
+    2, dot_nav_enabled: true, total_blocks: product_list.count, total_slides: product_list.count
+    | divided_by: 2, spacing_around_blocks: true, transition_type: 'slide'"
+  to: "        render 'carousel', view: 'product', section_id: section.id, onboarding:
+    onboarding, bg_color: bg_color, blocks: product_list, blocks_per_slide: 4, blocks_per_slide_mobile:
+    2, dot_nav_enabled: true, total_blocks: product_list.count, total_slides: product_list.count,
+    divided_by: 2, spacing_around_blocks: true, transition_type: 'slide'"
+  position: 2599..2941
+{%- endcomment -%}
